@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31112.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbImportExport", "DbImportExport\DbImportExport.csproj", "{B78B5BAF-104F-472B-BB43-EE4E82144B39}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B78B5BAF-104F-472B-BB43-EE4E82144B39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B78B5BAF-104F-472B-BB43-EE4E82144B39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B78B5BAF-104F-472B-BB43-EE4E82144B39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B78B5BAF-104F-472B-BB43-EE4E82144B39}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9E9AC7BB-433B-4F0C-A476-DD09FB621AD8}
+	EndGlobalSection
+EndGlobal
