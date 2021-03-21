@@ -32,6 +32,7 @@ namespace DbImportExport
             this.btImport = new System.Windows.Forms.Button();
             this.btExport = new System.Windows.Forms.Button();
             this.rtbLog = new System.Windows.Forms.RichTextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btImport
@@ -39,7 +40,7 @@ namespace DbImportExport
             this.btImport.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btImport.Location = new System.Drawing.Point(753, 12);
             this.btImport.Name = "btImport";
-            this.btImport.Size = new System.Drawing.Size(131, 72);
+            this.btImport.Size = new System.Drawing.Size(131, 38);
             this.btImport.TabIndex = 0;
             this.btImport.Text = "Import";
             this.btImport.UseVisualStyleBackColor = true;
@@ -48,9 +49,9 @@ namespace DbImportExport
             // btExport
             // 
             this.btExport.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btExport.Location = new System.Drawing.Point(753, 90);
+            this.btExport.Location = new System.Drawing.Point(753, 56);
             this.btExport.Name = "btExport";
-            this.btExport.Size = new System.Drawing.Size(131, 72);
+            this.btExport.Size = new System.Drawing.Size(131, 36);
             this.btExport.TabIndex = 1;
             this.btExport.Text = "Export";
             this.btExport.UseVisualStyleBackColor = true;
@@ -67,17 +68,27 @@ namespace DbImportExport
             this.rtbLog.TabIndex = 2;
             this.rtbLog.Text = "";
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(753, 98);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(131, 20);
+            this.textBox1.TabIndex = 3;
+            this.textBox1.Text = "aaaa";
+            // 
             // DbImportExportMainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(896, 532);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.rtbLog);
             this.Controls.Add(this.btExport);
             this.Controls.Add(this.btImport);
             this.Name = "DbImportExportMainForm";
             this.Text = "Db Import Export";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -86,6 +97,7 @@ namespace DbImportExport
         private System.Windows.Forms.Button btImport;
         private System.Windows.Forms.Button btExport;
         private System.Windows.Forms.RichTextBox rtbLog;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 

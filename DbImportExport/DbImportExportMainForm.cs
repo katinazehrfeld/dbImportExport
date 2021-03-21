@@ -29,7 +29,7 @@ namespace DbImportExport
         {
             try
             {
-                _startExport.Export(Log);  // Export - funktion
+                _startExport.Export(Log, this.textBox1.Text);  // Export - funktion
             }
             catch(Exception ex)
             {

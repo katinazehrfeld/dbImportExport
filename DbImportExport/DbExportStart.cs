@@ -11,10 +11,10 @@ namespace DbImportExport
     {
         private Action<string> Log;
  
-        public void Export(Action<string> log) {
+        public void Export(Action<string> log, string query) {
             Log = log;
 
-            List<string> lines = GetLinesFromDb();
+            List<string> lines = GetLinesFromDb(query);
 
             Log("Got lines: " + lines.Count);
 
@@ -32,7 +32,7 @@ namespace DbImportExport
             File.WriteAllLines(filename, lines);
         }
 
-        private List<string> GetLinesFromDb()
+        private List<string> GetLinesFromDb(string query)
         {
             Log("Opening SQL connection");
 
@@ -50,7 +50,7 @@ WHERE BezeichnungVorschlag = @P1
             using (var command = connection.CreateCommand())
             {
                 command.CommandText = sql;
-                command.Parameters.AddWithValue("@P1", "aaaa");
+                command.Parameters.AddWithValue("@P1", query);
 
                 var reader = command.ExecuteReader();
 
