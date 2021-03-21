@@ -5,7 +5,8 @@ namespace DbImportExport
 {
     public partial class DbImportExportMainForm : Form
     {
-        private DbImportExportStart _start = new DbImportExportStart();
+        private DbImportStart _startImport = new DbImportStart();
+        private DbExportStart _startExport = new DbExportStart();
 
         public DbImportExportMainForm()
         {
@@ -16,7 +17,7 @@ namespace DbImportExport
         {
             try 
             {
-                _start.Import(Log);
+                _startImport.Import(Log);
             }
             catch (Exception ex)
             {
@@ -28,7 +29,7 @@ namespace DbImportExport
         {
             try
             {
-                _start.Export(Log);  // Export - funktion
+                _startExport.Export(Log);  // Export - funktion
             }
             catch(Exception ex)
             {

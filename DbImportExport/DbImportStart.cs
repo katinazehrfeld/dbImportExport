@@ -2,11 +2,10 @@
 using System.Data.SqlClient;
 using System.IO;
 using System.Linq;
-using System.Windows.Forms;
 
 namespace DbImportExport
 {
-    public class DbImportExportStart
+    public class DbImportStart
     {
         private Action<string> Log;
 
@@ -34,11 +33,6 @@ namespace DbImportExport
                 ProcessImport(fileName);
             }
         }
-
-        public void Export(Action<string> log) {
-            Log = log;
-        }
-
 
         private void ProcessImport(string filename)
         {

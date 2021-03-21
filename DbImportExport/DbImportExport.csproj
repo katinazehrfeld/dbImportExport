@@ -52,7 +52,8 @@
     <Compile Include="DbImportExportMainForm.Designer.cs">
       <DependentUpon>DbImportExportMainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="DbImportExportStart.cs" />
+    <Compile Include="DbExportStart.cs" />
+    <Compile Include="DbImportStart.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="DbImportExportMainForm.resx">
