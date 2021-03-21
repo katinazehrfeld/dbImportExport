@@ -13,7 +13,7 @@ namespace DbImportExport
         {
             Log = log;
 
-            // Datei auswählen
+            // Datei auswählen - test
             string fileName = null;
 
             /*
