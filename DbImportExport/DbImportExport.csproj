@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DbImportProbe.cs" />
     <Compile Include="DbOdorExport.cs" />
     <Compile Include="DbImportExportMainForm.cs">
       <SubType>Form</SubType>

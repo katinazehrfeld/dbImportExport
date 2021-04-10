@@ -7,6 +7,8 @@ namespace DbImportExport
     {
         private DbImportStart _startImport = new DbImportStart();
         private DbExportStart _startExport = new DbExportStart();
+        private DbImportProbe _probeImport = new DbImportProbe();
+
 
         public DbImportExportMainForm()
         {
@@ -40,6 +42,18 @@ namespace DbImportExport
         private void Log(string message)
         {
             rtbLog.AppendText(message + Environment.NewLine);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                _probeImport.Import(Log);
+            }
+            catch (Exception ex)
+            {
+                Log("ERROR IMPORTING PROBE:" + ex.Message);
+            }
         }
     }
 }

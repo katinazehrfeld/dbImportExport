@@ -3,6 +3,7 @@ using System.Data.SqlClient;
 using System.Globalization;
 using System.IO;
 using System.Linq;
+using System.Windows.Forms;
 
 namespace DbImportExport
 {
@@ -14,18 +15,18 @@ namespace DbImportExport
         {
             Log = log;
 
-            // Datei auswählen - test
+           // Datei auswählen - test
             string fileName = null;
 
-            /*
+            
             var dialog = new OpenFileDialog();
             if (dialog.ShowDialog() == DialogResult.OK)
             {
                 fileName = dialog.FileName;
             }
-            */
+            
 
-            fileName = "C:\\Daten\\TeslaProben\\alle_DB_CSV\\test1.csv";
+           // fileName = "C:\\Daten\\TeslaProben\\alle_CSV_nachAWDB1\\AWDB_1_62005831_AT_1L.csv";
 
 
             if (!string.IsNullOrEmpty(fileName)) // ! = not , < = kl, > = gr, == ist gleichheitsvergleich, = ist zuweisung
