@@ -5,7 +5,9 @@ namespace DbImportExport
 {
     public partial class DbImportExportMainForm : Form
     {
-        private DbImportStart _startImport = new DbImportStart();
+        private DBImportMessung _messungImporter = new DBImportMessung();
+        private DBImportProbeninfo _probenInfoImporter = new DBImportProbeninfo();
+
         private DbExportStart _startExport = new DbExportStart();
         private DbImportProbe _probeImport = new DbImportProbe();
 
@@ -15,17 +17,31 @@ namespace DbImportExport
             InitializeComponent();
         }
 
-        private void btImport_Click(object sender, EventArgs e)
+        private void btnImportMessung(object sender, EventArgs e)
         {
             try 
             {
-                _startImport.Import(Log);
+                _messungImporter.Import(Log);
             }
             catch (Exception ex)
             {
-                Log("ERROR IMPORTING:" + ex.Message);
+                Log("ERROR IMPORTING MESSUNG:" + ex.Message);
             }
         }
+
+        private void btnImportProbeninfo(object sender, EventArgs e)
+        {
+            try
+            {
+                _probenInfoImporter.Import(Log);
+            }
+            catch (Exception ex)
+            {
+                Log("ERROR IMPORTING PROBENINFO:" + ex.Message);
+            }
+        }
+
+
 
         private void btExport_Click(object sender, EventArgs e)
         {
@@ -55,5 +71,7 @@ namespace DbImportExport
                 Log("ERROR IMPORTING PROBE:" + ex.Message);
             }
         }
+
+      
     }
 }

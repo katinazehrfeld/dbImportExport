@@ -8,7 +8,7 @@ using System.IO;
 using System.Data.SqlClient;
 
 
-namespace DbImportExport
+namespace DbImportExport //Name der Funktion
 {
     public class DbImportProbe
     {

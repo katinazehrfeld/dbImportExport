@@ -46,6 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConverterTool.cs" />
+    <Compile Include="DBImportProbeninfo.cs" />
     <Compile Include="DbImportProbe.cs" />
     <Compile Include="DbOdorExport.cs" />
     <Compile Include="DbImportExportMainForm.cs">
@@ -56,6 +58,7 @@
     </Compile>
     <Compile Include="DbExportStart.cs" />
     <Compile Include="DbImportStart.cs" />
+    <Compile Include="DBImportMessung.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="DbImportExportMainForm.resx">
