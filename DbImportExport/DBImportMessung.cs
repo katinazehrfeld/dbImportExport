@@ -95,7 +95,7 @@ INSERT INTO dbo.UA_csv     -- definiert in welche Tabelle der DB die Daten über
       ,Comment)
 VALUES ( @Best_Hit, @Component_RT, @Base_Peak_MZ, @CAS, @Library_RI, @Component_RI, @Match_Factor, @Compound_Name, @Formula, @Library_File, @Component_Area, @Base_Peak_Area, @Type, @Comment)
 ";
-            var lineItems = SplitSpecial(line);  //line.Split(new[] { ';' });  
+            var lineItems = SplitSpecial(line);  //Code zu SplitSpzial siehe weiter unten 
 
             Log("Items:" + lineItems.Length);
 
@@ -106,8 +106,8 @@ VALUES ( @Best_Hit, @Component_RT, @Base_Peak_MZ, @CAS, @Library_RI, @Component_
                 command.CommandText = sql;
                  
                 command.Parameters.AddWithValue("@Best_Hit", ConverterTool.ToBool(lineItems[0]));//Best_Hit
-                command.Parameters.AddWithValue("@Component_RT", (ToDecimal(lineItems[1])));//Component_RT
-                command.Parameters.AddWithValue("@Base_Peak_MZ", (ToDecimal(lineItems[2])));//Base_Peak_MZ
+                command.Parameters.AddWithValue("@Component_RT", ConverterTool.ToDecimal(lineItems[1]));//Component_RT
+                command.Parameters.AddWithValue("@Base_Peak_MZ", ConverterTool.ToDecimal(lineItems[2]));//Base_Peak_MZ
                 command.Parameters.AddWithValue("@CAS", lineItems[3]);//CAS
 
 
@@ -117,13 +117,13 @@ VALUES ( @Best_Hit, @Component_RT, @Base_Peak_MZ, @CAS, @Library_RI, @Component_
 
                 command.Parameters.AddWithValue("@Library_RI", value ?? DBNull.Value );//Library_RI
       
-                command.Parameters.AddWithValue("@Component_RI", (ToDecimal(lineItems[5])));//Component_RI
-                command.Parameters.AddWithValue("@Match_Factor", (ToDecimal(lineItems[6])));//Match_Faktor
+                command.Parameters.AddWithValue("@Component_RI", ConverterTool.ToDecimal(lineItems[5]));//Component_RI
+                command.Parameters.AddWithValue("@Match_Factor", ConverterTool.ToDecimal(lineItems[6]));//Match_Faktor
                 
                 command.Parameters.AddWithValue("@Compound_Name", lineItems[7]);//Compound_Name
                 command.Parameters.AddWithValue("@Formula", lineItems[8]);//Formula
                 command.Parameters.AddWithValue("@Library_File", lineItems[9]);//Library_File
-                command.Parameters.AddWithValue("@Component_Area", (ToDecimal(lineItems[10])));//Component_Area
+                command.Parameters.AddWithValue("@Component_Area", ConverterTool.ToDecimal(lineItems[10]));//Component_Area
 
                 /*
                 var nullableDec = ToNullableDecimal(lineItems[12]);
@@ -132,7 +132,7 @@ VALUES ( @Best_Hit, @Component_RT, @Base_Peak_MZ, @CAS, @Library_RI, @Component_
                 var area = obj ?? DBNull.Value;
                 */
 
-                command.Parameters.AddWithValue("@Base_Peak_Area", (ToDecimal(lineItems[11])));//Base_Peak_Area                          
+                command.Parameters.AddWithValue("@Base_Peak_Area", ConverterTool.ToDecimal(lineItems[11]));//Base_Peak_Area                          
                 command.Parameters.AddWithValue("@Type", lineItems[12]);//Type
 
                 command.Parameters.AddWithValue("@Comment", lineItems[13]);//Comment
@@ -153,7 +153,7 @@ VALUES ( @Best_Hit, @Component_RT, @Base_Peak_MZ, @CAS, @Library_RI, @Component_
 
         }
         
-        private string[] SplitSpecial(string line)  // Tool um die Stoffnamen, die auch oft Kommas enthalten, von den SpaltenKommas zu unterscheiden 
+        private string[] SplitSpecial(string line)  // Tool um die Stoffnamen, die auch oft Kommata enthalten, von den SpaltenKommata zu unterscheiden 
         {
             var values = line.Split(',');           //zerlegt eine Zeile in Teilstücke, getrennt durch Kommas
 
@@ -167,36 +167,37 @@ VALUES ( @Best_Hit, @Component_RT, @Base_Peak_MZ, @CAS, @Library_RI, @Component_
                 {
                     if (value.EndsWith("\""))   // und wenn Teilstück am Ende " hat
                     {
-                        textString = textString + "," + value.TrimEnd('"'); //dann Textstück + "
+                        textString = textString + "," + value.TrimEnd('"'); //dann vorhandenes Teilstück + Komma + aktuelles Teilstück + "
                         result.Add(textString);         // und in Liste einfügen
-                        textString = null;              // Textstück auf leer setzen
+                        textString = null;              // Teilstück auf leer setzen
                     }
                     else                       // wenn nicht " am Ende, 
                     {
-                        textString = textString + "," + value ; //dann bisheriges Textstück + nächstes Textstück
+                        textString = textString + "," + value ; //dann bisheriges Textstück + Komma + nächstes Textstück
                     }
                 }
-                else    // wenn Teilstück leer ist
+                else    // wenn Teilstück noch leer ist
                 {
-                    if (value.StartsWith("\"") && !value.EndsWith("\""))
+                    if (value.StartsWith("\"") && !value.EndsWith("\""))    //wenn Teilstück mit " beginnt und Nicht mit " endet
                     {
-                        textString = value.Substring(1);
+                        textString = value.Substring(1);                    //dann Teilstück minus erstes Zeichen in Teilstück speichern
                     }
                     else
                     {
-                        result.Add(value.TrimStart('"').TrimEnd('"'));
+                        result.Add(value.TrimStart('"').TrimEnd('"'));      //sonst von Teilstück vorne und hinten " abtrennen und speichern
                     }
                 }
             }
 
-            if (textString != null)
+            if (textString != null)             // wenn Teilstück nicht leer ist und keine Semikolons
             {
-                result.Add(textString);
+                result.Add(textString);         // dann Teilstück speichern in "result"
             }
 
-            return result.ToArray();
+            return result.ToArray();            // "result" an Array übergeben
         }
         
+        /*
         private decimal ToDecimal(string value)
         {
             if (!decimal.TryParse(value, NumberStyles.Number, CultureInfo.InvariantCulture, out var result))
@@ -208,18 +209,15 @@ VALUES ( @Best_Hit, @Component_RT, @Base_Peak_MZ, @CAS, @Library_RI, @Component_
         }
         private decimal? ToNullableDecimal(string value)
         {
-            //ToDo... NumberStyles...
 
-            value = value.Replace('.', ',');
-
-            if (!decimal.TryParse(value, out var result))
+            if (!decimal.TryParse(value, NumberStyles.Number, CultureInfo.InvariantCulture, out var result))
             {
                 return null;
             }
 
             return result; 
         }
-
+        */
 
 
     }

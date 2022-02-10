@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Globalization;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -26,24 +27,22 @@ namespace DbImportExport
 
             return result;
         }
-        /*
+        
         public static decimal ToDecimal(string value)
         {
-            value = value.Replace('.', ',');
-
-            if (!decimal.TryParse(value, out var result))
+            
+             if (!decimal.TryParse(value, NumberStyles.Number, CultureInfo.InvariantCulture, out var result))
             {
                 result = 0;
             }
 
             return result;
         }
-        */
+       
         public static decimal? ToNullableDecimal(string value)
         {
-            value = value.Replace('.', ',');
 
-            if (!decimal.TryParse(value, out var result))
+            if (!decimal.TryParse(value, NumberStyles.Number, CultureInfo.InvariantCulture, out var result))
             {
                 return null;
             }
