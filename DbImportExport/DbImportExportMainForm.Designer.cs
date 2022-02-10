@@ -44,10 +44,9 @@ namespace DbImportExport
             // btImport
             // 
             this.btImport.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btImport.Location = new System.Drawing.Point(778, 19);
-            this.btImport.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btImport.Location = new System.Drawing.Point(753, 19);
             this.btImport.Name = "btImport";
-            this.btImport.Size = new System.Drawing.Size(197, 59);
+            this.btImport.Size = new System.Drawing.Size(131, 38);
             this.btImport.TabIndex = 0;
             this.btImport.Text = "Import Messung";
             this.btImport.UseVisualStyleBackColor = true;
@@ -56,10 +55,9 @@ namespace DbImportExport
             // btExport
             // 
             this.btExport.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btExport.Location = new System.Drawing.Point(1130, 86);
-            this.btExport.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btExport.Location = new System.Drawing.Point(756, 353);
             this.btExport.Name = "btExport";
-            this.btExport.Size = new System.Drawing.Size(197, 55);
+            this.btExport.Size = new System.Drawing.Size(131, 36);
             this.btExport.TabIndex = 1;
             this.btExport.Text = "Export";
             this.btExport.UseVisualStyleBackColor = true;
@@ -70,28 +68,26 @@ namespace DbImportExport
             this.rtbLog.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.rtbLog.Location = new System.Drawing.Point(18, 19);
-            this.rtbLog.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.rtbLog.Location = new System.Drawing.Point(12, 12);
             this.rtbLog.Name = "rtbLog";
-            this.rtbLog.Size = new System.Drawing.Size(564, 779);
+            this.rtbLog.Size = new System.Drawing.Size(693, 508);
             this.rtbLog.TabIndex = 2;
             this.rtbLog.Text = "";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(1130, 151);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBox1.Location = new System.Drawing.Point(756, 395);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(194, 26);
+            this.textBox1.Size = new System.Drawing.Size(131, 20);
             this.textBox1.TabIndex = 3;
             this.textBox1.Text = "aaaa";
             // 
             // bt_Odor_in
             // 
-            this.bt_Odor_in.Location = new System.Drawing.Point(1130, 202);
-            this.bt_Odor_in.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.bt_Odor_in.Location = new System.Drawing.Point(756, 421);
+            this.bt_Odor_in.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.bt_Odor_in.Name = "bt_Odor_in";
-            this.bt_Odor_in.Size = new System.Drawing.Size(195, 48);
+            this.bt_Odor_in.Size = new System.Drawing.Size(130, 31);
             this.bt_Odor_in.TabIndex = 4;
             this.bt_Odor_in.Text = "Odor import";
             this.bt_Odor_in.UseVisualStyleBackColor = true;
@@ -99,10 +95,9 @@ namespace DbImportExport
             // button1
             // 
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(1127, 309);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button1.Location = new System.Drawing.Point(755, 458);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(197, 59);
+            this.button1.Size = new System.Drawing.Size(131, 38);
             this.button1.TabIndex = 5;
             this.button1.Text = "ImportProbe";
             this.button1.UseVisualStyleBackColor = true;
@@ -110,9 +105,10 @@ namespace DbImportExport
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(1127, 391);
+            this.textBox2.Location = new System.Drawing.Point(753, 501);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(197, 26);
+            this.textBox2.Size = new System.Drawing.Size(133, 20);
             this.textBox2.TabIndex = 6;
             // 
             // contextMenuStrip1
@@ -124,10 +120,9 @@ namespace DbImportExport
             // button2
             // 
             this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.Location = new System.Drawing.Point(778, 88);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button2.Location = new System.Drawing.Point(753, 63);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(197, 59);
+            this.button2.Size = new System.Drawing.Size(131, 38);
             this.button2.TabIndex = 7;
             this.button2.Text = "Import ProbenInfos";
             this.button2.UseVisualStyleBackColor = true;
@@ -135,9 +130,9 @@ namespace DbImportExport
             // 
             // DbImportExportMainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1344, 819);
+            this.ClientSize = new System.Drawing.Size(896, 532);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.button1);
@@ -146,7 +141,6 @@ namespace DbImportExport
             this.Controls.Add(this.rtbLog);
             this.Controls.Add(this.btExport);
             this.Controls.Add(this.btImport);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "DbImportExportMainForm";
             this.Text = "Db Import Export";
             this.ResumeLayout(false);

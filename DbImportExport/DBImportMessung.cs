@@ -1,35 +1,30 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data.SqlClient;
+﻿using System;                           //globale geladene Funktionen
+using System.Collections.Generic;       //vereinfachen später den Code
+using System.Data.SqlClient;            //weil verkürzte Schreibweise dadurch möglich
 using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Windows.Forms;
 
-namespace DbImportExport
+namespace DbImportExport        //Namensklasse in der keine Namensgleichheit vorkommen darf
 {
-    public class DBImportMessung
+    public class DBImportMessung    // auf eine public class kann von außen zugegriffen werden
     {
-        private Action<string> Log;
-
-        public void Import(Action<string> log)
+        private Action<string> Log; // private ist nur in dieser public class ansprechbar
+                                    // erzeugt einen Log string
+        public void Import(Action<string> log)  //öffentliche Ausgabe des Import Log 
         {
-            Log = log;
+            Log = log;              // zeigt die erfolgten ToDos und Fehler
 
             // Datei auswählen - test
             string fileName = null;
-
-
-            var dialog = new OpenFileDialog();
-            if (dialog.ShowDialog() == DialogResult.OK)
+            var dialog = new OpenFileDialog();      //öffnet Dateiauswahl Fenster
+            if (dialog.ShowDialog() == DialogResult.OK) //Schleife: wenn ok gedrückt Dateiname übernehmen
             {
                 fileName = dialog.FileName;
             }
-
-
-            // fileName = "C:\\Daten\\TeslaProben\\alle_nachUA_CSV\\62005831.csv";
-
-
+            // Bsp: fileName = "C:\\Daten\\TeslaProben\\alle_nachUA_CSV\\62005831.csv";
+            // Schleife weiter: wenn NICHT 0 oder leer, gehe zu ProcessImport
             if (!string.IsNullOrEmpty(fileName)) // ! = not , < = kl, > = gr, == ist gleichheitsvergleich, = ist zuweisung
             {
                 // Import Verarbeitung
@@ -40,41 +35,40 @@ namespace DbImportExport
 
 
 
-        private void ProcessImport(string filename)
+        private void ProcessImport(string filename)  //void bedeutet, es kommt etwas rein,aber nichts raus
         {
-            Log("Importing " + filename);
+            Log("Importing " + filename);       //neuer LogEintrag
 
-            var linesFromFile = File.ReadAllLines(filename);
+            var linesFromFile = File.ReadAllLines(filename);    //erstellt Zeilenobjekt (Array oder Liste)
 
-            var lines = linesFromFile
-                .Where(line => !string.IsNullOrEmpty(line))
-                .Skip(1) //Überspringt x Zeilen, z.B. Überschrift: Skip(1)
-                .ToArray();
+            var lines = linesFromFile                       //hier wird zeilenweise geprüft
+                .Where(line => !string.IsNullOrEmpty(line)) //Zeile ist nicht 0 oder leer
+                .Skip(1)                                    //Überspringt x Zeilen, z.B. Überschrift: Skip(1)
+                .ToArray();                                 //Übergabe an Array
 
-            Log("Opning SQL connection");
+            Log("Opning SQL connection");       //neuer LogEintrag
 
-            var sqlConnection = new SqlConnection("Data Source = KATINALAPTOP2; Initial Catalog = BWB; Integrated Security = true; ");
-            sqlConnection.Open();
+            var sqlConnection = new SqlConnection("Data Source = KATINALAPTOP2; Initial Catalog = BWB; Integrated Security = true; ");  //definert Datenbankobjekt und verbindet zur entsprechenden DB
+            sqlConnection.Open();               //öffnet gewählte DB
 
-            using (var transaction = sqlConnection.BeginTransaction())
+            using (var transaction = sqlConnection.BeginTransaction())  //Starten Datenübergabe in ein ÜbergabeObjekt
             {
-
                 try
                 {
 
-                    Log("Importing lines: " + lines.Length);
+                    Log("Importing lines: " + lines.Length);       //zählt die übertragenen Zeilen
 
-                    foreach (var line in lines)
+                    foreach (var line in lines)                    //überträgt zeilenweise in einen Zwischenspeicherobjekt mittels Schleife
                     {
                         Log("Importing: " + line);
                         ImportLine(line, sqlConnection, transaction);
                     }
 
-                    transaction.Commit();
+                    transaction.Commit();                          //speichert jede neue Zeile
                 }
                 catch
                 {
-                    transaction.Rollback();
+                    transaction.Rollback();                        //überträgt nichts an die DB, falls der Datensatz einen Fehler hat 
                     throw;
                 }
 
@@ -82,10 +76,10 @@ namespace DbImportExport
         }
 
         private void ImportLine(string line, SqlConnection connection, SqlTransaction transaction)
-        {
-            var sql = @"
-INSERT INTO dbo.UA_csv 
-(      Best_Hit
+        {   //das braune ist sql Code, deshalb die andere Notation (zB: Kommentare --)
+            var sql = @"   -- definiert Spalten
+INSERT INTO dbo.UA_csv     -- definiert in welche Tabelle der DB die Daten übertragen werden
+      (Best_Hit
       ,Component_RT
       ,Base_Peak_MZ
       ,CAS
@@ -99,9 +93,9 @@ INSERT INTO dbo.UA_csv
       ,Base_Peak_Area
       ,Type
       ,Comment)
-VALUES (@P2, @P3, @P4, @P5, @P6, @P7, @P8, @P9, @P10, @P11, @P12, @P13, @P14, @P15)
+VALUES ( @Best_Hit, @Component_RT, @Base_Peak_MZ, @CAS, @Library_RI, @Component_RI, @Match_Factor, @Compound_Name, @Formula, @Library_File, @Component_Area, @Base_Peak_Area, @Type, @Comment)
 ";
-            var lineItems = SplitSpecial(line);
+            var lineItems = SplitSpecial(line);  //line.Split(new[] { ';' });  
 
             Log("Items:" + lineItems.Length);
 
@@ -110,91 +104,79 @@ VALUES (@P2, @P3, @P4, @P5, @P6, @P7, @P8, @P9, @P10, @P11, @P12, @P13, @P14, @P
                 command.Transaction = transaction;
 
                 command.CommandText = sql;
-
-                //command.Parameters.AddWithValue("@P1", lineItems[24]);//ID_Peak
-                command.Parameters.AddWithValue("@P2", ConverterTool.ToBool(lineItems[1]));//Best_Hit
-                command.Parameters.AddWithValue("@P3", lineItems[2]);//Component_RT
-                command.Parameters.AddWithValue("@P4", lineItems[3]);//Base_Peak_MZ
-                command.Parameters.AddWithValue("@P5", lineItems[4]);//CAS
-                command.Parameters.AddWithValue("@P6", lineItems[5]);//Library_RI
-                command.Parameters.AddWithValue("@P7", ToDecimal(lineItems[6]));//Component_RI
-                command.Parameters.AddWithValue("@P8", ToDecimal(lineItems[7]));//Match_Faktor
-                
-                command.Parameters.AddWithValue("@P9", (Int64)(ToDecimal(lineItems[8])));//Compound_Name
-                
-                command.Parameters.AddWithValue("@P10", (int)(ToDecimal(lineItems[9])));//Formula
-                
-                command.Parameters.AddWithValue("@P11", (ToDecimal(lineItems[10])));//Library_File
-                command.Parameters.AddWithValue("@P12", lineItems[11]);//Component_Area
+                 
+                command.Parameters.AddWithValue("@Best_Hit", ConverterTool.ToBool(lineItems[0]));//Best_Hit
+                command.Parameters.AddWithValue("@Component_RT", (ToDecimal(lineItems[1])));//Component_RT
+                command.Parameters.AddWithValue("@Base_Peak_MZ", (ToDecimal(lineItems[2])));//Base_Peak_MZ
+                command.Parameters.AddWithValue("@CAS", lineItems[3]);//CAS
 
 
+
+
+                object value = ConverterTool.ToNullableDecimal(lineItems[4]);
+
+                command.Parameters.AddWithValue("@Library_RI", value ?? DBNull.Value );//Library_RI
+      
+                command.Parameters.AddWithValue("@Component_RI", (ToDecimal(lineItems[5])));//Component_RI
+                command.Parameters.AddWithValue("@Match_Factor", (ToDecimal(lineItems[6])));//Match_Faktor
+                
+                command.Parameters.AddWithValue("@Compound_Name", lineItems[7]);//Compound_Name
+                command.Parameters.AddWithValue("@Formula", lineItems[8]);//Formula
+                command.Parameters.AddWithValue("@Library_File", lineItems[9]);//Library_File
+                command.Parameters.AddWithValue("@Component_Area", (ToDecimal(lineItems[10])));//Component_Area
+
+                /*
                 var nullableDec = ToNullableDecimal(lineItems[12]);
                 var nullableInt = (int?)nullableDec;
                 var obj = (object)nullableInt;
                 var area = obj ?? DBNull.Value;
+                */
 
-                command.Parameters.AddWithValue("@P13", area);//Base_Peak_Area
+                command.Parameters.AddWithValue("@Base_Peak_Area", (ToDecimal(lineItems[11])));//Base_Peak_Area                          
+                command.Parameters.AddWithValue("@Type", lineItems[12]);//Type
 
-
-                
-                command.Parameters.AddWithValue("@P14", (int)(ToDecimal(lineItems[13])));//Type
-                command.Parameters.AddWithValue("@P15", (ToDecimal(lineItems[14])));//Comment
+                command.Parameters.AddWithValue("@Comment", lineItems[13]);//Comment
                 
 
 
                 command.ExecuteNonQuery();
-
-                //  var x = ToFloat("1.23");
 
                 /*
-                // command.Parameters.AddWithValue("@P1", lineItems[24]);//ID_Peak
-                command.Parameters.AddWithValue("@P2",  ToFloat("66.678"));//RT_korr_Pr
-                command.Parameters.AddWithValue("@P3", Math.Round( 66.66));//BPMZ_Pr
-                command.Parameters.AddWithValue("@P4",  "2");//CAS_V1
-                command.Parameters.AddWithValue("@P5",  3);//RI_Lib
-                command.Parameters.AddWithValue("@P6",  4);//RI_korr_Pr
-                command.Parameters.AddWithValue("@P7",  5);//MF_Pr
-                command.Parameters.AddWithValue("@P8",  "6");//Name_V1
-                command.Parameters.AddWithValue("@P9",  "7");//Formel_V1
-                command.Parameters.AddWithValue("@P10", 8);//PeakArea
-                command.Parameters.AddWithValue("@P11", 9);//BPArea
-                command.Parameters.AddWithValue("@P12", "10");//PeakType
-                command.Parameters.AddWithValue("@P13", 11);//PeakArea_mal_Faktoren
-                command.Parameters.AddWithValue("@P14", 12);//FlaechenProzent
-                command.Parameters.AddWithValue("@P15", "13");//BPMZ_Rtkorr
-                command.Parameters.AddWithValue("@P16", "14");//GC_RI_BPMZ
-                command.Parameters.AddWithValue("@P17", 15);//LimsNr
-                command.Parameters.AddWithValue("@P18", "16");//LibFile
-                command.ExecuteNonQuery();
-           */
+                  mögliche KonvertierungsBeispiele
+                  var x = ToFloat("1.23");
+                  command.Parameters.AddWithValue("@P3", Math.Round( 66.66));//BPMZ_Pr
+                  command.Parameters.AddWithValue("@Comment", (ToDecimal(lineItems[14])));
+                  command.Parameters.AddWithValue("@Formula", (int)(ToDecimal(lineItems[9])));
+                  command.Parameters.AddWithValue("@Compound_Name", (Int64)(ToDecimal(lineItems[8])))
+                */
             }
 
         }
-
-        private string[] SplitSpecial(string line)
+        
+        private string[] SplitSpecial(string line)  // Tool um die Stoffnamen, die auch oft Kommas enthalten, von den SpaltenKommas zu unterscheiden 
         {
-            var values = line.Split(',');
+            var values = line.Split(',');           //zerlegt eine Zeile in Teilstücke, getrennt durch Kommas
 
-            List<string> result = new List<string>();
+            List<string> result = new List<string>(); //erzeugt eine leere Liste
 
-            string textString = null;
+            string textString = null;                 //erzeugt ein leeres Teilstück
 
-            foreach(var value in values)
+            foreach(var value in values)        // für jedes Teilstück der Zeile
             {
-                if (textString != null)
+                if (textString != null)         // wenn Teilstück nicht leer ist
                 {
-                    if (value.EndsWith("\""))
+                    if (value.EndsWith("\""))   // und wenn Teilstück am Ende " hat
                     {
-                        textString = textString + value.TrimEnd('"');
-                        result.Add(textString);
-                        textString = null;
+                        textString = textString + value.TrimEnd('"'); //dann Textstück + "
+                        result.Add(textString);         // und in Liste einfügen
+                        textString = null;              // Textstück auf leer setzen
                     }
-                    else
+                    else                       // wenn nicht " am Ende, 
                     {
-                        textString = textString + value;
+                        textString = textString + value + ","; //dann bisheriges Textstück + nächstes Textstück
                     }
                 }
-                else
+                else    // wenn Teilstück leer ist
                 {
                     if (value.StartsWith("\""))
                     {
@@ -214,18 +196,7 @@ VALUES (@P2, @P3, @P4, @P5, @P6, @P7, @P8, @P9, @P10, @P11, @P12, @P13, @P14, @P
 
             return result.ToArray();
         }
-
-        private int ToInt(string value)
-        {
-            if (!int.TryParse(value, out var result))
-            {
-                result = 0;
-            }
-
-            return result;
-        }
-
-
+        
         private decimal ToDecimal(string value)
         {
             value = value.Replace('.', ',');
@@ -237,9 +208,6 @@ VALUES (@P2, @P3, @P4, @P5, @P6, @P7, @P8, @P9, @P10, @P11, @P12, @P13, @P14, @P
 
             return result;
         }
-
-
-
         private decimal? ToNullableDecimal(string value)
         {
             value = value.Replace('.', ',');
@@ -251,8 +219,6 @@ VALUES (@P2, @P3, @P4, @P5, @P6, @P7, @P8, @P9, @P10, @P11, @P12, @P13, @P14, @P
 
             return result;
         }
-
-
 
 
 

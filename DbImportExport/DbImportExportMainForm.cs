@@ -25,7 +25,7 @@ namespace DbImportExport
             }
             catch (Exception ex)
             {
-                Log("ERROR IMPORTING MESSUNG:" + ex.Message);
+                Log("ERROR IMPORTING MESSUNG:" + ex.Message + Environment.NewLine + ex.StackTrace);
             }
         }
 
