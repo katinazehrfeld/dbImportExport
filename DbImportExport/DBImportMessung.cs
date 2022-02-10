@@ -167,24 +167,24 @@ VALUES ( @Best_Hit, @Component_RT, @Base_Peak_MZ, @CAS, @Library_RI, @Component_
                 {
                     if (value.EndsWith("\""))   // und wenn Teilstück am Ende " hat
                     {
-                        textString = textString + value.TrimEnd('"'); //dann Textstück + "
+                        textString = textString + "," + value.TrimEnd('"'); //dann Textstück + "
                         result.Add(textString);         // und in Liste einfügen
                         textString = null;              // Textstück auf leer setzen
                     }
                     else                       // wenn nicht " am Ende, 
                     {
-                        textString = textString + value + ","; //dann bisheriges Textstück + nächstes Textstück
+                        textString = textString + "," + value ; //dann bisheriges Textstück + nächstes Textstück
                     }
                 }
                 else    // wenn Teilstück leer ist
                 {
-                    if (value.StartsWith("\""))
+                    if (value.StartsWith("\"") && !value.EndsWith("\""))
                     {
                         textString = value.Substring(1);
                     }
                     else
                     {
-                        result.Add(value);
+                        result.Add(value.TrimStart('"').TrimEnd('"'));
                     }
                 }
             }
@@ -199,9 +199,7 @@ VALUES ( @Best_Hit, @Component_RT, @Base_Peak_MZ, @CAS, @Library_RI, @Component_
         
         private decimal ToDecimal(string value)
         {
-            value = value.Replace('.', ',');
-
-            if (!decimal.TryParse(value, out var result))
+            if (!decimal.TryParse(value, NumberStyles.Number, CultureInfo.InvariantCulture, out var result))
             {
                 result = 0;
             }
@@ -210,6 +208,8 @@ VALUES ( @Best_Hit, @Component_RT, @Base_Peak_MZ, @CAS, @Library_RI, @Component_
         }
         private decimal? ToNullableDecimal(string value)
         {
+            //ToDo... NumberStyles...
+
             value = value.Replace('.', ',');
 
             if (!decimal.TryParse(value, out var result))
