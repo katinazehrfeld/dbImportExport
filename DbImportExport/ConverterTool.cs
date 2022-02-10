@@ -39,7 +39,9 @@ namespace DbImportExport
             return result;
         }
        
-        public static decimal? ToNullableDecimal(string value)
+        public static decimal? ToNullableDecimal(string value) //wenn in einer Spalte mit Zahlen ein Feld leer ist, dann wird es auf "NULL" gesetzt
+                                                               //Textspalten brauchen diese Funktion nicht, dürfen einfach leer sein
+                                                               //bei Spalten mit Zahlen stellt sich die Frage, ob eine leere Zelle als die Zahl 0 oder als leer ("NULL") verstanden werden soll
         {
 
             if (!decimal.TryParse(value, NumberStyles.Number, CultureInfo.InvariantCulture, out var result))

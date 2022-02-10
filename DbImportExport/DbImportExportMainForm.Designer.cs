@@ -38,7 +38,7 @@ namespace DbImportExport
             this.button1 = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.button2 = new System.Windows.Forms.Button();
+            this.import_BW_zuordg = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btImport
@@ -106,7 +106,7 @@ namespace DbImportExport
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(753, 501);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(133, 20);
             this.textBox2.TabIndex = 6;
@@ -117,23 +117,23 @@ namespace DbImportExport
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
-            // button2
+            // import_BW_zuordg
             // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.Location = new System.Drawing.Point(753, 63);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(131, 38);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "Import ProbenInfos";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.btnImportProbeninfo);
+            this.import_BW_zuordg.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.import_BW_zuordg.Location = new System.Drawing.Point(753, 63);
+            this.import_BW_zuordg.Name = "import_BW_zuordg";
+            this.import_BW_zuordg.Size = new System.Drawing.Size(131, 38);
+            this.import_BW_zuordg.TabIndex = 7;
+            this.import_BW_zuordg.Text = "Import BW Zuordnung";
+            this.import_BW_zuordg.UseVisualStyleBackColor = true;
+            this.import_BW_zuordg.Click += new System.EventHandler(this.btnImportProbeninfo);
             // 
             // DbImportExportMainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(896, 532);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.import_BW_zuordg);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.bt_Odor_in);
@@ -158,7 +158,7 @@ namespace DbImportExport
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button import_BW_zuordg;
     }
 }
 
