@@ -2,13 +2,15 @@
 using System.Windows.Forms;
 using DbImportExport.Importer;
 
+
 namespace DbImportExport
 {
     public partial class DbImportExportMainForm : Form
     {
         private DBImportMessung _messungImporter = new DBImportMessung();
         private DBImportProbeninfo _probenInfoImporter = new DBImportProbeninfo();
-        private DBImportBWZuordnung _dBImportBWZuordnung = new DBImportBWZuordnung();
+        private DBImportBWZuordnung _bwZuordnungImporter = new DBImportBWZuordnung();
+        private DBImportLimsinfo _limsInfoImporter = new DBImportLimsinfo();
 
         public DbImportExportMainForm()
         {
@@ -26,7 +28,17 @@ namespace DbImportExport
                 Log("ERROR IMPORTING MESSUNG:" + ex.Message + Environment.NewLine + ex.StackTrace);
             }
         }
-
+        private void btnImportBWZuordnung(object sender, EventArgs e)
+        {
+            try
+            {
+                _bwZuordnungImporter.Import(Log);
+            }
+            catch (Exception ex)
+            {
+                Log("ERROR IMPORTING MESSUNG:" + ex.Message + Environment.NewLine + ex.StackTrace);
+            }
+        }
         private void btnImportProbeninfo(object sender, EventArgs e)
         {
             try
@@ -39,6 +51,18 @@ namespace DbImportExport
             }
         }
       
+        private void btnImportLimsinfo(object sender, EventArgs e)
+        {
+            try
+            {
+                _limsInfoImporter.Import(Log);
+            }
+            catch (Exception ex)
+            {
+                Log("ERROR IMPORTING PROBENINFO:" + ex.Message);
+            }
+        }
+
         private void Log(string message)
         {
             rtbLog.AppendText(message + Environment.NewLine);

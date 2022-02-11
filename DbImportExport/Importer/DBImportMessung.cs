@@ -6,7 +6,7 @@ using System.IO;
 using System.Linq;
 using System.Windows.Forms;
 
-namespace DbImportExport        //Namensklasse in der keine Namensgleichheit vorkommen darf
+namespace DbImportExport.Importer        //Namensklasse in der keine Namensgleichheit vorkommen darf
 {
     public class DBImportMessung    // auf eine public class kann von außen zugegriffen werden
     {
@@ -79,8 +79,9 @@ namespace DbImportExport        //Namensklasse in der keine Namensgleichheit vor
         {   //das braune ist sql Code, deshalb die andere Notation (zB: Kommentare --)
             var sql = @"   -- definiert Spalten
 INSERT INTO dbo.UA_csv     -- definiert in welche Tabelle der DB die Daten übertragen werden
-      (Best_Hit
-      ,Component_RT
+      (
+                            -- Best_Hit,
+      Component_RT
       ,Base_Peak_MZ
       ,CAS
       ,Library_RI
@@ -92,8 +93,9 @@ INSERT INTO dbo.UA_csv     -- definiert in welche Tabelle der DB die Daten über
       ,Component_Area
       ,Base_Peak_Area
       ,Type
-      ,Comment)
-VALUES ( @Best_Hit, @Component_RT, @Base_Peak_MZ, @CAS, @Library_RI, @Component_RI, @Match_Factor, @Compound_Name, @Formula, @Library_File, @Component_Area, @Base_Peak_Area, @Type, @Comment)
+      ,Comment
+      ,Import_Date)
+VALUES (  @Component_RT, @Base_Peak_MZ, @CAS, @Library_RI, @Component_RI, @Match_Factor, @Compound_Name, @Formula, @Library_File, @Component_Area, @Base_Peak_Area, @Type, @Comment, @Import_Date)
 ";
             var lineItems = SplitSpecial(line);  //Code zu SplitSpzial siehe weiter unten 
 
@@ -104,17 +106,13 @@ VALUES ( @Best_Hit, @Component_RT, @Base_Peak_MZ, @CAS, @Library_RI, @Component_
                 command.Transaction = transaction;
 
                 command.CommandText = sql;
-                 
-                command.Parameters.AddWithValue("@Best_Hit", ConverterTool.ToBool(lineItems[0]));//Best_Hit
+                // die Zahl bei "lineItems[8]" in den eckigen Klammern gibt an aus welcher Spalte der csvDatei die Daten eingelesen werden sollen (1.Spalte=0, 2.Sp =1,...)
+                //command.Parameters.AddWithValue("@Best_Hit", ConverterTool.ToBool(lineItems[0]));//Best_Hit
                 command.Parameters.AddWithValue("@Component_RT", ConverterTool.ToDecimal(lineItems[1]));//Component_RT
                 command.Parameters.AddWithValue("@Base_Peak_MZ", ConverterTool.ToDecimal(lineItems[2]));//Base_Peak_MZ
                 command.Parameters.AddWithValue("@CAS", lineItems[3]);//CAS
 
-
-
-
                 object value = ConverterTool.ToNullableDecimal(lineItems[4]);
-
                 command.Parameters.AddWithValue("@Library_RI", value ?? DBNull.Value );//Library_RI
       
                 command.Parameters.AddWithValue("@Component_RI", ConverterTool.ToDecimal(lineItems[5]));//Component_RI
@@ -123,21 +121,14 @@ VALUES ( @Best_Hit, @Component_RT, @Base_Peak_MZ, @CAS, @Library_RI, @Component_
                 command.Parameters.AddWithValue("@Compound_Name", lineItems[7]);//Compound_Name
                 command.Parameters.AddWithValue("@Formula", lineItems[8]);//Formula
                 command.Parameters.AddWithValue("@Library_File", lineItems[9]);//Library_File
+
                 command.Parameters.AddWithValue("@Component_Area", ConverterTool.ToDecimal(lineItems[10]));//Component_Area
-
-                /*
-                var nullableDec = ToNullableDecimal(lineItems[12]);
-                var nullableInt = (int?)nullableDec;
-                var obj = (object)nullableInt;
-                var area = obj ?? DBNull.Value;
-                */
-
-                command.Parameters.AddWithValue("@Base_Peak_Area", ConverterTool.ToDecimal(lineItems[11]));//Base_Peak_Area                          
+                command.Parameters.AddWithValue("@Base_Peak_Area", ConverterTool.ToDecimal(lineItems[11]));//Base_Peak_Area
+                                                                                                           //
                 command.Parameters.AddWithValue("@Type", lineItems[12]);//Type
-
                 command.Parameters.AddWithValue("@Comment", lineItems[13]);//Comment
-                
 
+                command.Parameters.AddWithValue("@Import_Date", DateTime.Now);
 
                 command.ExecuteNonQuery();
 
@@ -148,6 +139,9 @@ VALUES ( @Best_Hit, @Component_RT, @Base_Peak_MZ, @CAS, @Library_RI, @Component_
                   command.Parameters.AddWithValue("@Comment", (ToDecimal(lineItems[14])));
                   command.Parameters.AddWithValue("@Formula", (int)(ToDecimal(lineItems[9])));
                   command.Parameters.AddWithValue("@Compound_Name", (Int64)(ToDecimal(lineItems[8])))
+                
+                  object value = ConverterTool.ToNullableDecimal(lineItems[4]);                         //diese zwei Zeilen gehören zusammen, um Felder in Zahlenspalten
+                  command.Parameters.AddWithValue("@Library_RI", value ?? DBNull.Value );//Library_RI   //als leer zu definieren
                 */
             }
 
@@ -196,8 +190,17 @@ VALUES ( @Best_Hit, @Component_RT, @Base_Peak_MZ, @CAS, @Library_RI, @Component_
 
             return result.ToArray();            // "result" an Array übergeben
         }
-        
+
         /*
+        private int ToInt(string value)
+        {
+            if (!int.TryParse(value, out var result))
+            {
+                result = 0;
+            }
+
+            return result;
+        }
         private decimal ToDecimal(string value)
         {
             if (!decimal.TryParse(value, NumberStyles.Number, CultureInfo.InvariantCulture, out var result))
@@ -217,6 +220,12 @@ VALUES ( @Best_Hit, @Component_RT, @Base_Peak_MZ, @CAS, @Library_RI, @Component_
 
             return result; 
         }
+        
+                var nullableDec = ToNullableDecimal(lineItems[12]);
+                var nullableInt = (int?)nullableDec;
+                var obj = (object)nullableInt;
+                var area = obj ?? DBNull.Value;
+               
         */
 
 

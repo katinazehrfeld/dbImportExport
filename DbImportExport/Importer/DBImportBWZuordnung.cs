@@ -78,15 +78,16 @@ namespace DbImportExport.Importer        //Namensklasse in der keine Namensgleic
         private void ImportLine(string line, SqlConnection connection, SqlTransaction transaction)
         {   //das braune ist sql Code, deshalb die andere Notation (zB: Kommentare --)
             var sql = @"   -- definiert Spalten
-INSERT INTO dbo.E2_Pr_BW_Zuordg     -- definiert in welche Tabelle der DB die Daten übertragen werden
+INSERT INTO dbo.E1_Pr_BW_Zuordg     -- definiert in welche Tabelle der DB die Daten übertragen werden
       (
        Pr_Kennung
       ,BW_Zuordnung
       ,Alkane_Zuordg
       ,File_name
       ,Acq_Date_Time
+      ,Import_Date
        )
-VALUES ( @Pr_Kennung, @BW_Zuordnung, @Alkane_Zuordg, @File_name, @Acq_Date_Time)
+VALUES ( @Pr_Kennung, @BW_Zuordnung, @Alkane_Zuordg, @File_name, @Acq_Date_Time, @Import_Date)
 ";
             var lineItems = SplitSpecial(line);  //Code zu SplitSpzial siehe weiter unten 
 
@@ -104,7 +105,7 @@ VALUES ( @Pr_Kennung, @BW_Zuordnung, @Alkane_Zuordg, @File_name, @Acq_Date_Time)
                 command.Parameters.AddWithValue("@File_name", lineItems[3]);//File_name
                 command.Parameters.AddWithValue("@Acq_Date_Time", lineItems[6]);//Acq_Date_Time
 
-                //command.Parameters.AddWithValue("@ImportDate", DateTime.Now);
+                command.Parameters.AddWithValue("@Import_Date", DateTime.Now);
 
                 command.ExecuteNonQuery();
 

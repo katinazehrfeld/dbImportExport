@@ -8,7 +8,8 @@ using System.Windows.Forms;
 
 namespace DbImportExport.Importer
 {
-    public class DBImportProbeninfo
+    
+    public class DBImportLimsinfo
     {
         private Action<string> Log;
 
@@ -16,7 +17,7 @@ namespace DbImportExport.Importer
         {
             Log = log;
 
-            // Datei auswählen - test
+            // Datei auswählen 
             string fileName = null;
             var dialog = new OpenFileDialog();
             if (dialog.ShowDialog() == DialogResult.OK)
@@ -76,27 +77,20 @@ namespace DbImportExport.Importer
         private void ImportLine(string line, SqlConnection connection, SqlTransaction transaction)
         {
             var sql = @"
-INSERT INTO dbo.E2_Pr_Info 
+INSERT INTO dbo.E3_Lims_Info 
       (      
-       Pr_Kennung
-      ,Thema
-      ,LM
-      ,Vorbereitung_Meth
-      ,RT_IS_Pr
-      ,RI_IS_Pr
-      ,IS_Area_Peak
-      ,IS_Area_BasePeak
-      ,V_Extraktion_mL
-      ,Verdg_im_Vial
-      ,IS_Volumen_ml
-      ,InjektionsVolumen_ml
+       LimsNr
+      ,ProbenArt
+      ,Ort_kurz
+      ,Entnahmedatum
       ,Import_Date
       )
-VALUES ( @Pr_Kennung, @Thema, @LM, @Vorbereitung_Meth, @RT_IS_Pr, @RI_IS_Pr, @IS_Area_Peak, @IS_Area_BasePeak, @V_Extraktion_mL, @Verdg_im_Vial, @IS_Volumen_ml, @InjektionsVolumen_ml, @Import_Date)
+VALUES ( @LimsNr, @ProbenArt, @Ort_kurz, @Entnahmedatum, @Import_Date)
 ";
-      //Spalten in der CSV_Datei
-      //Pr_Kennung[0] Thema[1] LM[2] Vorbereitung_Meth[3] RT_IS_Pr[4]	RI_IS_Pr[5]	IS_Area_Peak[6]	IS_Area_BasePeak[7]	V_Extraktion_mL[8]
-      //Verdg_im_Vial[9] IS_Volumen_ml[10] InjektionsVolumen_ml[11]
+            //Spalten in der CSV_Datei
+            //  Probe_Nr[0] Annahmedatum[1]	Kom[2]	Status[3]	Termin[4]	Teilproj_Nr[5]	Teilprojekt[6]	Pruefauftrag[7]	Pg_Kz_1[8]	Pg_Kz_2[9]
+            //	Ort_Kz[10]	Ort[11]	PLZ[12]	Straße[13]	HNr[14]	Zusatz[15]	Bezeichnung[16]	Meßstelle[17]	Detail[18]	int_Nr[19]	ext_Nr[20]
+            //	Firma[21]	Abt[22]	KSt[23]	SAP_Nr[24]	Entnahmedatum[25]	Flag[26]	fert[27]	Labor[28]
 
             var lineItems = SplitSpecial(line);  //Code zu SplitSpzial siehe weiter unten 
 
@@ -108,22 +102,12 @@ VALUES ( @Pr_Kennung, @Thema, @LM, @Vorbereitung_Meth, @RT_IS_Pr, @RI_IS_Pr, @IS
 
                 command.CommandText = sql;
                 // die Zahl bei "lineItems[8]" in den eckigen Klammern gibt an aus welcher Spalte der csvDatei die Daten eingelesen werden sollen (1.Spalte=0, 2.Sp =1,...)
-               
-                command.Parameters.AddWithValue("@Pr_Kennung", lineItems[0]);//Pr_Kennung
-                command.Parameters.AddWithValue("@Thema", lineItems[1]);//Thema
-                command.Parameters.AddWithValue("@LM", lineItems[2]);//Lösungsmittel bei der Extraktion
-                command.Parameters.AddWithValue("@Vorbereitung_Meth", lineItems[3]);//Vorbereitung_Methode (SPE,gesch,...)
 
-                command.Parameters.AddWithValue("@RT_IS_Pr", ConverterTool.ToDecimal(lineItems[4]));//RetentionTime des IS in der Probe
-                command.Parameters.AddWithValue("@RI_IS_Pr", ConverterTool.ToDecimal(lineItems[5]));//RetentionIndex des IS in der Probe
-                command.Parameters.AddWithValue("@IS_Area_Peak", ConverterTool.ToDecimal(lineItems[6]));//PeakFläche des IS
-                command.Parameters.AddWithValue("@IS_Area_BasePeak", ConverterTool.ToDecimal(lineItems[7]));//BasePeakFläche des IS
-                
-                command.Parameters.AddWithValue("@V_Extraktion_mL", ConverterTool.ToDecimal(lineItems[8]));//ExtraktionsVolumen in mL
-                command.Parameters.AddWithValue("@Verdg_im_Vial", ConverterTool.ToDecimal(lineItems[9]));//Verdünnung_im_Vial
-                command.Parameters.AddWithValue("@IS_Volumen_ml", ConverterTool.ToDecimal(lineItems[10]));//dosiertes IS_Volumen in ml zur Probe
-                command.Parameters.AddWithValue("@InjektionsVolumen_ml", ConverterTool.ToDecimal(lineItems[11]));//InjektionsVolumen_ml_in den GC
-                
+                command.Parameters.AddWithValue("@LimsNr", lineItems[0]);//Probe_Nr im Lims
+                command.Parameters.AddWithValue("@ProbenArt", lineItems[9]);//Pg_Kz_2 , Probenarten: Abwasser,Rohzulauf,gereinigtes Abwasser,Trinkwasser,Grundwasser,Reinwasser,Wasser aus TW-Installation,
+                command.Parameters.AddWithValue("@Ort_kurz", lineItems[10]);//Ort_Kz , Kurzzeichen für den Ort
+                command.Parameters.AddWithValue("@Entnahmedatum", lineItems[25]);//Entnahmedatum der Probe
+              
                 command.Parameters.AddWithValue("@Import_Date", DateTime.Now);
 
                 command.ExecuteNonQuery();
@@ -178,3 +162,5 @@ VALUES ( @Pr_Kennung, @Thema, @LM, @Vorbereitung_Meth, @RT_IS_Pr, @RI_IS_Pr, @IS
 
     }
 }
+
+
