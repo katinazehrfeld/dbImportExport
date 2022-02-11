@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using DbImportExport.Importer;
 
 namespace DbImportExport
 {
@@ -7,10 +8,7 @@ namespace DbImportExport
     {
         private DBImportMessung _messungImporter = new DBImportMessung();
         private DBImportProbeninfo _probenInfoImporter = new DBImportProbeninfo();
-
-        private DbExportStart _startExport = new DbExportStart();
-        
-
+        private DBImportBWZuordnung _dBImportBWZuordnung = new DBImportBWZuordnung();
 
         public DbImportExportMainForm()
         {
@@ -40,38 +38,10 @@ namespace DbImportExport
                 Log("ERROR IMPORTING PROBENINFO:" + ex.Message);
             }
         }
-
-
-
-        private void btExport_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                _startExport.Export(Log, this.textBox1.Text);  // Export - Funktion
-            }
-            catch(Exception ex)
-            {
-                Log("ERROR EXPORTING:" + ex.Message);
-            }
-        }
-
+      
         private void Log(string message)
         {
             rtbLog.AppendText(message + Environment.NewLine);
         }
-        
-        private void button1_Click(object sender, EventArgs e)  // Import -Funktion
-        {
-            try
-            {
-                _probeImport.Import(Log);
-            }
-            catch (Exception ex)
-            {
-                Log("ERROR IMPORTING PROBE:" + ex.Message);
-            }
-        }
-        
-      
     }
 }

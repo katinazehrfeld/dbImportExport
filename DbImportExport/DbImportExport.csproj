@@ -46,18 +46,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DBImportBWZuordnung.cs" />
-    <Compile Include="ConverterTool.cs" />
-    <Compile Include="DBImportProbeninfo.cs" />
-    <Compile Include="DbOdorExport.cs" />
+    <Compile Include="Importer\DBImportBWZuordnung.cs" />
+    <Compile Include="Common\ConverterTool.cs" />
+    <Compile Include="Importer\DBImportProbeninfo.cs" />
     <Compile Include="DbImportExportMainForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DbImportExportMainForm.Designer.cs">
       <DependentUpon>DbImportExportMainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="DbExportStart.cs" />
-    <Compile Include="DBImportMessung.cs" />
+    <Compile Include="Importer\DBImportMessung.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="DbImportExportMainForm.resx">

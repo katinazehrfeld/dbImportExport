@@ -6,7 +6,7 @@ using System.IO;
 using System.Linq;
 using System.Windows.Forms;
 
-namespace DbImportExport        //Namensklasse in der keine Namensgleichheit vorkommen darf
+namespace DbImportExport.Importer        //Namensklasse in der keine Namensgleichheit vorkommen darf
 {
     public class DBImportBWZuordnung    // auf eine public class kann von außen zugegriffen werden
     {
@@ -103,7 +103,9 @@ VALUES ( @Pr_Kennung, @BW_Zuordnung, @Alkane_Zuordg, @File_name, @Acq_Date_Time)
                 command.Parameters.AddWithValue("@Alkane_Zuordg", lineItems[2]);//Alkane_Zuordg
                 command.Parameters.AddWithValue("@File_name", lineItems[3]);//File_name
                 command.Parameters.AddWithValue("@Acq_Date_Time", lineItems[6]);//Acq_Date_Time
-                
+
+                //command.Parameters.AddWithValue("@ImportDate", DateTime.Now);
+
                 command.ExecuteNonQuery();
 
                 /*
