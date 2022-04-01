@@ -80,14 +80,14 @@ namespace DbImportExport.Importer        //Namensklasse in der keine Namensgleic
             var sql = @"   -- definiert Spalten
 INSERT INTO dbo.tbBWZuordg     -- definiert in welche Tabelle der DB die Daten übertragen werden
       (
-       Pr_Kennung
-      ,BW_Zuordnung
+       PKenng
+      ,BWZuordg
       ,Alkane_Zuordg
-      ,File_name
+      ,File_mess
       ,Acq_Date_Time
       ,Import_Date
        )
-VALUES ( @Pr_Kennung, @BW_Zuordnung, @Alkane_Zuordg, @File_name, @Acq_Date_Time, @Import_Date)
+VALUES ( @PKenng, @BWZuordg, @Alkane_Zuordg, @File_mess, @Acq_Date_Time, @Import_Date)
 ";
             var lineItems = SplitSpecial(line);  //Code zu SplitSpzial siehe weiter unten 
 
@@ -99,10 +99,10 @@ VALUES ( @Pr_Kennung, @BW_Zuordnung, @Alkane_Zuordg, @File_name, @Acq_Date_Time,
 
                 command.CommandText = sql;
 
-                command.Parameters.AddWithValue("@Pr_Kennung", lineItems[0]);//Pr_Kennung
-                command.Parameters.AddWithValue("@BW_Zuordnung", lineItems[1]);//BW_Zuordnung
+                command.Parameters.AddWithValue("@PKenng", lineItems[0]);//Pr_Kennung
+                command.Parameters.AddWithValue("@BWZuordg", lineItems[1]);//BW_Zuordnung
                 command.Parameters.AddWithValue("@Alkane_Zuordg", lineItems[2]);//Alkane_Zuordg
-                command.Parameters.AddWithValue("@File_name", lineItems[3]);//File_name
+                command.Parameters.AddWithValue("@File_mess", lineItems[3]);//File_name
                 command.Parameters.AddWithValue("@Acq_Date_Time", lineItems[6]);//Acq_Date_Time
 
                 command.Parameters.AddWithValue("@Import_Date", DateTime.Now);
@@ -114,8 +114,8 @@ VALUES ( @Pr_Kennung, @BW_Zuordnung, @Alkane_Zuordg, @File_name, @Acq_Date_Time,
                   var x = ToFloat("1.23");
                   command.Parameters.AddWithValue("@P3", Math.Round( 66.66));//BPMZ_Pr
                   command.Parameters.AddWithValue("@PKenng", (ToDecimal(lineItems[14])));
-                  command.Parameters.AddWithValue("@Pr_Kennung", ConverterTool.ToBool(lineItems[0]));//Pr_Kennung
-                  command.Parameters.AddWithValue("@BW_Zuordnung", ConverterTool.ToDecimal(lineItems[1]));//BW_Zuordnung
+                  command.Parameters.AddWithValue("@PKenng", ConverterTool.ToBool(lineItems[0]));//Pr_Kennung
+                  command.Parameters.AddWithValue("@BWZuordg", ConverterTool.ToDecimal(lineItems[1]));//BW_Zuordnung
                   command.Parameters.AddWithValue("@Formula", (int)(ToDecimal(lineItems[9])));
                   command.Parameters.AddWithValue("@SName", (Int64)(ToDecimal(lineItems[8])))
                 */

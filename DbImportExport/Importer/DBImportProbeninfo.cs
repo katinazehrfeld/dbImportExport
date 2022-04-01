@@ -78,21 +78,21 @@ namespace DbImportExport.Importer
             var sql = @"
 INSERT INTO dbo.tbPInfos 
       (      
-       Pr_Kennung
+       PKenng
       ,Thema
       ,LM
       ,Vorbereitung_Meth
       ,RT_IS_Pr
       ,RI_IS_Pr
-      ,IS_Area_Peak
-      ,IS_Area_BasePeak
+      ,IS_AreaP
+      ,IS_AreaBP
       ,V_Extraktion_mL
       ,Verdg_im_Vial
       ,IS_Volumen_ml
       ,InjektionsVolumen_ml
       ,Import_Date
       )
-VALUES ( @Pr_Kennung, @Thema, @LM, @Vorbereitung_Meth, @RT_IS_Pr, @RI_IS_Pr, @IS_Area_Peak, @IS_Area_BasePeak, @V_Extraktion_mL, @Verdg_im_Vial, @IS_Volumen_ml, @InjektionsVolumen_ml, @Import_Date)
+VALUES ( @PKenng, @Thema, @LM, @Vorbereitung_Meth, @RT_IS_Pr, @RI_IS_Pr, @IS_AreaP, @IS_AreaBP, @V_Extraktion_mL, @Verdg_im_Vial, @IS_Volumen_ml, @InjektionsVolumen_ml, @Import_Date)
 ";
       //Spalten in der CSV_Datei
       //Pr_Kennung[0] Thema[1] LM[2] Vorbereitung_Meth[3] RT_IS_Pr[4]	RI_IS_Pr[5]	IS_Area_Peak[6]	IS_Area_BasePeak[7]	V_Extraktion_mL[8]
@@ -109,15 +109,15 @@ VALUES ( @Pr_Kennung, @Thema, @LM, @Vorbereitung_Meth, @RT_IS_Pr, @RI_IS_Pr, @IS
                 command.CommandText = sql;
                 // die Zahl bei "lineItems[8]" in den eckigen Klammern gibt an aus welcher Spalte der csvDatei die Daten eingelesen werden sollen (1.Spalte=0, 2.Sp =1,...)
                
-                command.Parameters.AddWithValue("@Pr_Kennung", lineItems[0]);//Pr_Kennung
+                command.Parameters.AddWithValue("@PKenng", lineItems[0]);//Pr_Kennung
                 command.Parameters.AddWithValue("@Thema", lineItems[1]);//Thema
                 command.Parameters.AddWithValue("@LM", lineItems[2]);//Lösungsmittel bei der Extraktion
                 command.Parameters.AddWithValue("@Vorbereitung_Meth", lineItems[3]);//Vorbereitung_Methode (SPE,gesch,...)
 
                 command.Parameters.AddWithValue("@RT_IS_Pr", ConverterTool.ToDecimal(lineItems[4]));//RetentionTime des IS in der Probe
                 command.Parameters.AddWithValue("@RI_IS_Pr", ConverterTool.ToDecimal(lineItems[5]));//RetentionIndex des IS in der Probe
-                command.Parameters.AddWithValue("@IS_Area_Peak", ConverterTool.ToDecimal(lineItems[6]));//PeakFläche des IS
-                command.Parameters.AddWithValue("@IS_Area_BasePeak", ConverterTool.ToDecimal(lineItems[7]));//BasePeakFläche des IS
+                command.Parameters.AddWithValue("@IS_AreaP", ConverterTool.ToDecimal(lineItems[6]));//PeakFläche des IS
+                command.Parameters.AddWithValue("@IS_AreaBP", ConverterTool.ToDecimal(lineItems[7]));//BasePeakFläche des IS
                 
                 command.Parameters.AddWithValue("@V_Extraktion_mL", ConverterTool.ToDecimal(lineItems[8]));//ExtraktionsVolumen in mL
                 command.Parameters.AddWithValue("@Verdg_im_Vial", ConverterTool.ToDecimal(lineItems[9]));//Verdünnung_im_Vial

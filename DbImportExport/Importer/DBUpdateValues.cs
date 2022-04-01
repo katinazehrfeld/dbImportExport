@@ -50,7 +50,7 @@ namespace DbImportExport.Importer        //Namensklasse in der keine Namensgleic
 	                            probeInfo.RT_IS_Pr 
                             FROM
 	                            dbo.tbPeaks messung
-	                            LEFT JOIN dbo.tbPInfos probeInfo ON messung.PKenng = probeInfo.Pr_Kennung
+	                            LEFT JOIN dbo.tbPInfos probeInfo ON messung.PKenng = probeInfo.PKenng
                             WHERE 
                                 messung.RTkorr IS NULL
                                 AND probeInfo.RT_IS_Pr IS NOT NULL
@@ -147,7 +147,7 @@ namespace DbImportExport.Importer        //Namensklasse in der keine Namensgleic
 	                            probeInfo.RI_IS_Pr 
                             FROM
 	                            dbo.tbPeaks messung
-	                            LEFT JOIN dbo.tbPInfos probeInfo ON messung.PKenng = probeInfo.Pr_Kennung
+	                            LEFT JOIN dbo.tbPInfos probeInfo ON messung.PKenng = probeInfo.PKenng
                             WHERE 
                                 messung.RIkorr IS NULL
                                 AND probeInfo.RI_IS_Pr IS NOT NULL
