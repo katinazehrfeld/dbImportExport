@@ -32,7 +32,7 @@ namespace DbImportExport.Importer        //Namensklasse in der keine Namensgleic
             RiKorrigieren(connection);
             MzRtName(connection);
             MzRiName(connection);
-            //PeaksMinusBW(connection);
+            //Peak_BWok(connection);
         }
 
 
@@ -47,13 +47,16 @@ namespace DbImportExport.Importer        //Namensklasse in der keine Namensgleic
                             SELECT
 	                            messung.ID_Peak,
 	                            messung.RTmess,
-	                            probeInfo.RT_IS_Pr 
+	                            probeInfo.RT_IS_Pr
+                                messung.BWok
                             FROM
 	                            dbo.tbPeaks messung
 	                            LEFT JOIN dbo.tbPInfos probeInfo ON messung.PKenng = probeInfo.PKenng
                             WHERE 
                                 messung.RTkorr IS NULL
+                                AND messung.BWok IS NULL
                                 AND probeInfo.RT_IS_Pr IS NOT NULL
+                                
                             ";
 
 

@@ -99,36 +99,52 @@ VALUES ( @PKenng, @Thema, @LM, @Vorbereitung_Meth, @RT_IS_Pr, @RI_IS_Pr, @IS_Are
       //Verdg_im_Vial[9] IS_Volumen_ml[10] InjektionsVolumen_ml[11]
 
             var lineItems = SplitSpecial(line);  //Code zu SplitSpzial siehe weiter unten 
-
-            Log("Items:" + lineItems.Length);
-
+           
+            int lineCount = 0;
             using (var command = connection.CreateCommand())
             {
                 command.Transaction = transaction;
-
-                command.CommandText = sql;
-                // die Zahl bei "lineItems[8]" in den eckigen Klammern gibt an aus welcher Spalte der csvDatei die Daten eingelesen werden sollen (1.Spalte=0, 2.Sp =1,...)
-               
+                command.CommandText = "SELECT count(*) FROM dbo.tbPInfos WHERE PKenng = @PKenng";
                 command.Parameters.AddWithValue("@PKenng", lineItems[0]);//Pr_Kennung
-                command.Parameters.AddWithValue("@Thema", lineItems[1]);//Thema
-                command.Parameters.AddWithValue("@LM", lineItems[2]);//Lösungsmittel bei der Extraktion
-                command.Parameters.AddWithValue("@Vorbereitung_Meth", lineItems[3]);//Vorbereitung_Methode (SPE,gesch,...)
 
-                command.Parameters.AddWithValue("@RT_IS_Pr", ConverterTool.ToDecimal(lineItems[4]));//RetentionTime des IS in der Probe
-                command.Parameters.AddWithValue("@RI_IS_Pr", ConverterTool.ToDecimal(lineItems[5]));//RetentionIndex des IS in der Probe
-                command.Parameters.AddWithValue("@IS_AreaP", ConverterTool.ToDecimal(lineItems[6]));//PeakFläche des IS
-                command.Parameters.AddWithValue("@IS_AreaBP", ConverterTool.ToDecimal(lineItems[7]));//BasePeakFläche des IS
-                
-                command.Parameters.AddWithValue("@V_Extraktion_mL", ConverterTool.ToDecimal(lineItems[8]));//ExtraktionsVolumen in mL
-                command.Parameters.AddWithValue("@Verdg_im_Vial", ConverterTool.ToDecimal(lineItems[9]));//Verdünnung_im_Vial
-                command.Parameters.AddWithValue("@IS_Volumen_ml", ConverterTool.ToDecimal(lineItems[10]));//dosiertes IS_Volumen in ml zur Probe
-                command.Parameters.AddWithValue("@InjektionsVolumen_ml", ConverterTool.ToDecimal(lineItems[11]));//InjektionsVolumen_ml_in den GC
-                
-                command.Parameters.AddWithValue("@Import_Date", DateTime.Now);
-
-                command.ExecuteNonQuery();
+                lineCount = (int)command.ExecuteScalar();
             }
 
+            //if (lineCount > 0)
+            //{
+            //    Log("SKIPPING line " + lineItems[0]);
+            //}
+
+            if (lineCount == 0)
+            {
+                Log("Items:" + lineItems.Length);
+                using (var command = connection.CreateCommand())
+                {
+                    command.Transaction = transaction;
+
+                    command.CommandText = sql;
+                    // die Zahl bei "lineItems[8]" in den eckigen Klammern gibt an aus welcher Spalte der csvDatei die Daten eingelesen werden sollen (1.Spalte=0, 2.Sp =1,...)
+
+                    command.Parameters.AddWithValue("@PKenng", lineItems[0]);//Pr_Kennung
+                    command.Parameters.AddWithValue("@Thema", lineItems[1]);//Thema
+                    command.Parameters.AddWithValue("@LM", lineItems[2]);//Lösungsmittel bei der Extraktion
+                    command.Parameters.AddWithValue("@Vorbereitung_Meth", lineItems[3]);//Vorbereitung_Methode (SPE,gesch,...)
+
+                    command.Parameters.AddWithValue("@RT_IS_Pr", ConverterTool.ToDecimal(lineItems[4]));//RetentionTime des IS in der Probe
+                    command.Parameters.AddWithValue("@RI_IS_Pr", ConverterTool.ToDecimal(lineItems[5]));//RetentionIndex des IS in der Probe
+                    command.Parameters.AddWithValue("@IS_AreaP", ConverterTool.ToDecimal(lineItems[6]));//PeakFläche des IS
+                    command.Parameters.AddWithValue("@IS_AreaBP", ConverterTool.ToDecimal(lineItems[7]));//BasePeakFläche des IS
+
+                    command.Parameters.AddWithValue("@V_Extraktion_mL", ConverterTool.ToDecimal(lineItems[8]));//ExtraktionsVolumen in mL
+                    command.Parameters.AddWithValue("@Verdg_im_Vial", ConverterTool.ToDecimal(lineItems[9]));//Verdünnung_im_Vial
+                    command.Parameters.AddWithValue("@IS_Volumen_ml", ConverterTool.ToDecimal(lineItems[10]));//dosiertes IS_Volumen in ml zur Probe
+                    command.Parameters.AddWithValue("@InjektionsVolumen_ml", ConverterTool.ToDecimal(lineItems[11]));//InjektionsVolumen_ml_in den GC
+
+                    command.Parameters.AddWithValue("@Import_Date", DateTime.Now);
+
+                    command.ExecuteNonQuery();
+                }
+            }
         }
 
         private string[] SplitSpecial(string line)  // Tool um die Stoffnamen, die auch oft Kommata enthalten, von den SpaltenKommata zu unterscheiden 

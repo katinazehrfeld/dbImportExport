@@ -98,7 +98,7 @@ namespace DbImportExport
             this.bt_import_lims_info.TabIndex = 9;
             this.bt_import_lims_info.Text = "Import Lims Infos";
             this.bt_import_lims_info.UseVisualStyleBackColor = true;
-            this.bt_import_lims_info.Click += new System.EventHandler(this.btnTestImportCAS);
+            this.bt_import_lims_info.Click += new System.EventHandler(this.btnImportLimsinfo);
             // 
             // bt_test_cas_import
             // 
