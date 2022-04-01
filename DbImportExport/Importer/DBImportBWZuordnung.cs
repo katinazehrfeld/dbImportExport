@@ -23,7 +23,7 @@ namespace DbImportExport.Importer        //Namensklasse in der keine Namensgleic
             {
                 fileName = dialog.FileName;
             }
-            // Bsp: fileName = "C:\\Daten\\TeslaProben\\alle_nachUA_CSV\\62005831.csv";
+            // Bsp: fileName = "C:\\Daten\\TeslaProben\\alle_nachPeaks\\62005831.csv";
             // Schleife weiter: wenn NICHT 0 oder leer, gehe zu ProcessImport
             if (!string.IsNullOrEmpty(fileName)) // ! = not , < = kl, > = gr, == ist gleichheitsvergleich, = ist zuweisung
             {

@@ -47,6 +47,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Importer\DBUpdateValues.cs" />
+    <Compile Include="Importer\DBTestCASImport.cs" />
     <Compile Include="Importer\DBImportLimsinfo.cs" />
     <Compile Include="Importer\DBImportBWZuordnung.cs" />
     <Compile Include="Common\ConverterTool.cs" />
@@ -58,6 +60,7 @@
       <DependentUpon>DbImportExportMainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Importer\DBImportMessung.cs" />
+    <Compile Include="Importer\Konstanten.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="DbImportExportMainForm.resx">

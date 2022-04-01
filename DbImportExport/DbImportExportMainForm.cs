@@ -11,6 +11,9 @@ namespace DbImportExport
         private DBImportProbeninfo _probenInfoImporter = new DBImportProbeninfo();
         private DBImportBWZuordnung _bwZuordnungImporter = new DBImportBWZuordnung();
         private DBImportLimsinfo _limsInfoImporter = new DBImportLimsinfo();
+        private DBTestCASImport _testCASImporter = new DBTestCASImport();
+        private DBUpdateValues _werteKorrektur = new DBUpdateValues();
+
 
         public DbImportExportMainForm()
         {
@@ -63,9 +66,33 @@ namespace DbImportExport
             }
         }
 
+        private void btnTestImportCAS(object sender, EventArgs e)
+        {
+            try
+            {
+                _testCASImporter.Import(Log);
+            }
+            catch (Exception ex)
+            {
+                Log("ERROR IMPORTING PROBENINFO:" + ex.Message);
+            }
+        }
+
         private void Log(string message)
         {
             rtbLog.AppendText(message + Environment.NewLine);
+        }
+
+        private void button_updateValues_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                _werteKorrektur.UpdateData(Log);
+            }
+            catch (Exception ex)
+            {
+                Log("ERROR UPDATING:" + ex.Message + Environment.NewLine + ex.StackTrace);
+            }
         }
     }
 }

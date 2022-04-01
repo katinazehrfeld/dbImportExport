@@ -8,7 +8,7 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 
-CREATE TABLE [dbo].[E1_Pr_BW_Zuordg](
+CREATE TABLE [dbo].[E1_Pr_BW_Zuordg_test](
 	[ID_BW_Zuordg] [int] IDENTITY(1,1) NOT NULL,
 	[Pr_Kennung] [nvarchar](50) NOT NULL,
 	[BW_Zuordnung] [nvarchar](50) NOT NULL,

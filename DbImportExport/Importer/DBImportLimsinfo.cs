@@ -74,6 +74,7 @@ namespace DbImportExport.Importer
 
             }
         }
+
         private void ImportLine(string line, SqlConnection connection, SqlTransaction transaction)
         {
             var sql = @"
