@@ -23,7 +23,7 @@ namespace DbImportExport.Importer        //Namensklasse in der keine Namensgleic
             {
                 fileName = dialog.FileName;
             }
-            // Bsp: fileName = "C:\\Daten\\TeslaProben\\alle_nachPeaks\\62005831.csv";
+            // Bsp: fileName = "C:\\Daten\\TeslaProben\\alle_nachtbPeaks\\62005831.csv";
             // Schleife weiter: wenn NICHT 0 oder leer, gehe zu ProcessImport
             if (!string.IsNullOrEmpty(fileName)) // ! = not , < = kl, > = gr, == ist gleichheitsvergleich, = ist zuweisung
             {
@@ -78,7 +78,7 @@ namespace DbImportExport.Importer        //Namensklasse in der keine Namensgleic
         private void ImportLine(string line, SqlConnection connection, SqlTransaction transaction)
         {   //das braune ist sql Code, deshalb die andere Notation (zB: Kommentare --)
             var sql = @"   -- definiert Spalten
-INSERT INTO dbo.E1_Pr_BW_Zuordg     -- definiert in welche Tabelle der DB die Daten übertragen werden
+INSERT INTO dbo.tbBWZuordg     -- definiert in welche Tabelle der DB die Daten übertragen werden
       (
        Pr_Kennung
       ,BW_Zuordnung
@@ -113,11 +113,11 @@ VALUES ( @Pr_Kennung, @BW_Zuordnung, @Alkane_Zuordg, @File_name, @Acq_Date_Time,
                   mögliche KonvertierungsBeispiele
                   var x = ToFloat("1.23");
                   command.Parameters.AddWithValue("@P3", Math.Round( 66.66));//BPMZ_Pr
-                  command.Parameters.AddWithValue("@Comment", (ToDecimal(lineItems[14])));
+                  command.Parameters.AddWithValue("@PKenng", (ToDecimal(lineItems[14])));
                   command.Parameters.AddWithValue("@Pr_Kennung", ConverterTool.ToBool(lineItems[0]));//Pr_Kennung
                   command.Parameters.AddWithValue("@BW_Zuordnung", ConverterTool.ToDecimal(lineItems[1]));//BW_Zuordnung
                   command.Parameters.AddWithValue("@Formula", (int)(ToDecimal(lineItems[9])));
-                  command.Parameters.AddWithValue("@Compound_Name", (Int64)(ToDecimal(lineItems[8])))
+                  command.Parameters.AddWithValue("@SName", (Int64)(ToDecimal(lineItems[8])))
                 */
             }
 

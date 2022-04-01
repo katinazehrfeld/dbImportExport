@@ -76,7 +76,7 @@ namespace DbImportExport.Importer
         private void ImportLine(string line, SqlConnection connection, SqlTransaction transaction)
         {
             var sql = @"
-INSERT INTO dbo.E2_Pr_Info 
+INSERT INTO dbo.tbPInfos 
       (      
        Pr_Kennung
       ,Thema

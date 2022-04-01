@@ -78,7 +78,7 @@ namespace DbImportExport.Importer
         private void ImportLine(string line, SqlConnection connection, SqlTransaction transaction)
         {
             var sql = @"
-INSERT INTO dbo.E3_Lims_Info 
+INSERT INTO dbo.tbLInfos 
       (      
        LimsNr
       ,ProbenArt

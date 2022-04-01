@@ -23,7 +23,7 @@ namespace DbImportExport.Importer        //Namensklasse in der keine Namensgleic
             {
                 fileName = dialog.FileName;
             }
-            // Bsp: fileName = "C:\\Daten\\TeslaProben\\alle_nachPeaks\\62005831.csv";
+            // Bsp: fileName = "C:\\Daten\\TeslaProben\\alle_nachtbPeaks\\62005831.csv";
             // Schleife weiter: wenn NICHT 0 oder leer, gehe zu ProcessImport
             if (!string.IsNullOrEmpty(fileName)) // ! = not , < = kl, > = gr, == ist gleichheitsvergleich, = ist zuweisung
             {
@@ -78,24 +78,24 @@ namespace DbImportExport.Importer        //Namensklasse in der keine Namensgleic
         private void ImportLine(string line, SqlConnection connection, SqlTransaction transaction)
         {   //das braune ist sql Code, deshalb die andere Notation (zB: Kommentare --)
             var sql = @"   -- definiert Spalten
-INSERT INTO dbo.Peaks     -- definiert in welche Tabelle der DB die Daten übertragen werden
+INSERT INTO dbo.tbPeaks     -- definiert in welche Tabelle der DB die Daten übertragen werden
       (
                             -- Best_Hit,
-      Component_RT
-      ,Base_Peak_MZ
+      RTmess
+      ,BP_MZ
       ,CAS
-      ,Library_RI
-      ,Component_RI
-      ,Match_Factor
-      ,Compound_Name
+      ,LibRI
+      ,RImess
+      ,MF
+      ,SName
       ,Formula
-      ,Library_File
-      ,Component_Area
-      ,Base_Peak_Area
+      ,LibFile
+      ,AreaP
+      ,AreaBP
       ,Type
-      ,Comment
+      ,PKenng
       ,Import_Date)
-VALUES (  @Component_RT, @Base_Peak_MZ, @CAS, @Library_RI, @Component_RI, @Match_Factor, @Compound_Name, @Formula, @Library_File, @Component_Area, @Base_Peak_Area, @Type, @Comment, @Import_Date)
+VALUES (  @RTmess, @BP_MZ, @CAS, @LibRI, @RImess, @MF, @SName, @Formula, @LibFile, @AreaP, @AreaBP, @Type, @PKenng, @Import_Date)
 ";
             var lineItems = SplitSpecial(line);  //Code zu SplitSpzial siehe weiter unten 
 
@@ -108,25 +108,25 @@ VALUES (  @Component_RT, @Base_Peak_MZ, @CAS, @Library_RI, @Component_RI, @Match
                 command.CommandText = sql;
                 // die Zahl bei "lineItems[8]" in den eckigen Klammern gibt an aus welcher Spalte der csvDatei die Daten eingelesen werden sollen (1.Spalte=0, 2.Sp =1,...)
                 //command.Parameters.AddWithValue("@Best_Hit", ConverterTool.ToBool(lineItems[0]));//Best_Hit
-                command.Parameters.AddWithValue("@Component_RT", ConverterTool.ToDecimal(lineItems[1]));//Component_RT
-                command.Parameters.AddWithValue("@Base_Peak_MZ", ConverterTool.ToDecimal(lineItems[2]));//Base_Peak_MZ
+                command.Parameters.AddWithValue("@RTmess", ConverterTool.ToDecimal(lineItems[1]));//Component_RT
+                command.Parameters.AddWithValue("@BP_MZ", ConverterTool.ToDecimal(lineItems[2]));//Base_Peak_MZ
                 command.Parameters.AddWithValue("@CAS", lineItems[3]);//CAS
 
                 object value = ConverterTool.ToNullableDecimal(lineItems[4]);
-                command.Parameters.AddWithValue("@Library_RI", value ?? DBNull.Value );//Library_RI
+                command.Parameters.AddWithValue("@LibRI", value ?? DBNull.Value );//Library_RI
       
-                command.Parameters.AddWithValue("@Component_RI", ConverterTool.ToDecimal(lineItems[5]));//Component_RI
-                command.Parameters.AddWithValue("@Match_Factor", ConverterTool.ToDecimal(lineItems[6]));//Match_Faktor
+                command.Parameters.AddWithValue("@RImess", ConverterTool.ToDecimal(lineItems[5]));//Component_RI
+                command.Parameters.AddWithValue("@MF", ConverterTool.ToDecimal(lineItems[6]));//Match_Faktor
                 
-                command.Parameters.AddWithValue("@Compound_Name", lineItems[7]);//Compound_Name
+                command.Parameters.AddWithValue("@SName", lineItems[7]);//Compound_Name
                 command.Parameters.AddWithValue("@Formula", lineItems[8]);//Formula
-                command.Parameters.AddWithValue("@Library_File", lineItems[9]);//Library_File
+                command.Parameters.AddWithValue("@LibFile", lineItems[9]);//Library_File
 
-                command.Parameters.AddWithValue("@Component_Area", ConverterTool.ToDecimal(lineItems[10]));//Component_Area
-                command.Parameters.AddWithValue("@Base_Peak_Area", ConverterTool.ToDecimal(lineItems[11]));//Base_Peak_Area
+                command.Parameters.AddWithValue("@AreaP", ConverterTool.ToDecimal(lineItems[10]));//Component_Area
+                command.Parameters.AddWithValue("@AreaBP", ConverterTool.ToDecimal(lineItems[11]));//Base_Peak_Area
                                                                                                            //
                 command.Parameters.AddWithValue("@Type", lineItems[12]);//Type
-                command.Parameters.AddWithValue("@Comment", lineItems[13]);//Comment
+                command.Parameters.AddWithValue("@PKenng", lineItems[13]);//Comment
 
                 command.Parameters.AddWithValue("@Import_Date", DateTime.Now);
 
@@ -136,12 +136,12 @@ VALUES (  @Component_RT, @Base_Peak_MZ, @CAS, @Library_RI, @Component_RI, @Match
                   mögliche KonvertierungsBeispiele
                   var x = ToFloat("1.23");
                   command.Parameters.AddWithValue("@P3", Math.Round( 66.66));//BPMZ_Pr
-                  command.Parameters.AddWithValue("@Comment", (ToDecimal(lineItems[14])));
+                  command.Parameters.AddWithValue("@PKenng", (ToDecimal(lineItems[14])));
                   command.Parameters.AddWithValue("@Formula", (int)(ToDecimal(lineItems[9])));
-                  command.Parameters.AddWithValue("@Compound_Name", (Int64)(ToDecimal(lineItems[8])))
+                  command.Parameters.AddWithValue("@SName", (Int64)(ToDecimal(lineItems[8])))
                 
                   object value = ConverterTool.ToNullableDecimal(lineItems[4]);                         //diese zwei Zeilen gehören zusammen, um Felder in Zahlenspalten
-                  command.Parameters.AddWithValue("@Library_RI", value ?? DBNull.Value );//Library_RI   //als leer zu definieren
+                  command.Parameters.AddWithValue("@LibRI", value ?? DBNull.Value );//Library_RI   //als leer zu definieren
                 */
             }
 

@@ -45,14 +45,14 @@ namespace DbImportExport.Importer        //Namensklasse in der keine Namensgleic
         {
             var sql_select = @"
                             SELECT
-	                            messung.ID_Messung,
-	                            messung.Component_RT,
+	                            messung.ID_Peak,
+	                            messung.RTmess,
 	                            probeInfo.RT_IS_Pr 
                             FROM
-	                            dbo.Peaks messung
-	                            LEFT JOIN dbo.E2_Pr_Info probeInfo ON messung.Comment = probeInfo.Pr_Kennung
+	                            dbo.tbPeaks messung
+	                            LEFT JOIN dbo.tbPInfos probeInfo ON messung.PKenng = probeInfo.Pr_Kennung
                             WHERE 
-                                messung.RT_korr IS NULL
+                                messung.RTkorr IS NULL
                                 AND probeInfo.RT_IS_Pr IS NOT NULL
                             ";
 
@@ -70,8 +70,8 @@ namespace DbImportExport.Importer        //Namensklasse in der keine Namensgleic
                     while (reader.Read())
                     {
                         c++;
-                        var id = (int)reader["ID_Messung"];
-                        var messRt = (double)reader["Component_RT"];
+                        var id = (int)reader["ID_Peak"];
+                        var messRt = (double)reader["RTmess"];
                         var messRtIS = (double)reader["RT_IS_Pr"];
 
 
@@ -116,11 +116,11 @@ namespace DbImportExport.Importer        //Namensklasse in der keine Namensgleic
 
         private void UpdateRtLine(SqlConnection connection, int idMessung, double rtKorr)
         {
-            var sqlUpdateRow = @"UPDATE dbo.Peaks
+            var sqlUpdateRow = @"UPDATE dbo.tbPeaks
                         SET 
-                            RT_korr = @RT_korr
+                            RTkorr = @RTkorr
                         WHERE 
-                            ID_Messung = @ID_Messung
+                            ID_Peak = @ID_Peak
             ";
 
 
@@ -128,8 +128,8 @@ namespace DbImportExport.Importer        //Namensklasse in der keine Namensgleic
             {
                 commandUpdate.CommandText = sqlUpdateRow;
 
-                commandUpdate.Parameters.AddWithValue("@ID_Messung", idMessung);
-                commandUpdate.Parameters.AddWithValue("@RT_korr", rtKorr);          
+                commandUpdate.Parameters.AddWithValue("@ID_Peak", idMessung);
+                commandUpdate.Parameters.AddWithValue("@RTkorr", rtKorr);          
 
                 var result = commandUpdate.ExecuteNonQuery();
 
@@ -142,14 +142,14 @@ namespace DbImportExport.Importer        //Namensklasse in der keine Namensgleic
         {
             var sql_select = @"
                             SELECT
-	                            messung.ID_Messung,
-	                            messung.Component_RI,
+	                            messung.ID_Peak,
+	                            messung.RImess,
 	                            probeInfo.RI_IS_Pr 
                             FROM
-	                            dbo.Peaks messung
-	                            LEFT JOIN dbo.E2_Pr_Info probeInfo ON messung.Comment = probeInfo.Pr_Kennung
+	                            dbo.tbPeaks messung
+	                            LEFT JOIN dbo.tbPInfos probeInfo ON messung.PKenng = probeInfo.Pr_Kennung
                             WHERE 
-                                messung.RI_korr IS NULL
+                                messung.RIkorr IS NULL
                                 AND probeInfo.RI_IS_Pr IS NOT NULL
                             ";
 
@@ -167,8 +167,8 @@ namespace DbImportExport.Importer        //Namensklasse in der keine Namensgleic
                     while (reader.Read())
                     {
                         c++;
-                        var id = (int)reader["ID_Messung"];
-                        var messRi = (double)reader["Component_RI"];
+                        var id = (int)reader["ID_Peak"];
+                        var messRi = (double)reader["RImess"];
                         var messRiIS = (double)reader["RI_IS_Pr"];
 
                         //hier rechnen
@@ -210,11 +210,11 @@ namespace DbImportExport.Importer        //Namensklasse in der keine Namensgleic
 
         private void UpdateRiLine(SqlConnection connection, int idMessung, double riKorr)
         {
-            var sqlUpdateRow = @"UPDATE dbo.Peaks
+            var sqlUpdateRow = @"UPDATE dbo.tbPeaks
                         SET 
-                            RI_korr = @RI_korr 
+                            RIkorr = @RIkorr 
                         WHERE 
-                            ID_Messung = @ID_Messung
+                            ID_Peak = @ID_Peak
             ";
 
 
@@ -222,8 +222,8 @@ namespace DbImportExport.Importer        //Namensklasse in der keine Namensgleic
             {
                 commandUpdate.CommandText = sqlUpdateRow;
 
-                commandUpdate.Parameters.AddWithValue("@ID_Messung", idMessung);
-                commandUpdate.Parameters.AddWithValue("@RI_korr", riKorr);          
+                commandUpdate.Parameters.AddWithValue("@ID_Peak", idMessung);
+                commandUpdate.Parameters.AddWithValue("@RIkorr", riKorr);          
 
                 var result = commandUpdate.ExecuteNonQuery();
 
@@ -237,14 +237,14 @@ namespace DbImportExport.Importer        //Namensklasse in der keine Namensgleic
         {
             var sql_select = @"
                             SELECT
-	                            messung.ID_Messung,
-	                            messung.RT_korr,
-	                            messung.Base_Peak_MZ
+	                            messung.ID_Peak,
+	                            messung.RTkorr,
+	                            messung.BP_MZ
                             FROM
-	                            dbo.Peaks messung
+	                            dbo.tbPeaks messung
 	                        WHERE 
                                 messung.BPMZ_RT IS NULL
-                                AND messung.RT_korr IS NOT NULL
+                                AND messung.RTkorr IS NOT NULL
                             ";
 
 
@@ -261,9 +261,9 @@ namespace DbImportExport.Importer        //Namensklasse in der keine Namensgleic
                     while (reader.Read())
                     {
                         c++;
-                        var id = (int)reader["ID_Messung"];
-                        var korrRt = (double)reader["RT_korr"];
-                        var Mz = (double)reader["Base_Peak_MZ"];
+                        var id = (int)reader["ID_Peak"];
+                        var korrRt = (double)reader["RTkorr"];
+                        var Mz = (double)reader["BP_MZ"];
 
 
 
@@ -308,11 +308,11 @@ namespace DbImportExport.Importer        //Namensklasse in der keine Namensgleic
 
         private void UpdateMzRtLine(SqlConnection connection, int idMessung, string mzrtWert)
         {
-            var sqlUpdateRow = @"UPDATE dbo.Peaks
+            var sqlUpdateRow = @"UPDATE dbo.tbPeaks
                         SET 
                             BPMZ_RT = @BPMZ_RT
                         WHERE 
-                            ID_Messung = @ID_Messung
+                            ID_Peak = @ID_Peak
             ";
 
 
@@ -320,7 +320,7 @@ namespace DbImportExport.Importer        //Namensklasse in der keine Namensgleic
             {
                 commandUpdate.CommandText = sqlUpdateRow;
 
-                commandUpdate.Parameters.AddWithValue("@ID_Messung", idMessung);
+                commandUpdate.Parameters.AddWithValue("@ID_Peak", idMessung);
                 commandUpdate.Parameters.AddWithValue("@BPMZ_RT", mzrtWert);
 
                 var result = commandUpdate.ExecuteNonQuery();
@@ -339,14 +339,14 @@ namespace DbImportExport.Importer        //Namensklasse in der keine Namensgleic
         {
             var sql_select = @"
                             SELECT
-	                            messung.ID_Messung,
-	                            messung.RI_korr,
-	                            messung.Base_Peak_MZ
+	                            messung.ID_Peak,
+	                            messung.RIkorr,
+	                            messung.BP_MZ
                             FROM
-	                            dbo.Peaks messung
+	                            dbo.tbPeaks messung
 	                        WHERE 
                                 messung.BPMZ_RI IS NULL
-                                AND messung.RI_korr IS NOT NULL
+                                AND messung.RIkorr IS NOT NULL
                             ";
 
 
@@ -363,9 +363,9 @@ namespace DbImportExport.Importer        //Namensklasse in der keine Namensgleic
                     while (reader.Read())
                     {
                         c++;
-                        var id = (int)reader["ID_Messung"];
-                        var korrRi = (int)reader["RI_korr"];
-                        var Mz = (double)reader["Base_Peak_MZ"];
+                        var id = (int)reader["ID_Peak"];
+                        var korrRi = (int)reader["RIkorr"];
+                        var Mz = (double)reader["BP_MZ"];
 
 
 
@@ -410,11 +410,11 @@ namespace DbImportExport.Importer        //Namensklasse in der keine Namensgleic
 
         private void UpdateMzRiLine(SqlConnection connection, int idMessung, string mzriWert)
         {
-            var sqlUpdateRow = @"UPDATE dbo.Peaks
+            var sqlUpdateRow = @"UPDATE dbo.tbPeaks
                         SET 
                             BPMZ_RI = @BPMZ_RI
                         WHERE 
-                            ID_Messung = @ID_Messung
+                            ID_Peak = @ID_Peak
             ";
 
 
@@ -422,7 +422,7 @@ namespace DbImportExport.Importer        //Namensklasse in der keine Namensgleic
             {
                 commandUpdate.CommandText = sqlUpdateRow;
 
-                commandUpdate.Parameters.AddWithValue("@ID_Messung", idMessung);
+                commandUpdate.Parameters.AddWithValue("@ID_Peak", idMessung);
                 commandUpdate.Parameters.AddWithValue("@BPMZ_RI", mzriWert);
 
                 var result = commandUpdate.ExecuteNonQuery();
