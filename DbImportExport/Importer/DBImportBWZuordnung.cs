@@ -91,39 +91,54 @@ VALUES ( @PKenng, @BWZuordg, @Alkane_Zuordg, @File_mess, @Acq_Date_Time, @Import
 ";
             var lineItems = SplitSpecial(line);  //Code zu SplitSpzial siehe weiter unten 
 
-            Log("Items:" + lineItems.Length);
-
+            int lineCount = 0;
             using (var command = connection.CreateCommand())
             {
                 command.Transaction = transaction;
 
-                command.CommandText = sql;
-
+                command.CommandText = "SELECT count(*) FROM dbo.tbBWZuordg WHERE PKenng = @PKenng";
                 command.Parameters.AddWithValue("@PKenng", lineItems[0]);//Pr_Kennung
-                command.Parameters.AddWithValue("@BWZuordg", lineItems[1]);//BW_Zuordnung
-                command.Parameters.AddWithValue("@Alkane_Zuordg", lineItems[2]);//Alkane_Zuordg
-                command.Parameters.AddWithValue("@File_mess", lineItems[3]);//File_name
-                command.Parameters.AddWithValue("@Acq_Date_Time", lineItems[6]);//Acq_Date_Time
+                                                                         // die Zahl bei "lineItems[8]" in den eckigen Klammern gibt an aus welcher Spalte der csvDatei die Daten eingelesen werden sollen (1.Spalte=0, 2.Sp =1,...)
 
-                command.Parameters.AddWithValue("@Import_Date", DateTime.Now);
 
-                command.ExecuteNonQuery();
-
-                /*
-                  mögliche KonvertierungsBeispiele
-                  var x = ToFloat("1.23");
-                  command.Parameters.AddWithValue("@P3", Math.Round( 66.66));//BPMZ_Pr
-                  command.Parameters.AddWithValue("@PKenng", (ToDecimal(lineItems[14])));
-                  command.Parameters.AddWithValue("@PKenng", ConverterTool.ToBool(lineItems[0]));//Pr_Kennung
-                  command.Parameters.AddWithValue("@BWZuordg", ConverterTool.ToDecimal(lineItems[1]));//BW_Zuordnung
-                  command.Parameters.AddWithValue("@Formula", (int)(ToDecimal(lineItems[9])));
-                  command.Parameters.AddWithValue("@SName", (Int64)(ToDecimal(lineItems[8])))
-                */
+                lineCount = (int)command.ExecuteScalar();
             }
+            if (lineCount == 0)
+            {
+                Log("Items:" + lineItems.Length);
+                using (var command = connection.CreateCommand())
+                {
+                    command.Transaction = transaction;
 
+                    command.CommandText = sql;
+
+                    command.Parameters.AddWithValue("@PKenng", lineItems[0]);//Pr_Kennung
+                    command.Parameters.AddWithValue("@BWZuordg", lineItems[1]);//BW_Zuordnung
+                    command.Parameters.AddWithValue("@Alkane_Zuordg", lineItems[2]);//Alkane_Zuordg
+                    command.Parameters.AddWithValue("@File_mess", lineItems[3]);//File_name
+                    command.Parameters.AddWithValue("@Acq_Date_Time", lineItems[6]);//Acq_Date_Time
+
+                    command.Parameters.AddWithValue("@Import_Date", DateTime.Now);
+
+                    command.ExecuteNonQuery();
+
+                    /*
+                      mögliche KonvertierungsBeispiele
+                      var x = ToFloat("1.23");
+                      command.Parameters.AddWithValue("@P3", Math.Round( 66.66));//BPMZ_Pr
+                      command.Parameters.AddWithValue("@PKenng", (ToDecimal(lineItems[14])));
+                      command.Parameters.AddWithValue("@PKenng", ConverterTool.ToBool(lineItems[0]));//Pr_Kennung
+                      command.Parameters.AddWithValue("@BWZuordg", ConverterTool.ToDecimal(lineItems[1]));//BW_Zuordnung
+                      command.Parameters.AddWithValue("@Formula", (int)(ToDecimal(lineItems[9])));
+                      command.Parameters.AddWithValue("@SName", (Int64)(ToDecimal(lineItems[8])))
+                    */
+                }
+            }
         }
 
-        private string[] SplitSpecial(string line)  // Tool um die Stoffnamen, die auch oft Kommata enthalten, von den SpaltenKommata zu unterscheiden 
+
+
+            private string[] SplitSpecial(string line)  // Tool um die Stoffnamen, die auch oft Kommata enthalten, von den SpaltenKommata zu unterscheiden 
         {
             var values = line.Split(',');           //zerlegt eine Zeile in Teilstücke, getrennt durch Kommas
 

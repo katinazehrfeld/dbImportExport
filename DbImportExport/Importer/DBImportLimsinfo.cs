@@ -95,28 +95,44 @@ VALUES ( @LimsNr, @ProbenArt, @Ort_kurz, @Entnahmedatum, @Import_Date)
 
             var lineItems = SplitSpecial(line);  //Code zu SplitSpzial siehe weiter unten 
 
-            Log("Items:" + lineItems.Length);
-
+            int lineCount = 0;
             using (var command = connection.CreateCommand())
             {
                 command.Transaction = transaction;
+                command.CommandText = "SELECT count(*) FROM dbo.tbLInfos WHERE LimsNr = @ LimsNr";
+                command.Parameters.AddWithValue("@LimsNr", lineItems[0]);//Pr_Kennung
+                                                                         // die Zahl bei "lineItems[8]" in den eckigen Klammern gibt an aus welcher Spalte der csvDatei die Daten eingelesen werden sollen (1.Spalte=0, 2.Sp =1,...)
 
-                command.CommandText = sql;
-                // die Zahl bei "lineItems[8]" in den eckigen Klammern gibt an aus welcher Spalte der csvDatei die Daten eingelesen werden sollen (1.Spalte=0, 2.Sp =1,...)
 
-                command.Parameters.AddWithValue("@LimsNr", lineItems[0]);//Probe_Nr im Lims
-                command.Parameters.AddWithValue("@ProbenArt", lineItems[9]);//Pg_Kz_2 , Probenarten: Abwasser,Rohzulauf,gereinigtes Abwasser,Trinkwasser,Grundwasser,Reinwasser,Wasser aus TW-Installation,
-                command.Parameters.AddWithValue("@Ort_kurz", lineItems[10]);//Ort_Kz , Kurzzeichen für den Ort
-                command.Parameters.AddWithValue("@Entnahmedatum", lineItems[25]);//Entnahmedatum der Probe
-              
-                command.Parameters.AddWithValue("@Import_Date", DateTime.Now);
-
-                command.ExecuteNonQuery();
+                lineCount = (int)command.ExecuteScalar();
             }
 
+            if (lineCount == 0)
+            {
+                Log("Items:" + lineItems.Length);
+                using (var command = connection.CreateCommand())
+
+                {
+
+                    command.Transaction = transaction;
+
+                    command.CommandText = sql;
+                    // die Zahl bei "lineItems[8]" in den eckigen Klammern gibt an aus welcher Spalte der csvDatei die Daten eingelesen werden sollen (1.Spalte=0, 2.Sp =1,...)
+
+                    command.Parameters.AddWithValue("@LimsNr", lineItems[0]);//Probe_Nr im Lims
+                    command.Parameters.AddWithValue("@ProbenArt", lineItems[9]);//Pg_Kz_2 , Probenarten: Abwasser,Rohzulauf,gereinigtes Abwasser,Trinkwasser,Grundwasser,Reinwasser,Wasser aus TW-Installation,
+                    command.Parameters.AddWithValue("@Ort_kurz", lineItems[10]);//Ort_Kz , Kurzzeichen für den Ort
+                    command.Parameters.AddWithValue("@Entnahmedatum", lineItems[25]);//Entnahmedatum der Probe
+
+                    command.Parameters.AddWithValue("@Import_Date", DateTime.Now);
+
+                    command.ExecuteNonQuery();
+                }
+            }
         }
 
-        private string[] SplitSpecial(string line)  // Tool um die Stoffnamen, die auch oft Kommata enthalten, von den SpaltenKommata zu unterscheiden 
+
+            private string[] SplitSpecial(string line)  // Tool um die Stoffnamen, die auch oft Kommata enthalten, von den SpaltenKommata zu unterscheiden 
         {
             var values = line.Split(',');           //zerlegt eine Zeile in Teilstücke, getrennt durch Kommas
 
