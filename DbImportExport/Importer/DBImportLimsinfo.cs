@@ -99,7 +99,7 @@ VALUES ( @LimsNr, @ProbenArt, @Ort_kurz, @Entnahmedatum, @Import_Date)
             using (var command = connection.CreateCommand())
             {
                 command.Transaction = transaction;
-                command.CommandText = "SELECT count(*) FROM dbo.tbLInfos WHERE LimsNr = @ LimsNr";
+                command.CommandText = "SELECT count(*) FROM dbo.tbLInfos WHERE LimsNr = @LimsNr";
                 command.Parameters.AddWithValue("@LimsNr", lineItems[0]);//Pr_Kennung
                                                                          // die Zahl bei "lineItems[8]" in den eckigen Klammern gibt an aus welcher Spalte der csvDatei die Daten eingelesen werden sollen (1.Spalte=0, 2.Sp =1,...)
 
