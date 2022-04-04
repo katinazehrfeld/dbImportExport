@@ -30,8 +30,9 @@ namespace DbImportExport.Importer        //Namensklasse in der keine Namensgleic
             //MzRtp02Name(connection);
             //MzRtm02Name(connection);
             MzRiName(connection);
+            AreaBW(connection);
             //PeaksMinusBW(connection);
-           
+
         }
 
 
@@ -637,6 +638,119 @@ namespace DbImportExport.Importer        //Namensklasse in der keine Namensgleic
 
 
 }
+
+    // Ermittlung der Blindwert-Fläche
+
+    private void AreaBW(SqlConnection connection)
+    {
+        var sql_select = @"
+                         SELECT
+                            messung.PKenng,
+                            messung.RTkorr,
+                            messung.BP_MZ,
+                            messung.BPMZ_RT,
+							messung.BPMZ_RT_p01,
+							messung.BPMZ_RT_p02,
+							messung.BPMZ_RT_m01,
+							messung.BPMZ_RT_m02,
+                            messung.AreaP,
+                            messung.AreaBW,
+                            messung.Type,
+                            messung.ID_Peak
+
+                        FROM
+                            dbo.tbPeaks messung
+                            LEFT JOIN dbo.tbPInfos probeInfo ON messung.PKenng = probeInfo.PKenng
+
+                        WHERE 
+                            messung.AreaBW         IS NULL  
+                            AND  messung.RTkorr    IS NOT NULL
+                            AND  messung.BPMZ_RT   IS NOT NULL
+                            
+                                
+                            ";
+
+
+        var ids = new List<int>();
+        var aBWNeu = new List<double>();
+
+        int c = 0;
+
+        using (var command = connection.CreateCommand())
+        {
+            command.CommandText = sql_select;
+            using (var reader = command.ExecuteReader())
+            {
+                while (reader.Read())
+                {
+                    c++;
+                    var id = (int)reader["ID_Peak"];
+                    var korrRt = (double)reader["RTkorr"];
+                    var messRtIS = (double)reader["RT_IS_Pr"];
+
+
+
+
+                    //hier rechnen
+                    var aBWNeuValue = BerechneaBW(messRt, messRtIS);    //Sprung in die Berechnung,siehe unten (mit erforderlichen Parametern)
+
+                    ids.Add(id);
+                    aBWNeu.Add(aBWNeuValue);
+                }
+            }
+        }
+
+        c = 0;
+        foreach (var idMessung in ids)
+        {
+            var AreaBW = aBWNeu[c];
+
+            UpdateaBWLine(connection, idMessung, rtKorr); //
+
+            c++;
+        }
+
+    }
+
+
+
+
+    private double BerechneaBW(double messRt, double messRtIS)    //rausgezogene Berechnung
+    {
+
+        var aBWNeuValue = messRt - (Konstanten.RT_SOLL_IS_DEzimal - messRtIS);
+
+        aBWNeuValue = Math.Round(aBWNeuValue, 1);
+
+        return aBWNeuValue;
+    }
+
+
+
+
+    private void UpdateaBWLine(SqlConnection connection, int idMessung, double AreaBW)
+    {
+        var sqlUpdateRow = @"UPDATE dbo.tbPeaks
+                        SET 
+                            AreaBW = @AreaBW
+                        WHERE 
+                            ID_Peak = @ID_Peak
+            ";
+
+
+        using (var commandUpdate = connection.CreateCommand())
+        {
+            commandUpdate.CommandText = sqlUpdateRow;
+
+            commandUpdate.Parameters.AddWithValue("@ID_Peak", idMessung);
+            commandUpdate.Parameters.AddWithValue("@AreaBW", AreaBW);
+
+            var result = commandUpdate.ExecuteNonQuery();
+
+            Log($"Updated {result} lines");
+        }
+    }
+
 
     // BW Peak von ProbenPeak abziehen, im Bereich von +/- 0,2min, wenn Werte vorhanden, sonst Null, Kontrolle ob 2x größer, Zelle leer, wenn Werte fehlen
     /*
