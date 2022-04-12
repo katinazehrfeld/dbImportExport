@@ -30,7 +30,7 @@ namespace DbImportExport.Importer        //Namensklasse in der keine Namensgleic
             MzRtp02Name(connection);
             MzRtm02Name(connection);
             MzRiName(connection);
-            //AreaBW(connection);
+            FlaecheBW(connection);
             //PeaksMinusBW(connection);
 
         }
@@ -845,237 +845,235 @@ namespace DbImportExport.Importer        //Namensklasse in der keine Namensgleic
 
 
 
-}
-/*
-    // Ermittlung der Blindwert-Fläche
 
-    private void AreaBW(SqlConnection connection)
-    {
-        var sql_select = @"
-                         SELECT
-                            messung.PKenng,
-                            messung.RTkorr,
-                            messung.BP_MZ,
-                            messung.BPMZ_RT,
-							messung.BPMZ_RT_p01,
-							messung.BPMZ_RT_p02,
-							messung.BPMZ_RT_m01,
-							messung.BPMZ_RT_m02,
-                            messung.AreaP,
-                            messung.AreaBW,
-                            messung.Type,
-                            messung.ID_Peak
+    
+        // Ermittlung der Blindwert-Fläche
 
-                        FROM
-                            dbo.tbPeaks messung
-                            LEFT JOIN dbo.tbPInfos probeInfo ON messung.PKenng = probeInfo.PKenng
+        private void FlaecheBW(SqlConnection connection)
+        {
+            var sql_select = @"
+                             SELECT
+                                messung.AreaP,
+                                messung.AreaBW,
+                                messung.Type,
+                                messung.ID_Peak
 
-                        WHERE 
-                            messung.AreaBW         IS NULL  
-                            AND  messung.RTkorr    IS NOT NULL
-                            AND  messung.BPMZ_RT   IS NOT NULL
-                            
+                            FROM
+                                dbo.tbPeaks messung
                                 
+                            WHERE 
+                                messung.AreaBW         IS NULL  
+
+                                AND  messung.RTkorr    IS NOT NULL
+                                AND  messung.AreaP     IS NOT NULL
+                                AND  messung.Type      = 'Blank'
+                                ";
+
+
+            var ids = new List<int>();
+            var BWNeu = new List<double>();
+
+            int c = 0;
+
+            using (var command = connection.CreateCommand())
+            {
+                command.CommandText = sql_select;
+                using (var reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        c++;
+                        var id = (int)reader["ID_Peak"];
+                        var AreaP = (double)reader["AreaP"];
+
+                        //so...
+                        var FlaecheBW =  reader["AreaBW"] == DBNull.Value 
+                            ? (double)0 
+                            : (double)reader["AreaBW"];
+
+
+                        //oder so...
+                        var o = reader["AreaBW"];
+
+                        if (o == DBNull.Value)
+                        { 
+                        }
+                        else
+                        {
+
+                        }
+
+                        // oder so...
+                        var x = o == DBNull.Value
+                            ? 0
+                            : (double)o;
+
+
+
+
+                        //hier rechnen
+                        var BWNeuValue = AreaP;    
+
+                        ids.Add(id);
+                        BWNeu.Add(BWNeuValue);
+                    }
+                }
+            }
+
+            c = 0;
+            foreach (var idMessung in ids)
+            {
+                var AreaBW = BWNeu[c];
+
+                UpdateBWLine(connection, idMessung, AreaBW); //
+
+                c++;
+            }
+
+        }
+
+
+
+        private void UpdateBWLine(SqlConnection connection, int idMessung, double AreaBW)
+        {
+            var sqlUpdateRow = @"UPDATE dbo.tbPeaks
+                            SET 
+                                AreaBW = @AreaBW
+                            WHERE 
+                                ID_Peak = @ID_Peak
+                ";
+
+
+            using (var commandUpdate = connection.CreateCommand())
+            {
+                commandUpdate.CommandText = sqlUpdateRow;
+
+                commandUpdate.Parameters.AddWithValue("@ID_Peak", idMessung);
+                commandUpdate.Parameters.AddWithValue("@AreaBW", AreaBW);
+
+                var result = commandUpdate.ExecuteNonQuery();
+                           
+                Log($"Updated {result} lines");
+        }
+        }
+}
+
+        // BW Peak von ProbenPeak abziehen, im Bereich von +/- 0,2min, wenn Werte vorhanden, sonst Null, Kontrolle ob 2x größer, Zelle leer, wenn Werte fehlen
+        /*
+
+        private void PeaksMinusBW(SqlConnection connection)
+        {
+            int cc = 0;
+
+            var sql_select = @"
+                            SELECT
+                                messung.PKenng,
+                                messung.RTkorr,
+                                messung.BP_MZ,
+                                messung.BPMZ_RT,
+                                messung.AreaP,
+                                messung.Type,
+                                messung.ID_Peak
+                            FROM
+                                dbo.tbPeaks messung
+                                LEFT JOIN dbo.tbPInfos probeInfo ON messung.PKenng = probeInfo.PKenng
+
+                            WHERE 
+                                messung.Peak_minus_BW  IS NULL  --die Zahl 0 bedeutet BWPeak, leere Zelle kann zwei Bedeutungen haben: 1.werte zur Berechung fehlen, 2.neuerEintrag der noch in die Berechnung muss
+                                                                --für fehlende Werte ein FW eintragen, dann kann später, danach selektiert werden, ist das gut?
+                                AND  messung.RTkorr    IS NOT NULL
+                                AND  messung.BPMZ_RT   IS NOT NULL
+
                             ";
 
 
-        var ids = new List<int>();
-        var aBWNeu = new List<double>();
+            var ids = new List<int>();
+            var PeakminusBWNeu = new List<string>();
 
-        int c = 0;
+            int c = 0;
 
-        using (var command = connection.CreateCommand())
-        {
-            command.CommandText = sql_select;
-            using (var reader = command.ExecuteReader())
+            using (var command = connection.CreateCommand())
             {
-                while (reader.Read())
+                command.CommandText = sql_select;
+                using (var reader = command.ExecuteReader())
                 {
-                    c++;
-                    var id = (int)reader["ID_Peak"];
-                    var korrRt = (double)reader["RTkorr"];
-                    var messRtIS = (double)reader["RT_IS_Pr"];
+                    while (reader.Read())
+                    {
+                        c++;
+                        var id = (string)reader["Pkenng"];
+                        var korrRt = (double)reader["RTkorr"];
+                        var Mz = (double)reader["BP_MZ"];
+                        var Mz_Rt = (string)reader["BPMZ_RT"];
+                        var PK_Area = (double)reader["AreaP"];
 
 
 
+                        var PeakminusBWNeuValue = Sub_PK_BW(korrRt, Mz, Mz_Rt,PK_Area);    //Sprung in die Berechnung,siehe unten (mit erforderlichen Parametern)
 
-                    //hier rechnen
-                    var aBWNeuValue = BerechneaBW(messRt, messRtIS);    //Sprung in die Berechnung,siehe unten (mit erforderlichen Parametern)
-
-                    ids.Add(id);
-                    aBWNeu.Add(aBWNeuValue);
+                        ids.Add(id);
+                        PeakminusBWNeu.Add(PeakminusBWNeuValue);
+                    }
                 }
             }
+
+            c = 0;
+            foreach (var PKenng in ids)
+            {
+                double PeakminusBW_Wert = PeakminusBWNeu[c];
+
+                UpdatePeakminusBWLine(connection, PKenng, PeakminusBW_Wert);
+
+                c++;
+            }
+
         }
 
-        c = 0;
-        foreach (var idMessung in ids)
+
+
+
+        private string Sub_PK_BW(double korrRt, double Mz, string Mz_Rt, double PK_Area)    //rausgezogene Berechnung
         {
-            var AreaBW = aBWNeu[c];
+            Mz = Math.Round(Mz, 0);
 
-            UpdateaBWLine(connection, idMessung, rtKorr); //
+            double PeakminusBWNeuValue = (Mz + "-" + korrRt);
 
-            c++;
+
+
+            return PeakminusBWNeuValue;
         }
 
-    }
 
 
 
-
-    private double BerechneaBW(double messRt, double messRtIS)    //rausgezogene Berechnung
-    {
-
-        var aBWNeuValue = messRt - (Konstanten.RT_SOLL_IS_DEzimal - messRtIS);
-
-        aBWNeuValue = Math.Round(aBWNeuValue, 1);
-
-        return aBWNeuValue;
-    }
-
-
-
-
-    private void UpdateaBWLine(SqlConnection connection, int idMessung, double AreaBW)
-    {
-        var sqlUpdateRow = @"UPDATE dbo.tbPeaks
+        private void UpdatePeakminusBWLine(SqlConnection connection, int idMessung, double PeakminusBW_Wert)
+        {
+            var sqlUpdateRow = @"UPDATE dbo.tbPeaks
                         SET 
-                            AreaBW = @AreaBW
+                            Peak_minus_BW = @Peak_minus_BW
                         WHERE 
-                            ID_Peak = @ID_Peak
+                            PKenng = @PKenng
             ";
 
 
-        using (var commandUpdate = connection.CreateCommand())
-        {
-            commandUpdate.CommandText = sqlUpdateRow;
-
-            commandUpdate.Parameters.AddWithValue("@ID_Peak", idMessung);
-            commandUpdate.Parameters.AddWithValue("@AreaBW", AreaBW);
-
-            var result = commandUpdate.ExecuteNonQuery();
-
-            Log($"Updated {result} lines");
-        }
-    }
-
-
-    // BW Peak von ProbenPeak abziehen, im Bereich von +/- 0,2min, wenn Werte vorhanden, sonst Null, Kontrolle ob 2x größer, Zelle leer, wenn Werte fehlen
-    /*
-     
-    private void PeaksMinusBW(SqlConnection connection)
-    {
-        int cc = 0;
-
-        var sql_select = @"
-                        SELECT
-                            messung.PKenng,
-                            messung.RTkorr,
-                            messung.BP_MZ,
-                            messung.BPMZ_RT,
-                            messung.AreaP,
-                            messung.Type,
-                            messung.ID_Peak
-                        FROM
-                            dbo.tbPeaks messung
-                            LEFT JOIN dbo.tbPInfos probeInfo ON messung.PKenng = probeInfo.PKenng
-
-                        WHERE 
-                            messung.Peak_minus_BW  IS NULL  --die Zahl 0 bedeutet BWPeak, leere Zelle kann zwei Bedeutungen haben: 1.werte zur Berechung fehlen, 2.neuerEintrag der noch in die Berechnung muss
-                                                            --für fehlende Werte ein FW eintragen, dann kann später, danach selektiert werden, ist das gut?
-                            AND  messung.RTkorr    IS NOT NULL
-                            AND  messung.BPMZ_RT   IS NOT NULL
-
-                        ";
-
-
-        var ids = new List<int>();
-        var PeakminusBWNeu = new List<string>();
-
-        int c = 0;
-
-        using (var command = connection.CreateCommand())
-        {
-            command.CommandText = sql_select;
-            using (var reader = command.ExecuteReader())
+            using (var commandUpdate = connection.CreateCommand())
             {
-                while (reader.Read())
-                {
-                    c++;
-                    var id = (string)reader["Pkenng"];
-                    var korrRt = (double)reader["RTkorr"];
-                    var Mz = (double)reader["BP_MZ"];
-                    var Mz_Rt = (string)reader["BPMZ_RT"];
-                    var PK_Area = (double)reader["AreaP"];
+                commandUpdate.CommandText = sqlUpdateRow;
 
+                commandUpdate.Parameters.AddWithValue("@ID_Messung", idMessung);
+                commandUpdate.Parameters.AddWithValue("@Peak_minus_BW", PeakminusBW_Wert);
 
+                var result = commandUpdate.ExecuteNonQuery();
 
-                    var PeakminusBWNeuValue = Sub_PK_BW(korrRt, Mz, Mz_Rt,PK_Area);    //Sprung in die Berechnung,siehe unten (mit erforderlichen Parametern)
-
-                    ids.Add(id);
-                    PeakminusBWNeu.Add(PeakminusBWNeuValue);
-                }
+                Log($"Updated {result} lines");
             }
         }
 
-        c = 0;
-        foreach (var PKenng in ids)
-        {
-            double PeakminusBW_Wert = PeakminusBWNeu[c];
-
-            UpdatePeakminusBWLine(connection, PKenng, PeakminusBW_Wert);
-
-            c++;
-        }
-
-    }
-
-
-
-
-    private string Sub_PK_BW(double korrRt, double Mz, string Mz_Rt, double PK_Area)    //rausgezogene Berechnung
-    {
-        Mz = Math.Round(Mz, 0);
-
-        double PeakminusBWNeuValue = (Mz + "-" + korrRt);
-
-
-
-        return PeakminusBWNeuValue;
-    }
-
-
-
-
-    private void UpdatePeakminusBWLine(SqlConnection connection, int idMessung, double PeakminusBW_Wert)
-    {
-        var sqlUpdateRow = @"UPDATE dbo.tbPeaks
-                    SET 
-                        Peak_minus_BW = @Peak_minus_BW
-                    WHERE 
-                        PKenng = @PKenng
-        ";
-
-
-        using (var commandUpdate = connection.CreateCommand())
-        {
-            commandUpdate.CommandText = sqlUpdateRow;
-
-            commandUpdate.Parameters.AddWithValue("@ID_Messung", idMessung);
-            commandUpdate.Parameters.AddWithValue("@Peak_minus_BW", PeakminusBW_Wert);
-
-            var result = commandUpdate.ExecuteNonQuery();
-
-            Log($"Updated {result} lines");
-        }
-    }
 
 
 
 
 
-    
-    */
+        */
 
 
 }
