@@ -26,10 +26,6 @@ namespace DbImportExport.Importer        //Namensklasse in der keine Namensgleic
             RiKorrigieren(connection);
             MzRtName(connection);
             MzRtNamePlus(connection);
-            //MzRtp01Name(connection);
-            //MzRtm01Name(connection);
-            //MzRtp02Name(connection);
-            //MzRtm02Name(connection);
             MzRiName(connection);
             FlaecheBW(connection);
             //PeaksMinusBW(connection);
@@ -76,10 +72,6 @@ namespace DbImportExport.Importer        //Namensklasse in der keine Namensgleic
                         var messRt = (double)reader["RTmess"];
                         var messRtIS = (double)reader["RT_IS_Pr"];
 
-
-
-
-                        //hier rechnen
                         var rtNeuValue = BerechneRt(messRt, messRtIS);    //Sprung in die Berechnung,siehe unten (mit erforderlichen Parametern)
 
                         ids.Add(id);
@@ -101,8 +93,6 @@ namespace DbImportExport.Importer        //Namensklasse in der keine Namensgleic
         }
 
 
-
-
         private double BerechneRt(double messRt, double messRtIS)    //rausgezogene Berechnung
         {
 
@@ -112,8 +102,6 @@ namespace DbImportExport.Importer        //Namensklasse in der keine Namensgleic
             
             return rtNeuValue;
         }
-
-
 
 
         private void UpdateRtLine(SqlConnection connection, int idMessung, double rtKorr)
@@ -173,8 +161,7 @@ namespace DbImportExport.Importer        //Namensklasse in der keine Namensgleic
                         var messRi = (double)reader["RImess"];
                         var messRiIS = (double)reader["RI_IS_Pr"];
 
-                        //hier rechnen
-                        var riNeuValue = BerechneRi(messRi, messRiIS);
+                        var riNeuValue = BerechneRi(messRi, messRiIS);  // Sprung in Berechnung
 
                         ids.Add(id);
                         riNeu.Add(riNeuValue);
@@ -191,24 +178,16 @@ namespace DbImportExport.Importer        //Namensklasse in der keine Namensgleic
 
                 c++;
             }
-
         }
-
 
         private double BerechneRi(double messRi, double messRiIS)
         {
             //hier rechnen
-
-           // var messRiRundend = Math.Round(messRi, 0);
-
             var riNeuValue = messRi - (Konstanten.RI_SOLL_IS_DEzimal - messRiIS);
-
             riNeuValue = Math.Round(riNeuValue, 0);
-
 
             return riNeuValue;
         }
-
 
         private void UpdateRiLine(SqlConnection connection, int idMessung, double riKorr)
         {
@@ -249,7 +228,6 @@ namespace DbImportExport.Importer        //Namensklasse in der keine Namensgleic
                                 AND messung.RTkorr IS NOT NULL
                             ";
 
-
             var ids = new List<int>();
             var mzrtNeu = new List<string>();
 
@@ -267,10 +245,6 @@ namespace DbImportExport.Importer        //Namensklasse in der keine Namensgleic
                         var korrRt = (double)reader["RTkorr"];
                         var Mz = (double)reader["BP_MZ"];
 
-
-
-
-                        //hier rechnen
                         var mzrtNeuValue = SetztMzRt(korrRt, Mz);    //Sprung in die Berechnung,siehe unten (mit erforderlichen Parametern)
 
                         ids.Add(id);
@@ -288,10 +262,7 @@ namespace DbImportExport.Importer        //Namensklasse in der keine Namensgleic
 
                 c++;
             }
-
-        }
-
-
+         }
 
 
         private string SetztMzRt(double korrRt, double Mz)    //rausgezogene Berechnung
@@ -300,13 +271,8 @@ namespace DbImportExport.Importer        //Namensklasse in der keine Namensgleic
 
             string mzrtNeuValue = (Mz + "-" + korrRt);
 
-            
-
             return mzrtNeuValue;
         }
-
-
-
 
         private void UpdateMzRtLine(SqlConnection connection, int idMessung, string mzrtWert)
         {
@@ -330,6 +296,7 @@ namespace DbImportExport.Importer        //Namensklasse in der keine Namensgleic
                 Log($"Updated {result} lines");
             }
         }
+
         //MzRtNamePlus(connection)
         private void MzRtNamePlus(SqlConnection connection)
         {
@@ -425,7 +392,6 @@ namespace DbImportExport.Importer        //Namensklasse in der keine Namensgleic
             return mzrtm02NeuValue;
         }
 
-
         private void UpdateMzRtp01Line(SqlConnection connection, int idMessung, string mzrtp01Wert, string mzrtp02Wert, string mzrtm01Wert, string mzrtm02Wert)
         {
             var sqlUpdateRow = @"UPDATE dbo.tbPeaks
@@ -454,418 +420,7 @@ namespace DbImportExport.Importer        //Namensklasse in der keine Namensgleic
             }
         }
         
-        
-        /*
-        // Spalte mit den BPMZ-Rt_plus 0,1min-Namen für jeden Peak, aber nicht BWs
-        private void MzRtp01Name(SqlConnection connection)
-        {
-            var sql_select = @"
-                            SELECT
-	                            messung.ID_Peak,
-	                            messung.RTkorr,
-	                            messung.BP_MZ
-                            FROM
-	                            dbo.tbPeaks messung
-	                        WHERE 
-                                messung.BPMZ_RT_p01 IS NULL
-                                AND messung.RTkorr IS NOT NULL
-                                AND messung.Type = 'Sample'
-                            ";
-
-
-            var ids = new List<int>();
-            var mzrtp01Neu = new List<string>();
-
-            int c = 0;
-
-            using (var command = connection.CreateCommand())
-            {
-                command.CommandText = sql_select;
-                using (var reader = command.ExecuteReader())
-                {
-                    while (reader.Read())
-                    {
-                        c++;
-                        var id = (int)reader["ID_Peak"];
-                        var korrRt = (double)reader["RTkorr"];
-                        var Mz = (double)reader["BP_MZ"];
-
-
-
-
-                        //hier rechnen
-                        var mzrtp01NeuValue = SetztMzRtp01(korrRt, Mz);    //Sprung in die Berechnung,siehe unten (mit erforderlichen Parametern)
-
-                        ids.Add(id);
-                        mzrtp01Neu.Add(mzrtp01NeuValue);
-                    }
-                }
-            }
-
-            c = 0;
-            foreach (var idMessung in ids)
-            {
-                string mzrtp01Wert = mzrtp01Neu[c];
-
-                UpdateMzRtp01Line(connection, idMessung, mzrtp01Wert); //
-
-                c++;
-            }
-
-        }
-
-
-
-
-        private string SetztMzRtp01(double korrRt, double Mz)    //rausgezogene Berechnung
-        {
-            Mz = Math.Round(Mz, 0);
-            korrRt = korrRt + 0.1;      //hier Korrektur + 0,1 Minute
-
-            string mzrtp01NeuValue = (Mz + "-" + korrRt);
-
-
-
-            return mzrtp01NeuValue;
-        }
-
-
-
-
-        private void UpdateMzRtp01Line(SqlConnection connection, int idMessung, string mzrtp01Wert)
-        {
-            var sqlUpdateRow = @"UPDATE dbo.tbPeaks
-                        SET 
-                            BPMZ_RT_p01 = @BPMZ_RT_p01
-                        WHERE 
-                            ID_Peak = @ID_Peak
-            ";
-
-
-            using (var commandUpdate = connection.CreateCommand())
-            {
-                commandUpdate.CommandText = sqlUpdateRow;
-
-                commandUpdate.Parameters.AddWithValue("@ID_Peak", idMessung);
-                commandUpdate.Parameters.AddWithValue("@BPMZ_RT_p01", mzrtp01Wert);
-
-                var result = commandUpdate.ExecuteNonQuery();
-
-                Log($"Updated {result} lines");
-            }
-        }
-
-
-
-
-
-        // Spalte mit den BPMZ-Rt_plus 0,2min-Namen für jeden Peak, aber nicht BWs
-        private void MzRtp02Name(SqlConnection connection)
-        {
-            var sql_select = @"
-                            SELECT
-	                            messung.ID_Peak,
-	                            messung.RTkorr,
-	                            messung.BP_MZ
-                            FROM
-	                            dbo.tbPeaks messung
-	                        WHERE 
-                                messung.BPMZ_RT_p02 IS NULL
-                                AND messung.RTkorr IS NOT NULL
-                                AND messung.Type = 'Sample'
-                            ";
-
-
-            var ids = new List<int>();
-            var mzrtp02Neu = new List<string>();
-
-            int c = 0;
-
-            using (var command = connection.CreateCommand())
-            {
-                command.CommandText = sql_select;
-                using (var reader = command.ExecuteReader())
-                {
-                    while (reader.Read())
-                    {
-                        c++;
-                        var id = (int)reader["ID_Peak"];
-                        var korrRt = (double)reader["RTkorr"];
-                        var Mz = (double)reader["BP_MZ"];
-
-
-
-
-                        //hier rechnen
-                        var mzrtp02NeuValue = SetztMzRtp02(korrRt, Mz);    //Sprung in die Berechnung,siehe unten (mit erforderlichen Parametern)
-
-                        ids.Add(id);
-                        mzrtp02Neu.Add(mzrtp02NeuValue);
-                    }
-                }
-            }
-
-            c = 0;
-            foreach (var idMessung in ids)
-            {
-                string mzrtp02Wert = mzrtp02Neu[c];
-
-                UpdateMzRtp02Line(connection, idMessung, mzrtp02Wert); //
-
-                c++;
-            }
-
-        }
-
-
-
-
-        private string SetztMzRtp02(double korrRt, double Mz)    //rausgezogene Berechnung
-        {
-            Mz = Math.Round(Mz, 0);
-            korrRt = korrRt + 0.2;      //hier Korrektur + 0,2 Minute
-
-            string mzrtp02NeuValue = (Mz + "-" + korrRt);
-
-
-
-            return mzrtp02NeuValue;
-        }
-
-
-
-
-        private void UpdateMzRtp02Line(SqlConnection connection, int idMessung, string mzrtp02Wert)
-        {
-            var sqlUpdateRow = @"UPDATE dbo.tbPeaks
-                        SET 
-                            BPMZ_RT_p02 = @BPMZ_RT_p02
-                        WHERE 
-                            ID_Peak = @ID_Peak
-            ";
-
-
-            using (var commandUpdate = connection.CreateCommand())
-            {
-                commandUpdate.CommandText = sqlUpdateRow;
-
-                commandUpdate.Parameters.AddWithValue("@ID_Peak", idMessung);
-                commandUpdate.Parameters.AddWithValue("@BPMZ_RT_p02", mzrtp02Wert);
-
-                var result = commandUpdate.ExecuteNonQuery();
-
-                Log($"Updated {result} lines");
-            }
-        }
-
-
-
-
-
-
-        // Spalte mit den BPMZ-Rt_minus 0,1min-Namen für jeden Peak, aber nicht BWs
-        private void MzRtm01Name(SqlConnection connection)
-        {
-            var sql_select = @"
-                            SELECT
-	                            messung.ID_Peak,
-	                            messung.RTkorr,
-	                            messung.BP_MZ
-                            FROM
-	                            dbo.tbPeaks messung
-	                        WHERE 
-                                messung.BPMZ_RT_m01 IS NULL
-                                AND messung.RTkorr IS NOT NULL
-                                AND messung.Type = 'Sample'
-                            ";
-
-
-            var ids = new List<int>();
-            var mzrtm01Neu = new List<string>();
-
-            int c = 0;
-
-            using (var command = connection.CreateCommand())
-            {
-                command.CommandText = sql_select;
-                using (var reader = command.ExecuteReader())
-                {
-                    while (reader.Read())
-                    {
-                        c++;
-                        var id = (int)reader["ID_Peak"];
-                        var korrRt = (double)reader["RTkorr"];
-                        var Mz = (double)reader["BP_MZ"];
-
-
-
-
-                        //hier rechnen
-                        var mzrtm01NeuValue = SetztMzRtm01(korrRt, Mz);    //Sprung in die Berechnung,siehe unten (mit erforderlichen Parametern)
-
-                        ids.Add(id);
-                        mzrtm01Neu.Add(mzrtm01NeuValue);
-                    }
-                }
-            }
-
-            c = 0;
-            foreach (var idMessung in ids)
-            {
-                string mzrtm01Wert = mzrtm01Neu[c];
-
-                UpdateMzRtm01Line(connection, idMessung, mzrtm01Wert); //
-
-                c++;
-            }
-
-        }
-
-
-
-
-        private string SetztMzRtm01(double korrRt, double Mz)    //rausgezogene Berechnung
-        {
-            Mz = Math.Round(Mz, 0);
-            korrRt = korrRt - 0.1;      //hier Korrektur - 0,1 Minute
-
-            string mzrtm01NeuValue = (Mz + "-" + korrRt);
-
-
-
-            return mzrtm01NeuValue;
-        }
-
-
-
-
-        private void UpdateMzRtm01Line(SqlConnection connection, int idMessung, string mzrtm01Wert)
-        {
-            var sqlUpdateRow = @"UPDATE dbo.tbPeaks
-                        SET 
-                            BPMZ_RT_m01 = @BPMZ_RT_m01
-                        WHERE 
-                            ID_Peak = @ID_Peak
-            ";
-
-
-            using (var commandUpdate = connection.CreateCommand())
-            {
-                commandUpdate.CommandText = sqlUpdateRow;
-
-                commandUpdate.Parameters.AddWithValue("@ID_Peak", idMessung);
-                commandUpdate.Parameters.AddWithValue("@BPMZ_RT_m01", mzrtm01Wert);
-
-                var result = commandUpdate.ExecuteNonQuery();
-
-                Log($"Updated {result} lines");
-            }
-        }
-
-
-
-        // Spalte mit den BPMZ-Rt_minus 0,2min-Namen für jeden Peak, aber nicht BWs
-        private void MzRtm02Name(SqlConnection connection)
-        {
-            var sql_select = @"
-                            SELECT
-	                            messung.ID_Peak,
-	                            messung.RTkorr,
-	                            messung.BP_MZ
-                            FROM
-	                            dbo.tbPeaks messung
-	                        WHERE 
-                                messung.BPMZ_RT_m02 IS NULL
-                                AND messung.RTkorr IS NOT NULL
-                                AND messung.Type = 'Sample'
-                            ";
-
-
-            var ids = new List<int>();
-            var mzrtm02Neu = new List<string>();
-
-            int c = 0;
-
-            using (var command = connection.CreateCommand())
-            {
-                command.CommandText = sql_select;
-                using (var reader = command.ExecuteReader())
-                {
-                    while (reader.Read())
-                    {
-                        c++;
-                        var id = (int)reader["ID_Peak"];
-                        var korrRt = (double)reader["RTkorr"];
-                        var Mz = (double)reader["BP_MZ"];
-
-
-
-
-                        //hier rechnen
-                        var mzrtm02NeuValue = SetztMzRtm02(korrRt, Mz);    //Sprung in die Berechnung,siehe unten (mit erforderlichen Parametern)
-
-                        ids.Add(id);
-                        mzrtm02Neu.Add(mzrtm02NeuValue);
-                    }
-                }
-            }
-
-            c = 0;
-            foreach (var idMessung in ids)
-            {
-                string mzrtm02Wert = mzrtm02Neu[c];
-
-                UpdateMzRtm02Line(connection, idMessung, mzrtm02Wert); //
-
-                c++;
-            }
-
-        }
-
-
-
-
-        private string SetztMzRtm02(double korrRt, double Mz)    //rausgezogene Berechnung
-        {
-            Mz = Math.Round(Mz, 0);
-            korrRt = korrRt - 0.2;      //hier Korrektur - 0,2 Minute
-
-            string mzrtm02NeuValue = (Mz + "-" + korrRt);
-
-
-
-            return mzrtm02NeuValue;
-        }
-
-
-
-
-        private void UpdateMzRtm02Line(SqlConnection connection, int idMessung, string mzrtm02Wert)
-        {
-            var sqlUpdateRow = @"UPDATE dbo.tbPeaks
-                        SET 
-                            BPMZ_RT_m02 = @BPMZ_RT_m02
-                        WHERE 
-                            ID_Peak = @ID_Peak
-            ";
-
-
-            using (var commandUpdate = connection.CreateCommand())
-            {
-                commandUpdate.CommandText = sqlUpdateRow;
-
-                commandUpdate.Parameters.AddWithValue("@ID_Peak", idMessung);
-                commandUpdate.Parameters.AddWithValue("@BPMZ_RT_m02", mzrtm02Wert);
-
-                var result = commandUpdate.ExecuteNonQuery();
-
-                Log($"Updated {result} lines");
-            }
-        }
-
-        */
-
-
+       
 
         // Spalte mit den BPMZ-RI-Namen für jeden Peak
 
@@ -902,10 +457,6 @@ namespace DbImportExport.Importer        //Namensklasse in der keine Namensgleic
                         var korrRi = (int)reader["RIkorr"];
                         var Mz = (double)reader["BP_MZ"];
 
-
-
-
-                        //hier rechnen
                         var mzriNeuValue = SetztMzRi(korrRi, Mz);    //Sprung in die Berechnung,siehe unten (mit erforderlichen Parametern)
 
                         ids.Add(id);
@@ -923,11 +474,7 @@ namespace DbImportExport.Importer        //Namensklasse in der keine Namensgleic
 
                 c++;
             }
-
         }
-
-
-
 
         private string SetztMzRi(double korrRi, double Mz)    //rausgezogene Berechnung
         {
@@ -935,12 +482,8 @@ namespace DbImportExport.Importer        //Namensklasse in der keine Namensgleic
 
             string mzriNeuValue = (Mz + "-" + korrRi);
 
-
-
             return mzriNeuValue;
         }
-
-
 
 
         private void UpdateMzRiLine(SqlConnection connection, int idMessung, string mzriWert)
@@ -1054,9 +597,7 @@ namespace DbImportExport.Importer        //Namensklasse in der keine Namensgleic
 
                 c++;
             }
-
         }
-
 
 
         private void UpdateBWLine(SqlConnection connection, int idMessung, double AreaBW)
@@ -1079,7 +620,7 @@ namespace DbImportExport.Importer        //Namensklasse in der keine Namensgleic
                 var result = commandUpdate.ExecuteNonQuery();
                            
                 Log($"Updated {result} lines");
-        }
+            }
         }
 }
 
