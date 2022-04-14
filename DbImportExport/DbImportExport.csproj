@@ -47,7 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Importer\DBUpdateValues.cs" />
+    <Compile Include="Importer\UpdateValues\DBUpdateValues.cs" />
     <Compile Include="Importer\DBTestCASImport.cs" />
     <Compile Include="Importer\DBImportLimsinfo.cs" />
     <Compile Include="Importer\DBImportBWZuordnung.cs" />
@@ -61,6 +61,15 @@
     </Compile>
     <Compile Include="Importer\DBImportMessung.cs" />
     <Compile Include="Importer\Konstanten.cs" />
+    <Compile Include="Importer\UpdateValues\FlaecheBWKlasse.cs" />
+    <Compile Include="Importer\UpdateValues\MzRiNameKlasse.cs" />
+    <Compile Include="Importer\UpdateValues\MzRtNameKlasse.cs" />
+    <Compile Include="Importer\UpdateValues\MzRtNamePlusKlasse.cs" />
+    <Compile Include="Importer\UpdateValues\PeaksMinusBW\Blindwert.cs" />
+    <Compile Include="Importer\UpdateValues\PeaksMinusBW\Peak.cs" />
+    <Compile Include="Importer\UpdateValues\PeaksMinusBW\PeaksMinusBWKlasse.cs" />
+    <Compile Include="Importer\UpdateValues\RiKorrigierenKlasse.cs" />
+    <Compile Include="Importer\UpdateValues\RtKorrigierenKlasse.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="DbImportExportMainForm.resx">
