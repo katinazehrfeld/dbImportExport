@@ -22,15 +22,9 @@ namespace DbImportExport.Importer.UpdateValues        //Namensklasse in der kein
             new RtKorrigierenKlasse(log).RtKorrigieren(connection);
             new RiKorrigierenKlasse(log).RiKorrigieren(connection);
             new MzRtNameKlasse(log).MzRtName(connection);
-            new MzRtNamePlusKlasse(log).MzRtNamePlus(connection);
             new MzRiNameKlasse(log).MzRiName(connection);
             new FlaecheBWKlasse(log).FlaecheBW(connection);
-
-            
             new PeaksMinusBWKlasse(log).PeaksMinusBW(connection);
-
-
-            // BWinnen(connection);
         }
     } 
 }

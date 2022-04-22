@@ -6,10 +6,6 @@
         public string BWZuordg { get; set; }
         public int ID_Peak { get; set; }
         public string BPMZ_RT { get; set; }
-        public string BPMZ_RT_p01 { get; set; }
-        public string BPMZ_RT_p02 { get; set; }
-        public string BPMZ_RT_m01 { get; set; }
-        public string BPMZ_RT_m02 { get; set; }
         public double AreaP { get; set; }
 
         public double V_Extraktion_mL { get; set; }
@@ -27,5 +23,8 @@
         public string BPMZ_RI { get; set; }
 
         public double IS_AreaP { get; set; }
+        public double RTkorr { get; set; }
+
+        public double BP_MZ_korr { get; set; }
     }
 }

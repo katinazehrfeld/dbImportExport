@@ -4,6 +4,7 @@ using System.Data.Common;
 using System.Data.SqlClient;
 using System.Linq;
 using Dapper;
+using DbImportExport.Importer.MzRtFinder;
 
 namespace DbImportExport.Importer.UpdateValues.PeaksMinusBW
 {
@@ -21,7 +22,8 @@ namespace DbImportExport.Importer.UpdateValues.PeaksMinusBW
             var peaks = ReadPeaks(connection);
             var groups = peaks.GroupBy(peak => peak.PKenng);
 
-            var gemesseneStandards = connection.Query<GemessenerStandad>("SELECT * FROM dbo.GemesseneStandads").ToList();
+            var gemesseneStandards =
+                connection.Query<GemessenerStandad>("SELECT * FROM dbo.GemesseneStandads").ToList();
             var säuleBw = connection.Query<SäuleBw>("SELECT * FROM dbo.Säule_BW").ToList();
 
             foreach (var group in groups)
@@ -49,7 +51,7 @@ namespace DbImportExport.Importer.UpdateValues.PeaksMinusBW
 
                 foreach (var peak in peaks)
                 {
-                    var blindwert = GetBlindwert(peak, blindwerte);
+                    var blindwert = new BlindwertFinder().SucheBlindwert(peak, blindwerte);
                     if (blindwert != null)
                     {
                         UpdateBlindwert(connection, peak, blindwert, gemesseneStandads, säuleBws, transaction);
@@ -206,52 +208,6 @@ WHERE
                 transaction);
         }
 
-        private static Blindwert GetBlindwert(Peak peak, List<Blindwert> blindwerte)
-        {
-            var match = blindwerte
-                .Where(bw => bw.BPMZ_RT == peak.BPMZ_RT)
-                .Where(bw => 2 * bw.AreaP < peak.AreaP)
-                .FirstOrDefault();
-
-            //--BPMZ_RT_p01
-            if (match == null)
-            {
-                match = blindwerte
-                    .Where(bw => bw.BPMZ_RT == peak.BPMZ_RT_p01)
-                    .Where(bw => 2 * bw.AreaP < peak.AreaP)
-                    .FirstOrDefault();
-            }
-
-            //--BPMZ_RT_m01
-            if (match == null)
-            {
-                match = blindwerte
-                    .Where(bw => bw.BPMZ_RT == peak.BPMZ_RT_m01)
-                    .Where(bw => 2 * bw.AreaP < peak.AreaP)
-                    .FirstOrDefault();
-            }
-
-            //--BPMZ_RT_p02
-            if (match == null)
-            {
-                match = blindwerte
-                    .Where(bw => bw.BPMZ_RT == peak.BPMZ_RT_p02)
-                    .Where(bw => 2 * bw.AreaP < peak.AreaP)
-                    .FirstOrDefault();
-            }
-
-            //--BPMZ_RT_m02
-            if (match == null)
-            {
-                match = blindwerte
-                    .Where(bw => bw.BPMZ_RT == peak.BPMZ_RT_m02)
-                    .Where(bw => 2 * bw.AreaP < peak.AreaP)
-                    .FirstOrDefault();
-            }
-
-            return match;
-        }
-
         private static List<Peak> ReadPeaks(SqlConnection connection)
         {
             var sql_select = @"
@@ -267,21 +223,16 @@ WHERE
                         tbBWZuordg.BWZuordg,
 
                         tbPeaks.ID_Peak,
-                        tbPeaks.BPMZ_RT,
-                        tbPeaks.BPMZ_RT_p01,
-                        tbPeaks.BPMZ_RT_p02,
-                        tbPeaks.BPMZ_RT_m01,
-						tbPeaks.BPMZ_RT_m02,
                         tbPeaks.AreaP,
                         tbPeaks.CAS,
                         tbPeaks.MF,
                         tbPeaks.LibRI,
                         tbPeaks.RIkorr,
                         tbPeaks.LibFile,
-
                         tbPeaks.SName,
-                        tbPeaks.BPMZ_RI
-
+                        tbPeaks.BPMZ_RI,
+                        tbPeaks.RTkorr,
+                        ROUND(BP_MZ, 0) BP_MZ_korr
                     FROM
                         dbo.tbPInfos tbPInfos
                         LEFT JOIN dbo.tbPeaks tbPeaks ON tbPInfos.PKenng = tbPeaks.PKenng
@@ -297,15 +248,16 @@ WHERE
             return peaks;
         }
 
-        private static List<Blindwert> ReadBlindwerte(SqlConnection connection,
+        private static List<Blindwert> ReadBlindwerte(
+            SqlConnection connection,
             string pKennung,
             SqlTransaction transaction)
         {
             var sql_select = @"
 SELECT
-	tbPeaks.ID_Peak,
-    tbPeaks.BPMZ_RT,
-    tbPeaks.AreaP
+    tbPeaks.AreaP,
+    tbPeaks.RTkorr,
+    ROUND(tbPeaks.BP_MZ, 0) BP_MZ_korr
 FROM
 	dbo.tbPeaks 
 WHERE 
@@ -316,7 +268,7 @@ WHERE
             {
                 PKenng = pKennung
             };
-            
+
             var blindWerte = connection.Query<Blindwert>(
                     sql_select,
                     parameter,

@@ -67,7 +67,7 @@
     <Compile Include="Importer\UpdateValues\FlaecheBWKlasse.cs" />
     <Compile Include="Importer\UpdateValues\MzRiNameKlasse.cs" />
     <Compile Include="Importer\UpdateValues\MzRtNameKlasse.cs" />
-    <Compile Include="Importer\UpdateValues\MzRtNamePlusKlasse.cs" />
+    <Compile Include="Importer\MzRtFinder\BlindwertFinder.cs" />
     <Compile Include="Importer\UpdateValues\PeaksMinusBW\Blindwert.cs" />
     <Compile Include="Importer\UpdateValues\PeaksMinusBW\Peak.cs" />
     <Compile Include="Importer\UpdateValues\PeaksMinusBW\PeaksMinusBWKlasse.cs" />
@@ -103,5 +103,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
