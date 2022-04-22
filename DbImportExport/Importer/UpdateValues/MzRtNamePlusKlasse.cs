@@ -77,7 +77,6 @@ namespace DbImportExport.Importer.UpdateValues
             }
         }
 
-
         private string SetztMzRtp01(double korrRt, double Mz)    //rausgezogene Berechnung
         {
             Mz = Math.Round(Mz, 0);
@@ -85,6 +84,7 @@ namespace DbImportExport.Importer.UpdateValues
             string mzrtp01NeuValue = (Mz + "-" + korrRt);
             return mzrtp01NeuValue;
         }
+
         private string SetztMzRtp02(double korrRt, double Mz)    //rausgezogene Berechnung
         {
             Mz = Math.Round(Mz, 0);
@@ -92,6 +92,7 @@ namespace DbImportExport.Importer.UpdateValues
             string mzrtp02NeuValue = (Mz + "-" + korrRt);
             return mzrtp02NeuValue;
         }
+
         private string SetztMzRtm01(double korrRt, double Mz)    //rausgezogene Berechnung
         {
             Mz = Math.Round(Mz, 0);
@@ -99,6 +100,7 @@ namespace DbImportExport.Importer.UpdateValues
             string mzrtm01NeuValue = (Mz + "-" + korrRt);
             return mzrtm01NeuValue;
         }
+
         private string SetztMzRtm02(double korrRt, double Mz)    //rausgezogene Berechnung
         {
             Mz = Math.Round(Mz, 0);

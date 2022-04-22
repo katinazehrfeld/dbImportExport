@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Dapper, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dapper.2.0.123\lib\net461\Dapper.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -68,6 +71,8 @@
     <Compile Include="Importer\UpdateValues\PeaksMinusBW\Blindwert.cs" />
     <Compile Include="Importer\UpdateValues\PeaksMinusBW\Peak.cs" />
     <Compile Include="Importer\UpdateValues\PeaksMinusBW\PeaksMinusBWKlasse.cs" />
+    <Compile Include="Importer\UpdateValues\PeaksMinusBW\GemessenerStandad.cs" />
+    <Compile Include="Importer\UpdateValues\PeaksMinusBW\SäuleBw.cs" />
     <Compile Include="Importer\UpdateValues\RiKorrigierenKlasse.cs" />
     <Compile Include="Importer\UpdateValues\RtKorrigierenKlasse.cs" />
     <Compile Include="Program.cs" />
@@ -84,6 +89,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

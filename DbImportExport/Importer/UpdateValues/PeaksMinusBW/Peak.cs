@@ -1,23 +1,31 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DbImportExport.Importer.UpdateValues.PeaksMinusBW
+﻿namespace DbImportExport.Importer.UpdateValues.PeaksMinusBW
 {
-    class Peak
+    internal class Peak
     {
-        public string PKenng {get; set;}
-		public string BWZuordg { get; set; }
+        public string PKenng { get; set; }
+        public string BWZuordg { get; set; }
         public int ID_Peak { get; set; }
-        public string Type { get; set; }
         public string BPMZ_RT { get; set; }
         public string BPMZ_RT_p01 { get; set; }
         public string BPMZ_RT_p02 { get; set; }
         public string BPMZ_RT_m01 { get; set; }
         public string BPMZ_RT_m02 { get; set; }
         public double AreaP { get; set; }
-        public double AreaBW { get; set; }
+
+        public double V_Extraktion_mL { get; set; }
+        public double Verdg_im_Vial { get; set; }
+        public double IS_Volumen_ml { get; set; }
+        public double InjektionsVolumen_ml { get; set; }
+        public string CAS { get; set; }
+
+        public double MF { get; set; }
+        public double? LibRI { get; set; }
+        public double? RIkorr { get; set; }
+        public string LibFile { get; set; }
+
+        public string SName { get; set; }
+        public string BPMZ_RI { get; set; }
+
+        public double IS_AreaP { get; set; }
     }
 }
