@@ -257,7 +257,7 @@ WHERE
 SELECT
     tbPeaks.AreaP,
     tbPeaks.RTkorr,
-    ROUND(tbPeaks.BP_MZ, 0) BP_MZ_korr
+    ROUND(tbPeaks.BP_MZ, 0) BP_MZ_korr,
 FROM
 	dbo.tbPeaks 
 WHERE 

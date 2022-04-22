@@ -5,7 +5,6 @@
         public string PKenng { get; set; }
         public string BWZuordg { get; set; }
         public int ID_Peak { get; set; }
-        public string BPMZ_RT { get; set; }
         public double AreaP { get; set; }
 
         public double V_Extraktion_mL { get; set; }

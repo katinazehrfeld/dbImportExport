@@ -32,9 +32,6 @@ namespace DbImportExport.Importer        //Namensklasse in der keine Namensgleic
             }
         }
 
-
-
-
         private void ProcessImport(string filename)  //void bedeutet, es kommt etwas rein,aber nichts raus
         {
             Log("Importing " + filename);       //neuer LogEintrag

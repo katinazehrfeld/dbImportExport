@@ -50,6 +50,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Report\DBGetReport.cs" />
     <Compile Include="Importer\UpdateValues\DBUpdateValues.cs" />
     <Compile Include="Importer\DBTestCASImport.cs" />
     <Compile Include="Importer\DBImportLimsinfo.cs" />
@@ -77,6 +78,8 @@
     <Compile Include="Importer\UpdateValues\RtKorrigierenKlasse.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Report\ReportPeak.cs" />
+    <Compile Include="Report\ReportProbe.cs" />
     <EmbeddedResource Include="DbImportExportMainForm.resx">
       <DependentUpon>DbImportExportMainForm.cs</DependentUpon>
     </EmbeddedResource>

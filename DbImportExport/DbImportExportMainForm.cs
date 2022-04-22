@@ -1,7 +1,9 @@
 ﻿using System;
+using System.IO;
 using System.Windows.Forms;
 using DbImportExport.Importer;
 using DbImportExport.Importer.UpdateValues;
+using DbImportExport.Report;
 
 namespace DbImportExport
 {
@@ -13,6 +15,7 @@ namespace DbImportExport
         private DBImportLimsinfo _limsInfoImporter = new DBImportLimsinfo();
         private DBTestCASImport _testCASImporter = new DBTestCASImport();
         private DBUpdateValues _werteKorrektur = new DBUpdateValues();
+        private DBGetReport _getReport = new DBGetReport();
 
         public DbImportExportMainForm()
         {
@@ -87,6 +90,23 @@ namespace DbImportExport
             try
             {
                 _werteKorrektur.UpdateData(Log);
+            }
+            catch (Exception ex)
+            {
+                Log("ERROR UPDATING:" + ex.Message + Environment.NewLine + ex.StackTrace);
+            }
+        }
+
+        private void btnQuery_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                var report = _getReport.GetReport(tbWasserwerk.Text, Log);
+                var filename = "c:\\temp\\queryReportResult.csv";
+
+                File.WriteAllText(filename, report);
+
+                Log($"report saved as {filename}");
             }
             catch (Exception ex)
             {
