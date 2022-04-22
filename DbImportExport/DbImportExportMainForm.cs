@@ -37,6 +37,9 @@ namespace DbImportExport
         {
             try
             {
+                //ToDo File open dialog
+
+
                 _bwZuordnungImporter.Import(Log);
             }
             catch (Exception ex)
