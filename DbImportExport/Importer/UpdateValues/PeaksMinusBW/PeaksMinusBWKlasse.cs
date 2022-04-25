@@ -23,7 +23,7 @@ namespace DbImportExport.Importer.UpdateValues.PeaksMinusBW
             var groups = peaks.GroupBy(peak => peak.PKenng);
 
             var gemesseneStandards =
-                connection.Query<GemessenerStandad>("SELECT * FROM dbo.GemesseneStandads").ToList();
+                connection.Query<GemessenerStandad>("SELECT * FROM dbo.GemesseneStandards").ToList();
             var säuleBw = connection.Query<SäuleBw>("SELECT * FROM dbo.Säule_BW").ToList();
 
             foreach (var group in groups)
@@ -37,7 +37,7 @@ namespace DbImportExport.Importer.UpdateValues.PeaksMinusBW
         private void ProcessProbe(SqlConnection connection,
             string probeKennung,
             List<Peak> peaks,
-            List<GemessenerStandad> gemesseneStandads,
+            List<GemessenerStandad> gemesseneStandards,
             List<SäuleBw> säuleBws)
         {
             using (var transaction = connection.BeginTransaction())
@@ -54,7 +54,7 @@ namespace DbImportExport.Importer.UpdateValues.PeaksMinusBW
                     var blindwert = new BlindwertFinder().SucheBlindwert(peak, blindwerte);
                     if (blindwert != null)
                     {
-                        UpdateBlindwert(connection, peak, blindwert, gemesseneStandads, säuleBws, transaction);
+                        UpdateBlindwert(connection, peak, blindwert, gemesseneStandards, säuleBws, transaction);
                     }
                 }
 
@@ -104,7 +104,7 @@ namespace DbImportExport.Importer.UpdateValues.PeaksMinusBW
             6: ODER(O17<10000,Y17="Säule",Y17="BW",Y17="IS") <-- Paek.CAS == Säule_BW.CAS
             5: G17<80  <-- TbPaekks.MF < 80
             4: UND(ABS(E17-U17)>100,NICHT(E17="")) <--  tbPeak.LibRi != NULL  &&  abs( tbPeak.LibRi - Peak.RiKorr) > 100 
-            1: UND(AI17="x",NICHT(E17="")) <--  tbPeak.LibRi != NULL  && GemesseneStandads.CAS."x" =="x"
+            1: UND(AI17="x",NICHT(E17="")) <--  tbPeak.LibRi != NULL  && GemesseneStandards.CAS."x" =="x"
             3: UND(ODER(
                         J17="NIST20.L",
                         J17="NIST17.L",
