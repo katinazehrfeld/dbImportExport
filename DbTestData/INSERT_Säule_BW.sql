@@ -24,6 +24,4 @@ values
 (NULL,					'GC_PBMZ_327_RI_1891',		'Säule',		'GC_PBMZ_327_RI_1891'),
 (NULL,					'GC_PBMZ_281_RI_1009',		'Säule',		'GC_PBMZ_281_RI_1009'),
 (NULL,					'GC_PBMZ_147_RI_2285',		'Säule',		'GC_PBMZ_147_RI_2285'),
-('5324-68-5',			NULL,						'IS',			'alpha HCH d6 (IS)'),
-('1486-01-7',			NULL,						'IS',			'ISTD_BIPHENYL-D10'),
-('1520-96-3',			NULL,						'IS',			'Perylene-D12')
+

@@ -57,8 +57,8 @@ values
 ('85-01-8','x','1794.7289','Phenanthrene','PAK, Std'),
 ('86-73-7','x','1592.6817','Fluorene','PAK, Std'),
 ('91-20-3','x','1185.3303','Naphthalene','PAK, Std'),
-('???','IS','2479.5569','Benz[a]anthracene-D12','PAK, Std'),
-('???','IS','1587.5237','Fluorene-D10','PAK, Std'),
+('1718-53-2','IS','2479.5569','Benz[a]anthracene-D12','PAK, Std'),
+('81103-79-9','IS','1587.5237','Fluorene-D10','PAK, Std'),
 ('117-81-7','x','2558.7459','Bis(2-ethylhexyl) phthalate','PHTH std'),
 ('117-84-0','x','2745.9612','Di-n-octyl phthalate','PHTH std'),
 ('131-11-3','x','1454','Dimethyl phthalate','PHTH std'),
@@ -88,4 +88,6 @@ values
 ('78-40-0','x','1137','Triethyl phosphate','std'),
 ('84057-84-1 ','x','2547',' Lamotrigine','Std'),
 ('934-34-9','x','1630','2(3H)-Benzothiazolone','std'),
+('1031-07-8','x','2329','Endosulfan sulfate','CKW std'),
+('15067-26-2','IS','1475','Acenaphthene-d10','PAK, Std'),
 ('98-86-2','x','1066','Acetophenone','std')
