@@ -28,7 +28,7 @@ namespace DbImportExport.Importer.UpdateValues
 	                            LEFT JOIN dbo.tbPInfos probeInfo ON messung.PKenng = probeInfo.PKenng
                             WHERE 
                                 messung.RTkorr IS NULL
-                                AND probeInfo.BWabgezogen IS NULL
+                                
                                 AND probeInfo.RT_IS_Pr IS NOT NULL
                                 
                             ";
