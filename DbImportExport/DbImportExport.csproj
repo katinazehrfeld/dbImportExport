@@ -72,7 +72,7 @@
     <Compile Include="Importer\UpdateValues\PeaksMinusBW\Blindwert.cs" />
     <Compile Include="Importer\UpdateValues\PeaksMinusBW\Peak.cs" />
     <Compile Include="Importer\UpdateValues\PeaksMinusBW\PeaksMinusBWKlasse.cs" />
-    <Compile Include="Importer\UpdateValues\PeaksMinusBW\GemessenerStandad.cs" />
+    <Compile Include="Importer\UpdateValues\PeaksMinusBW\GemessenerStandard.cs" />
     <Compile Include="Importer\UpdateValues\PeaksMinusBW\SäuleBw.cs" />
     <Compile Include="Importer\UpdateValues\RiKorrigierenKlasse.cs" />
     <Compile Include="Importer\UpdateValues\RtKorrigierenKlasse.cs" />

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DbImportExport.Importer.UpdateValues.PeaksMinusBW
 {
-    class GemessenerStandad
+    class GemessenerStandard
     {
         public string CAS { get; set; }
         public string Type { get; set; }

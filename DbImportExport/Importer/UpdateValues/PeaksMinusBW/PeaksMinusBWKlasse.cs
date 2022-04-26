@@ -23,7 +23,7 @@ namespace DbImportExport.Importer.UpdateValues.PeaksMinusBW
             var groups = peaks.GroupBy(peak => peak.PKenng);
 
             var gemesseneStandards =
-                connection.Query<GemessenerStandad>("SELECT * FROM dbo.GemesseneStandards").ToList();
+                connection.Query<GemessenerStandard>("SELECT * FROM dbo.GemesseneStandards").ToList();
             var säuleBw = connection.Query<SäuleBw>("SELECT * FROM dbo.Säule_BW").ToList();
 
             foreach (var group in groups)
@@ -37,7 +37,7 @@ namespace DbImportExport.Importer.UpdateValues.PeaksMinusBW
         private void ProcessProbe(SqlConnection connection,
             string probeKennung,
             List<Peak> peaks,
-            List<GemessenerStandad> gemesseneStandards,
+            List<GemessenerStandard> gemesseneStandards,
             List<SäuleBw> säuleBws)
         {
             using (var transaction = connection.BeginTransaction())
@@ -71,7 +71,7 @@ namespace DbImportExport.Importer.UpdateValues.PeaksMinusBW
             SqlConnection connection,
             Peak peak,
             Blindwert blindwert,
-            List<GemessenerStandad> gemessenerStandads,
+            List<GemessenerStandard> gemessenerStandards,
             List<SäuleBw> säuleBws,
             DbTransaction transaction)
         {
@@ -133,7 +133,7 @@ namespace DbImportExport.Importer.UpdateValues.PeaksMinusBW
             {
                 kategorie = 4;
             }
-            else if (peak.LibRI.HasValue && gemessenerStandads.FirstOrDefault(s => s.CAS == peak.CAS)?.Type == "x")
+            else if (peak.LibRI.HasValue && gemessenerStandards.FirstOrDefault(s => s.CAS == peak.CAS)?.Type == "x")
             {
                 kategorie = 1;
             }
@@ -165,12 +165,18 @@ namespace DbImportExport.Importer.UpdateValues.PeaksMinusBW
                         sonst: pbPeak.Name_BPMZ_RI = tbPeak.BPMZ_RI
             */
 
-            var name_BPMZ_RI = kategorie == 1 || kategorie == 2 || kategorie == 3
+            var name_BPMZ_RI = peak.BPMZ_RI;
+            if (kategorie == 1 || kategorie == 2 || kategorie == 3)
+            {
+                name_BPMZ_RI = peak.CAS;
+            }
+            /*    
+                = kategorie == 1 || kategorie == 2 || kategorie == 3
                 ? peak.SName
                 : peak.BPMZ_RI;
 
 
-            /*
+           
             //Flächenprozent:
             
             - Neue Spalte
