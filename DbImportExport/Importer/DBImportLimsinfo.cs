@@ -8,7 +8,8 @@ using System.Windows.Forms;
 
 namespace DbImportExport.Importer
 {
-    
+    // !!!Achtung, damit beim Importieren der Limstabelle auch Umlaute(Ü,Ä;Ö) erkannt werden
+    // muss die CSV-Datei als "CSV UTF-8 (durch Trennzeichen getrennt)(*.csv)"Dateityp gespeichert werden!!!
     public class DBImportLimsinfo
     {
         private Action<string> Log;

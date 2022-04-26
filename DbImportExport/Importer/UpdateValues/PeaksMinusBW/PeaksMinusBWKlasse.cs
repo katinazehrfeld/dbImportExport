@@ -19,15 +19,15 @@ namespace DbImportExport.Importer.UpdateValues.PeaksMinusBW
 
         public void PeaksMinusBW(SqlConnection connection)
         {
-            var peaks = ReadPeaks(connection);
-            var groups = peaks.GroupBy(peak => peak.PKenng);
+            var peaks = ReadPeaks(connection);                  //Liste die über ReadPeaks-Methode aus Datenbank ausgelesen werden
+            var groups = peaks.GroupBy(peak => peak.PKenng);    //Sortierung nach Probenkennung
 
             var gemesseneStandards =
                 connection.Query<GemessenerStandard>("SELECT * FROM dbo.GemesseneStandards").ToList();
             var säuleBw = connection.Query<SäuleBw>("SELECT * FROM dbo.Säule_BW").ToList();
 
-            foreach (var group in groups)
-            {
+            foreach (var group in groups)       //für jede ZEILE in der Liste tue folgendes
+            {                                   //öffne Methode ProcessProbe ...
                 ProcessProbe(connection, group.Key, group.ToList(), gemesseneStandards, säuleBw);
             }
 
@@ -52,7 +52,6 @@ namespace DbImportExport.Importer.UpdateValues.PeaksMinusBW
                 foreach (var peak in peaks)
                 {
                     var blindwert = new BlindwertFinder().SucheBlindwert(peak, blindwerte);
-                    if (blindwert != null)
                     {
                         UpdateBlindwert(connection, peak, blindwert, gemesseneStandards, säuleBws, transaction);
                     }
@@ -75,7 +74,16 @@ namespace DbImportExport.Importer.UpdateValues.PeaksMinusBW
             List<SäuleBw> säuleBws,
             DbTransaction transaction)
         {
-            var areaNeu = peak.AreaP - blindwert.AreaP;
+            double  areaNeu;
+            if (blindwert == null)
+            {
+                areaNeu = peak.AreaP;                   //wenn kein BW gefunden, dann Peakfläche wie vorher
+            }
+            else
+            {
+                areaNeu= peak.AreaP - blindwert.AreaP; //sonst PeakFläche minus BW
+            }
+            
 
             //                                Verdünnungsfaktor        Vlumen IS                        Volumen Spritze
             // O2*1000/Proben_Infos!$J$3  *   Proben_Infos!$K$3   *   (0.05/Proben_Infos!$L$3)   *   (0.001/Proben_Infos!$M$3)
@@ -86,10 +94,10 @@ namespace DbImportExport.Importer.UpdateValues.PeaksMinusBW
             //Vol Spritze:          pinfo.Injektionsvolumen_ml
 
 
-            areaNeu = areaNeu * 1000D / peak.V_Extraktion_mL *
+            areaNeu = areaNeu * Konstanten.Tausend_ml / peak.V_Extraktion_mL *
                       peak.Verdg_im_Vial *
-                      (0.05 / peak.IS_Volumen_ml) *
-                      (0.001 / peak.InjektionsVolumen_ml);
+                      (Konstanten.fünfzigMikroLiter_in_ml / peak.IS_Volumen_ml) *
+                      (Konstanten.einMikroLiter_in_ml / peak.InjektionsVolumen_ml);
 
             /*
             =WENN(ODER(O17<10000,Y17="Säule",Y17="BW",Y17="IS"),6,
@@ -120,16 +128,16 @@ namespace DbImportExport.Importer.UpdateValues.PeaksMinusBW
             */
 
             var kategorie = 2;
-            if (areaNeu < 10000 || säuleBws.Any(s => s.CAS == peak.CAS))
+            if (areaNeu < Konstanten.Min_10000Fläche || säuleBws.Any(s => s.CAS == peak.CAS))
             {
                 kategorie = 6;
             }
-            else if (peak.MF < 80)
+            else if (peak.MF < Konstanten.AchtzigProzent)
             {
                 kategorie = 5;
             }
             else if (peak.LibRI.HasValue && peak.RIkorr.HasValue &&
-                     (peak.LibRI.Value - peak.RIkorr.Value) > 100) //ToDo: peak.RIkorr.HasValue???
+                     Math.Abs(peak.LibRI.Value - peak.RIkorr.Value) > 100) //ToDo: peak.RIkorr.HasValue???
             {
                 kategorie = 4;
             }
@@ -138,7 +146,7 @@ namespace DbImportExport.Importer.UpdateValues.PeaksMinusBW
                 kategorie = 1;
             }
             else if (peak.LibRI.HasValue && (
-                         peak.LibFile == "" ||
+                         //peak.LibFile == "" ||            //diesen Fall dürfte es nicht geben
                          peak.LibFile == "NIST20.L" ||
                          peak.LibFile == "NIST17.L" ||
                          peak.LibFile == "NIST11.L" ||
@@ -185,21 +193,21 @@ namespace DbImportExport.Importer.UpdateValues.PeaksMinusBW
             */
 
 
-            var flaechenProzent = (int)Math.Round(100D / peak.IS_AreaP * areaNeu);
+            var flaechenProzent = (int)Math.Round(Konstanten.HundertProzent / peak.IS_AreaP * areaNeu); //100D: Zahl 100 als double
 
 
             // ToDo: in tablePaeks Spalte Peak_minus_BW updaten (areaNeu)
             // ToDo: Column TbPeak.Kategorie -> update!
 
-            var sqlStatementUpdatePeak = @"
-UPDATE dbo.tbPeaks 
-SET 
-    Peak_minus_BW = @areaNeu,
-    Kategorie = @kategorie,
-    Name_BPMZ_RI = @name_BPMZ_RI,
-    AreaPercent = @flaechenProzent
-WHERE
-    ID_Peak = @ID_Peak";
+            var sqlStatementUpdatePeak = @"     
+                UPDATE dbo.tbPeaks              
+                SET 
+                    Peak_minus_BW = @areaNeu,
+                    Kategorie = @kategorie,
+                    Name_BPMZ_RI = @name_BPMZ_RI,
+                    AreaPercent = @flaechenProzent
+                WHERE
+                    ID_Peak = @ID_Peak";
 
             connection.Execute(
                 sqlStatementUpdatePeak,
@@ -211,10 +219,10 @@ WHERE
                     name_BPMZ_RI = name_BPMZ_RI,
                     flaechenProzent = flaechenProzent
                 },
-                transaction);
+                transaction);       //Übergabe der neuen Werte an die Datenbank: berechnetePeakfläche, Kategorie, SysName,FlächenProzent
         }
 
-        private static List<Peak> ReadPeaks(SqlConnection connection)
+        private static List<Peak> ReadPeaks(SqlConnection connection)   //Datenbank-AusleseMethode für ProbenPeaks
         {
             var sql_select = @"
                     SELECT
@@ -250,26 +258,26 @@ WHERE
 						AND tbPeaks.Type = 'Sample'
 ";
 
-            var peaks = connection.Query<Peak>(sql_select).ToList();
+            var peaks = connection.Query<Peak>(sql_select).ToList();    //erstellt Listenfeld mit ausgelesenen Werten
             return peaks;
         }
 
-        private static List<Blindwert> ReadBlindwerte(
-            SqlConnection connection,
+        private static List<Blindwert> ReadBlindwerte(SqlConnection connection,    
             string pKennung,
-            SqlTransaction transaction)
+            SqlTransaction transaction)     //Datenbank-AusleseMethode für BlindwertPeaks
+                                            //hier werden nur benötigte BWs zur den Proben eingelesen
         {
             var sql_select = @"
-SELECT
-    tbPeaks.AreaP,
-    tbPeaks.RTkorr,
-    ROUND(tbPeaks.BP_MZ, 0) BP_MZ_korr,
-FROM
-	dbo.tbPeaks 
-WHERE 
-	tbPeaks.PKenng = @PKenng
-	AND tbPeaks.Type = 'Blank'
-";
+            SELECT
+                tbPeaks.AreaP,
+                tbPeaks.RTkorr,
+                ROUND(tbPeaks.BP_MZ, 0) BP_MZ_korr,
+            FROM
+	            dbo.tbPeaks 
+            WHERE 
+	            tbPeaks.PKenng = @PKenng
+	            AND tbPeaks.Type = 'Blank'
+            ";
             var parameter = new
             {
                 PKenng = pKennung
@@ -279,7 +287,7 @@ WHERE
                     sql_select,
                     parameter,
                     transaction)
-                .ToList();
+                .ToList();      //sammelt alle BWs in Liste für die gerade selektierten Proben
 
             return blindWerte;
         }
