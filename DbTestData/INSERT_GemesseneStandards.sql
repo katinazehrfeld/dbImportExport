@@ -1,4 +1,4 @@
-insert into  dbo.GemesseneStandads
+insert into  dbo.GemesseneStandards
 (CAS, Type, RILib, Name, Remark)
 values
 
