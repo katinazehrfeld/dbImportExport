@@ -16,7 +16,7 @@ namespace DbImportExport
         private DBTestCASImport _testCASImporter = new DBTestCASImport();
         private DBUpdateValues _werteKorrektur = new DBUpdateValues();
         private DBGetReport _getReport = new DBGetReport();
-
+        private DBImportCAS _casImporter = new DBImportCAS();
         public DbImportExportMainForm()
         {
             InitializeComponent();
@@ -114,6 +114,18 @@ namespace DbImportExport
             catch (Exception ex)
             {
                 Log("ERROR UPDATING:" + ex.Message + Environment.NewLine + ex.StackTrace);
+            }
+        }
+
+        private void bt_import_cas_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                _casImporter.Import(Log);
+            }
+            catch (Exception ex)
+            {
+                Log("ERROR IMPORTING PROBENINFO:" + ex.Message);
             }
         }
     }

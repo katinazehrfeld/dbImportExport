@@ -36,7 +36,7 @@ namespace DbImportExport
             this.bt_import_BW_zuordg = new System.Windows.Forms.Button();
             this.bt_import_Pr_Info = new System.Windows.Forms.Button();
             this.bt_import_lims_info = new System.Windows.Forms.Button();
-            this.bt_test_cas_import = new System.Windows.Forms.Button();
+            this.bt_import_cas = new System.Windows.Forms.Button();
             this.btnUpdateValues = new System.Windows.Forms.Button();
             this.btnQuery = new System.Windows.Forms.Button();
             this.tbWasserwerk = new System.Windows.Forms.TextBox();
@@ -45,10 +45,10 @@ namespace DbImportExport
             // btImport
             // 
             this.btImport.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btImport.Location = new System.Drawing.Point(18, 18);
-            this.btImport.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btImport.Location = new System.Drawing.Point(16, 14);
+            this.btImport.Margin = new System.Windows.Forms.Padding(4);
             this.btImport.Name = "btImport";
-            this.btImport.Size = new System.Drawing.Size(196, 58);
+            this.btImport.Size = new System.Drawing.Size(174, 46);
             this.btImport.TabIndex = 0;
             this.btImport.Text = "Import Messung";
             this.btImport.UseVisualStyleBackColor = true;
@@ -59,10 +59,10 @@ namespace DbImportExport
             this.rtbLog.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.rtbLog.Location = new System.Drawing.Point(224, 18);
-            this.rtbLog.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.rtbLog.Location = new System.Drawing.Point(199, 14);
+            this.rtbLog.Margin = new System.Windows.Forms.Padding(4);
             this.rtbLog.Name = "rtbLog";
-            this.rtbLog.Size = new System.Drawing.Size(1710, 1051);
+            this.rtbLog.Size = new System.Drawing.Size(1580, 616);
             this.rtbLog.TabIndex = 2;
             this.rtbLog.Text = "";
             // 
@@ -75,10 +75,10 @@ namespace DbImportExport
             // bt_import_BW_zuordg
             // 
             this.bt_import_BW_zuordg.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.bt_import_BW_zuordg.Location = new System.Drawing.Point(18, 86);
-            this.bt_import_BW_zuordg.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.bt_import_BW_zuordg.Location = new System.Drawing.Point(16, 69);
+            this.bt_import_BW_zuordg.Margin = new System.Windows.Forms.Padding(4);
             this.bt_import_BW_zuordg.Name = "bt_import_BW_zuordg";
-            this.bt_import_BW_zuordg.Size = new System.Drawing.Size(196, 58);
+            this.bt_import_BW_zuordg.Size = new System.Drawing.Size(174, 46);
             this.bt_import_BW_zuordg.TabIndex = 7;
             this.bt_import_BW_zuordg.Text = "Import BW Zuordnung";
             this.bt_import_BW_zuordg.UseVisualStyleBackColor = true;
@@ -87,10 +87,10 @@ namespace DbImportExport
             // bt_import_Pr_Info
             // 
             this.bt_import_Pr_Info.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.bt_import_Pr_Info.Location = new System.Drawing.Point(18, 154);
-            this.bt_import_Pr_Info.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.bt_import_Pr_Info.Location = new System.Drawing.Point(16, 123);
+            this.bt_import_Pr_Info.Margin = new System.Windows.Forms.Padding(4);
             this.bt_import_Pr_Info.Name = "bt_import_Pr_Info";
-            this.bt_import_Pr_Info.Size = new System.Drawing.Size(196, 58);
+            this.bt_import_Pr_Info.Size = new System.Drawing.Size(174, 46);
             this.bt_import_Pr_Info.TabIndex = 8;
             this.bt_import_Pr_Info.Text = "Import Proben Infos";
             this.bt_import_Pr_Info.UseVisualStyleBackColor = true;
@@ -98,32 +98,32 @@ namespace DbImportExport
             // 
             // bt_import_lims_info
             // 
-            this.bt_import_lims_info.Location = new System.Drawing.Point(18, 223);
-            this.bt_import_lims_info.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.bt_import_lims_info.Location = new System.Drawing.Point(16, 178);
+            this.bt_import_lims_info.Margin = new System.Windows.Forms.Padding(4);
             this.bt_import_lims_info.Name = "bt_import_lims_info";
-            this.bt_import_lims_info.Size = new System.Drawing.Size(196, 58);
+            this.bt_import_lims_info.Size = new System.Drawing.Size(174, 46);
             this.bt_import_lims_info.TabIndex = 9;
             this.bt_import_lims_info.Text = "Import Lims Infos";
             this.bt_import_lims_info.UseVisualStyleBackColor = true;
             this.bt_import_lims_info.Click += new System.EventHandler(this.btnImportLimsinfo);
             // 
-            // bt_test_cas_import
+            // bt_import_cas
             // 
-            this.bt_test_cas_import.Location = new System.Drawing.Point(18, 291);
-            this.bt_test_cas_import.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.bt_test_cas_import.Name = "bt_test_cas_import";
-            this.bt_test_cas_import.Size = new System.Drawing.Size(196, 58);
-            this.bt_test_cas_import.TabIndex = 10;
-            this.bt_test_cas_import.Text = "Test CAS Import";
-            this.bt_test_cas_import.UseVisualStyleBackColor = true;
-            this.bt_test_cas_import.Click += new System.EventHandler(this.btnTestImportCAS);
+            this.bt_import_cas.Location = new System.Drawing.Point(16, 233);
+            this.bt_import_cas.Margin = new System.Windows.Forms.Padding(4);
+            this.bt_import_cas.Name = "bt_import_cas";
+            this.bt_import_cas.Size = new System.Drawing.Size(174, 46);
+            this.bt_import_cas.TabIndex = 10;
+            this.bt_import_cas.Text = "CAS Import";
+            this.bt_import_cas.UseVisualStyleBackColor = true;
+            this.bt_import_cas.Click += new System.EventHandler(this.bt_import_cas_Click);
             // 
             // btnUpdateValues
             // 
-            this.btnUpdateValues.Location = new System.Drawing.Point(18, 449);
-            this.btnUpdateValues.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnUpdateValues.Location = new System.Drawing.Point(16, 359);
+            this.btnUpdateValues.Margin = new System.Windows.Forms.Padding(4);
             this.btnUpdateValues.Name = "btnUpdateValues";
-            this.btnUpdateValues.Size = new System.Drawing.Size(196, 58);
+            this.btnUpdateValues.Size = new System.Drawing.Size(174, 46);
             this.btnUpdateValues.TabIndex = 13;
             this.btnUpdateValues.Text = "Werte korrigieren";
             this.btnUpdateValues.UseVisualStyleBackColor = true;
@@ -131,10 +131,10 @@ namespace DbImportExport
             // 
             // btnQuery
             // 
-            this.btnQuery.Location = new System.Drawing.Point(18, 1090);
-            this.btnQuery.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnQuery.Location = new System.Drawing.Point(13, 624);
+            this.btnQuery.Margin = new System.Windows.Forms.Padding(4);
             this.btnQuery.Name = "btnQuery";
-            this.btnQuery.Size = new System.Drawing.Size(196, 58);
+            this.btnQuery.Size = new System.Drawing.Size(174, 46);
             this.btnQuery.TabIndex = 14;
             this.btnQuery.Text = "Abfrage";
             this.btnQuery.UseVisualStyleBackColor = true;
@@ -142,27 +142,28 @@ namespace DbImportExport
             // 
             // tbWasserwerk
             // 
-            this.tbWasserwerk.Location = new System.Drawing.Point(224, 1106);
+            this.tbWasserwerk.Location = new System.Drawing.Point(199, 636);
+            this.tbWasserwerk.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbWasserwerk.Name = "tbWasserwerk";
-            this.tbWasserwerk.Size = new System.Drawing.Size(592, 26);
+            this.tbWasserwerk.Size = new System.Drawing.Size(527, 22);
             this.tbWasserwerk.TabIndex = 15;
             this.tbWasserwerk.Text = "WDF";
             // 
             // DbImportExportMainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(2016, 1228);
+            this.ClientSize = new System.Drawing.Size(1792, 676);
             this.Controls.Add(this.tbWasserwerk);
             this.Controls.Add(this.btnQuery);
             this.Controls.Add(this.btnUpdateValues);
-            this.Controls.Add(this.bt_test_cas_import);
+            this.Controls.Add(this.bt_import_cas);
             this.Controls.Add(this.bt_import_lims_info);
             this.Controls.Add(this.bt_import_Pr_Info);
             this.Controls.Add(this.bt_import_BW_zuordg);
             this.Controls.Add(this.rtbLog);
             this.Controls.Add(this.btImport);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "DbImportExportMainForm";
             this.Text = "Db Import Export";
             this.ResumeLayout(false);
@@ -178,10 +179,11 @@ namespace DbImportExport
         private System.Windows.Forms.Button bt_import_BW_zuordg;
         private System.Windows.Forms.Button bt_import_Pr_Info;
         private System.Windows.Forms.Button bt_import_lims_info;
-        private System.Windows.Forms.Button bt_test_cas_import;
+        private System.Windows.Forms.Button bt_import_cas;
         private System.Windows.Forms.Button btnUpdateValues;
         private System.Windows.Forms.Button btnQuery;
         private System.Windows.Forms.TextBox tbWasserwerk;
+        //private System.Windows.Forms.Button bt_cas_import;
     }
 }
 
