@@ -50,7 +50,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Importer\DBImportBWBstoffe.cs" />
     <Compile Include="Importer\DBImportCAS.cs" />
+    <Compile Include="Importer\DBImportUAstoffe.cs" />
     <Compile Include="Report\DBGetReport.cs" />
     <Compile Include="Importer\UpdateValues\DBUpdateValues.cs" />
     <Compile Include="Importer\DBTestCASImport.cs" />

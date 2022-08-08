@@ -40,12 +40,13 @@ namespace DbImportExport
             this.btnUpdateValues = new System.Windows.Forms.Button();
             this.btnQuery = new System.Windows.Forms.Button();
             this.tbWasserwerk = new System.Windows.Forms.TextBox();
+            this.bt_import_UA = new System.Windows.Forms.Button();
+            this.bt_import_BWB = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btImport
             // 
-            this.btImport.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btImport.Location = new System.Drawing.Point(16, 14);
+            this.btImport.Location = new System.Drawing.Point(17, 14);
             this.btImport.Margin = new System.Windows.Forms.Padding(4);
             this.btImport.Name = "btImport";
             this.btImport.Size = new System.Drawing.Size(174, 46);
@@ -62,7 +63,7 @@ namespace DbImportExport
             this.rtbLog.Location = new System.Drawing.Point(199, 14);
             this.rtbLog.Margin = new System.Windows.Forms.Padding(4);
             this.rtbLog.Name = "rtbLog";
-            this.rtbLog.Size = new System.Drawing.Size(1580, 616);
+            this.rtbLog.Size = new System.Drawing.Size(1053, 616);
             this.rtbLog.TabIndex = 2;
             this.rtbLog.Text = "";
             // 
@@ -74,8 +75,7 @@ namespace DbImportExport
             // 
             // bt_import_BW_zuordg
             // 
-            this.bt_import_BW_zuordg.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.bt_import_BW_zuordg.Location = new System.Drawing.Point(16, 69);
+            this.bt_import_BW_zuordg.Location = new System.Drawing.Point(17, 69);
             this.bt_import_BW_zuordg.Margin = new System.Windows.Forms.Padding(4);
             this.bt_import_BW_zuordg.Name = "bt_import_BW_zuordg";
             this.bt_import_BW_zuordg.Size = new System.Drawing.Size(174, 46);
@@ -86,8 +86,7 @@ namespace DbImportExport
             // 
             // bt_import_Pr_Info
             // 
-            this.bt_import_Pr_Info.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.bt_import_Pr_Info.Location = new System.Drawing.Point(16, 123);
+            this.bt_import_Pr_Info.Location = new System.Drawing.Point(17, 123);
             this.bt_import_Pr_Info.Margin = new System.Windows.Forms.Padding(4);
             this.bt_import_Pr_Info.Name = "bt_import_Pr_Info";
             this.bt_import_Pr_Info.Size = new System.Drawing.Size(174, 46);
@@ -116,11 +115,11 @@ namespace DbImportExport
             this.bt_import_cas.TabIndex = 10;
             this.bt_import_cas.Text = "CAS Import";
             this.bt_import_cas.UseVisualStyleBackColor = true;
-            this.bt_import_cas.Click += new System.EventHandler(this.bt_import_cas_Click);
+            this.bt_import_cas.Click += new System.EventHandler(this.btnImportCAS);
             // 
             // btnUpdateValues
             // 
-            this.btnUpdateValues.Location = new System.Drawing.Point(16, 359);
+            this.btnUpdateValues.Location = new System.Drawing.Point(17, 445);
             this.btnUpdateValues.Margin = new System.Windows.Forms.Padding(4);
             this.btnUpdateValues.Name = "btnUpdateValues";
             this.btnUpdateValues.Size = new System.Drawing.Size(174, 46);
@@ -149,11 +148,35 @@ namespace DbImportExport
             this.tbWasserwerk.TabIndex = 15;
             this.tbWasserwerk.Text = "WDF";
             // 
+            // bt_import_UA
+            // 
+            this.bt_import_UA.Location = new System.Drawing.Point(17, 287);
+            this.bt_import_UA.Margin = new System.Windows.Forms.Padding(4);
+            this.bt_import_UA.Name = "bt_import_UA";
+            this.bt_import_UA.Size = new System.Drawing.Size(174, 46);
+            this.bt_import_UA.TabIndex = 16;
+            this.bt_import_UA.Text = "UA Import";
+            this.bt_import_UA.UseVisualStyleBackColor = true;
+            this.bt_import_UA.Click += new System.EventHandler(this.btnImportUA);
+            // 
+            // bt_import_BWB
+            // 
+            this.bt_import_BWB.Location = new System.Drawing.Point(17, 341);
+            this.bt_import_BWB.Margin = new System.Windows.Forms.Padding(4);
+            this.bt_import_BWB.Name = "bt_import_BWB";
+            this.bt_import_BWB.Size = new System.Drawing.Size(174, 46);
+            this.bt_import_BWB.TabIndex = 17;
+            this.bt_import_BWB.Text = "BWB Import";
+            this.bt_import_BWB.UseVisualStyleBackColor = true;
+            this.bt_import_BWB.Click += new System.EventHandler(this.btnImportBWB);
+            // 
             // DbImportExportMainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1792, 676);
+            this.ClientSize = new System.Drawing.Size(1265, 676);
+            this.Controls.Add(this.bt_import_BWB);
+            this.Controls.Add(this.bt_import_UA);
             this.Controls.Add(this.tbWasserwerk);
             this.Controls.Add(this.btnQuery);
             this.Controls.Add(this.btnUpdateValues);
@@ -183,7 +206,8 @@ namespace DbImportExport
         private System.Windows.Forms.Button btnUpdateValues;
         private System.Windows.Forms.Button btnQuery;
         private System.Windows.Forms.TextBox tbWasserwerk;
-        //private System.Windows.Forms.Button bt_cas_import;
+        private System.Windows.Forms.Button bt_import_UA;
+        private System.Windows.Forms.Button bt_import_BWB;
     }
 }
 

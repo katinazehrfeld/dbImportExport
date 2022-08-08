@@ -17,6 +17,8 @@ namespace DbImportExport
         private DBUpdateValues _werteKorrektur = new DBUpdateValues();
         private DBGetReport _getReport = new DBGetReport();
         private DBImportCAS _casImporter = new DBImportCAS();
+        private DBImportUAstoffe _uaImporter = new DBImportUAstoffe();
+        private DBImportBWBstoffe _bwbImporter = new DBImportBWBstoffe();
         public DbImportExportMainForm()
         {
             InitializeComponent();
@@ -117,11 +119,35 @@ namespace DbImportExport
             }
         }
 
-        private void bt_import_cas_Click(object sender, EventArgs e)
+        private void btnImportCAS(object sender, EventArgs e)
         {
             try
             {
                 _casImporter.Import(Log);
+            }
+            catch (Exception ex)
+            {
+                Log("ERROR IMPORTING PROBENINFO:" + ex.Message);
+            }
+        }
+
+        private void btnImportUA(object sender, EventArgs e)
+        {
+            try
+            {
+                _uaImporter.Import(Log);
+            }
+            catch (Exception ex)
+            {
+                Log("ERROR IMPORTING PROBENINFO:" + ex.Message);
+            }
+        }
+
+        private void btnImportBWB(object sender, EventArgs e)
+        {
+            try
+            {
+                _bwbImporter.Import(Log);
             }
             catch (Exception ex)
             {
