@@ -83,15 +83,19 @@ namespace DbImportExport.Importer
             var sql = @"
 INSERT INTO dbo.tb_cas_ikey 
       (      
-       CAS_NIST_name
+       Zeile
+      ,CAS_NIST_name
       ,InChiKey
+      ,Woher
       ,EC_No
+      ,Norman_SusDat_ID
       ,Import_Date
       )
-VALUES ( @CAS_NIST_name, @InChiKey, @EC_No, @Import_Date)
+VALUES ( @Zeile, @CAS_NIST_name, @InChiKey, @Woher, @EC_No, @Norman_SusDat_ID, @Import_Date)
 ";
             //Spalten in der CSV_Datei
-            //EC_No[0] CAS_NIST_mit_Vorsatz[1] CAS_NIST[2] InChiKey[3] t[4]	LIB[5]	
+            //Zeile [0] CAS_NIST_name[1] InChiKey[2] Woher[3] EC_No[4] Norman_SusDat_ID[5]
+            //	
 
             var lineItems = SplitSpecial(line);  //Code zu SplitSpzial siehe weiter unten 
 
@@ -99,8 +103,8 @@ VALUES ( @CAS_NIST_name, @InChiKey, @EC_No, @Import_Date)
             using (var command = connection.CreateCommand())
             {
                 command.Transaction = transaction;
-                command.CommandText = "SELECT count(*) FROM dbo.tb_cas_ikey WHERE CAS_NIST_name = @CAS_NIST_name";
-                command.Parameters.AddWithValue("@CAS_NIST_name", lineItems[1]);
+                command.CommandText = "SELECT count(*) FROM dbo.tb_cas_ikey WHERE Zeile = @Zeile";
+                command.Parameters.AddWithValue("@Zeile", lineItems[5]);
 
                 lineCount = (int)command.ExecuteScalar();
             }
@@ -114,10 +118,13 @@ VALUES ( @CAS_NIST_name, @InChiKey, @EC_No, @Import_Date)
                     command.CommandText = sql;
                     // die Zahl bei "lineItems[8]" in den eckigen Klammern gibt an aus welcher Spalte der csvDatei die Daten eingelesen werden sollen (1.Spalte=0, 2.Sp =1,...)
 
+                    command.Parameters.AddWithValue("@Zeile", lineItems[0]);
                     command.Parameters.AddWithValue("@CAS_NIST_name", lineItems[1]);//CAS_NIST_name mit Vorsatz
-                    command.Parameters.AddWithValue("@InChiKey", lineItems[3]);//InChiKey
-                    command.Parameters.AddWithValue("@EC_No", lineItems[0]);//EC Nummer
-                    
+                    command.Parameters.AddWithValue("@InChiKey", lineItems[2]);//
+                    command.Parameters.AddWithValue("@Woher", lineItems[3]);//                                                           //
+                    command.Parameters.AddWithValue("@EC_No", lineItems[4]);//EC Nummer
+                    command.Parameters.AddWithValue("@Norman_SusDat_ID", lineItems[5]);//
+
                     command.Parameters.AddWithValue("@Import_Date", DateTime.Now);
 
                     command.ExecuteNonQuery();

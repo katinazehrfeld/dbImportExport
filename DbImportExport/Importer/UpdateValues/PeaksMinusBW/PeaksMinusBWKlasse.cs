@@ -128,15 +128,16 @@ namespace DbImportExport.Importer.UpdateValues.PeaksMinusBW
             */
 
             var kategorie = 2;
-            if (areaNeu < Konstanten.Min_10000Fläche || säuleBws.Any(s => s.CAS == peak.CAS))
+            if (areaNeu < Konstanten.Min_10000Fläche || säuleBws.Any(s => s.CAS == peak.CAS)) //Wenn Peakfläche kleiner 10.000Flächeneinheiten oder SäulenBW
+
             {
-                kategorie = 6;
+                kategorie = 6;                             //dann Kategorie 6
             }
-            else if (peak.MF < Konstanten.AchtzigProzent)
+            else if (peak.MF < Konstanten.AchtzigProzent)  //wenn Matchfaktor kleiner 80%
             {
-                kategorie = 5;
+                kategorie = 5;                             //dann Kategorie 5
             }
-            else if (peak.LibRI.HasValue && peak.RIkorr.HasValue &&
+            else if (peak.LibRI.HasValue && peak.RIkorr.HasValue &&  // wenn RI-Werte für vorgeschlagenen Stoff und BibliotheksWert vorhanden und
                      Math.Abs(peak.LibRI.Value - peak.RIkorr.Value) > 100) //ToDo: peak.RIkorr.HasValue???
             {
                 kategorie = 4;
@@ -159,9 +160,9 @@ namespace DbImportExport.Importer.UpdateValues.PeaksMinusBW
             {
                 kategorie = 3;
             }
-            else if (peak.LibRI == null)
+            else if (peak.LibRI == null)  //wenn kein LibaryRI vorhanden
             {
-                kategorie = 4;
+                kategorie = 4;      // dann Kategorie 4
             }
 
             /*
@@ -171,6 +172,8 @@ namespace DbImportExport.Importer.UpdateValues.PeaksMinusBW
 
             Kategorie = 1,2,3 -> pbPeak.Name_BPMZ_RI = tbPeak.SName 
                         sonst: pbPeak.Name_BPMZ_RI = tbPeak.BPMZ_RI
+            Peaks mit guter Stoffzuordnung erhalten eine CAS-Nr in dieser Spalte, alle anderen einen systematischen BPMZ_RI_Namen
+
             */
 
             var name_BPMZ_RI = peak.BPMZ_RI;
@@ -178,6 +181,7 @@ namespace DbImportExport.Importer.UpdateValues.PeaksMinusBW
             {
                 name_BPMZ_RI = peak.CAS;
             }
+            //else (name_BPMZ_RI = peak.BPMZ_RI) //steht schon in erster Zeile
             /*    
                 = kategorie == 1 || kategorie == 2 || kategorie == 3
                 ? peak.SName
@@ -271,7 +275,7 @@ namespace DbImportExport.Importer.UpdateValues.PeaksMinusBW
             SELECT
                 tbPeaks.AreaP,
                 tbPeaks.RTkorr,
-                ROUND(tbPeaks.BP_MZ, 0) BP_MZ_korr,
+                ROUND(tbPeaks.BP_MZ, 0) BP_MZ_korr
             FROM
 	            dbo.tbPeaks 
             WHERE 

@@ -25,5 +25,7 @@ namespace DbImportExport.Importer
         public static double Min_10000Fläche = 10000;
 
         public static double AchtzigProzent = 80;
+
+        public static double FünfundsiebzigProzent = 75;
     }
 }
