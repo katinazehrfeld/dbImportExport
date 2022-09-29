@@ -121,7 +121,7 @@ namespace DbImportExport.Importer.UpdateValues
 
                 var result = commandUpdate.ExecuteNonQuery();
 
-                Log($"Updated {result} lines");
+               // Log($"Updated {result} lines");
             }
         }
 
