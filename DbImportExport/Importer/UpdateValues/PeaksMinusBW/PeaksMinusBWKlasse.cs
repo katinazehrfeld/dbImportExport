@@ -136,8 +136,8 @@ namespace DbImportExport.Importer.UpdateValues.PeaksMinusBW
             else if (peak.MF < Konstanten.AchtzigProzent)  //wenn Matchfaktor kleiner 80%
             {
                 kategorie = 5;                             //dann Kategorie 5
-            }
-            else if (peak.LibRI.HasValue && peak.RIkorr.HasValue &&  // wenn RI-Werte für vorgeschlagenen Stoff und BibliotheksWert vorhanden und
+            }                                             // wenn RI-Werte für vorgeschlagenen Stoff und BibliotheksWert vorhanden und
+            else if (peak.LibRI.HasValue && peak.RIkorr.HasValue && 
                      Math.Abs(peak.LibRI.Value - peak.RIkorr.Value) > 100) //ToDo: peak.RIkorr.HasValue???
             {
                 kategorie = 4;
@@ -181,7 +181,7 @@ namespace DbImportExport.Importer.UpdateValues.PeaksMinusBW
             {
                 name_BPMZ_RI = peak.CAS;
             }
-            //else (name_BPMZ_RI = peak.BPMZ_RI) //steht schon in erster Zeile
+            //else name_BPMZ_RI = peak.BPMZ_RI;//steht schon in erster Zeile
             /*    
                 = kategorie == 1 || kategorie == 2 || kategorie == 3
                 ? peak.SName

@@ -74,6 +74,7 @@ namespace DbImportExport.Importer.UpdateValues
             Mz = Math.Round(Mz, 2);
 
             string mzriNeuValue = ("GC_BPMZ_" + Mz + "_RI_" + korrRi);
+            //string mzriNeuValue = (Mz + "-" + korrRi);
 
             return mzriNeuValue;
         }

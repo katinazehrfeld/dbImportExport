@@ -56,7 +56,7 @@ namespace DbImportExport.Importer.UpdateValues
                         var id = (int)reader["ID_Peak"];
                         var AreaP = (double)reader["AreaP"];
 
-                        /*so...
+                        //so...
                         var FlaecheBW = reader["AreaBW"] == DBNull.Value
                             ? (double)0
                             : (double)reader["AreaBW"];
@@ -77,7 +77,7 @@ namespace DbImportExport.Importer.UpdateValues
                         var x = o == DBNull.Value
                             ? 0
                             : (double)o;
-                        */
+                       // */
 
 
 
@@ -121,7 +121,7 @@ namespace DbImportExport.Importer.UpdateValues
 
                 var result = commandUpdate.ExecuteNonQuery();
 
-               // Log($"Updated {result} lines");
+                Log($"Updated {result} lines");
             }
         }
 
