@@ -9,6 +9,8 @@ namespace DbImportExport
 {
     public partial class DbImportExportMainForm : Form
     {
+        const string bwbConnectionString = "Data Source = KATINALAPTOP2; Initial Catalog = BWB; Integrated Security = true; ";
+
         private DBImportMessung _messungImporter = new DBImportMessung();
         private DBImportProbeninfo _probenInfoImporter = new DBImportProbeninfo();
         private DBImportBWZuordnung _bwZuordnungImporter = new DBImportBWZuordnung();
@@ -28,7 +30,11 @@ namespace DbImportExport
         {
             try 
             {
-                _messungImporter.Import(Log);
+                var filename = GetFileName();
+                if (!string.IsNullOrWhiteSpace(filename))
+                {
+                    _messungImporter.Import(Log, filename, bwbConnectionString);
+                }
             }
             catch (Exception ex)
             {
@@ -39,10 +45,12 @@ namespace DbImportExport
         {
             try
             {
-                //ToDo File open dialog
+                var filename = GetFileName();
+                if (!string.IsNullOrWhiteSpace(filename))
+                {
 
-
-                _bwZuordnungImporter.Import(Log);
+                    _bwZuordnungImporter.Import(Log, filename, bwbConnectionString);
+                }
             }
             catch (Exception ex)
             {
@@ -53,7 +61,11 @@ namespace DbImportExport
         {
             try
             {
-                _probenInfoImporter.Import(Log);
+                var filename = GetFileName();
+                if (!string.IsNullOrWhiteSpace(filename))
+                {
+                    _probenInfoImporter.Import(Log, filename, bwbConnectionString);
+                }
             }
             catch (Exception ex)
             {
@@ -65,13 +77,29 @@ namespace DbImportExport
         {
             try
             {
-                _limsInfoImporter.Import(Log);
+                var filename = GetFileName();
+                if (!string.IsNullOrWhiteSpace(filename))
+                {
+                    _limsInfoImporter.Import(Log, filename, bwbConnectionString);
+                }
             }
             catch (Exception ex)
             {
                 Log("ERROR IMPORTING PROBENINFO:" + ex.Message);
             }
         }
+
+        private string GetFileName()
+        {
+            string fileName = null;
+            var dialog = new OpenFileDialog();
+            if (dialog.ShowDialog() == DialogResult.OK)
+            {
+                fileName = dialog.FileName;
+            }
+            return fileName;
+        }
+
 
         private void btnTestImportCAS(object sender, EventArgs e)
         {
@@ -123,7 +151,12 @@ namespace DbImportExport
         {
             try
             {
-                _casImporter.Import(Log);
+                var filename = GetFileName();
+                if (!string.IsNullOrWhiteSpace(filename))
+                {
+                    _casImporter.Import(Log, filename, bwbConnectionString);
+                }
+                
             }
             catch (Exception ex)
             {
@@ -135,7 +168,12 @@ namespace DbImportExport
         {
             try
             {
-                _uaImporter.Import(Log);
+                var filename = GetFileName();
+                if (!string.IsNullOrWhiteSpace(filename))
+                {
+                    _uaImporter.Import(Log, filename, bwbConnectionString);
+                }
+
             }
             catch (Exception ex)
             {
@@ -147,12 +185,42 @@ namespace DbImportExport
         {
             try
             {
-                _bwbImporter.Import(Log);
+                var filename = GetFileName();
+                if (!string.IsNullOrWhiteSpace(filename))
+                {
+                    _bwbImporter.Import(Log, filename, bwbConnectionString);
+                }
+                
             }
             catch (Exception ex)
             {
                 Log("ERROR IMPORTING PROBENINFO:" + ex.Message);
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+            try
+            {
+                var testConnectionString = "Data Source = KATINALAPTOP2; Initial Catalog = BWB_TEST; Integrated Security = true; ";
+
+
+                _probenInfoImporter.Import(Log, @"C:\Projekte\DbImportExport\DbTestDataEinzelprobe\tb_PInfos_nur1_Pr.csv", testConnectionString);
+                _limsInfoImporter.Import(Log, @"C:\Projekte\DbImportExport\DbTestDataEinzelprobe\tb_LInfos_nur1_Pr.csv", testConnectionString);
+                _messungImporter.Import(Log, @"C:\Projekte\DbImportExport\DbTestDataEinzelprobe\72102609.csv", testConnectionString);
+                _messungImporter.Import(Log, @"C:\Projekte\DbImportExport\DbTestDataEinzelprobe\BW_2021_11_04.csv", testConnectionString);
+                _bwZuordnungImporter.Import(Log, @"C:\Projekte\DbImportExport\DbTestDataEinzelprobe\tb_BW_Zuordg_nur1_Pr.csv", testConnectionString);
+                _casImporter.Import(Log, @"C:\Projekte\DbImportExport\DbTestDataEinzelprobe\InChiKey_CAS_Nist_EG_nur1Stoff.csv", testConnectionString);
+                _uaImporter.Import(Log, @"C:\Projekte\DbImportExport\DbTestDataEinzelprobe\UA_Lib_SoffListe.csv", testConnectionString);
+                _bwbImporter.Import(Log, @"C:\Projekte\DbImportExport\DbTestDataEinzelprobe\Stoffsammlung_BWB_Umwelt_GC_nur1Stoff.csv", testConnectionString);
+
+            }
+            catch (Exception ex)
+            {
+                Log("ERROR IMPORTING PROBENINFO:" + ex.Message);
+            }
+
         }
     }
 }

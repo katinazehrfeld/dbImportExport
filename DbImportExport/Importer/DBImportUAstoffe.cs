@@ -17,24 +17,18 @@ namespace DbImportExport.Importer
     {
         private Action<string> Log;
 
-        public void Import(Action<string> log)
+        public void Import(Action<string> log, string fileName, string connectionString)
         {
             Log = log;
 
-            string fileName = null;
-            var dialog = new OpenFileDialog();
-            if (dialog.ShowDialog() == DialogResult.OK)
-            {
-                fileName = dialog.FileName;
-            }
             if (!string.IsNullOrEmpty(fileName)) // ! = not
             {
-                ProcessImport(fileName);
+                ProcessImport(fileName, connectionString);
             }
         }
 
 
-        private void ProcessImport(string filename)  //void bedeutet, es kommt etwas rein,aber nichts raus
+        private void ProcessImport(string filename, string connectionString)  //void bedeutet, es kommt etwas rein,aber nichts raus
         {
             Log("Importing " + filename);       //neuer LogEintrag
 
@@ -47,7 +41,7 @@ namespace DbImportExport.Importer
 
             Log("Opning SQL connection");       //neuer LogEintrag
 
-            var sqlConnection = new SqlConnection("Data Source = KATINALAPTOP2; Initial Catalog = BWB; Integrated Security = true; ");  //definert Datenbankobjekt und verbindet zur entsprechenden DB
+            var sqlConnection = new SqlConnection(connectionString);  //definert Datenbankobjekt und verbindet zur entsprechenden DB
             sqlConnection.Open();               //öffnet gewählte DB
 
             using (var transaction = sqlConnection.BeginTransaction())  //Starten Datenübergabe in ein ÜbergabeObjekt
@@ -76,14 +70,14 @@ namespace DbImportExport.Importer
         {
             var sql = @"
 INSERT INTO dbo.tb_UA_stoffe 
-      (      
-       Ikey_GC_name
+      ( ID_UAstoffe     
+      ,Ikey_GC_name
       ,UAname
       ,BPMZ_UALib
       ,RI_UALib
       ,Import_Date
       )
-VALUES ( @Ikey_GC_name, @UAname, @BPMZ_UALib, @RI_UALib, @Import_Date)
+VALUES ( @ID_UAstoffe, @Ikey_GC_name, @UAname, @BPMZ_UALib, @RI_UALib, @Import_Date)
 ";
             //Spalten in der CSV_Datei
             //InChiKey_GC_Name[0] ID_UALib[1]	Name1_UALib[2]	Name2_UALib[3]	CAS_UALib[4]	Formel_UALib[5]	BPMZ_UALib[6]
@@ -110,6 +104,7 @@ VALUES ( @Ikey_GC_name, @UAname, @BPMZ_UALib, @RI_UALib, @Import_Date)
                     command.CommandText = sql;
                     // die Zahl bei "lineItems[8]" in den eckigen Klammern gibt an aus welcher Spalte der csvDatei die Daten eingelesen werden sollen (1.Spalte=0, 2.Sp =1,...)
 
+                    command.Parameters.AddWithValue("@ID_UAstoffe", lineItems[1]);//ID-Nummer aus der MassHunterLibrary
                     command.Parameters.AddWithValue("@IKey_GC_name", lineItems[0]);//InChiKey oder BPMZ_RI Name
                     command.Parameters.AddWithValue("@UAname", lineItems[3]);//Name aus der UnknowsAnalysis inkl. BPMZ_RI
                     command.Parameters.AddWithValue("@BPMZ_UALib", lineItems[6]);//BasePeakMassenZahl_UALib

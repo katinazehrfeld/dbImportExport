@@ -12,30 +12,19 @@ namespace DbImportExport.Importer        //Namensklasse in der keine Namensgleic
     {
         private Action<string> Log; // private ist nur in dieser public class ansprechbar
                                     // erzeugt einen Log string
-        public void Import(Action<string> log)  //öffentliche Ausgabe des Import Log 
+        public void Import(Action<string> log, string fileName, string connectionString)
         {
-            Log = log;              // zeigt die erfolgten ToDos und Fehler
-
-            // Datei auswählen - test
-            string fileName = null;
-            var dialog = new OpenFileDialog();      //öffnet Dateiauswahl Fenster
-            if (dialog.ShowDialog() == DialogResult.OK) //Schleife: wenn ok gedrückt Dateiname übernehmen
+            Log = log;
+            if (!string.IsNullOrEmpty(fileName))
             {
-                fileName = dialog.FileName;
-            }
-            // Bsp: fileName = "C:\\Daten\\TeslaProben\\alle_nachtbPeaks\\62005831.csv";
-            // Schleife weiter: wenn NICHT 0 oder leer, gehe zu ProcessImport
-            if (!string.IsNullOrEmpty(fileName)) // ! = not , < = kl, > = gr, == ist gleichheitsvergleich, = ist zuweisung
-            {
-                // Import Verarbeitung
-                ProcessImport(fileName);
+            ProcessImport(fileName, connectionString);
             }
         }
 
 
 
 
-        private void ProcessImport(string filename)  //void bedeutet, es kommt etwas rein,aber nichts raus
+        private void ProcessImport(string filename, string connectionString)  //void bedeutet, es kommt etwas rein,aber nichts raus
         {
             Log("Importing " + filename);       //neuer LogEintrag
 
@@ -48,7 +37,7 @@ namespace DbImportExport.Importer        //Namensklasse in der keine Namensgleic
 
             Log("Opning SQL connection");       //neuer LogEintrag
 
-            var sqlConnection = new SqlConnection("Data Source = KATINALAPTOP2; Initial Catalog = BWB; Integrated Security = true; ");  //definert Datenbankobjekt und verbindet zur entsprechenden DB
+            var sqlConnection = new SqlConnection(connectionString);  //definert Datenbankobjekt und verbindet zur entsprechenden DB
             sqlConnection.Open();               //öffnet gewählte DB
 
             using (var transaction = sqlConnection.BeginTransaction())  //Starten Datenübergabe in ein ÜbergabeObjekt

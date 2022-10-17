@@ -42,6 +42,7 @@ namespace DbImportExport
             this.tbWasserwerk = new System.Windows.Forms.TextBox();
             this.bt_import_UA = new System.Windows.Forms.Button();
             this.bt_import_BWB = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btImport
@@ -119,7 +120,7 @@ namespace DbImportExport
             // 
             // btnUpdateValues
             // 
-            this.btnUpdateValues.Location = new System.Drawing.Point(17, 445);
+            this.btnUpdateValues.Location = new System.Drawing.Point(17, 395);
             this.btnUpdateValues.Margin = new System.Windows.Forms.Padding(4);
             this.btnUpdateValues.Name = "btnUpdateValues";
             this.btnUpdateValues.Size = new System.Drawing.Size(174, 46);
@@ -170,11 +171,22 @@ namespace DbImportExport
             this.bt_import_BWB.UseVisualStyleBackColor = true;
             this.bt_import_BWB.Click += new System.EventHandler(this.btnImportBWB);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(32, 526);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(128, 42);
+            this.button1.TabIndex = 18;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // DbImportExportMainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1265, 676);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.bt_import_BWB);
             this.Controls.Add(this.bt_import_UA);
             this.Controls.Add(this.tbWasserwerk);
@@ -208,6 +220,7 @@ namespace DbImportExport
         private System.Windows.Forms.TextBox tbWasserwerk;
         private System.Windows.Forms.Button bt_import_UA;
         private System.Windows.Forms.Button bt_import_BWB;
+        private System.Windows.Forms.Button button1;
     }
 }
 

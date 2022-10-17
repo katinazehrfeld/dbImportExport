@@ -21,7 +21,7 @@ values
 ('556-68-3',    		NULL,						'Säule',		'Hexadecamethylcyclooctasiloxane'),
 ('556-71-8',    		NULL,						'Säule',		'Octadecamethylcyclononasiloxane'),
 ('74810-38-1',  		NULL,						'Säule',		'Silane, (iodomethyl)dimethylpropyl-'),
-(NULL,					'GC_PBMZ_327_RI_1891',		'Säule',		'GC_PBMZ_327_RI_1891'),
-(NULL,					'GC_PBMZ_281_RI_1009',		'Säule',		'GC_PBMZ_281_RI_1009'),
-(NULL,					'GC_PBMZ_147_RI_2285',		'Säule',		'GC_PBMZ_147_RI_2285'),
+(NULL,					'GC_BPMZ_327_RI_1891',		'Säule',		'GC_BPMZ_327_RI_1891'),
+(NULL,					'GC_BPMZ_281_RI_1009',		'Säule',		'GC_BPMZ_281_RI_1009'),
+(NULL,					'GC_BPMZ_147_RI_2285',		'Säule',		'GC_BPMZ_147_RI_2285'),
 

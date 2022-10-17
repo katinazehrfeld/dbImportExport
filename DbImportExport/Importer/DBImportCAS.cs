@@ -17,24 +17,18 @@ namespace DbImportExport.Importer
     {
         private Action<string> Log;
 
-        public void Import(Action<string> log)
+        public void Import(Action<string> log, string fileName, string connectionString)
         {
             Log = log;
 
-            string fileName = null;
-            var dialog = new OpenFileDialog();
-            if (dialog.ShowDialog() == DialogResult.OK)
-            {
-                fileName = dialog.FileName;
-            }
             if (!string.IsNullOrEmpty(fileName)) // ! = not
             {
-                ProcessImport(fileName);
+                ProcessImport(fileName, connectionString);
             }
         }
 
 
-        private void ProcessImport(string filename)  //void bedeutet, es kommt etwas rein,aber nichts raus
+        private void ProcessImport(string filename, string connectionString)  //void bedeutet, es kommt etwas rein,aber nichts raus
         {
             Log("Importing " + filename);       //neuer LogEintrag
 
@@ -47,7 +41,7 @@ namespace DbImportExport.Importer
 
             Log("Opning SQL connection");       //neuer LogEintrag
 
-            var sqlConnection = new SqlConnection("Data Source = KATINALAPTOP2; Initial Catalog = BWB; Integrated Security = true; ");  //definert Datenbankobjekt und verbindet zur entsprechenden DB
+            var sqlConnection = new SqlConnection(connectionString);  //definert Datenbankobjekt und verbindet zur entsprechenden DB
             sqlConnection.Open();               //öffnet gewählte DB
 
             using (var transaction = sqlConnection.BeginTransaction())  //Starten Datenübergabe in ein ÜbergabeObjekt
@@ -104,7 +98,7 @@ VALUES ( @Zeile, @CAS_NIST_name, @InChiKey, @Woher, @EC_No, @Norman_SusDat_ID, @
             {
                 command.Transaction = transaction;
                 command.CommandText = "SELECT count(*) FROM dbo.tb_cas_ikey WHERE Zeile = @Zeile";
-                command.Parameters.AddWithValue("@Zeile", lineItems[5]);
+                command.Parameters.AddWithValue("@Zeile", lineItems[0]);
 
                 lineCount = (int)command.ExecuteScalar();
             }
