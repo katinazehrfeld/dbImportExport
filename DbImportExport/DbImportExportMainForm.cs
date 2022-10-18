@@ -218,7 +218,9 @@ namespace DbImportExport
             }
             catch (Exception ex)
             {
-                Log("ERROR IMPORTING PROBENINFO:" + ex.Message);
+                Log("ERROR IMPORTING xxxx:" + ex.Message);
+
+                Log("at:" + ex.StackTrace);
             }
 
         }

@@ -70,8 +70,8 @@ namespace DbImportExport.Importer
         {
             var sql = @"
 INSERT INTO dbo.tb_bwb_stoffe
-      (      
-       IKey_CAS_name
+      (ID_BWBstoffe      
+      ,IKey_CAS_name
       ,BWBname
       ,IUPACname
       ,Formel
@@ -79,7 +79,7 @@ INSERT INTO dbo.tb_bwb_stoffe
       ,SummeVerwendung
       ,Import_Date
       )
-VALUES ( @IKey_CAS_name, @BWBname, @IUPACname, @Formel, @MW, @SummeVerwendung, @Import_Date)
+VALUES ( @ID_BWBstoffe, @IKey_CAS_name, @BWBname, @IUPACname, @Formel, @MW, @SummeVerwendung, @Import_Date)
 ";
             //Spalten in der CSV_Datei
             //InChiKey_CAS_NameListe[0]	Stoffname[1] CAS-Nr[2] INCHIKEY[3]	IUPAC_NAME[4]	SMILES[5]	INCHI_STRING[6]	
@@ -97,7 +97,7 @@ VALUES ( @IKey_CAS_name, @BWBname, @IUPACname, @Formel, @MW, @SummeVerwendung, @
             {
                 command.Transaction = transaction;
                 command.CommandText = "SELECT count(*) FROM dbo.tb_bwb_stoffe WHERE IKey_CAS_name = @IKey_CAS_name";
-                command.Parameters.AddWithValue("@IKey_CAS_name", lineItems[1]);
+                command.Parameters.AddWithValue("@IKey_CAS_name", lineItems[0]);
 
                 lineCount = (int)command.ExecuteScalar();
             }
@@ -110,7 +110,8 @@ VALUES ( @IKey_CAS_name, @BWBname, @IUPACname, @Formel, @MW, @SummeVerwendung, @
 
                     command.CommandText = sql;
                     // die Zahl bei "lineItems[8]" in den eckigen Klammern gibt an aus welcher Spalte der csvDatei die Daten eingelesen werden sollen (1.Spalte=0, 2.Sp =1,...)
-
+                    
+                    command.Parameters.AddWithValue("@ID_BWBstoffe", lineItems[10]);//ID[10] aus der BWBstoffe Tabelle
                     command.Parameters.AddWithValue("@IKey_CAS_name", lineItems[0]);//InChiKey, inkl.CAS_NIST_name mit Vorsatz
                     command.Parameters.AddWithValue("@BWBname", lineItems[1]);//Stoffname aus BWBliste
                     command.Parameters.AddWithValue("@IUPACname", lineItems[4]);//IUPAC Name

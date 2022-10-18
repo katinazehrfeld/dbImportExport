@@ -49,18 +49,10 @@ namespace DbImportExport.Importer
                 try
                 {
                     Log("Importing lines: " + lines.Length);       //zählt die übertragenen Zeilen
-                    int c = 0;
-                    var perc = lines.Length / 100;
+                   
                     foreach (var line in lines)                    //überträgt zeilenweise in einen Zwischenspeicherobjekt mittels Schleife
-                    {
-                        c++;
+                    {                       
                         ImportLine(line, sqlConnection, transaction);
-
-                        if (c % perc == 0)
-                        {
-                            Log($"Done {c / perc }%");
-                        }
-
                     }
 
                     transaction.Commit();                          //speichert jede neue Zeile
@@ -76,8 +68,8 @@ namespace DbImportExport.Importer
         {
             var sql = @"
 INSERT INTO dbo.tb_cas_ikey 
-      (      
-       Zeile
+      (     
+       ID_cas
       ,CAS_NIST_name
       ,InChiKey
       ,Woher
@@ -85,10 +77,10 @@ INSERT INTO dbo.tb_cas_ikey
       ,Norman_SusDat_ID
       ,Import_Date
       )
-VALUES ( @Zeile, @CAS_NIST_name, @InChiKey, @Woher, @EC_No, @Norman_SusDat_ID, @Import_Date)
+VALUES ( @ID_cas, @CAS_NIST_name, @InChiKey, @Woher, @EC_No, @Norman_SusDat_ID, @Import_Date)
 ";
             //Spalten in der CSV_Datei
-            //Zeile [0] CAS_NIST_name[1] InChiKey[2] Woher[3] EC_No[4] Norman_SusDat_ID[5]
+            //ID_cas [0] CAS_NIST_name[1] InChiKey[2] Woher[3] EC_No[4] Norman_SusDat_ID[5]
             //	
 
             var lineItems = SplitSpecial(line);  //Code zu SplitSpzial siehe weiter unten 
@@ -97,8 +89,8 @@ VALUES ( @Zeile, @CAS_NIST_name, @InChiKey, @Woher, @EC_No, @Norman_SusDat_ID, @
             using (var command = connection.CreateCommand())
             {
                 command.Transaction = transaction;
-                command.CommandText = "SELECT count(*) FROM dbo.tb_cas_ikey WHERE Zeile = @Zeile";
-                command.Parameters.AddWithValue("@Zeile", lineItems[0]);
+                command.CommandText = "SELECT count(*) FROM dbo.tb_cas_ikey WHERE CAS_NIST_name = @CAS_NIST_name";
+                command.Parameters.AddWithValue("@CAS_NIST_name", lineItems[1]);
 
                 lineCount = (int)command.ExecuteScalar();
             }
@@ -112,7 +104,7 @@ VALUES ( @Zeile, @CAS_NIST_name, @InChiKey, @Woher, @EC_No, @Norman_SusDat_ID, @
                     command.CommandText = sql;
                     // die Zahl bei "lineItems[8]" in den eckigen Klammern gibt an aus welcher Spalte der csvDatei die Daten eingelesen werden sollen (1.Spalte=0, 2.Sp =1,...)
 
-                    command.Parameters.AddWithValue("@Zeile", lineItems[0]);
+                    command.Parameters.AddWithValue("@ID_cas", lineItems[0]);
                     command.Parameters.AddWithValue("@CAS_NIST_name", lineItems[1]);//CAS_NIST_name mit Vorsatz
                     command.Parameters.AddWithValue("@InChiKey", lineItems[2]);//
                     command.Parameters.AddWithValue("@Woher", lineItems[3]);//                                                           //

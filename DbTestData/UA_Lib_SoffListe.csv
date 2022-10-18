@@ -1,416 +1,413 @@
-﻿InChiKey_GC_Name,ID_UALib,Name1_UALib,Name2_UALib,CAS_UALib,Formel_UALib,BPMZ_UALib,RT_UALib,RI_UALib,MW_UALib,Bem_UALib,MF_UALib,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-GFISDBXSWQMOND-UHFFFAOYSA-N,2,"2,5-Dimethoxyoxolane","Furan, tetrahydro-2,5-dimethoxy-",696-59-3,C6H12O3,101,5.6868,894,132.0786442,,91,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-HPYNZHMRTTWQTB-UHFFFAOYSA-N,4,"2,3-Dimethylpyridine","2,3-Dimethylpyridine",583-61-9,C7H9N,107,6.9612,909,107.0734993,,84,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-GC_BPMZ_77_RI_979,5,,GC_BPMZ_77_RI_979,,,77,7.684,979,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-ZPQOPVIELGIULI-UHFFFAOYSA-N,8,"1,3-Dichlorobenzene","1,3-Dichlorobenzene",541-73-1,C6H4Cl2,146,8.4986,1012,145.9690055,LHKW-Std,91,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-IGJRNTLDWLTHCQ-UHFFFAOYSA-N,9,"2,3-Dimethylnonane","2,3-Dimethylnonane",2884-06-2,C11H24,71,8.7923,1054,156.1878,,83,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-RRQYJINTUHWNHW-UHFFFAOYSA-N,10,1-Ethoxy-2-(2-ethoxyethoxy)ethane,Diethylene glycol diethyl ether,112-36-7,C8H18O3,59,9.0098,1058,162.1255944,Diethyldiethylene glycol,83,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-VLQBSKLZRSUMTJ-UHFFFAOYSA-N,12,2-(Methylsulfanyl)pyridine,"Pyridine, 2-(methylthio)-",18438-38-5,C6H7NS,124,10.2894,1083,125.0299204,,77,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-ZRYDPLOWJSFQAE-UHFFFAOYSA-N,16,2-tert-Butylcyclohexan-1-one,2-tert-Butylcyclohexanone,1728-46-7,C10H18O,98,11.1864,1141,154.1357652,,91,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-CMBSSVKZOPZBKW-UHFFFAOYSA-N,17,5-Methylpyridin-2-amine,6-Amino-3-methylpyridine,1603-41-4,C6H8N2,108,11.5954,1118,108.0687483,,82,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-DLTWBMHADAJAAZ-DTWKUNHWSA-N,19,"(1R,2R)-2-tert-Butylcyclohexan-1-ol","Cyclohexanol, 2-(1,1-dimethylethyl)-, (1R,2R)-rel-",7214-18-8,C10H20O,82,11.8292,1203,156.1514153,,94,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-CRSBERNSMYQZNG-UHFFFAOYSA-N,20,Dodec-1-ene,1-Dodecene,112-41-4,C12H24,83,12.0659,1197,168.1878008,KW,88,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-PWORFEDVDWBHSJ-UHFFFAOYSA-N,21,2-Methyl-2H-benzotriazole,"2H-Benzotriazole, 2-methyl-",16584-00-2,C7H7N3,133,12.0925,1156,133.0639972,Korrosionsinhibitor,93,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-SMWDFEZZVXVKRB-UHFFFAOYSA-N,24,Quinoline,Quinoline,91-22-5,C9H7N,129,13.2217,1245,129.0578492,"Leucol, Chinolin",80,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-SMUQFGGVLNAIOZ-UHFFFAOYSA-N,25,2-Methylquinoline,Quinaldine,91-63-4,C10H9N,143,13.9854,1288,143.0734993,Chinaldine,90,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-DQBHJILNHNRDTM-UHFFFAOYSA-N,30,"2,6-Di-tert-butyl-4-hydroxy-4-methylcyclohexa-2,5-dien-1-one","2,6-Di-tert-butyl-4-hydroxy-4-methyl-2,5-cyclohexadien-1-one",10396-80-2,C15H24O2,165,16.3085,1471,236.17763,,84,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-QRUDEWIWKLJBPS-UHFFFAOYSA-N,31,1H-Benzotriazole,"1,2,3-Benzotriazole",95-14-7,C6H5N3,119,16.329,1469,119.0483472,"Std, LC",97,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-MIZGSAALSYARKU-UHFFFAOYSA-N,32,"1,1,2,3,3-Pentamethyl-1,2,3,5,6,7-hexahydro-4H-inden-4-one",Cashmeran,33704-61-9,C14H22O,191,16.7579,1513,206.1670653,Cashmeran,63,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-LRUDIIUSNGCQKF-UHFFFAOYSA-N,33,5-Methyl-1H-benzotriazole,5-Methyl-1H-benzotriazole,136-85-6,C7H7N3,133,17.1572,1577,133.0639972,Korrosionsschutzmittel,88,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-PUZORFQMRDHKBT-UHFFFAOYSA-N,34,"N,N-Diethyl-4-methylbenzamide","BENZAMIDE, N,N-DIETHYL-4-METHYL-",2728-05-4,C12H17NO,119,17.7554,1505,191.131,,93,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-VUNOFAIHSALQQH-UHFFFAOYSA-N,36,N-Ethyl-5-methyl-2-(propan-2-yl)cyclohexane-1-carboxamide,N-Ethyl-2-(isopropyl)-5-methylcyclohexanecarboxamide,39711-79-0,C13H25NO,100,17.9519,1636,211.1936144,,86,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-UTBVIMLZIRIFFR-UHFFFAOYSA-N,37,"2-(Methylsulfanyl)-1,3-benzothiazole",2-(Methylthio)benzothiazole,615-22-5,C8H7NS2,181,18.0568,1607,181.0019916,Abbauprodukt v. Fungizid u. Vulkanisationsbeschleuniger,94,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-IPRJXAGUEGOFGG-UHFFFAOYSA-N,42,N-Butylbenzenesulfonamide,N-Butylbenzenesulfonamide,3622-84-2,C10H15NO2S,170,20.2009,1797,213.0823499,"Weichmacher, in kleinerer Menge auch im BW,Plastomoll BMB, Plasthall BSA",95,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-KVMPUXDNESXNOH-UHFFFAOYSA-N,43,Tris(1-chloropropan-2-yl) phosphate,Tris(2-chloroisopropyl)phosphate,13674-84-5,C9H18Cl3O4P,125,20.3993,1814,326.0008292,"Std, LC",94,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-QELBXOLVEDEBJG-UHFFFAOYSA-N   ,44,Bis(2-chloro-1-methylethyl) 3-chloropropyl phosphate,Bis(1-chloro-2-propyl)(3-chloro-1-propyl)phosphate,137909-40-1,C9H18Cl3O4P,99,20.5223,1798,326.000828,,74,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-GC_BPMZ_243_RI_1895,47,,GC_BPMZ_243_RI_1895,,,243,21.2992,1895,,ähnlich: Galaxolide,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-NNJVILVZKWQKPM-UHFFFAOYSA-N,49,"2-(Diethylamino)-N-(2,6-dimethylphenyl)acetamide  ",Lidocaine,137-58-6,C14H22N2O,86,21.515,1912,234.1732133,std Arzeneistoff: örtliches Beteubungsmittel,96,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-GC_BPMZ_243_RI_1928,50,,GC_BPMZ_243_RI_1928,,,243,21.6409,1928,,ähnlich: Galaxolide,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-JFZHPFOXAAIUMB-UHFFFAOYSA-N,51,2-Ethyl-2-phenylpropanediamide,2-Phenyl-2-ethylmalondiamide,7206-76-0,C11H14N2O2,163,21.7586,1916,206.1055277,PEMA,67,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-BYAUGQHXQRQQPB-UHFFFAOYSA-N  ,53,,"8-Ethyl-4,6,6,8-tetramethyl-3,4,6,7-tetrahydro-1H-cyclopenta(G)-2-benzopyran",78448-49-4,C18H26O,229,22.2839,1951,258.198366,Nist: 1000432-48-9,67,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-PEGCITODQASXKH-UHFFFAOYSA-N,54,Methyl(oxo)diphenyl-lambda~5~-phosphane,"Phosphine oxide, diphenylmethyl-",2129-89-7,C13H13OP,215,22.5929,2029,216.070402,,80,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-VQRPJMVGRQQVKI-UHFFFAOYSA-N   ,57,1-[(4-Methylphenyl)sulfonyl]-2-pyrrolidinylamine,"Pyrrolidin-2-amine, 1-(4-methylphenylsulfonyl)-",1000267-40-2,C11H16N2O2S,120,23.6438,2111,240.093248,,67,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-LCLVJNFWTMYFRL-UHFFFAOYSA-N,60,"5-[(3-Hydroxyphenyl)methylidene]-2,2-dimethyl-1,3-dioxane-4,6-dione","5-(3-Hydroxybenzylidene)-2,2-dimethyl-1,3-dioxane-4,6-dione",15795-58-1,C13H12O5,190,25.2393,2283,248.0684735,,55,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-FFGPTBGBLSHEPO-UHFFFAOYSA-N,61,"5H-Dibenzo[b,f]azepine-5-carboxamide",Carbamazepine,298-46-4,C15H12N2O,193,26.0001,2314,236.094963,"std, Antiepileptika",97,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-CTRLABGOLIVAIY-UHFFFAOYSA-N,64,"10-Oxo-10,11-dihydro-5H-dibenzo[b,f]azepine-5-carboxamide",Oxcarbazepine,28721-07-5,C15H12N2O2,180,26.7932,2490,252.0898776,Trileptal,86,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-IDMGLOPCYDADNB-UHFFFAOYSA-N   ,65,,"Carbonic acid, phenyl tetradecyl ester",1000314-57-8,C21H34O3,94,26.8101,2428,334.250795,KW mit Phenylester,83,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-BNCADMBVWNPPIZ-UHFFFAOYSA-N,67,"N~2~,N~2~,N~4~,N~4~,N~6~,N~6~-Hexakis(methoxymethyl)-1,3,5-triazine-2,4,6-triamine",Hexa(methoxymethyl)melamine,3089-11-0,C15H30N6O6,207,26.899,2499,390.222683,,85,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-GC_BPMZ_94_RI_2501,68,,GC_BPMZ_94_RI_2501,,,94,26.9466,2501,,KW mit Phenylester,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-GC_BPMZ_94_RI_2521,69,,GC_BPMZ_94_RI_2521,,,94,27.1137,2521,,KW mit Phenylester,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-FIQMHBFVRAXMOP-UHFFFAOYSA-N,70,Oxo(triphenyl)-lambda~5~-phosphane,Triphenylphosphine oxide,791-28-6,C18H15OP,277,27.4078,2561,278.0860521,,93,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-ZDMORWSPXCSTKG-UHFFFAOYSA-N   ,71,,"Carbonic acid, pentadecyl phenyl ester",1000314-57-9,C22H36O3,94,27.4484,2528,348.266445,KW mit Phenylester,75,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-GC_BPMZ_94_RI_2584,72,,GC_BPMZ_94_RI_2584,,,94,27.631,2584,,KW mit Phenylester,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-GC_BPMZ_94_RI_2590,73,,GC_BPMZ_94_RI_2590,,,94,27.6857,2590,,KW mit Phenylester,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-GC_BPMZ_94_RI_2603,74,,GC_BPMZ_94_RI_2603,,,94,27.7879,2603,,KW mit Phenylester,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-GC_BPMZ_94_RI_2610,75,,GC_BPMZ_94_RI_2610,,,94,27.8448,2610,,KW mit Phenylester,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-CWQABBMFNPYHEF-UHFFFAOYSA-N   ,76,,"Carbonic acid, hexadecyl phenyl ester",1000314-58-0,C23H38O3,94,27.9559,2627,362.282095,KW mit Phenylester,84,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-GC_BPMZ_94_RI_2665,77,,GC_BPMZ_94_RI_2665,,,94,28.2882,2665,,KW mit Phenylester,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-GC_BPMZ_94_RI_2685,78,,GC_BPMZ_94_RI_2685,,,94,28.4542,2685,,KW mit Phenylester,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-GC_BPMZ_94_RI_2713,79,,GC_BPMZ_94_RI_2713,,,94,28.6746,2713,,KW mit Phenylester,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-GC_BPMZ_94_RI_2725,80,,GC_BPMZ_94_RI_2725,,,94,28.769,2725,,KW mit Phenylester,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-GC_BPMZ_94_RI_2767,81,,GC_BPMZ_94_RI_2767,,,94,29.099,2767,,KW mit Phenylester,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-ZYUBDLPFZYBCKS-UHFFFAOYSA-N   ,82,,"Carbonic acid, octadecyl phenyl ester",1000314-58-1,C25H42O3,94,29.2691,2826,390.313395,KW mit Phenylester,75,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-JLQNHALFVCURHW-UHFFFAOYSA-N,86,Octathiocane,Octasulfur,10544-50-0,S8,160,23.0262,2049,255.7765694,,95,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-PPBRXRYQALVLMV-UHFFFAOYSA-N,87,Ethenylbenzene,Styrene,100-42-5,C8H8,104,5.9288,893,104.0626003,Kunststoffindustrie,95,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-AXISYYRBXTVTFY-UHFFFAOYSA-N,89,Propan-2-yl tetradecanoate,Isopropyl tetradecanoate,110-27-0,C17H34O2,228,20.5443,1827,270.2558803,,95,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-FEXCMMPRRBSCRG-UHFFFAOYSA-N,91,Hexathiane,Hexasulfur,13798-23-7,S6,192,16.7407,1500,191.832427,,95,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-KWOLFJPFCHCOCG-UHFFFAOYSA-N,93,(1-Propylnonyl)benzene,Acetophenone,98-86-2,C8H8O,140,9.8102,1066,120.0575149,std,98,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-YCMLQMDWSXFTIF-UHFFFAOYSA-N,94,2-Methylbenzene-1-sulfonamide,o-Toluenesulfonamide,88-19-7,C7H9NO2S,90,18.3556,1557,171.0353997,,90,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-IOJUPLGTWVMSFF-UHFFFAOYSA-N,97,"1,3-Benzothiazole",Benzothiazole,95-16-9,C7H5NS,135,12.6384,1229,135.0142703,"Grundstoff für Vulkanisation, Farbstoffe, Pharmaindustrie",95,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-ISXOGOLHEGHGQF-UHFFFAOYSA-N,98,Octadecamethylcyclononasiloxane,Octadecamethylcyclononasiloxane,556-71-8,C18H54O9Si9,73,20.5764,1860,666.1691221,Säule,81,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-YQEZLKZALYSWHR-UHFFFAOYSA-N,100,2-(2-Chlorophenyl)-2-(methylamino)cyclohexan-1-one,Ketamine,6740-88-1,C13H16ClNO,180,21.2331,1977,237.0920418,,84,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-IROINLKCQGIITA-UHFFFAOYSA-N,101,"N~2~-tert-Butyl-N~4~-ethyl-6-(methylsulfanyl)-1,3,5-triazine-2,4-diamine",Terbutryn,886-50-0,C10H19N5S,185,21.9306,1962,241.1361168,,86,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-VOWZNBNDMFLQGM-UHFFFAOYSA-N,102,"2,5-Dimethylaniline","2,5-Dimethylaniline",95-78-3,C8H11N,121,11.6404,1171,121.0891494,,87,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-YZEFQPIMXZVPKP-UHFFFAOYSA-N,103,"5-Methyl-6,7-dihydro-5H-cyclopenta[b]pyrazine","6,7-Dihydro-5-methyl-5H-cyclopentapyrazine",23747-48-0,C8H10N2,119,11.1579,1149,134.0843983,,94,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-BDCFWIDZNLCTMF-UHFFFAOYSA-N,104,2-Phenylpropan-2-ol,2-Phenylpropan-2-ol,617-94-7,C9H12O,121,10.1241,1098,136.088815,,92,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-WXZOXVVKILCOPG-UHFFFAOYSA-N,107,"Bis(2-ethylhexyl) benzene-1,3-dicarboxylate",Bis(2-ethylhexyl) isophthalate,137-89-3,C24H38O4,149,28.95,2707,390.2770097,Weichmacher/ Phthalat,86,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-ISWSIDIOOBJBQZ-UHFFFAOYSA-N,110,Phenol,Phenol,108-95-2,C6H6O,94,7.9765,989,94.04186481,,91,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-JDNGDDOTBYZAGS-UHFFFAOYSA-N,113,"4,5-Dimethylnonane","4,5-Dimethylnonane",17302-23-7,C11H24,71,9.5481,1046,156.1878008,,86,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-AMNQQNTZDFYVGH-UHFFFAOYSA-N,114,"1,1,1,3,3-Pentamethyl-3-phenyldisiloxane",Pentamethylphenyldisiloxane,14920-92-4,C11H20OSi2,209,7.44,1087,224.1052683,Säule,81,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-ZTKTZVXSSKVBTH-UHFFFAOYSA-N  ,115,"1,2,3,4,5-Pentamethyl-1-cyclopentene","Cyclopentene, 1,2,3,4,5-pentamethyl-",1000154-28-6,C10H18,123,6.1965,944,138.140851,,95,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-NFVSFLUJRHRSJG-UHFFFAOYSA-N,116,Hexadecamethylheptasiloxane,Hexadecamethylheptasiloxane,541-01-5,C16H48O6Si7,147,26.3225,1553,532.183575,Säule,81,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-JCICIFOYVSPMHG-UHFFFAOYSA-N,117,"1-(2,6-Dichlorophenyl)-1,3-dihydro-2H-indol-2-one","1-(2,6-Dichlorophenyl)-2-indolinone",15362-40-0,C14H9Cl2NO,214,24.2561,2301,277.0061193,Diclofenac artifact,92,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-GC_BPMZ_147_RI_2285,118,,GC_BPMZ_147_RI_2285,,,147,25.0688,2285,,"Säule, ähnlich: Cyclononasiloxane, octadecamethyl-",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-UGPWRRVOLLMHSC-UHFFFAOYSA-N,119,"2,2'-(1,3-Phenylene)di(propan-2-ol)","1,3-Benzenedimethanol, .alpha.1,.alpha.1,.alpha.3,.alpha.3-tetramethyl-",1999-85-5,C12H18O2,179,16.2052,1488,194.1306798,,86,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-GC_BPMZ_123_RI_908,120,,GC_BPMZ_123_RI_908,,,123,5.6437,908,,"ähnlich: Cyclopentene, 1,2,3,4,5-pentamethyl-",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-BEVFKHLJPJLSEX-UHFFFAOYSA-N  ,125,"6-Methyl-1,2,3,5,8,8a-hexahydronaphthalene","Naphthalene, 1,4,4a,5,6,7-hexahydro-2-methyl-",107914-86-3,C11H16,148,13.8362,1184,148.1252,,82,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-ZVQXQPNJHRNGID-UHFFFAOYSA-N,127,Tetramethylbutanedinitrile,Tetramethylsuccinonitrile,3333-52-6,C8H12N2,69,8.9363,1138,136.1000484,,88,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-DLTWBMHADAJAAZ-UHFFFAOYSA-N,128,2-tert-Butylcyclohexan-1-ol,2-tert-Butylcyclohexanol,13491-79-7,C10H20O,82,11.7238,1182,156.1514153,Kunststoffadditiv,85,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-GC_BPMZ_149_RI_2826,130,,GC_BPMZ_149_RI_2826,,,149,29.5583,2826,,Weichmacher/ Phthalat,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-HBGGXOJOCNVPFY-UHFFFAOYSA-N,131,"Bis(7-methyloctyl) benzene-1,2-dicarboxylate",Bis(7-methyloctyl) phthalate,20548-62-3,C26H42O4,149,29.7395,2902,418.3083098,Weichmacher/ Phthalat,91.3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-JQHJESVUFUNCLT-UHFFFAOYSA-N  ,132,,"Phthalic acid, 6-methylhept-2-yl nonyl ester",1000377-96-3,C25H40O4,149,29.3655,2803,404.29266,Weichmacher/ Phthalat,92,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-QAKHJGJRTDJEJD-UHFFFAOYSA-N   ,133,,"Phthalic acid, hept-2-yl nonyl ester",1000356-97-6,C24H38O4,149,29.1456,2768,390.27701,Weichmacher/ Phthalat,85.2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-DROMNWUQASBTFM-UHFFFAOYSA-N,134,"Dinonyl benzene-1,2-dicarboxylate",Dinonyl phthalate,84-76-4,C26H42O4,149,29.9365,2880,418.3083098,PHTH std,90,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-KWWWFTBWCKTBQI-UHFFFAOYSA-N,135,1-[4-(2-Hydroxypropan-2-yl)phenyl]ethan-1-one,1-[4-(1-Hydroxy-1-methylethyl)phenyl]ethanone,54549-72-3,C11H14O2,163,16.3909,1432,178.0993797,Weichmacher/ Phthalat,84.8,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-SOGKSNZFDBFKCV-UHFFFAOYSA-N,137,Tetracosamethylcyclododecasiloxane,Tetracosamethylcyclododecasiloxane,18919-94-3,C24H72O12Si12,147,23.7104,2338,888.2254962,Säule,81.8,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-SKBBQSLSGRSQAJ-UHFFFAOYSA-N,138,"1,1'-(1,4-Phenylene)di(ethan-1-one)","1,4-Diacetylbenzene",1009-61-6,C10H10O2,147,15.8094,1470,162.0680796,,86.8,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-IUMSDRXLFWAGNT-UHFFFAOYSA-N,139,Dodecamethylcyclohexasiloxane,Dodecamethylcyclohexasiloxane,540-97-6,C12H36O6Si6,73,14.2315,1335,444.1127481,Säule,88.4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-HSUIVCLOAAJSRE-UHFFFAOYSA-N,140,"Bis(2-methoxyethyl) benzene-1,2-dicarboxylate",Di(2-methoxyethyl) phthalate,117-82-8,C14H18O6,149,22.0699,1965,282.1103383,Weichmacher/ Phthalat,84.6,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-WEEGYLXZBRQIMU-UHFFFAOYSA-N,142,"1,3,3-Trimethyl-2-oxabicyclo[2.2.2]octane","1,8-Cineol",470-82-6,C10H18O,83,8.9561,1032,154.1357652,Geruchsstoff,80.9,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-WNJSKZBEWNVKGU-UHFFFAOYSA-N,144,"(2,2-Dimethoxyethyl)benzene",Phenylacetaldehyde dimethyl acetal,101-48-4,C10H14O2,75,12.5585,1221,166.0993797,"Viridine,",80.1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-YPJRYQGOKHKNKZ-UHFFFAOYSA-N,146,1-Ethyl-1-methylcyclohexane,"Cyclohexane, 1-ethyl-1-methyl-",4926-90-3,C9H18,55,6.6955,953,126.1408505,,84.9,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-BNXZHVUCNYMNOS-UHFFFAOYSA-N,147,1-Butylpyrrolidin-2-one,"2-Pyrrolidinone, 1-butyl-",3470-98-2,C8H15NO,98,13.6997,1300,141.1153641,,94,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-DWTPSNLJCUREIA-UHFFFAOYSA-N   ,148,"1,3-Diacetyl-2,4,5-imidazolidinetrione","Imidazolidine-2,4,5-trione, 1,3-diacetyl-",115083-04-0,C7H6N2O5,198,21.4243,1883,198.027671,,80,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-PYCFMMQNMYYCKK-NTCAYCPXSA-N   ,149,"(3Z)-3-(2,2-Dimethyl-6-methylenecyclohexylidene)-1-methylbutyl acetate","Acetic acid, 3-(2,2-dimethyl-6-methylene-cyclohexylidene)-1-methyl-butyl ester",1000192-69-2,C16H26O2,175,19.9826,1682,250.19328,,86,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-ASUMBDPCWUXZFX-UHFFFAOYSA-N   ,150,,"Phthalic acid, di(6-methylhept-2-yl) ester",1000377-97-3,C24H38O4,149,27.4164,2575,390.27701,Weichmacher/ Phthalat,81,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-RECUKUPTGUEGMW-UHFFFAOYSA-N,152,2-Methyl-5-(propan-2-yl)phenol,Isopropyl-o-cresol,499-75-2,C10H14O,135,13.7466,1299,150.1044651,,80,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-POPACFLNWGUDSR-UHFFFAOYSA-N,153,Methoxy(trimethyl)silane,"Silane, methoxytrimethyl-",1825-61-2,C4H12OSi,89,10.8352,506,104.0657415,Säule,93,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-GC_BPMZ_205_RI_1946,157,,GC_BPMZ_205_RI_1946,,,205,21.8263,1946,,"ähnlich: 1,3-Dimethyl-5,7-dipropyladamantane  ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-GC_BPMZ_130_RI_1777,158,,GC_BPMZ_130_RI_1777,,,130,20.0258,1777,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-GC_BPMZ_121_RI_1893,160,,GC_BPMZ_121_RI_1893,,,121,21.2793,1893,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-GC_BPMZ_149_RI_1998,161,,GC_BPMZ_149_RI_1998,,,149,22.3482,1998,,Weichmacher/ Phthalat,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-GC_BPMZ_119_RI_1885,162,,GC_BPMZ_119_RI_1885,,,119,21.1923,1885,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-GC_BPMZ_257_RI_2206,163,,GC_BPMZ_257_RI_2206,,,257,24.3499,2206,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-GC_BPMZ_150_RI_1878,164,,GC_BPMZ_150_RI_1878,,,150,21.1178,1878,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-GC_BPMZ_164_RI_1585,165,,GC_BPMZ_164_RI_1585,,,164,17.7864,1585,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-GC_BPMZ_116_RI_1524,166,,GC_BPMZ_116_RI_1524,,,116,17.0202,1524,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-GC_BPMZ_225_RI_2158,167,,GC_BPMZ_225_RI_2158,,,225,23.8985,2158,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-GC_BPMZ_135_RI_1704,168,,GC_BPMZ_135_RI_1704,,,135,19.2069,1704,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-GC_BPMZ_150_RI_1980,169,,GC_BPMZ_150_RI_1980,,,150,22.1715,1980,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-GC_BPMZ_149_RI_1902,171,,GC_BPMZ_149_RI_1902,,,149,21.3699,1902,,Weichmacher/ Phthalat,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-XAUGWFWQVYXATQ-UHFFFAOYSA-N,172,N-Phenylbenzenesulfonamide,Benzenesulfonanilide,1678-25-7,C12H11NO2S,92,22.8676,2072,233.0510498,Fungizid,82,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-GC_BPMZ_116_RI_1497,174,,GC_BPMZ_116_RI_1497,,,116,16.6626,1497,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-GC_BPMZ_152_RI_1674,175,,GC_BPMZ_152_RI_1674,,,152,18.8579,1674,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-POAOYUHQDCAZBD-UHFFFAOYSA-N,177,2-Butoxyethan-1-ol,2-Butoxyethanol,111-76-2,C6H14O2,57,5.8891,910,118.0993797,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-ZXVVIKMMTCNHIH-UHFFFAOYSA-N   ,178,"1,2,3,4,5-Pentamethylcyclopentane","Cyclopentane, 1,2,3,4,5-pentamethyl-",1000152-79-7,C10H20,84,6.1426,905,140.156501,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-JFDZBHWFFUWGJE-UHFFFAOYSA-N,182,Benzonitrile,Benzonitrile,100-47-0,C7H5N,103,7.8794,987,103.0421992,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-WGYZMNBUZFHYRX-UHFFFAOYSA-N,183,1-[(1-Methoxypropan-2-yl)oxy]propan-2-ol,1-[(1-Methoxypropan-2-yl)oxy]propan-2-ol,20324-32-7,C7H16O3,59,8.3326,981,148.1099444,PEG-Bruchstück,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-PDCBTSVBFUQBNN-UHFFFAOYSA-N,186,1-({1-[(Prop-2-en-1-yl)oxy]propan-2-yl}oxy)propan-2-ol,"2-propanol, 1-[1-methyl-2-(2-propenyloxy)ethoxy]-",55956-25-7,C9H18O3,59,8.4542,984,174.1255944,PEG-Bruchstück,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-FOLPKOWCPVGUCA-UHFFFAOYSA-N,187,1-(2-Methoxypropoxy)propan-2-ol,1-(2-Methoxypropoxy)-2-propanol,13429-07-7,C7H16O3,59,8.6914,1010,148.1099444,PEG-Bruchstück,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-FOLPKOWCPVGUCA-UHFFFAOYSA-N,188,1-(2-Methoxypropoxy)-propan-2-ol,Dipropylene glycol monomethyl ether (Salt/Mix),1321-21-7,C7H16O3,59,8.751,1010,148.109944,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-GC_BPMZ_101_RI_1024,189,,GC_BPMZ_101_RI_1024,,,101,8.7747,1024,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-VMKMZRBPOSNUMX-UHFFFAOYSA-N,190,"2,2'-Oxydi(propan-1-ol)","2,2'-Oxybis-1-propanol",108-61-2,C6H14O3,59,9.0003,1042,134.0942943,Lösungsmittel / Weichmacher,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-WVDDGKGOMKODPV-UHFFFAOYSA-N,192,Phenylmethanol,Benzyl alcohol,100-51-6,C7H8O,108,9.0801,1036,108.0575149,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-XSNQECSCDATQEL-UHFFFAOYSA-N,193,"2,6-Dimethyloct-7-en-2-ol",Dihydromyrcenol,18479-58-8,C10H20O,59,9.8601,1064,156.1514153,related CAS 25279-08-7,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-IWDCLRJOBJJRNH-UHFFFAOYSA-N,194,4-Methylphenol,p-Cresol,106-44-5,C7H8O,107,10.0021,1077,108.0575149,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-FPYUJUBAXZAQNL-UHFFFAOYSA-N,195,2-Chlorobenzaldehyde,2-Chlorobenzaldehyde,89-98-5,C7H5ClO,139,10.7344,1105,140.0028925,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-NOOLISFMXDJSKH-UHFFFAOYSA-N,197,5-Methyl-2-(propan-2-yl)cyclohexan-1-ol,Menthol,1490-04-6,C10H20O,95,11.7572,1169,156.1514153,Duftstoff,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-OAYXUHPQHDHDDZ-UHFFFAOYSA-N,198,2-(2-Butoxyethoxy)ethan-1-ol,2-(2-Butoxyethoxy)ethanol,112-34-5,C8H18O3,57,12.0433,1186,162.1255944,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-FCEHBMOGCRZNNI-UHFFFAOYSA-N,199,1-Benzothiophene,Benzothiophene,95-15-8,C8H6S,134,12.0855,1188,134.0190214,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-ZSRDNPVYGSFUMD-UHFFFAOYSA-N,200,(3-Chlorophenyl)methanol,3-Chlorobenzyl alcohol,873-63-2,C7H7ClO,107,12.5011,1216,142.0185425,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-CUVLMZNMSPJDON-UHFFFAOYSA-N,202,1-[(1-Butoxypropan-2-yl)oxy]propan-2-ol,1-[(1-Butoxy-2-propanyl)oxy]-2-propanol,29911-28-2,C10H22O3,59,12.9197,1238,190.1568946,PEG-Bruchstück,94,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-AKGGYBADQZYZPD-UHFFFAOYSA-N,204,4-Phenylbutan-2-one,Benzylacetone,2550-26-7,C10H12O,148,12.9655,1232,148.088815,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-PNBCGVPSRHMZDO-UHFFFAOYSA-N  ,208,,1-[(1-Propoxypropan-2-yl)oxy]propan-2-yl acetate,1000378-33-1,C11H22O4,101,13.2393,1323,218.151809,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-BWHOZHOGCMHOBV-UHFFFAOYSA-N,209,4-Phenylbut-3-en-2-one,Methyl styryl ketone,122-57-6,C10H10O,131,14.7599,1337,146.0731649,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-LXOFYPKXCSULTL-UHFFFAOYSA-N,212,"2,4,7,9-Tetramethyldec-5-yne-4,7-diol","2,4,7,9-Tetramethyl-5-decyne-4,7-diol",126-86-3,C14H26O2,109,15.5293,1407,226.1932801,"Surfunyl, Tensid, in Farben/Druckertinten",90,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-GC_BPMZ_99_RI_1515,214,,GC_BPMZ_99_RI_1515,,,99,16.904,1515,,"Phosporic acid - Verbindung, Flammschutzmittel",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-GC_BPMZ_85_RI_1563,215,,GC_BPMZ_85_RI_1563,,,85,17.5093,1563,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-RWCCWEUUXYIKHB-UHFFFAOYSA-N,216,Diphenylmethanone,Benzophenone,119-61-9,C13H10O,105,18.3925,1635,182.0731649,"Fotoinhibitor, UV-Härter/Schutz in Kosmetika/Verpackungen",76,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-GC_BPMZ_173_RI_1641,217,,GC_BPMZ_173_RI_1641,,,173,18.4633,1641,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-BGRWYDHXPHLNKA-UHFFFAOYSA-N,218,"N,N'-(Ethane-1,2-diyl)bis(N-acetylacetamide)",Tetraacetylethylenediamine,10543-57-4,C10H16N2O4,127,18.4861,1689,228.111007,Bleichmittel - Aktivator in Waschmitteln,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-KVWWIYGFBYDJQC-UHFFFAOYSA-N,219,Methyl (3-oxo-2-pentylcyclopentyl)acetate,Methyl dihydrojasmonate,24851-98-7,C13H22O3,83,18.6353,1649,226.1568946,Hedione,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-NMMIRFKUKVHGTQ-UHFFFAOYSA-N  ,220,,Butyl dodecyl ether,1000406-40-3,C16H34O,57,18.7862,1675,242.260965,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-RDOFJDLLWVCMRU-UHFFFAOYSA-N,222,Bis(2-methylpropyl) hexanedioate,Diisobutyl adipate,141-04-8,C14H26O4,129,18.9505,1695,258.1831093,"Weichmacher, plasticizer for hair fixatives and nail polishes, DIBA",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-YTHPHGWTOWIKBU-UHFFFAOYSA-N  ,223,,"Phthalic acid, methyl 2-pentyl ester",1000315-55-1,C14H18O4,163,19.3939,1774,250.120509,Weichmacher/ Phthalat,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-MXVMODFDROLTFD-UHFFFAOYSA-N,224,"3,6,9,12-Tetraoxahexadecan-1-ol","3,6,9,12-Tetraoxahexadecan-1-ol",1559-34-8,C12H26O5,89,19.7047,1744,250.1780239,"Tensid, PEG-Ether des Butylalkohols (C4). durchschnittliche Anzahl der Molekueleinheit -CH2-CH2-O-, auch ""Anzahl""ethylene glycol monobutyl ether z.B. Tetraethylene glycol monobutyl ether",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-RYYVLZVUVIJVGH-UHFFFAOYSA-N,227,"1,3,7-Trimethyl-3,7-dihydro-1H-purine-2,6-dione",Caffeine,58-08-2,C8H10N4O2,194,20.9141,1835,194.0803756,"auf Wirkstoffliste, ca 2 t/a",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-OKVLJDBLLKNOQZ-UHFFFAOYSA-N,229,"N-(2-Ethylhexyl)-3,5,5-trimethylhexanamide","Hexanamide, 3,5,5-trimethyl-N-2-ethylhexyl-",1000419-85-1,C17H35NO,158,21.1274,1898,269.271864,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-BXWNKGSJHAJOGX-UHFFFAOYSA-N,231,Hexadecan-1-ol,1-Hexadecanol,36653-82-4,C16H34O,83,21.2356,1880,242.2609657,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-ZTMZUYHXZPUDRF-UHFFFAOYSA-N,232,"7,9-Di-tert-butyl-1-oxaspiro[4.5]deca-6,9-diene-2,8-dione","7,9-Di-tert-butyl-1-oxaspiro(4,5)deca-6,9-diene-2,8-dione",82304-66-3,C17H24O3,205,21.6607,1923,276.1725446,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-GC_BPMZ_57_RI_1948,233,,GC_BPMZ_57_RI_1948,,,57,21.8505,1948,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-IPCSVZSSVZVIGE-UHFFFAOYSA-N,234,Hexadecanoic acid,Hexadecanoic acid,57-10-3,C16H32O2,73,22.0052,1968,256.2402303,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-CBFCDTFDPHXCNY-UHFFFAOYSA-N,236,Icosane,Eicosane,112-95-8,C20H42,71,22.3715,2000,282.3286514,KW,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-YOACQWFUEYGCCF-UHFFFAOYSA-N  ,237,Ethyl hexyl phosphonate,"Phosphonic acid, ethyl hexyl ester",1656-73-1,C8H19O3P,83,22.471,1329,194.107182,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-JNRAEZULKWNOQO-NTCAYCPXSA-N  ,239,"(2E)-2-Benzylidene-3,4-dihydro-1(2H)-naphthalenone",Dibutyl phthalate,6261-32-1,C17H14O,233,22.8013,2095,234.1044655,Weichmacher/ Phthalat,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-GC_BPMZ_111_RI_2097,240,,GC_BPMZ_111_RI_2097,,,111,23.3192,2097,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-FNAZRRHPUDJQCJ-UHFFFAOYSA-N,241,Henicosane,Heneicosane,629-94-7,C21H44,71,23.3661,2100,296.3443014,KW,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-QIQXTHQIDYTFRH-UHFFFAOYSA-N,242,Octadecanoic acid,Octadecanoic acid,57-11-4,C18H36O2,73,23.9749,2172,284.2715304,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-HOWGUJZVBDQJKV-UHFFFAOYSA-N,243,Docosane,Docosane,629-97-0,C22H46,71,24.3149,2200,310.3599515,KW,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-FKMHSNTVILORFA-UHFFFAOYSA-N,244,2-{2-[2-(Dodecyloxy)ethoxy]ethoxy}ethan-1-ol,Triethylene glycol monododecyl ether,3055-94-5,C18H38O4,85,24.5193,2281,318.2770097,"Tensid, PEG-Ether des Laurylalkohols (C12). Die Zahl hinter Laureth steht fuer die durchschnittliche Anzahl der Molekueleinheit -CH2-CH2-O-, auch ""Anzahl""ethylene glycol monododecyl ether z.B. Laureth-4 = Tetraethylene glycol monododecyl ether",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-AGWKUHGLWHMYTG-UHFFFAOYSA-N,245,"2,5,8,11,14,17,20-Heptaoxadocosan-22-ol","2,5,8,11,14,17,20-Heptaoxadocosan-22-ol",4437-01-8,C15H32O8,59,25.3204,2342,340.209719,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-WPMWEFXCIYCJSA-UHFFFAOYSA-N,247,"3,6,9,12-Tetraoxatetracosan-1-ol",Tetraethylene glycol monododecyl ether,5274-68-0,C20H42O5,57,26.8772,2556,362.3032245,"Tensid, PEG-Ether des Laurylalkohols (C12). Die Zahl hinter Laureth steht fuer die durchschnittliche Anzahl der Molekueleinheit -CH2-CH2-O-, auch ""Anzahl""ethylene glycol monododecyl ether z.B. Laureth-4 = Tetraethylene glycol monododecyl ether",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-SZGNWRSFHADOMY-UHFFFAOYSA-N,248,"2,5,8,11,14,17,20,23-Octaoxapentacosan-25-ol",Octaethylene glycol monomethyl ether,25990-96-9,C17H36O9,89,27.6525,2615,384.2359327,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-XJEGLRCXBDRGTP-UHFFFAOYSA-N  ,249,,"Terephthalic acid, di(4-octyl) ester",1000323-74-2,C24H38O4,149,28.9547,2704,390.27701,Weichmacher/ Phthalat,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-LAPRIVJANDLWOK-UHFFFAOYSA-N,250,"3,6,9,12,15-Pentaoxaheptacosan-1-ol",Pentaethylene glycol monododecyl ether,3055-95-6,C22H46O6,57,28.9996,2830,406.3294392,"Tensid, PEG-Ether des Laurylalkohols (C12). Die Zahl hinter Laureth steht fuer die durchschnittliche Anzahl der Molekueleinheit -CH2-CH2-O-, auch ""Anzahl""ethylene glycol monododecyl ether z.B. Laureth-4 = Tetraethylene glycol monododecyl ether",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-YYGNTYWPHWGJRM-AAJYLUCBSA-N,251,"(6E,10E,14E,18E)-2,6,10,15,19,23-Hexamethyltetracosa-2,6,10,14,18,22-hexaene",(E)-Squalene,111-02-4,C30H50,69,29.5592,2832,410.3912516,"biogen, u.a. Hautschutzmittel,  Schmiermittel",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-NSSHGPBKKVJJMM-UHFFFAOYSA-N,255,"3-Methyl-4-(2,6,6-trimethylcyclohex-1-en-1-yl)but-3-en-2-one","3-Methyl-4-(2,6,6-trimethyl-1-cyclohexen-1-yl)-3-buten-2-one",79-89-0,C14H22O,191,18.8559,1583,206.1670653,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-RIWRBSMFKVOJMN-UHFFFAOYSA-N,256,2-Methyl-1-phenylpropan-2-ol,"1,1-Dimethylphenylethanol",100-86-7,C10H14O,92,11.5014,1125,150.1044651,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-GCGZDUFEEQNVPR-UHFFFAOYSA-N,257,"1-(2,6,6-Trimethylcyclohex-2-en-1-yl)but-3-en-1-one",.alpha.-damascone,31089-90-4,C13H20O,69,14.9968,1378,192.1514153,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-JRJBVWJSTHECJK-UHFFFAOYSA-N,258,"3-Methyl-4-(2,6,6-trimethylcyclohex-2-en-1-yl)but-3-en-2-one",alpha-Isomethylionone,127-51-5,C14H22O,135,16.4667,1470,206.1670653,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-AAOVKJBEBIDNHE-UHFFFAOYSA-N,260,"7-Chloro-1-methyl-5-phenyl-1,3-dihydro-2H-1,4-benzodiazepin-2-one",Diazepam,439-14-5,C16H13ClN2O,256,27.1021,2446,284.0716407,,94.6,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-GC_BPMZ_86_RI_867,261,,GC_BPMZ_86_RI_867,,,86,4.1256,867,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-AZZWZMUXHALBCQ-UHFFFAOYSA-N,262,"4,4'-Methylenebis(2,6-dimethylphenol)","Phenol, 4,4'-methylenebis[2,6-dimethyl-",5384-21-4,C17H20O2,241,25.4251,2313,256.1463299,,79.4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-RONZAEMNMFQXRA-UHFFFAOYSA-N,263,"2-Methyl-1,2,3,4,10,14b-hexahydropyrazino[2,1-a]pyrido[2,3-c][2]benzazepine",Mirtazapine,85650-52-8,C17H19N3,195,25.3321,2323,265.1578976,,75.8,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-GC_BPMZ_253_RI_1785,264,,GC_BPMZ_253_RI_1785,,C16H22O3Si3,253,20.1202,1785,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-BCDHBQLNRAQGHR-UHFFFAOYSA-N,265,9-Methyl-9H-carbazol-1-ol,1-Hydroxy-N-methylcarbazole,3449-61-4,C13H11NO,197,20.0349,1827,197.084064,,64.3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-GC_BPMZ_253_RI_2607,267,,GC_BPMZ_253_RI_2607,,C22H32O2,253,27.8198,2607,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-GC_BPMZ_78_RI_914,268,,GC_BPMZ_78_RI_914,,,78,5.8359,914,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-WXPWZZHELZEVPO-UHFFFAOYSA-N,269,(4-Methylphenyl)(phenyl)methanone,4-Methylbenzophenone,134-84-9,C14H12O,119,18.6358,1694,196.088815,,65,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-QZCLKYGREBVARF-UHFFFAOYSA-N,270,"Tributyl 2-(acetyloxy)propane-1,2,3-tricarboxylate",Acetyl tributyl citrate,77-90-7,C20H34O8,185,24.9435,2250,402.2253681,,86.9,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-GSANOGQCVHBHIF-UHFFFAOYSA-N,271,Tetradecamethylcycloheptasiloxane,"Cycloheptasiloxane, tetradecamethyl-",107-50-6,C14H42O7Si7,281,16.621,1502,518.1315394,Säule,67,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-GC_BPMZ_327_RI_1891,273,,GC_BPMZ_327_RI_1891,,,327,21.2555,1891,,Säule,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-GC_BPMZ_281_RI_1009,274,,GC_BPMZ_281_RI_1009,,,281,8.4112,1009,,Säule,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-WTLBZVNBAKMVDP-UHFFFAOYSA-N,275,Tris(2-butoxyethyl) phosphate,Tris(2-butoxyethyl) phosphate,78-51-3,C18H39O7P,125,26.2333,2363,398.2433406,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-PHWISQNXPLXQRU-UHFFFAOYSA-N,276,Dimethylcarbamothioyl chloride,Dimethylthiocarbamoyl chloride,16420-13-6,C3H6ClNS,123,10.6677,931,122.9909481,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-SODJJEXAWOSSON-UHFFFAOYSA-N,277,Bis(2-hydroxy-4-methoxyphenyl)methanone,"2,2'-Dihydroxy-4,4'-dimethoxybenzophenone",131-54-4,C15H14O5,151,26.8839,2422,274.0841236,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-NBBZMDUHKWRYSZ-UHFFFAOYSA-N,278,Methyl dimethylcarbamodithioate,Methyl dimethyldithiocarbamate,3735-92-0,C4H9NS2,88,13.4095,1082,135.0176416,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-YVPJVAWPIRGOJN-UHFFFAOYSA-N,284,"2~5~-Phenyl-2~1~,2~2~,2~3~,2~4~,2~5~,2~6~-hexahydro-1~1~,2~1~:2~3~,3~1~-terphenyl","1,3,5-Triphenylcyclohexane, cis,trans-",28336-57-4,C24H24,91,26.7062,2471,312.1878008,,90.3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-GC_BPMZ_57_RI_2000,285,,GC_BPMZ_57_RI_2000,,,57,22.3866,2000,,"ähnlich: Undecane, 3,7-dimethyl-",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-VDAVEASVPZDNQB-UHFFFAOYSA-N,286,"3,7-Dimethyldecane","3,7-Dimethyldecane",17312-54-8,C12H26,71,10.9262,1134,170.2034508,,89.3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-NQUMJENPNGXAIH-UHFFFAOYSA-N,288,"2,5-Dimethylnonane","2,5-Dimethylnonane",17302-27-1,C11H24,57,10.4086,1108,156.1878008,,86.9,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-MEJYDZQQVZJMPP-ULAWRXDQSA-N,293,"1,4:3,6-Dianhydro-2,5-di-O-methyl-D-glucitol","1,4:3,6-Dianhydro-2,5-di-O-methyl-D-glucitol",5306-85-4,C8H14O4,69,13.4433,1280,174.0892089,,85.3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-IEVWHTVOIZEXCC-UHFFFAOYSA-N,300,"4,7-Dimethylundecane","4,7-Dimethylundecane",17301-32-5,C13H28,57,12.5781,1224,184.2191009,,83.7,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-DYWJAEXIUOQBMV-YPKPFQOOSA-N   ,301,(9Z)-Docosenenitrile,(Z)-Docos-9-enenitrile,1000465-48-0,C22H41N,122,26.9571,2495,319.3239,,84.7,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-FNAZRRHPUDJQCJ-UHFFFAOYSA-N,302,Henicosane,Heneicosane,629-94-7,C21H44,57,23.3813,2100,296.3443014,KW,88.7,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-XUGNVMKQXJXZCD-UHFFFAOYSA-N,303,Propan-2-yl hexadecanoate,"Hexadecanoic acid, 1-methylethyl ester",142-91-6,C19H38O2,256,22.6503,2023,298.2871805,,77.7,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-LQERIDTXQFOHKA-UHFFFAOYSA-N,304,Nonadecane,Nonadecane,629-92-5,C19H40,57,21.3498,1900,268.3130013,KW,81,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-RWNUSVWFHDHRCJ-UHFFFAOYSA-N,305,1-Butoxypropan-2-ol,1-Butoxy-2-propanol,5131-66-8,C7H16O2,87,7.1616,945,132.1150298,,96.4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-AZLWQVJVINEILY-UHFFFAOYSA-N,306,2-[2-(Dodecyloxy)ethoxy]ethan-1-ol,2-[2-(Dodecyloxy)ethoxy]ethanol,3055-93-4,C16H34O3,57,22.4035,2006,274.250795,,94.7,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-MWKFXSUHUHTGQN-UHFFFAOYSA-N,307,Decan-1-ol,1-Decanol,112-30-1,C10H22O,70,13.4946,1273,158.1670653,,98.4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-XXJWXESWEXIICW-UHFFFAOYSA-N,308,2-(2-Ethoxyethoxy)ethan-1-ol,2-(2-Ethoxyethoxy)ethanol,111-90-0,C6H14O3,72,8.5481,1007,134.0942943,,95.4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-XUJLWPFSUCHPQL-UHFFFAOYSA-N,309,11-Methyldodecan-1-ol,11-Methyldodecanol,85763-57-1,C13H28O,69,15.9011,1492,200.2140155,,86.4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-KBPLFHHGFOOTCA-UHFFFAOYSA-N,310,Octan-1-ol,1-Octanol,111-87-5,C8H18O,56,9.9069,1071,130.1357652,,93.6,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-CYUXNNBUIUGQFS-UHFFFAOYSA-N ,311,,Decyl pentyl ether,1000406-41-5,C15H32O,57,16.8501,1572,228.245316,,87.7,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-GTJOHISYCKPIMT-UHFFFAOYSA-N,313,2-Methylundecane,2-Methylundecane,7045-71-8,C12H26,71,11.6076,1164,170.2034508,,86.3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-KXDAEFPNCMNJSK-UHFFFAOYSA-N,314,Benzamide,Benzamide,55-21-0,C7H7NO,105,14.494,1344,121.0527638,,93.8,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-HTZWVZNRDDOFEI-UHFFFAOYSA-N,315,3-Methylundecane,3-Methylundecane,1002-43-3,C12H26,71,11.7221,1170,170.2034508,,85,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-XPJRQAIZZQMSCM-UHFFFAOYSA-N,316,"3,6,9,12,15,18-Hexaoxaicosane-1,20-diol","3,6,9,12,15,18-Hexaoxaicosane-1,20-diol",5617-32-3,C14H30O8,89,25.3494,2364,326.1940679,,86.2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-LQSZQAHPRJMRET-UHFFFAOYSA-N   ,317,"2-(Heptan-3-yl)-1,3-dioxolane",2-Ethylhexanal ethylene glycol acetal,4359-47-1,C10H20O2,73,11.3589,1171,172.14633,,86.3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-PUOUKAVMFCKYKW-UHFFFAOYSA-N,318,"3-Ethyl-5,5-dimethylimidazolidine-2,4-dione","3-ethyl-5,5-dimethylimidazolidine-2,4-dione",37021-15-1,C7H12N2O2,141,13.9832,1318,156.0898776,,86.3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-COBPKKZHLDDMTB-UHFFFAOYSA-N,319,2-[2-(2-Butoxyethoxy)ethoxy]ethan-1-ol,2-[2-(2-Butoxyethoxy)ethoxy]ethanol,143-22-6,C10H22O4,89,16.2496,1470,206.1518092,,95.4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-IMFACGCPASFAPR-UHFFFAOYSA-N,320,"N,N-Dibutylbutan-1-amine",Tributylamine,102-82-9,C12H27N,142,12.199,1169,185.2143499,,93.7,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-SFNALCNOMXIBKG-UHFFFAOYSA-N,321,2-(Dodecyloxy)ethan-1-ol,2-(Dodecyloxy)ethanol,4536-30-5,C14H30O2,57,19.3554,1731,230.2245802,,92.9,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-SBASXUCJHJRPEV-UHFFFAOYSA-N,322,2-(2-Methoxyethoxy)ethan-1-ol,Diethylene glycol monomethyl ether,111-77-3,C5H12O3,58,6.7536,932,120.0786442,,85.2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-QCDWFXQBSFUVSP-UHFFFAOYSA-N,323,2-Phenoxyethan-1-ol,2-Phenoxyethanol,122-99-6,C8H10O2,94,12.6147,1225,138.0680796,,93.8,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-QHERURXKGFABNZ-UHFFFAOYSA-N,324,2-(Tetradecyloxy)ethan-1-ol,2-(Tetradecyloxy)ethanol,2136-70-1,C16H34O2,57,21.6407,1930,258.2558803,,86.2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-VSZGCLXGCOECAY-UHFFFAOYSA-N,325,"5,11-Dihydro-10H-dibenzo[b,f]azepin-10-one",DE(5-carboxamide)oxcarbazepine,21737-58-6,C14H11NO,209,23.8392,2178,209.084064,,80.2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-FSEXLNMNADBYJU-UHFFFAOYSA-N,326,2-Phenylquinoline,2-Phenylquinoline,612-96-4,C15H11N,205,22.0808,1912,205.0891494,,86.9,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-HSZCNGTZJWZAMF-UHFFFAOYSA-N,327,"([1,1'-Biphenyl]-4-yl)acetonitrile",4-Cyanomethylbiphenyl,31603-77-7,C14H11N,193,20.8701,1825,193.0891494,,85.2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-PAYRUJLWNCNPSJ-UHFFFAOYSA-N,328,Aniline,Aniline,62-53-3,C6H7N,93,7.7707,977,93.05784923,,89.6,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-VEAFKIYNHVBNIP-UHFFFAOYSA-N,329,"1,1'-(Propane-1,3-diyl)dibenzene","1,3-Diphenylpropane",1081-75-0,C15H16,92,18.6618,1633,196.1252005,,82.3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-ZFXDUWYVZMVVQT-UHFFFAOYSA-N,330,3-[2-(4-Hydroxyphenyl)propan-2-yl]phenol,"3,4'-Isopropylidenediphenol",46765-25-7,C15H16O2,213,24.2581,2173,228.1150298,,92.2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-CRBJBYGJVIBWIY-UHFFFAOYSA-N,331,2-(Propan-2-yl)phenol,2-Isopropylphenol,88-69-7,C9H12O,121,12.2797,1199,136.088815,,96.7,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-SIKJAQJRHWYJAI-UHFFFAOYSA-N,332,1H-Indole,Indole,120-72-9,C8H7N,117,13.7893,1295,117.0578492,,91.6,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-SAOKZLXYCUGLFA-UHFFFAOYSA-N,334,Bis(2-ethylhexyl) hexanedioate,Bis(2-ethylhexyl)hexanedioate,103-23-1,C22H42O4,129,26.1455,2398,370.3083098,,86.4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-PIRFDOCDTWKNTM-UHFFFAOYSA-N,335,"2,3,5-Trimethylphenanthrene","2,3,5-Trimethylphenanthrene",3674-73-5,C17H16,220,24.136,2142,220.1252005,,81.1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-XOJVVFBFDXDTEG-UHFFFAOYSA-N,336,"2,6,10,14-Tetramethylpentadecane",Norphytane,1921-70-6,C19H40,71,19.1893,1703,268.3130013,,92.4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-NDJKXXJCMXVBJW-UHFFFAOYSA-N,337,Heptadecane,Heptadecane,629-78-7,C17H36,71,19.117,1700,240.2817012,KW,91.8,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-QVRDLHPBZKOROD-UHFFFAOYSA-N,338,"2,3-Dimethylphenanthrene","Phenanthrene, 2,3-dimethyl-",3674-65-5,C16H14,206,23.079,2058,206.1095505,,87.6,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-DDLIGBOFAVUZHB-UHFFFAOYSA-N,340,"8-Chloro-6-(2-fluorophenyl)-1-methyl-4H-imidazo[1,5-a][1,4]benzodiazepine",Midazolam,59467-70-8,C18H13ClFN3,310,28.4115,2690,325.0782033,,98,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-KCXMKQUNVWSEMD-UHFFFAOYSA-N,341,(Chloromethyl)benzene,Benzyl chloride,100-44-7,C7H7Cl,91,8.6631,1023,126.0236279,,98,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-YQLRKXVEALTVCZ-UHFFFAOYSA-N,342,"2-Isocyanato-1,3-dimethylbenzene","Benzene, 2-isocyanato-1,3-dimethyl-",28556-81-2,C9H9NO,147,11.7628,1190,147.0684139,,97,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-HUMNYLRZRPPJDN-UHFFFAOYSA-N,343,Benzaldehyde,Benzaldehyde,100-52-7,C7H6O,106,7.4656,962,106.0418648,Öl der Bittermandel,97,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-OLBCVFGFOZPWHH-UHFFFAOYSA-N,344,"2,6-Di(propan-2-yl)phenol",Propofol,2078-54-8,C12H18O,163,14.748,1364,178.1357652,Arzneistoff: Narkotika,97,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-MGWAVDBGNNKXQV-UHFFFAOYSA-N,346,"Bis(2-methylpropyl) benzene-1,2-dicarboxylate",Diisobutyl phthalate,84-69-5,C16H22O4,149,21.0886,1887,278.1518092,Weichmacher/ Phthalat,95,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-XXBDWLFCJWSEKW-UHFFFAOYSA-N,348,"N,N-Dimethyl-1-phenylmethanamine","N,N-Dimethylbenzylamine",103-83-3,C9H13N,91,9.2659,1042,135.1047994,,94,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-QPFMBZIOSGYJDE-UHFFFAOYSA-N,349,"1,1,2,2-Tetrachloroethane","1,1,2,2-Tetrachloroethane",79-34-5,C2H2Cl4,83,6.3031,853,165.8910609,,94,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-VLPFTAMPNXLGLX-UHFFFAOYSA-N,350,"Propane-1,2,3-triyl trioctanoate",Tricaprylin,538-23-8,C27H50O6,127,30.4111,2958,470.3607393,,93,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-DMBAVJVECSKEPF-UHFFFAOYSA-N,351,"2-Hydroxypropane-1,3-diyl dioctanoate","1,3-Dioctanoyl glycerol",1429-66-9,C19H36O5,127,25.9339,2376,344.2562743,,96,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-TTWJBBZEZQICBI-UHFFFAOYSA-N,352,4-Amino-5-chloro-N-[2-(diethylamino)ethyl]-2-methoxybenzamide,Metoclopramide,364-62-5,C14H22ClN3O2,86,28.6132,2715,299.1400547,,96,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-UFWIBTONFRDIAS-UHFFFAOYSA-N,353,Naphthalene,Naphthalene,91-20-3,C10H8,128,11.9527,1185,128.0626003,"PAK, Std",98,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-NIHNNTQXNPWCJQ-UHFFFAOYSA-N,354,9H-Fluorene,Fluorene,86-73-7,C13H10,166,17.8399,1593,166.0782503,"PAK, Std",96,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-CWRYPZZKDGJXCA-UHFFFAOYSA-N,355,"1,2-Dihydroacenaphthylene",Acenaphthene,83-32-9,C12H10,153,16.5532,1495,154.0782503,"PAK, Std",98,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-YNPNZTXNASCQKK-UHFFFAOYSA-N,356,Phenanthrenato,Phenanthrene,85-01-8,C14H10,178,20.2284,1795,178.0782503,"PAK, Std",96,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-BBEAQIROQSPTKN-UHFFFAOYSA-N,358,Pyrene,Pyrene,129-00-0,C16H10,202,23.7834,2140,202.0782503,"PAK, Std",99,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-GVEPBJHOBDJJJI-UHFFFAOYSA-N,359,Fluoranthene,Fluoranthene,206-44-0,C16H10,202,23.246,2085,202.0782503,"PAK, Std",99,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-MWPLVEDNUUSJAV-UHFFFAOYSA-N,360,Anthracene,Anthracene,120-12-7,C14H10,178,20.3396,1805,178.0782503,"PAK, Std",97,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-HXGDTGSAIMULJN-UHFFFAOYSA-N,361,Acenaphthylene,Acenaphthylene,208-96-8,C12H8,152,16.0682,1458,152.0626003,"PAK, Std",97,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-LHRCREOYAASXPZ-UHFFFAOYSA-N,362,Benzo[k]tetraphene,"Dibenz(a,h)anthracene",53-70-3,C22H14,278,33.0484,3280,278.1095505,"PAK, Std",77,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-GYFAGKUZYNFMBN-UHFFFAOYSA-N,363,Benzo[ghi]perylene,"Benzo(g,h,i)perylene",191-24-2,C22H12,276,33.6748,3362,276.0939004,"PAK, Std",87,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-FTOVXSOBNPWTSH-UHFFFAOYSA-N,364,Benzo[e]acephenanthrylene,Benzo(b)fluoranthene,205-99-2,C20H12,252,29.4393,2812,252.0939004,"PAK, Std",94,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-FMMWHPNWAFZXNH-UHFFFAOYSA-N,365,Benzo[pqr]tetraphene,Benzo(a)pyrene,50-32-8,C20H12,252,30.1277,2901,252.0939004,"PAK, Std",95,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-HAXBIWFMXWRORI-UHFFFAOYSA-N,366,Benzo[k]fluoranthene,Benzo(k)fluoranthene,207-08-9,C20H12,252,29.4891,2818,252.0939004,"PAK, Std",94,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-WDECIBYCCFPHNR-UHFFFAOYSA-N,368,Chrysene,Chrysene,218-01-9,C18H12,228,26.9573,2497,228.0939004,"PAK, Std",95,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-DXBHBZVCASKNBY-UHFFFAOYSA-N,369,Tetraphene,Benz(a)anthracene,56-55-3,C18H12,228,26.8623,2486,228.0939004,"PAK, Std",97,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-SXQBHARYMNFBPS-UHFFFAOYSA-N,370,"Indeno[1,2,3-cd]pyrene","Indeno(1,2,3-cd)pyrene",193-39-5,C22H12,276,32.9431,3267,276.0939004,"PAK, Std",87,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-CSHWQDPOILHKBI-AQZSQYOVSA-N,371,(~2~H_12_)Perylene,(~2~H_12_)Perylene,1520-96-3,C20D12,264,30.2561,2918,264.1692213,"PAK, Std, IS",81,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-DXBHBZVCASKNBY-AQZSQYOVSA-N,372,(~2~H_12_)Tetraphene,Tetraphene-d12,1718-53-2,C18D12,240,26.8103,2480,240.1692213,"PAK, Std, IS",88,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-NIHNNTQXNPWCJQ-QNNBDYQESA-N,373,(~2~H_10_)-9H-Fluorene,Fluorene-d10,81103-79-9,C13D10,176,17.772,1588,176.1410178,"PAK, Std, IS",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-XUPYJHCZDLZNFP-UHFFFAOYSA-N,374,Butyl butanoate,Butyl butyrate,109-21-7,C8H16O2,71,8.2783,998,144.1150298,,96,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-XMSXQFUHVRWGNA-UHFFFAOYSA-N,375,"2,2,4,4,6,6,8,8,10,10-Decamethyl-1,3,5,7,9,2,4,6,8,10-pentoxapentasilecane",Decamethylcyclopentasiloxane,541-02-6,C10H30O5Si5,73,11.5241,1163,370.0939567,Säule,96,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-JLYXXMFPNIAWKQ-SHFUYGGZSA-N,376,"(1R,2R,3R,4R,5S,6S)-1,2,3,4,5,6-Hexachlorocyclohexane","alpha-1,2,3,4,5,6-Hexachlorocyclohexane",319-84-6,C6H6Cl6,181,19.2707,1713,287.8600664,"CKW, Std",95,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-JLYXXMFPNIAWKQ-CDRYSYESSA-N,377,"(1r,2r,3r,4r,5r,6r)-1,2,3,4,5,6-Hexachlorocyclohexane",beta-Hexachlorocyclohexane,319-85-7,C6H6Cl6,183,19.8835,1765,287.8600664,"CKW, Std",93,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-JLYXXMFPNIAWKQ-GNIYUCBRSA-N,378,"(1R,2S,3r,4R,5S,6r)-1,2,3,4,5,6-Hexachlorocyclohexane",Lindane,58-89-9,C6H6Cl6,181,20.0203,1777,287.8600664,"CKW, Std",91,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-JLYXXMFPNIAWKQ-GPIVLXJGSA-N,379,"(1R,2S,3r,4R,5S,6s)-1,2,3,4,5,6-Hexachlorocyclohexane",delta-Hexachlorocyclohexane,319-86-8,C6H6Cl6,181,20.5578,1825,287.8600664,"CKW, Std",94,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-QWUWMCYKGHVNAV-UHFFFAOYSA-N,380,"1,1'-(Ethane-1,2-diyl)dibenzene",Bibenzyl,103-29-7,C14H14,91,17.0119,1525,182.1095505,,92,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-OYGXFRZNLCWGOZ-UHFFFAOYSA-N,381,5-Propyldecane,5-Propyldecane,17312-62-8,C13H28,57,13.0784,1249,184.2191009,,92,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-WMZNFELFMFOGCC-UHFFFAOYSA-N,382,"2,4-Dimethylundecane","2,4-Dimethylundecane",17312-80-0,C13H28,85,12.4063,1212,184.2191009,,91,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-ZQPPMHVWECSIRJ-KTKRTIGZSA-N,383,(9Z)-Octadec-9-enoic acid,Oleic acid,112-80-1,C18H34O2,83,23.7907,2145,282.2558803,,91,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-YDTIDQXHYVFIKB-HZJYTTRNSA-N,384,"Benzyl (9Z,12Z)-octadeca-9,12-dienoate",Benzyl linoleate,47557-83-5,C25H38O2,91,29.065,2765,370.2871805,,90,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-CZTAPVBKUXXDLY-UHFFFAOYSA-N   ,385,"1,2-Benzenedicarboxylic acid, didecan-2-yl ester",Didecan-2-yl phthalate,28029-89-2,C28H46O4,149,29.6907,2847,446.33961,Weichmacher/ Phthalat,94,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-HERSSAVMHCMYSQ-UHFFFAOYSA-N,386,"1,8-Diazacyclotetradecane-2,9-dione","1,8-Diazacyclotetradecane-2,9-dione",5776-79-4,C12H22N2O2,114,25.2037,2196,226.168128,,82,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-CPGPAVAKSZHMBP-UHFFFAOYSA-N,387,9-Methylanthracene,"Anthracene, 9-methyl-",779-02-2,C15H12,192,21.8278,1980,192.093901,,95,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-KANLOADZXMMCQA-UHFFFAOYSA-N,388,2-Methyl-phenanthrene,"Phenanthrene, 2-methyl-",2531-84-2,C15H12,192,21.7704,1898,192.093901,,91,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-GQBHYWDCHSZDQU-UHFFFAOYSA-N,389,"Benzenamine, 4-(1,1,3,3-tetramethylbutyl)-N-[4-(1,1,3,3-tetramethylbutyl)phenyl]-","Benzenamine, 4-(1,1,3,3-tetramethylbutyl)-N-[4-(1,1,3,3-tetramethylbutyl)phenyl]-",15721-78-5,C28H43N,322,30.6262,2846,393.33955,,92,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-QPUYECUOLPXSFR-UHFFFAOYSA-N,390,"Naphthalene, 1-methyl",1-Methylnaphthalene                 P566,90-12-0,C11H10,142,14.0639,1307,142.07825,,92,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-GQEZCXVZFLOKMC-UHFFFAOYSA-N,391,1-Hexadecene,Cetene,629-73-2,C16H32,83,17.844,1592,224.2504015,,88,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-JBKVHLHDHHXQEQ-UHFFFAOYSA-N,392,"2H-Azepin-2-one, hexahydro-",Caprolactam,105-60-2,C6H11NO,113,13.0771,1253,113.084064,,88,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-STCOOQWBFONSKY-UHFFFAOYSA-N,395,Tributyl phosphate,Tributyl phosphate,126-73-8,C12H27O4P,99,18.6179,1659,266.1646963,"Std, LC",91,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-SNICXCGAKADSCV-JTQLQIEISA-N,396,"Pyridine, 3-(1-methyl-2-pyrrolidinyl)-, (S)-",Nicotine,54-11-5,C10H14N2,84,14.7095,1362,162.115699,"Std, LC",92,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-MMOXZBCLCQITDF-UHFFFAOYSA-N,397,"Benzamide, N,N-diethyl-3-methyl-",Diethyltoluamide,134-62-3,C12H17NO,119,17.8236,1592,191.131014,"Std, LC",93,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-PXWLVJLKJGVOKE-UHFFFAOYSA-N,398,"2,3-Dimethyl-4-isopropyl-1-phenyl-3H-pyrazolin-5-one",Propyphenazone,479-92-5,C14H18N2O,215,22.2185,1939,230.141913,"Std, LC",65,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-XZZNDPSIHUTMOC-UHFFFAOYSA-N,399,Triphenyl phosphate,Triphenyl phosphate,115-86-6,C18H15O4P,326,26.3113,2420,326.071,"Std, LC",93,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-HQUQLFOMPYWACS-UHFFFAOYSA-N,400,Tris(2-chloroethyl) phosphate,Tri(2-chloroethyl) phosphate,115-96-8,C6H12Cl3O4P,249,20.0194,1777,283.953879,"Std, LC",91,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-OXQOBQJCDNLAPO-UHFFFAOYSA-N,403,"2,3-Dimethylpyrazine","Pyrazine, 2,3-dimethyl-",5910-89-4,C6H8N2,108,6.4913,920,108.0687483,,94.8,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-HTDJPCNNEPUOOQ-UHFFFAOYSA-N,405,"2,2,4,4,6,6-Hexamethyl-1,3,5,2,4,6-trioxatrisilinane","Cyclotrisiloxane, hexamethyl-",541-05-9,C6H18O3Si3,207,4.4784,851,222.056374,Säule,93.9,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-ONKNPOPIGWHAQC-UHFFFAOYSA-N,406,"4,6,6,7,8,8-Hexamethyl-1,3,4,6,7,8-hexahydroindeno[5,6-c]pyran","Cyclopenta[g]-2-benzopyran, 1,3,4,6,7,8-hexahydro-4,6,6,7,8,8-hexamethyl-",1222-05-5,C18H26O,243,21.0307,1851,258.1983655,"Duftstoff in Waschmitteln/Reinigungsmitteln, über 1000t/a weltweit",93.7,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-SNRUBQQJIBEYMU-UHFFFAOYSA-N,407,Dodecane,Dodecane,112-40-3,C12H26,57,12.2526,1200,170.203,KW,92.5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-XGJPUQFWFRCCFO-UHFFFAOYSA-N,408,"3,3,4,4-Tetramethyl-2,5-pyrrolidinedione",Tetramethyl succinimide,3566-61-8,C8H13NO2,84,13.1786,1203,155.094628,,91.8,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-LMYRWZFENFIFIT-UHFFFAOYSA-N,410,p-Toluenesulfamide,"Benzenesulfonamide, 4-methyl-",70-55-3,C7H9NO2S,91,18.8238,1673,171.035399,pTSA-Std,91.4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-AYKYXWQEBUNJCN-UHFFFAOYSA-N,411,"3-Methyl-2,5-furandione","2,5-Furandione, 3-methyl-",616-02-4,C5H4O3,68,7.1456,949,112.016044,,97.8,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-DGTNSSLYPYDJGL-UHFFFAOYSA-N,412,Phenyl isocyanate,"Benzene, isocyanato-",103-71-9,C7H5NO,119,7.4388,979,119.0371137,,97.6,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-BGHCVCJVXZWKCC-UHFFFAOYSA-N,416,Tetradecane,Tetradecane,629-59-4,C14H30,57,15.2987,1400,198.234751,KW,95.4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-ZFOZVQLOBQUTQQ-UHFFFAOYSA-N,418,"Tributyl 2-hydroxy-1,2,3-propanetricarboxylate  ",Butyl citrate,77-94-1,C18H32O7,185,24.3237,2150,360.214804,,94.8,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-RSJKGSCJYJTIGS-UHFFFAOYSA-N,419,Undecane,Undecane,1120-21-4,C11H24,57,10.4696,1100,156.1878008,KW,97.1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-DIOQZVSQGTUSAI-UHFFFAOYSA-N,420,Decane,Decane,124-18-5,C10H22,57,8.4257,1018,142.1721507,KW,95.8,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-YIWUKEYIRIRTPP-UHFFFAOYSA-N,421,2-Ethylhexan-1-ol,"1-Hexanol, 2-ethyl-",104-76-7,C8H18O,57,9.0689,1030,130.1357652,,95.7,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-GCOMUEMCOXVZNI-UHFFFAOYSA-N,423,S-Methyl dimethylthiocarbamate  ,"Carbamothioic acid, dimethyl-, S-methyl ester",3013-02-3,C4H9NOS,72,8.8475,993,119.040485,,95.3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-ICKWICRCANNIBI-UHFFFAOYSA-N,424,"2,4-Di-tert-butylphenol","2,4-Di-tert-butylphenol",96-76-4,C14H22O,191,16.8356,1514,206.1670653,,94,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-JHIVVAPYMSGYDF-UHFFFAOYSA-N,425,Cyclohexyl ketone,Cyclohexanone,108-94-1,C6H10O,98,5.9174,894,98.073165,,92.9,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-UJPPXNXOEVDSRW-UHFFFAOYSA-N,426,Isopropyl laurate,"Dodecanoic acid, 1-methylethyl ester",10233-13-3,C15H30O2,102,18.2616,1618,242.22458,,96.1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-KQWGXHWJMSMDJJ-UHFFFAOYSA-N,427,Isocyanatocyclohexane,"Cyclohexane, isocyanato-",3173-53-3,C7H11NO,97,8.3248,1086,125.084064,,96.1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-HFZWRUODUSTPEG-UHFFFAOYSA-N,428,"1,3-Dichloro-4-hydroxybenzene","Phenol, 2,4-dichloro-",120-83-2,C6H4Cl2O,162,11.701,1186,161.96392,,94.9,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-CYTYCFOTNPOANT-UHFFFAOYSA-N,429,"1,1,2,2-Tetrachloroethene",Tetrachloroethene,127-18-4,C2Cl4,166,4.0999,815,163.875411,"LHKW, Std",94,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-AUHZEENZYGFFBQ-UHFFFAOYSA-N,430,"2,4,6-Trimethylbenzene",Mesitylene,108-67-8,C9H12,105,7.69,972,120.0939,,93.4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-GWHJZXXIDMPWGX-UHFFFAOYSA-N,431,"1,3,4-Trimethylbenzene","1,2,4-Trimethylbenzene              P434",95-63-6,C9H12,105,7.6896,990,120.0939,,94.1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-ZUOUZKKEUPVFJK-LHNTUAQVSA-N,432,"(~2~H_10_)-1,1'-Biphenyl",ISTD Biphenyl d10,1486-01-7,C12D10,164,15.0023,1375,164.1410178,IS 50µl (500ng/l),97,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-URAYPUMNDPQOKB-UHFFFAOYSA-N,433,"Propane-1,2,3-triyl triacetate",Triacetin,102-76-1,C9H14O6,103,14.5833,1350,218.0790382,,99,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-HUMNYLRZRPPJDN-UHFFFAOYSA-N,434,Benzaldehyde,Benzaldehyde,100-52-7,C7H6O,105,7.4656,962,106.0418648,Öl der Bittermandel,97,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-IIYFAKIEWZDVMP-UHFFFAOYSA-N,435,Tridecane,Tridecane,629-50-5,C13H28,57,13.8288,1300,184.219101,KW,97.4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-FXLOVSHXALFLKQ-UHFFFAOYSA-N,436,4-Methylbenzaldehyde,"Benzaldehyde, 4-methyl-",104-87-0,C8H8O,119,10.0909,1079,120.0575149,,97,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-QAPVYZRWKDXNDK-UHFFFAOYSA-N,438,4-Octyl-N-(4-octylphenyl)aniline,"Benzenamine, 4-octyl-N-(4-octylphenyl)-",101-67-7,C28H43N,322,30.6028,3184,393.33955,,94.2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-XTJFFFGAUHQWII-UHFFFAOYSA-N,439,"Hexanedioic acid, 1,6-dibutyl ester",Dibutyl adipate,105-99-7,C14H26O4,129,19.9074,1766,258.18311,,91.6,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-HMMGMWAXVFQUOA-UHFFFAOYSA-N,440,"2,2,4,4,6,6,8,8-Octamethyl-1,3,5,7,2,4,6,8-tetroxatetrasilocane","Cyclotetrasiloxane, octamethyl-",556-67-2,C8H24O4Si4,281,8.479,994,296.0751654,Säule,95,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-ZVLSVDOZUWIUIJ-UHFFFAOYSA-N  ,441,"2-Isopentyl-3,5-dimethylpyrazine","2-(3-Methylbutyl)-3,5-dimethylpyrazine",111150-30-2,C11H18N2,122,14.4218,1341,178.146998,,94.6,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-FINHMKGKINIASC-UHFFFAOYSA-N,442,Tetramethylpyrazine,"Pyrazine, tetramethyl-",1124-11-4,C8H12N2,136,10.196,1088,136.1000484,,92.7,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-UAUDZVJPLUQNMU-KTKRTIGZSA-N,443,(13Z)-13-Docosenamide,"13-Docosenamide, (Z)-",112-84-5,C22H43NO,59,29.2707,2793,337.334465,,90.3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-DURPTKYDGMDSBL-UHFFFAOYSA-N,444,n-Dibutyl ether,n-Butyl ether,142-96-1,C8H18O,57,5.6941,858,130.135765,,95.9,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-FVUGZKDGWGKCFE-UHFFFAOYSA-N,446,"1-(2,3,8,8-Tetramethyl-1,2,3,4,5,6,7,8-octahydro-2-naphthalenyl)ethanone",Amberonne (isomer 2),54464-57-2,C16H26O,191,18.855,1658,234.198365,"Related CAS#: 54464-57-2, 1000470-69-8",90,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-RWPICVVBGZBXNA-UHFFFAOYSA-N,447,"1,4-Benzenedicarboxylic acid, bis(2-ethylhexyl) ester",Dioctyl terephthalate,6422-86-2,C24H38O4,149,28.9732,2756,390.27701,Weichmacher/ Phthalat,82,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-JRUGFHHEKLYFPC-UHFFFAOYSA-N,448,"4-(2-Cyanoethyl)-1,2,3,4-tetrahydro-1-naphthalenecarbonitrile  #","3-[1-(4-Cyano-1,2,3,4-tetrahydronaphthyl)]propanenitrile",57964-40-6,C14H14N2,129,22.2123,1978,210.115699,,82,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-UTBIMNXEDGNJFE-UHFFFAOYSA-N,450,"2,3,6-Collidine","Pyridine, 2,3,6-trimethyl-",1462-84-6,C8H11N,121,8.1774,1003,121.0891495,,95.7,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-RFFLAFLAYFXFSW-UHFFFAOYSA-N,451,"Benzene, 1,2-dichloro-","1,2-Dichlorobenzene",95-50-1,C6H4Cl2,146,9.1096,1043,145.969006,LHKW-Std,99,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-OCJBOOLMMGQPQU-UHFFFAOYSA-N,452,"Benzene, 1,4-dichloro-","1,4-Dichlorobenzene",106-46-7,C6H4Cl2,146,8.6264,1021,145.969006,LHKW-Std,98.8,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-RWGFKTVRMDUZSP-UHFFFAOYSA-N,453,Isopropylbenzene,Cumen,98-82-8,C9H12,105,6.5962,922,120.0939,LHKW-Std,91.5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-CTQNGGLPUBDAKN-UHFFFAOYSA-N,454,o-Xylene,"1,2-Dimethylbenzene",95-47-6,C8H10,91,5.8353,888,106.0782504,LHKW-Std,91,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-DIKBFYAXUHHXCS-UHFFFAOYSA-N,455,Tribromomethane,Tribromomethane,75-25-2,CHBr3,173,5.6485,892,249.762836,LHKW-Std,86,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-URLKBWYHVLBVBO-UHFFFAOYSA-N,457,p-Xylene,"1,4-Dimethylbenzene",106-42-3,C8H10,91,5.313,865,106.0782504,LHKW-Std,91.2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-YNQLUTRBYVCPMQ-UHFFFAOYSA-N,458,Ethylbenzene,Ethylbenzene,100-41-4,C8H10,91,5.1374,855,106.0782503,LHKW-Std,97.6,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-MVPPADPHJFYWMZ-UHFFFAOYSA-N,459,Phenyl Chloride,Chlorobenzene,108-90-7,C6H5Cl,112,4.8111,849,112.007978,LHKW-Std,85,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-VKPSKYDESGTTFR-UHFFFAOYSA-N,460,"2,2,4,6,6-Pentamethylheptane","Heptane, 2,2,4,6,6-pentamethyl-",13475-82-6,C12H26,57,8.1426,990,170.203451,,92.4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-NLZUEZXRPGMBCV-UHFFFAOYSA-N,461,BHT,Butylated Hydroxytoluene,128-37-0,C15H24O,205,16.8841,1513,220.182715,std,95.9,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-DXYYSGDWQCSKKO-UHFFFAOYSA-N,462,"2-Methyl-1,3-benzothiazole","Benzothiazole, 2-methyl-",120-75-2,C8H7NS,149,13.7783,1281,149.029921,std,96,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-DQWPFSLDHJDLRL-UHFFFAOYSA-N,463,TEP,Triethyl phosphate,78-40-0,C6H15O4P,99,11.0166,1137,182.070796,std,97.8,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-WSEQXVZVJXJVFP-UHFFFAOYSA-N,464,"1-[3-(Dimethylamino)propyl]-1-(4-fluorophenyl)-1,3-dihydro-2-benzofuran-5-carbonitrile",Citalopram,59729-33-8,C20H21FN2O,58,26.7203,2407,324.163792,std,58.3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-YEDUAINPPJYDJZ-UHFFFAOYSA-N,465,"1,3-Benzothiazol-2-ol",2(3H)-Benzothiazolone,934-34-9,C7H5NOS,151,18.9831,1630,151.009185,std,78.3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-NIQCNGHVCWTJSM-UHFFFAOYSA-N,466,"Dimethyl benzene-1,2-dicarboxylate",Dimethyl phthalate,131-11-3,C10H10O4,163,16.119,1454,194.057909,PHTH std,96.5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-FLKPEMZONWLCSK-UHFFFAOYSA-N,467,"Diethyl benzene-1,2-dicarboxylate",Diethyl phthalate,84-66-2,C12H14O4,149,17.9468,1598,222.0892089,PHTH std,96.3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-DOIRQSBPFJWKBE-UHFFFAOYSA-N,468,"Dibutyl benzene-1,2-dicarboxylate",Dibutyl phthalate,84-74-2,C16H22O4,149,22.0844,1973,278.1518092,PHTH std,98.7,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-IRIAEXORFWYRCZ-UHFFFAOYSA-N,469,"Benzyl butyl benzene-1,2-dicarboxylate",Benzyl butyl phthalate,85-68-7,C19H20O4,149,25.821,2336,312.1361591,PHTH std,95.3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-BJQHLKABXJIVAM-UHFFFAOYSA-N,470,"Bis(2-ethylhexyl) benzene-1,2-dicarboxylate",Bis(2-ethylhexyl) phthalate,117-81-7,C24H38O4,149,27.4294,2559,390.27701,PHTH std,91.2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-MQIUGAXCHLFZKX-UHFFFAOYSA-N,471,"Dioctyl benzene-1,2-dicarboxylate",Di-n-octyl phthalate,117-84-0,C24H38O4,149,28.8969,2746,390.27701,PHTH std,93,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-VMNISWKTOHUZQN-UHFFFAOYSA-N,473,"1,3,5-Trichloro-2,4,6-trimethylbenzene",alpha HCH d6 (IS),5324-68-5,C9H9Cl3,224,19.1854,1706,221.977,CKW std IS,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-FRCCEHPWNOQAEU-UHFFFAOYSA-N,474,"1,4,5,6,7,8,8-Heptachloro-3a,4,7,7a-tetrahydro-1H-4,7-methanoindene",Heptachlor,76-44-8,C10H5Cl7,100,21.5872,1887,369.821095,CKW std,90.6,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-QBYJBZPUGVGKQQ-SJJAEHHWSA-N,475,"(1R,4S,4aS,5S,8R,8aR)-1,2,3,4,10,10-Hexachloro-1,4,4a,5,8,8a-hexahydro-1,4:5,8-dimethanonaphthalene",Aldrin,309-00-2,C12H8Cl6,263,22.3232,1955,361.875717,CKW std,91.4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-ZXFXBSWRVIQKOD-HWKPLSEASA-N,476,cis Heptachlor epoxide (Isomer B),Heptachlor epoxide,1024-57-3,C10H5Cl7O,353,23.1623,2015,385.816008,CKW std,88,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-RDYMFSUJUZBWLH-AZVNHNRSSA-N,477,Endosulfan I,alpha Endosulfan,959-98-8,C9H6Cl6O3S,195,23.8985,2114,403.816881,CKW std,88.8,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-UCNVFOCBFJOQAL-UHFFFAOYSA-N,478,"1,1'-(2,2-Dichloroethene-1,1-diyl)bis(4-chlorobenzene)","p,p'-DDE",72-55-9,C14H8Cl4,246,24.3673,2169,315.938011,CKW std,95.5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-DFBKLUNHFCTMDC-PICURKEMSA-N,479,"rel-(1aR,2R,2aS,3S,6R,6aR,7S,7aS)-3,4,5,6,9,9-Hexachloro-1a,2,2a,3,6,6a,7,7a-octahydro-2,7:3,6-dimethanonaphtho[2,3-b]oxirene",Dieldrin,60-57-1,C12H8Cl6O,79,24.4239,2167,377.87063,CKW std,80.9,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-DFBKLUNHFCTMDC-GKRDHZSOSA-N,480,"rel-(1aR,2R,2aR,3R,6S,6aS,7S,7aS)-3,4,5,6,9,9-Hexachloro-1a,2,2a,3,6,6a,7,7a-octahydro-2,7:3,6-dimethanonaphtho[2,3-b]oxirene",Endrin,72-20-8,C12H8Cl6O,263,24.863,2211,377.87063,CKW std,82.3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-RDYMFSUJUZBWLH-BRZMKDEISA-N,481,Endosulfan II,beta Endosulfan,33213-65-9,C9H6Cl6O3S,195,25.0463,2236,403.816881,CKW std,84.7,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-AHJKRLASYNVKDZ-UHFFFAOYSA-N,482,"1,1-Dichloro-2,2-bis(p-chlorophenyl)ethane","p,p DDD",72-54-8,C14H10Cl4,235,25.1978,2293,317.953661,CKW std,94,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-HCTWZIFNBBCVGM-YFQUMFGZSA-N,483,"1,2,4-Methenocyclopenta[cd]pentalene-5-carboxaldehyde, 2,2a,3,3,4,7-hexachlorodecahydro-, (1.alpha.,2.beta.,2a.beta.,4.beta.,4a.beta.,5.beta.,6a.beta.,6b.beta.,7R*)-",Endrin aldehyde,7421-93-4,C12H8Cl6O,67,25.4191,2261,377.87063,CKW,89.8,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-AAPVQEMYVNZIOO-DDYGQXQVSA-N,484,"6,7,8,9,10,10-Hexachloro-1,5,5a,6,9,9a-hexahydro- 6,9-methano-2,4,3-benzodioxathiepin-3,3-dioxide",Endosulfan sulfate,1031-07-8,C9H6Cl6O4S,272,25.8884,2362,419.811796,CKW,77,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-YVGGHNCTFXOJCH-UHFFFAOYSA-N,486,"1,1'-(2,2,2-Trichloroethane-1,1-diyl)bis(4-chlorobenzene)","p,p'-DDT",50-29-3,C14H9Cl5,235,25.9254,2334,351.914688,CKW std,86.6,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-CVUGPAFCQJIYDT-UHFFFAOYSA-N,487,"1-Chloro-2-[2,2,2-trichloro-1-(4-chlorophenyl)ethyl]benzene","o,p'-DDT",789-02-6,C14H9Cl5,235,25.92,2270,351.914688,CKW std,84.4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-FVUGZKDGWGKCFE-UHFFFAOYSA-N,488,"1-(2,3,8,8-Tetramethyl-1,2,3,4,5,6,7,8-octahydro-2-naphthalenyl)ethanone",Amberonne (isomer 2),54464-57-2,C16H26O,191,18.8532,1658,234.198365,,72,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-FVUGZKDGWGKCFE-UHFFFAOYSA-N,489,"1-(2,3,8,8-Tetramethyl-1,2,3,4,5,6,7,8-octahydro-2-naphthalenyl)ethanone",Amberonne (isomer 3),1000470-69-9,C16H26O,191,18.9324,1664,234.198365,,72,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-GECHUMIMRBOMGK-UHFFFAOYSA-N,490,4-Amino-N-(pyridin-2-yl)benzene-1-sulfonamide,Sulfapyridine,144-83-2,C11H11N3O2S,184,27.3008,2510,249.057198,std,96,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-HFDVRLIODXPAHB-UHFFFAOYSA-N,491,Tetradec-1-ene,1-Tetradecene,1120-36-1,C14H28,83,15.1169,1392,196.219101,,91.8,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-YHJBCRBYDBNEIK-UHFFFAOYSA-N,493,(Undecan-2-yl)benzene,"Benzene, (1-methyldecyl)-",4536-88-3,C17H28,105,19.1565,1708,232.219101,,90.1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-PGVOXXHNGYYHHB-UHFFFAOYSA-N,495,(Dodecan-3-yl)benzene,"Benzene, (1-ethyldecyl)-",2400-00-2,C18H30,91,19.8995,1766,246.234751,,90.5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-QYDYPVFESGNLHU-ZHACJKMWSA-N,496,Methyl (9E)-octadec-9-enoate,"9-Octadecenoic acid, methyl ester, (E)-",1937-62-8,C19H36O2,83,23.3552,2110,296.27153,,88.8,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-DKPFZGUDAPQIHT-UHFFFAOYSA-N,497,1-Butyl acetate,"Acetic acid, butyl ester",123-86-4,C6H12O2,56,4.2189,812,116.0837297,,98.4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-XKJMJYZFAWYREL-UHFFFAOYSA-N,498,Hexadecamethylcyclooctasiloxane,"Cyclooctasiloxane, hexadecamethyl-",556-68-3,C16H48O8Si8,73,18.7128,1704,592.1503308,Säule,89,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-HLBLWEWZXPIGSM-UHFFFAOYSA-N,499,"Benzenamine, 4,4'-oxybis-","4,4'-Oxydianiline",101-80-4,C12H12N2O,200,23.5814,2140,200.094963,std,96.1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-GLYJVQDYLFAUFC-UHFFFAOYSA-N,500,"Palmitic acid, butyl ester","Hexadecanoic acid, butyl ester",111-06-8,C20H40O2,56,24.1568,2175,312.30283,,94.8,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-ULBTUVJTXULMLP-UHFFFAOYSA-N,501,"Stearic acid, butyl ester","Octadecanoic acid, butyl ester",123-95-5,C22H44O2,56,25.9601,2388,340.334131,,93.8,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-DJBNUMBKLMJRSA-UHFFFAOYSA-N,502,"N-(2-Piperidinylmethyl)-2,5-bis(2,2,2-trifluoroethoxy)benzamide  ",Flecainide,54143-55-4,C17H20F6N2O3,84,25.0467,2231,414.137812,std,40,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-VRPRIAVYSREHAN-UHFFFAOYSA-N,503,(1-Methylundecyl)benzene,"Benzene, (1-methylundecyl)-",2719-61-1,C18H30,105,20.3366,1812,246.234751,,90.7,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-LQZZUXJYWNFBMV-UHFFFAOYSA-N,504,Dodecan-1-ol,1-Dodecanol,112-53-8,C12H26O,83,16.2687,1474,186.198365,,92.7,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-RHDHXBLZBVAPTL-UHFFFAOYSA-N,505,(Dodecan-4-yl)benzene,"Benzene, (1-propylnonyl)-",2719-64-4,C18H30,91,19.6487,1742,246.234751,,91.8,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-RDQSIADLBQFVMY-UHFFFAOYSA-N,506,"2,6-Di-tert-butylcyclohexa-2,5-diene-1,4-dione","2,5-Cyclohexadiene-1,4-dione, 2,6-bis(1,1-dimethylethyl)-",719-22-2,C14H20O2,177,16.2246,1472,220.14633,,84.5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-NSQAXMRLBNXEHK-UHFFFAOYSA-N,507,(Undecan-4-yl)benzene,"Benzene, (1-propyloctyl)-",4536-86-1,C17H28,91,18.4513,1643,232.219101,,88.4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-ZYHJQFMTTFCBKH-UHFFFAOYSA-N,508,(Dodecan-6-yl)benzene,"Benzene, (1-pentylheptyl)-",2719-62-2,C18H30,91,19.4399,1726,246.234751,,87.9,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-JWUXJYZVKZKLTJ-UHFFFAOYSA-N,509,"2,2,6,6-Tetramethylpiperidin-4-one","4-Piperidinone, 2,2,6,6-tetramethyl-",826-36-8,C9H17NO,140,10.6851,1137,155.1310142,"Vincubina, Odoratine",92,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-OVWYEQOVUDKZNU-UHFFFAOYSA-N,510,3-Methylbenzaldehyde,"Benzaldehyde, 3-methyl-",620-23-5,C8H8O,119,10.0195,1071,120.0575147,,91.8,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-IMKJGXCIJJXALX-SHUKQUCYSA-N,511,"Naphtho[2,1-b]furan-2(1H)-one, decahydro-3a,6,6,9a-tetramethyl-, (3aR,5aS,9aS,9bR)-",Sclareolide,564-20-5,C16H26O2,123,23.2367,2086,250.19328,,77.9,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-RZJRJXONCZWCBN-UHFFFAOYSA-N,512,Octadecane,Octadecane,593-45-3,C18H38,71,20.3848,1800,254.297351,KW,98,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-DCAYPVUWAIABOU-UHFFFAOYSA-N,513,Hexadecane,Hexadecane,544-76-3,C16H34,57,18.0324,1600,226.266051,KW,97.9,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-LROJZZICACKNJL-UHFFFAOYSA-N,514,"2,4,5-Trimethylbenzaldehyde","Benzaldehyde, 2,4,5-trimethyl-",5779-72-6,C10H12O,147,14.0356,1364,148.088815,,96.5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-FIHBHSQYSYVZQE-UHFFFAOYSA-N,515,"Hexane-1,6-diyl diprop-2-enoate",Hexamethylene diacrylate,13048-33-4,C12H18O4,55,17.8694,1602,226.120509,,96.3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-QUKGYYKBILRGFE-UHFFFAOYSA-N,516,Benzyl acetate,"Acetic acid, phenylmethyl ester",140-11-4,C9H10O2,108,11.7623,1164,150.06808,,96.1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-QNODIIQQMGDSEF-UHFFFAOYSA-N,517,(1-Hydroxycyclohexyl)(phenyl)methanone,"Methanone, (1-hydroxycyclohexyl)phenyl-",947-19-3,C13H16O2,99,19.2597,1687,204.115029,,95.1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-IBWFPYRVHYLXEU-UHFFFAOYSA-N,518,3-Hydroxy-3-phenylbutan-2-one,3-Hydroxy-3-phenylbutan-2-one,3155-01-9,C10H12O2,121,13.469,1320,164.08373,,94.9,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-UDSFAEKRVUSQDD-UHFFFAOYSA-N,519,Dimethyl hexanedioate,"Hexanedioic acid, dimethyl ester",627-93-0,C8H14O4,114,13.0796,1243,174.089209,,94.6,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-WHFKYDMBUMLWDA-UHFFFAOYSA-N,520,2-Phenoxyethyl acetate,"Ethanol, 2-phenoxy-, acetate",6192-44-5,C10H12O3,87,15.2264,1427,180.078644,,94.5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-POOSGDOYLQNASK-UHFFFAOYSA-N,521,Tetracosane,Tetracosane,646-31-1,C24H50,71,26.2411,2400,338.391253,KW,94.3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-XTDYIOOONNVFMA-UHFFFAOYSA-N,522,Dimethyl pentanedioate,"Pentanedioic acid, dimethyl ester",1119-40-0,C7H12O4,100,11.2804,1135,160.073559,,94.1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-WOZVHXUHUFLZGK-UHFFFAOYSA-N,523,"Dimethyl benzene-1,4-dicarboxylate","1,4-Benzenedicarboxylic acid, dimethyl ester",120-61-6,C10H10O4,163,16.8205,1515,194.057909,,93.9,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-XLPJNCYCZORXHG-UHFFFAOYSA-N,524,1-(Morpholin-4-yl)prop-2-en-1-one,N-Acryloylmorpholine,5117-12-4,C7H11NO2,86,13.4552,1146,141.078979,,93.5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-GISVICWQYMUPJF-UHFFFAOYSA-N,525,"2,4-Dimethylbenzaldehyde","Benzaldehyde, 2,4-dimethyl-",15764-16-6,C9H10O,133,12.6408,1181,134.073165,,93.3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-XMLYCEVDHLAQEL-UHFFFAOYSA-N,526,2-Hydroxy-2-methyl-1-phenylpropan-1-one,2-Hydroxy-iso-butyrophenone,7473-98-5,C10H12O2,59,13.7172,1278,164.08373,,93.3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-MBZRJSQZCBXRGK-XYPYZODXSA-N,527,"(1r,4r)-4-tert-Butylcyclohexyl acetate","Cyclohexanol, 4-(1,1-dimethylethyl)-, acetate, trans-",1900-69-2,C12H22O2,82,15.0235,1322,198.16198,,92.8,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-GNKZMNRKLCTJAY-UHFFFAOYSA-N,528,1-(4-Methylphenyl)ethan-1-one,"Ethanone, 1-(4-methylphenyl)-",122-00-9,C9H10O,119,12.1208,1183,134.073165,,92.5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-FCXPVFLEDIQLLO-UHFFFAOYSA-N,529,(Tridecan-2-yl)benzene,"Benzene, (1-methyldodecyl)-",4534-53-6,C19H32,105,21.6421,1916,260.2504,,91.7,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-MUXOBHXGJLMRAB-UHFFFAOYSA-N,530,Dimethyl butanedioate,"Butanedioic acid, dimethyl ester",106-65-0,C6H10O4,115,9.2969,1030,146.057909,,91.7,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-HMSWAIKSFDFLKN-UHFFFAOYSA-N,531,Hexacosane,Hexacosane,630-01-3,C26H54,71,27.8945,2600,366.422552,KW,90.9,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-MZTIRLOLMGVVEK-UHFFFAOYSA-N,532,(Tridecan-5-yl)benzene,"Benzene, (1-butylnonyl)-",4534-50-3,C19H32,91,20.8218,1826,260.2504,,90.5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-HJOVHMDZYOCNQW-UHFFFAOYSA-N,533,"3,5,5-Trimethylcyclohex-2-en-1-one",Isophorone,78-59-1,C9H14O,82,10.9787,1123,138.1044655,,90.4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-ZYURHZPYMFLWSH-UHFFFAOYSA-N,534,Octacosane,Octacosane,630-02-4,C28H58,57,29.4278,2800,394.453852,KW,90.1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-XSAYZAUNJMRRIR-UHFFFAOYSA-N,535,1-(Naphthalen-2-yl)ethan-1-one,2-Naphthyl methyl ketone,93-08-3,C12H10O,155,18.3391,1620,170.073165,,89.8,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-KTALPKYXQZGAEG-UHFFFAOYSA-N,536,2-(Propan-2-yl)-9H-thioxanthen-9-one,"9H-Thioxanthen-9-one, 2-(1-methylethyl)-",5495-84-1,C16H14OS,239,26.3079,2349,254.076536,,89.7,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-KVZJLSYJROEPSQ-UHFFFAOYSA-N,537,"1,2-Dimethylcyclohexane","Cyclohexane, 1,2-dimethyl- (cis/trans)",583-57-3,C8H16,97,4.5692,800,112.1252007,,89.1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-NVHBFHMWJJMQTG-UHFFFAOYSA-N,538,(Undecan-3-yl)benzene,"Benzene, (1-ethylnonyl)-",4536-87-2,C17H28,91,18.8937,1670,232.219101,,88.8,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-XCSGHNKDXGYELG-UHFFFAOYSA-N,539,"1,1'-[Ethane-1,2-diylbis(oxy)]dibenzene","Benzene, 1,1'-[1,2-ethanediylbis(oxy)]bis-",104-66-5,C14H14O2,77,20.5448,1811,214.09938,,88.7,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-RZGVZPAWCGDMCK-UHFFFAOYSA-N,540,(Tridecan-4-yl)benzene,"Benzene, (1-propyldecyl)-",4534-51-4,C19H32,91,20.9615,1840,260.2504,,87.9,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-RZVINYQDSSQUKO-UHFFFAOYSA-N,541,2-Phenoxyethyl prop-2-enoate,.beta.-Phenoxyethyl acrylate,48145-04-6,C11H12O3,99,16.4101,1425,192.078644,,87.9,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-NPAWGLOPXKCTCV-UHFFFAOYSA-N,542,(Dodecan-5-yl)benzene,"Benzene, (1-butyloctyl)-",2719-63-3,C18H30,91,19.6891,1730,246.234751,,87.4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-DDTJIQUCOLHYDL-UHFFFAOYSA-N,543,(Decan-2-yl)benzene,"Benzene, (1-methylnonyl)-",4537-13-7,C16H26,105,18.0972,1616,218.203451,,87,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-PYVIFMPVFLOTLN-UHFFFAOYSA-N,544,(Decan-3-yl)benzene,"Benzene, (1-ethyloctyl)-",4621-36-7,C16H26,91,17.6409,1568,218.203451,,86.8,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-GKDLTXYXODKDEA-UHFFFAOYSA-N,545,1-Phenylbutan-2-one,1-Phenyl-2-butanone,1007-32-5,C10H12O,91,12.8217,1192,148.088815,,86.5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-QLOPHJMYWXXKTM-UHFFFAOYSA-N,546,"1,3,6-Dioxathiocane","1,3,6-Dioxathiocane",2094-92-0,C5H10O2S,134,10.0645,1078,134.040151,,93.7,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-IVSZLXZYQVIEFR-UHFFFAOYSA-N,547,m-Xylene,"1,3-Dimethylbenzene",108-38-3,C8H10,91,5.2898,866,106.0782503,LHKW-Std,98.3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-FATBGEAMYMYZAF-UHFFFAOYSA-N,548,(9Z)-Octadec-9-enamide,"9-Octadecenamide, (Z)-",301-02-0,C18H35NO,59,25.7815,2386,281.271864,,96.5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-GOXQRTZXKQZDDN-UHFFFAOYSA-N,549,2-Ethylhexyl prop-2-enoate,2-Ethylhexyl acrylate,103-11-7,C11H20O2,70,12.6218,1220,184.14633,,90.2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-IBLKWZIFZMJLFL-UHFFFAOYSA-N,550,1-Phenoxypropan-2-ol,1-Phenoxypropan-2-ol,770-35-4,C9H12O2,94,12.9372,1251,152.08373,,97.1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+﻿InChiKey_GC_Name,ID_UALib,Name1_UALib,Name2_UALib,CAS_UALib,Formel_UALib,BPMZ_UALib,RT_UALib,RI_UALib,MW_UALib,Bem_UALib,MF_UALib
+AAOVKJBEBIDNHE-UHFFFAOYSA-N,260,"7-Chloro-1-methyl-5-phenyl-1,3-dihydro-2H-1,4-benzodiazepin-2-one",Diazepam,439-14-5,C16H13ClN2O,256,27.1021,2446,284.0716407,,94.6
+AAPVQEMYVNZIOO-DDYGQXQVSA-N,484,"6,7,8,9,10,10-Hexachloro-1,5,5a,6,9,9a-hexahydro- 6,9-methano-2,4,3-benzodioxathiepin-3,3-dioxide",Endosulfan sulfate,1031-07-8,C9H6Cl6O4S,272,25.8884,2362,419.811796,CKW,77
+AGWKUHGLWHMYTG-UHFFFAOYSA-N,245,"2,5,8,11,14,17,20-Heptaoxadocosan-22-ol","2,5,8,11,14,17,20-Heptaoxadocosan-22-ol",1/8/4437,C15H32O8,59,25.3204,2342,340.209719,,
+AHJKRLASYNVKDZ-UHFFFAOYSA-N,482,"1,1-Dichloro-2,2-bis(p-chlorophenyl)ethane","p,p DDD",72-54-8,C14H10Cl4,235,25.1978,2293,317.953661,CKW std,94
+AKGGYBADQZYZPD-UHFFFAOYSA-N,204,4-Phenylbutan-2-one,Benzylacetone,2550-26-7,C10H12O,148,12.9655,1232,148.088815,,
+AMNQQNTZDFYVGH-UHFFFAOYSA-N,114,"1,1,1,3,3-Pentamethyl-3-phenyldisiloxane",Pentamethylphenyldisiloxane,14920-92-4,C11H20OSi2,209,7.44,1087,224.1052683,Säule,81
+ASUMBDPCWUXZFX-UHFFFAOYSA-N   ,150,,"Phthalic acid, di(6-methylhept-2-yl) ester",1000377-97-3,C24H38O4,149,27.4164,2575,390.27701,Weichmacher/ Phthalat,81
+AUHZEENZYGFFBQ-UHFFFAOYSA-N,430,"2,4,6-Trimethylbenzene",Mesitylene,108-67-8,C9H12,105,7.69,972,120.0939,,93.4
+AXISYYRBXTVTFY-UHFFFAOYSA-N,89,Propan-2-yl tetradecanoate,Isopropyl tetradecanoate,110-27-0,C17H34O2,228,20.5443,1827,270.2558803,,95
+AYKYXWQEBUNJCN-UHFFFAOYSA-N,411,"3-Methyl-2,5-furandione","2,5-Furandione, 3-methyl-",616-02-4,C5H4O3,68,7.1456,949,112.016044,,97.8
+AZLWQVJVINEILY-UHFFFAOYSA-N,306,2-[2-(Dodecyloxy)ethoxy]ethan-1-ol,2-[2-(Dodecyloxy)ethoxy]ethanol,3055-93-4,C16H34O3,57,22.4035,2006,274.250795,,94.7
+AZZWZMUXHALBCQ-UHFFFAOYSA-N,262,"4,4'-Methylenebis(2,6-dimethylphenol)","Phenol, 4,4'-methylenebis[2,6-dimethyl-",5384-21-4,C17H20O2,241,25.4251,2313,256.1463299,,79.4
+BBEAQIROQSPTKN-UHFFFAOYSA-N,358,Pyrene,Pyrene,129-00-0,C16H10,202,23.7834,2140,202.0782503,"PAK, Std",99
+BCDHBQLNRAQGHR-UHFFFAOYSA-N,265,9-Methyl-9H-carbazol-1-ol,1-Hydroxy-N-methylcarbazole,3449-61-4,C13H11NO,197,20.0349,1827,197.084064,,64.3
+BDCFWIDZNLCTMF-UHFFFAOYSA-N,104,2-Phenylpropan-2-ol,2-Phenylpropan-2-ol,617-94-7,C9H12O,121,10.1241,1098,136.088815,,92
+BEVFKHLJPJLSEX-UHFFFAOYSA-N  ,125,"6-Methyl-1,2,3,5,8,8a-hexahydronaphthalene","Naphthalene, 1,4,4a,5,6,7-hexahydro-2-methyl-",107914-86-3,C11H16,148,13.8362,1184,148.1252,,82
+BGHCVCJVXZWKCC-UHFFFAOYSA-N,416,Tetradecane,Tetradecane,629-59-4,C14H30,57,15.2987,1400,198.234751,KW,95.4
+BGRWYDHXPHLNKA-UHFFFAOYSA-N,218,"N,N'-(Ethane-1,2-diyl)bis(N-acetylacetamide)",Tetraacetylethylenediamine,10543-57-4,C10H16N2O4,127,18.4861,1689,228.111007,Bleichmittel - Aktivator in Waschmitteln,
+BJQHLKABXJIVAM-UHFFFAOYSA-N,470,"Bis(2-ethylhexyl) benzene-1,2-dicarboxylate",Bis(2-ethylhexyl) phthalate,117-81-7,C24H38O4,149,27.4294,2559,390.27701,PHTH std,91.2
+BNCADMBVWNPPIZ-UHFFFAOYSA-N,67,"N~2~,N~2~,N~4~,N~4~,N~6~,N~6~-Hexakis(methoxymethyl)-1,3,5-triazine-2,4,6-triamine",Hexa(methoxymethyl)melamine,3089-11-0,C15H30N6O6,207,26.899,2499,390.222683,,85
+BNXZHVUCNYMNOS-UHFFFAOYSA-N,147,1-Butylpyrrolidin-2-one,"2-Pyrrolidinone, 1-butyl-",3470-98-2,C8H15NO,98,13.6997,1300,141.1153641,,94
+BWHOZHOGCMHOBV-UHFFFAOYSA-N,209,4-Phenylbut-3-en-2-one,Methyl styryl ketone,122-57-6,C10H10O,131,14.7599,1337,146.0731649,,
+BXWNKGSJHAJOGX-UHFFFAOYSA-N,231,Hexadecan-1-ol,1-Hexadecanol,36653-82-4,C16H34O,83,21.2356,1880,242.2609657,,
+BYAUGQHXQRQQPB-UHFFFAOYSA-N  ,53,,"8-Ethyl-4,6,6,8-tetramethyl-3,4,6,7-tetrahydro-1H-cyclopenta(G)-2-benzopyran",78448-49-4,C18H26O,229,22.2839,1951,258.198366,Nist: 1000432-48-9,67
+CBFCDTFDPHXCNY-UHFFFAOYSA-N,236,Icosane,Eicosane,112-95-8,C20H42,71,22.3715,2000,282.3286514,KW,
+CMBSSVKZOPZBKW-UHFFFAOYSA-N,17,5-Methylpyridin-2-amine,6-Amino-3-methylpyridine,1603-41-4,C6H8N2,108,11.5954,1118,108.0687483,,82
+COBPKKZHLDDMTB-UHFFFAOYSA-N,319,2-[2-(2-Butoxyethoxy)ethoxy]ethan-1-ol,2-[2-(2-Butoxyethoxy)ethoxy]ethanol,143-22-6,C10H22O4,89,16.2496,1470,206.1518092,,95.4
+CPGPAVAKSZHMBP-UHFFFAOYSA-N,387,9-Methylanthracene,"Anthracene, 9-methyl-",779-02-2,C15H12,192,21.8278,1980,192.093901,,95
+CRBJBYGJVIBWIY-UHFFFAOYSA-N,331,2-(Propan-2-yl)phenol,2-Isopropylphenol,88-69-7,C9H12O,121,12.2797,1199,136.088815,,96.7
+CRSBERNSMYQZNG-UHFFFAOYSA-N,20,Dodec-1-ene,1-Dodecene,112-41-4,C12H24,83,12.0659,1197,168.1878008,KW,88
+CSHWQDPOILHKBI-AQZSQYOVSA-N,371,(~2~H_12_)Perylene,(~2~H_12_)Perylene,1520-96-3,C20D12,264,30.2561,2918,264.1692213,"PAK, Std, IS",81
+CTQNGGLPUBDAKN-UHFFFAOYSA-N,454,o-Xylene,"1,2-Dimethylbenzene",95-47-6,C8H10,91,5.8353,888,106.0782504,LHKW-Std,91
+CTRLABGOLIVAIY-UHFFFAOYSA-N,64,"10-Oxo-10,11-dihydro-5H-dibenzo[b,f]azepine-5-carboxamide",Oxcarbazepine,28721-07-5,C15H12N2O2,180,26.7932,2490,252.0898776,Trileptal,86
+CUVLMZNMSPJDON-UHFFFAOYSA-N,202,1-[(1-Butoxypropan-2-yl)oxy]propan-2-ol,1-[(1-Butoxy-2-propanyl)oxy]-2-propanol,29911-28-2,C10H22O3,59,12.9197,1238,190.1568946,PEG-Bruchstück,94
+CVUGPAFCQJIYDT-UHFFFAOYSA-N,487,"1-Chloro-2-[2,2,2-trichloro-1-(4-chlorophenyl)ethyl]benzene","o,p'-DDT",789-02-6,C14H9Cl5,235,25.92,2270,351.914688,CKW std,84.4
+CWQABBMFNPYHEF-UHFFFAOYSA-N   ,76,,"Carbonic acid, hexadecyl phenyl ester",1000314-58-0,C23H38O3,94,27.9559,2627,362.282095,KW mit Phenylester,84
+CWRYPZZKDGJXCA-UHFFFAOYSA-N,355,"1,2-Dihydroacenaphthylene",Acenaphthene,83-32-9,C12H10,153,16.5532,1495,154.0782503,"PAK, Std",98
+CYTYCFOTNPOANT-UHFFFAOYSA-N,429,"1,1,2,2-Tetrachloroethene",Tetrachloroethene,127-18-4,C2Cl4,166,4.0999,815,163.875411,"LHKW, Std",94
+CYUXNNBUIUGQFS-UHFFFAOYSA-N ,311,,Decyl pentyl ether,1000406-41-5,C15H32O,57,16.8501,1572,228.245316,,87.7
+CZTAPVBKUXXDLY-UHFFFAOYSA-N   ,385,"1,2-Benzenedicarboxylic acid, didecan-2-yl ester",Didecan-2-yl phthalate,28029-89-2,C28H46O4,149,29.6907,2847,446.33961,Weichmacher/ Phthalat,94
+DCAYPVUWAIABOU-UHFFFAOYSA-N,513,Hexadecane,Hexadecane,544-76-3,C16H34,57,18.0324,1600,226.266051,KW,97.9
+DDLIGBOFAVUZHB-UHFFFAOYSA-N,340,"8-Chloro-6-(2-fluorophenyl)-1-methyl-4H-imidazo[1,5-a][1,4]benzodiazepine",Midazolam,59467-70-8,C18H13ClFN3,310,28.4115,2690,325.0782033,,98
+DDTJIQUCOLHYDL-UHFFFAOYSA-N,543,(Decan-2-yl)benzene,"Benzene, (1-methylnonyl)-",4537-13-7,C16H26,105,18.0972,1616,218.203451,,87
+DFBKLUNHFCTMDC-GKRDHZSOSA-N,480,"rel-(1aR,2R,2aR,3R,6S,6aS,7S,7aS)-3,4,5,6,9,9-Hexachloro-1a,2,2a,3,6,6a,7,7a-octahydro-2,7:3,6-dimethanonaphtho[2,3-b]oxirene",Endrin,72-20-8,C12H8Cl6O,263,24.863,2211,377.87063,CKW std,82.3
+DFBKLUNHFCTMDC-PICURKEMSA-N,479,"rel-(1aR,2R,2aS,3S,6R,6aR,7S,7aS)-3,4,5,6,9,9-Hexachloro-1a,2,2a,3,6,6a,7,7a-octahydro-2,7:3,6-dimethanonaphtho[2,3-b]oxirene",Dieldrin,60-57-1,C12H8Cl6O,79,24.4239,2167,377.87063,CKW std,80.9
+DGTNSSLYPYDJGL-UHFFFAOYSA-N,412,Phenyl isocyanate,"Benzene, isocyanato-",103-71-9,C7H5NO,119,7.4388,979,119.0371137,,97.6
+DIKBFYAXUHHXCS-UHFFFAOYSA-N,455,Tribromomethane,Tribromomethane,75-25-2,CHBr3,173,5.6485,892,249.762836,LHKW-Std,86
+DIOQZVSQGTUSAI-UHFFFAOYSA-N,420,Decane,Decane,124-18-5,C10H22,57,8.4257,1018,142.1721507,KW,95.8
+DJBNUMBKLMJRSA-UHFFFAOYSA-N,502,"N-(2-Piperidinylmethyl)-2,5-bis(2,2,2-trifluoroethoxy)benzamide  ",Flecainide,54143-55-4,C17H20F6N2O3,84,25.0467,2231,414.137812,std,40
+DKPFZGUDAPQIHT-UHFFFAOYSA-N,497,1-Butyl acetate,"Acetic acid, butyl ester",123-86-4,C6H12O2,56,4.2189,812,116.0837297,,98.4
+DLTWBMHADAJAAZ-DTWKUNHWSA-N,19,"(1R,2R)-2-tert-Butylcyclohexan-1-ol","Cyclohexanol, 2-(1,1-dimethylethyl)-, (1R,2R)-rel-",7214-18-8,C10H20O,82,11.8292,1203,156.1514153,,94
+DLTWBMHADAJAAZ-UHFFFAOYSA-N,128,2-tert-Butylcyclohexan-1-ol,2-tert-Butylcyclohexanol,13491-79-7,C10H20O,82,11.7238,1182,156.1514153,Kunststoffadditiv,85
+DMBAVJVECSKEPF-UHFFFAOYSA-N,351,"2-Hydroxypropane-1,3-diyl dioctanoate","1,3-Dioctanoyl glycerol",1429-66-9,C19H36O5,127,25.9339,2376,344.2562743,,96
+DOIRQSBPFJWKBE-UHFFFAOYSA-N,468,"Dibutyl benzene-1,2-dicarboxylate",Dibutyl phthalate,84-74-2,C16H22O4,149,22.0844,1973,278.1518092,PHTH std,98.7
+DQBHJILNHNRDTM-UHFFFAOYSA-N,30,"2,6-Di-tert-butyl-4-hydroxy-4-methylcyclohexa-2,5-dien-1-one","2,6-Di-tert-butyl-4-hydroxy-4-methyl-2,5-cyclohexadien-1-one",10396-80-2,C15H24O2,165,16.3085,1471,236.17763,,84
+DQWPFSLDHJDLRL-UHFFFAOYSA-N,463,TEP,Triethyl phosphate,78-40-0,C6H15O4P,99,11.0166,1137,182.070796,std,97.8
+DROMNWUQASBTFM-UHFFFAOYSA-N,134,"Dinonyl benzene-1,2-dicarboxylate",Dinonyl phthalate,84-76-4,C26H42O4,149,29.9365,2880,418.3083098,PHTH std,90
+DURPTKYDGMDSBL-UHFFFAOYSA-N,444,n-Dibutyl ether,n-Butyl ether,142-96-1,C8H18O,57,5.6941,858,130.135765,,95.9
+DWTPSNLJCUREIA-UHFFFAOYSA-N   ,148,"1,3-Diacetyl-2,4,5-imidazolidinetrione","Imidazolidine-2,4,5-trione, 1,3-diacetyl-",115083-04-0,C7H6N2O5,198,21.4243,1883,198.027671,,80
+DXBHBZVCASKNBY-AQZSQYOVSA-N,372,(~2~H_12_)Tetraphene,Tetraphene-d12,1718-53-2,C18D12,240,26.8103,2480,240.1692213,"PAK, Std, IS",88
+DXBHBZVCASKNBY-UHFFFAOYSA-N,369,Tetraphene,Benz(a)anthracene,56-55-3,C18H12,228,26.8623,2486,228.0939004,"PAK, Std",97
+DXYYSGDWQCSKKO-UHFFFAOYSA-N,462,"2-Methyl-1,3-benzothiazole","Benzothiazole, 2-methyl-",120-75-2,C8H7NS,149,13.7783,1281,149.029921,std,96
+DYWJAEXIUOQBMV-YPKPFQOOSA-N   ,301,(9Z)-Docosenenitrile,(Z)-Docos-9-enenitrile,1000465-48-0,C22H41N,122,26.9571,2495,319.3239,,84.7
+FATBGEAMYMYZAF-UHFFFAOYSA-N,548,(9Z)-Octadec-9-enamide,"9-Octadecenamide, (Z)-",301-02-0,C18H35NO,59,25.7815,2386,281.271864,,96.5
+FCEHBMOGCRZNNI-UHFFFAOYSA-N,199,1-Benzothiophene,Benzothiophene,95-15-8,C8H6S,134,12.0855,1188,134.0190214,,
+FCXPVFLEDIQLLO-UHFFFAOYSA-N,529,(Tridecan-2-yl)benzene,"Benzene, (1-methyldodecyl)-",4534-53-6,C19H32,105,21.6421,1916,260.2504,,91.7
+FEXCMMPRRBSCRG-UHFFFAOYSA-N,91,Hexathiane,Hexasulfur,13798-23-7,S6,192,16.7407,1500,191.832427,,95
+FFGPTBGBLSHEPO-UHFFFAOYSA-N,61,"5H-Dibenzo[b,f]azepine-5-carboxamide",Carbamazepine,298-46-4,C15H12N2O,193,26.0001,2314,236.094963,"std, Antiepileptika",97
+FIHBHSQYSYVZQE-UHFFFAOYSA-N,515,"Hexane-1,6-diyl diprop-2-enoate",Hexamethylene diacrylate,13048-33-4,C12H18O4,55,17.8694,1602,226.120509,,96.3
+FINHMKGKINIASC-UHFFFAOYSA-N,442,Tetramethylpyrazine,"Pyrazine, tetramethyl-",1124-11-4,C8H12N2,136,10.196,1088,136.1000484,,92.7
+FIQMHBFVRAXMOP-UHFFFAOYSA-N,70,Oxo(triphenyl)-lambda~5~-phosphane,Triphenylphosphine oxide,791-28-6,C18H15OP,277,27.4078,2561,278.0860521,,93
+FKMHSNTVILORFA-UHFFFAOYSA-N,244,2-{2-[2-(Dodecyloxy)ethoxy]ethoxy}ethan-1-ol,Triethylene glycol monododecyl ether,3055-94-5,C18H38O4,85,24.5193,2281,318.2770097,"Tensid, PEG-Ether des Laurylalkohols (C12). Die Zahl hinter Laureth steht fuer die durchschnittliche Anzahl der Molekueleinheit -CH2-CH2-O-, auch ""Anzahl""ethylene glycol monododecyl ether z.B. Laureth-4 = Tetraethylene glycol monododecyl ether",
+FLKPEMZONWLCSK-UHFFFAOYSA-N,467,"Diethyl benzene-1,2-dicarboxylate",Diethyl phthalate,84-66-2,C12H14O4,149,17.9468,1598,222.0892089,PHTH std,96.3
+FMMWHPNWAFZXNH-UHFFFAOYSA-N,365,Benzo[pqr]tetraphene,Benzo(a)pyrene,50-32-8,C20H12,252,30.1277,2901,252.0939004,"PAK, Std",95
+FNAZRRHPUDJQCJ-UHFFFAOYSA-N,302,Henicosane,Heneicosane,629-94-7,C21H44,57,23.3813,2100,296.3443014,KW,88.7
+FOLPKOWCPVGUCA-UHFFFAOYSA-N,187,1-(2-Methoxypropoxy)propan-2-ol,1-(2-Methoxypropoxy)-2-propanol,13429-07-7,C7H16O3,59,8.6914,1010,148.1099444,PEG-Bruchstück,
+FPYUJUBAXZAQNL-UHFFFAOYSA-N,195,2-Chlorobenzaldehyde,2-Chlorobenzaldehyde,89-98-5,C7H5ClO,139,10.7344,1105,140.0028925,,
+FRCCEHPWNOQAEU-UHFFFAOYSA-N,474,"1,4,5,6,7,8,8-Heptachloro-3a,4,7,7a-tetrahydro-1H-4,7-methanoindene",Heptachlor,76-44-8,C10H5Cl7,100,21.5872,1887,369.821095,CKW std,90.6
+FSEXLNMNADBYJU-UHFFFAOYSA-N,326,2-Phenylquinoline,2-Phenylquinoline,612-96-4,C15H11N,205,22.0808,1912,205.0891494,,86.9
+FTOVXSOBNPWTSH-UHFFFAOYSA-N,364,Benzo[e]acephenanthrylene,Benzo(b)fluoranthene,205-99-2,C20H12,252,29.4393,2812,252.0939004,"PAK, Std",94
+FVUGZKDGWGKCFE-UHFFFAOYSA-N,446,"1-(2,3,8,8-Tetramethyl-1,2,3,4,5,6,7,8-octahydro-2-naphthalenyl)ethanone",Amberonne (isomer 2),54464-57-2,C16H26O,191,18.855,1658,234.198365,"Related CAS#: 54464-57-2, 1000470-69-8",90
+NOMWSTMYQKABST-UHFFFAOYSA-N,488,"1-(2,3,8,8-Tetramethyl-1,2,3,4,5,6,7,8-octahydro-2-naphthalenyl)ethanone",Amberonne (isomer 2),68155-66-8,C16H26O,191,18.8532,1658,234.198365,,72
+YLWIXGWLTDBBHL-UHFFFAOYSA-N,489,"1-(2,3,8,8-Tetramethyl-1,2,3,4,5,6,7,8-octahydro-2-naphthalenyl)ethanone",Amberonne (isomer 3),68155-67-9,C16H26O,191,18.9324,1664,234.198365,,72
+FXLOVSHXALFLKQ-UHFFFAOYSA-N,436,4-Methylbenzaldehyde,"Benzaldehyde, 4-methyl-",104-87-0,C8H8O,119,10.0909,1079,120.0575149,,97
+GC_BPMZ_101_RI_1024,189,,GC_BPMZ_101_RI_1024,,,101,8.7747,1024,,,
+GC_BPMZ_111_RI_2097,240,,GC_BPMZ_111_RI_2097,,,111,23.3192,2097,,,
+GC_BPMZ_116_RI_1497,174,,GC_BPMZ_116_RI_1497,,,116,16.6626,1497,,,
+GC_BPMZ_116_RI_1524,166,,GC_BPMZ_116_RI_1524,,,116,17.0202,1524,,,
+GC_BPMZ_119_RI_1885,162,,GC_BPMZ_119_RI_1885,,,119,21.1923,1885,,,
+GC_BPMZ_121_RI_1893,160,,GC_BPMZ_121_RI_1893,,,121,21.2793,1893,,,
+GC_BPMZ_123_RI_908,120,,GC_BPMZ_123_RI_908,,,123,5.6437,908,,"ähnlich: Cyclopentene, 1,2,3,4,5-pentamethyl-",
+GC_BPMZ_130_RI_1777,158,,GC_BPMZ_130_RI_1777,,,130,20.0258,1777,,,
+GC_BPMZ_135_RI_1704,168,,GC_BPMZ_135_RI_1704,,,135,19.2069,1704,,,
+GC_BPMZ_147_RI_2285,118,,GC_BPMZ_147_RI_2285,,,147,25.0688,2285,,"Säule, ähnlich: Cyclononasiloxane, octadecamethyl-",
+GC_BPMZ_149_RI_1902,171,,GC_BPMZ_149_RI_1902,,,149,21.3699,1902,,Weichmacher/ Phthalat,
+GC_BPMZ_149_RI_1998,161,,GC_BPMZ_149_RI_1998,,,149,22.3482,1998,,Weichmacher/ Phthalat,
+GC_BPMZ_149_RI_2826,130,,GC_BPMZ_149_RI_2826,,,149,29.5583,2826,,Weichmacher/ Phthalat,
+GC_BPMZ_150_RI_1878,164,,GC_BPMZ_150_RI_1878,,,150,21.1178,1878,,,
+GC_BPMZ_150_RI_1980,169,,GC_BPMZ_150_RI_1980,,,150,22.1715,1980,,,
+GC_BPMZ_152_RI_1674,175,,GC_BPMZ_152_RI_1674,,,152,18.8579,1674,,,
+GC_BPMZ_164_RI_1585,165,,GC_BPMZ_164_RI_1585,,,164,17.7864,1585,,,
+GC_BPMZ_173_RI_1641,217,,GC_BPMZ_173_RI_1641,,,173,18.4633,1641,,,
+GC_BPMZ_205_RI_1946,157,,GC_BPMZ_205_RI_1946,,,205,21.8263,1946,,"ähnlich: 1,3-Dimethyl-5,7-dipropyladamantane  ",
+GC_BPMZ_225_RI_2158,167,,GC_BPMZ_225_RI_2158,,,225,23.8985,2158,,,
+GC_BPMZ_243_RI_1895,47,,GC_BPMZ_243_RI_1895,,,243,21.2992,1895,,ähnlich: Galaxolide,
+GC_BPMZ_243_RI_1928,50,,GC_BPMZ_243_RI_1928,,,243,21.6409,1928,,ähnlich: Galaxolide,
+GC_BPMZ_253_RI_1785,264,,GC_BPMZ_253_RI_1785,,C16H22O3Si3,253,20.1202,1785,,,
+GC_BPMZ_253_RI_2607,267,,GC_BPMZ_253_RI_2607,,C22H32O2,253,27.8198,2607,,,
+GC_BPMZ_257_RI_2206,163,,GC_BPMZ_257_RI_2206,,,257,24.3499,2206,,,
+GC_BPMZ_281_RI_1009,274,,GC_BPMZ_281_RI_1009,,,281,8.4112,1009,,Säule,
+GC_BPMZ_327_RI_1891,273,,GC_BPMZ_327_RI_1891,,,327,21.2555,1891,,Säule,
+GC_BPMZ_57_RI_1948,233,,GC_BPMZ_57_RI_1948,,,57,21.8505,1948,,,
+GC_BPMZ_57_RI_2000,285,,GC_BPMZ_57_RI_2000,,,57,22.3866,2000,,"ähnlich: Undecane, 3,7-dimethyl-",
+GC_BPMZ_77_RI_979,5,,GC_BPMZ_77_RI_979,,,77,7.684,979,,,
+GC_BPMZ_78_RI_914,268,,GC_BPMZ_78_RI_914,,,78,5.8359,914,,,
+GC_BPMZ_85_RI_1563,215,,GC_BPMZ_85_RI_1563,,,85,17.5093,1563,,,
+GC_BPMZ_86_RI_867,261,,GC_BPMZ_86_RI_867,,,86,4.1256,867,,,
+GC_BPMZ_94_RI_2501,68,,GC_BPMZ_94_RI_2501,,,94,26.9466,2501,,KW mit Phenylester,
+GC_BPMZ_94_RI_2521,69,,GC_BPMZ_94_RI_2521,,,94,27.1137,2521,,KW mit Phenylester,
+GC_BPMZ_94_RI_2584,72,,GC_BPMZ_94_RI_2584,,,94,27.631,2584,,KW mit Phenylester,
+GC_BPMZ_94_RI_2590,73,,GC_BPMZ_94_RI_2590,,,94,27.6857,2590,,KW mit Phenylester,
+GC_BPMZ_94_RI_2603,74,,GC_BPMZ_94_RI_2603,,,94,27.7879,2603,,KW mit Phenylester,
+GC_BPMZ_94_RI_2610,75,,GC_BPMZ_94_RI_2610,,,94,27.8448,2610,,KW mit Phenylester,
+GC_BPMZ_94_RI_2665,77,,GC_BPMZ_94_RI_2665,,,94,28.2882,2665,,KW mit Phenylester,
+GC_BPMZ_94_RI_2685,78,,GC_BPMZ_94_RI_2685,,,94,28.4542,2685,,KW mit Phenylester,
+GC_BPMZ_94_RI_2713,79,,GC_BPMZ_94_RI_2713,,,94,28.6746,2713,,KW mit Phenylester,
+GC_BPMZ_94_RI_2725,80,,GC_BPMZ_94_RI_2725,,,94,28.769,2725,,KW mit Phenylester,
+GC_BPMZ_94_RI_2767,81,,GC_BPMZ_94_RI_2767,,,94,29.099,2767,,KW mit Phenylester,
+GC_BPMZ_99_RI_1515,214,,GC_BPMZ_99_RI_1515,,,99,16.904,1515,,"Phosporic acid - Verbindung, Flammschutzmittel",
+GCGZDUFEEQNVPR-UHFFFAOYSA-N,257,"1-(2,6,6-Trimethylcyclohex-2-en-1-yl)but-3-en-1-one",.alpha.-damascone,31089-90-4,C13H20O,69,14.9968,1378,192.1514153,,
+GCOMUEMCOXVZNI-UHFFFAOYSA-N,423,S-Methyl dimethylthiocarbamate  ,"Carbamothioic acid, dimethyl-, S-methyl ester",2/3/3013,C4H9NOS,72,8.8475,993,119.040485,,95.3
+GECHUMIMRBOMGK-UHFFFAOYSA-N,490,4-Amino-N-(pyridin-2-yl)benzene-1-sulfonamide,Sulfapyridine,144-83-2,C11H11N3O2S,184,27.3008,2510,249.057198,std,96
+GFISDBXSWQMOND-UHFFFAOYSA-N,2,"2,5-Dimethoxyoxolane","Furan, tetrahydro-2,5-dimethoxy-",696-59-3,C6H12O3,101,5.6868,894,132.0786442,,91
+GISVICWQYMUPJF-UHFFFAOYSA-N,525,"2,4-Dimethylbenzaldehyde","Benzaldehyde, 2,4-dimethyl-",15764-16-6,C9H10O,133,12.6408,1181,134.073165,,93.3
+GKDLTXYXODKDEA-UHFFFAOYSA-N,545,1-Phenylbutan-2-one,1-Phenyl-2-butanone,1007-32-5,C10H12O,91,12.8217,1192,148.088815,,86.5
+GLYJVQDYLFAUFC-UHFFFAOYSA-N,500,"Palmitic acid, butyl ester","Hexadecanoic acid, butyl ester",111-06-8,C20H40O2,56,24.1568,2175,312.30283,,94.8
+GNKZMNRKLCTJAY-UHFFFAOYSA-N,528,1-(4-Methylphenyl)ethan-1-one,"Ethanone, 1-(4-methylphenyl)-",122-00-9,C9H10O,119,12.1208,1183,134.073165,,92.5
+GOXQRTZXKQZDDN-UHFFFAOYSA-N,549,2-Ethylhexyl prop-2-enoate,2-Ethylhexyl acrylate,103-11-7,C11H20O2,70,12.6218,1220,184.14633,,90.2
+GQBHYWDCHSZDQU-UHFFFAOYSA-N,389,"Benzenamine, 4-(1,1,3,3-tetramethylbutyl)-N-[4-(1,1,3,3-tetramethylbutyl)phenyl]-","Benzenamine, 4-(1,1,3,3-tetramethylbutyl)-N-[4-(1,1,3,3-tetramethylbutyl)phenyl]-",15721-78-5,C28H43N,322,30.6262,2846,393.33955,,92
+GQEZCXVZFLOKMC-UHFFFAOYSA-N,391,1-Hexadecene,Cetene,629-73-2,C16H32,83,17.844,1592,224.2504015,,88
+GSANOGQCVHBHIF-UHFFFAOYSA-N,271,Tetradecamethylcycloheptasiloxane,"Cycloheptasiloxane, tetradecamethyl-",107-50-6,C14H42O7Si7,281,16.621,1502,518.1315394,Säule,67
+GTJOHISYCKPIMT-UHFFFAOYSA-N,313,2-Methylundecane,2-Methylundecane,7045-71-8,C12H26,71,11.6076,1164,170.2034508,,86.3
+GVEPBJHOBDJJJI-UHFFFAOYSA-N,359,Fluoranthene,Fluoranthene,206-44-0,C16H10,202,23.246,2085,202.0782503,"PAK, Std",99
+GWHJZXXIDMPWGX-UHFFFAOYSA-N,431,"1,3,4-Trimethylbenzene","1,2,4-Trimethylbenzene              P434",95-63-6,C9H12,105,7.6896,990,120.0939,,94.1
+GYFAGKUZYNFMBN-UHFFFAOYSA-N,363,Benzo[ghi]perylene,"Benzo(g,h,i)perylene",191-24-2,C22H12,276,33.6748,3362,276.0939004,"PAK, Std",87
+HAXBIWFMXWRORI-UHFFFAOYSA-N,366,Benzo[k]fluoranthene,Benzo(k)fluoranthene,207-08-9,C20H12,252,29.4891,2818,252.0939004,"PAK, Std",94
+HBGGXOJOCNVPFY-UHFFFAOYSA-N,131,"Bis(7-methyloctyl) benzene-1,2-dicarboxylate",Bis(7-methyloctyl) phthalate,20548-62-3,C26H42O4,149,29.7395,2902,418.3083098,Weichmacher/ Phthalat,91.3
+HCTWZIFNBBCVGM-YFQUMFGZSA-N,483,"1,2,4-Methenocyclopenta[cd]pentalene-5-carboxaldehyde, 2,2a,3,3,4,7-hexachlorodecahydro-, (1.alpha.,2.beta.,2a.beta.,4.beta.,4a.beta.,5.beta.,6a.beta.,6b.beta.,7R*)-",Endrin aldehyde,7421-93-4,C12H8Cl6O,67,25.4191,2261,377.87063,CKW,89.8
+HERSSAVMHCMYSQ-UHFFFAOYSA-N,386,"1,8-Diazacyclotetradecane-2,9-dione","1,8-Diazacyclotetradecane-2,9-dione",5776-79-4,C12H22N2O2,114,25.2037,2196,226.168128,,82
+HFDVRLIODXPAHB-UHFFFAOYSA-N,491,Tetradec-1-ene,1-Tetradecene,1120-36-1,C14H28,83,15.1169,1392,196.219101,,91.8
+HFZWRUODUSTPEG-UHFFFAOYSA-N,428,"1,3-Dichloro-4-hydroxybenzene","Phenol, 2,4-dichloro-",120-83-2,C6H4Cl2O,162,11.701,1186,161.96392,,94.9
+HJOVHMDZYOCNQW-UHFFFAOYSA-N,533,"3,5,5-Trimethylcyclohex-2-en-1-one",Isophorone,78-59-1,C9H14O,82,10.9787,1123,138.1044655,,90.4
+HLBLWEWZXPIGSM-UHFFFAOYSA-N,499,"Benzenamine, 4,4'-oxybis-","4,4'-Oxydianiline",101-80-4,C12H12N2O,200,23.5814,2140,200.094963,std,96.1
+HMMGMWAXVFQUOA-UHFFFAOYSA-N,440,"2,2,4,4,6,6,8,8-Octamethyl-1,3,5,7,2,4,6,8-tetroxatetrasilocane","Cyclotetrasiloxane, octamethyl-",556-67-2,C8H24O4Si4,281,8.479,994,296.0751654,Säule,95
+HMSWAIKSFDFLKN-UHFFFAOYSA-N,531,Hexacosane,Hexacosane,630-01-3,C26H54,71,27.8945,2600,366.422552,KW,90.9
+HOWGUJZVBDQJKV-UHFFFAOYSA-N,243,Docosane,Docosane,629-97-0,C22H46,71,24.3149,2200,310.3599515,KW,
+HPYNZHMRTTWQTB-UHFFFAOYSA-N,4,"2,3-Dimethylpyridine","2,3-Dimethylpyridine",583-61-9,C7H9N,107,6.9612,909,107.0734993,,84
+HQUQLFOMPYWACS-UHFFFAOYSA-N,400,Tris(2-chloroethyl) phosphate,Tri(2-chloroethyl) phosphate,115-96-8,C6H12Cl3O4P,249,20.0194,1777,283.953879,"Std, LC",91
+HSUIVCLOAAJSRE-UHFFFAOYSA-N,140,"Bis(2-methoxyethyl) benzene-1,2-dicarboxylate",Di(2-methoxyethyl) phthalate,117-82-8,C14H18O6,149,22.0699,1965,282.1103383,Weichmacher/ Phthalat,84.6
+HSZCNGTZJWZAMF-UHFFFAOYSA-N,327,"([1,1'-Biphenyl]-4-yl)acetonitrile",4-Cyanomethylbiphenyl,31603-77-7,C14H11N,193,20.8701,1825,193.0891494,,85.2
+HTDJPCNNEPUOOQ-UHFFFAOYSA-N,405,"2,2,4,4,6,6-Hexamethyl-1,3,5,2,4,6-trioxatrisilinane","Cyclotrisiloxane, hexamethyl-",541-05-9,C6H18O3Si3,207,4.4784,851,222.056374,Säule,93.9
+HTZWVZNRDDOFEI-UHFFFAOYSA-N,315,3-Methylundecane,3-Methylundecane,1002-43-3,C12H26,71,11.7221,1170,170.2034508,,85
+HUMNYLRZRPPJDN-UHFFFAOYSA-N,343,Benzaldehyde,Benzaldehyde,100-52-7,C7H6O,106,7.4656,962,106.0418648,Öl der Bittermandel,97
+HXGDTGSAIMULJN-UHFFFAOYSA-N,361,Acenaphthylene,Acenaphthylene,208-96-8,C12H8,152,16.0682,1458,152.0626003,"PAK, Std",97
+IBLKWZIFZMJLFL-UHFFFAOYSA-N,550,1-Phenoxypropan-2-ol,1-Phenoxypropan-2-ol,770-35-4,C9H12O2,94,12.9372,1251,152.08373,,97.1
+IBWFPYRVHYLXEU-UHFFFAOYSA-N,518,3-Hydroxy-3-phenylbutan-2-one,3-Hydroxy-3-phenylbutan-2-one,1/9/3155,C10H12O2,121,13.469,1320,164.08373,,94.9
+ICKWICRCANNIBI-UHFFFAOYSA-N,424,"2,4-Di-tert-butylphenol","2,4-Di-tert-butylphenol",96-76-4,C14H22O,191,16.8356,1514,206.1670653,,94
+IDMGLOPCYDADNB-UHFFFAOYSA-N   ,65,,"Carbonic acid, phenyl tetradecyl ester",1000314-57-8,C21H34O3,94,26.8101,2428,334.250795,KW mit Phenylester,83
+IEVWHTVOIZEXCC-UHFFFAOYSA-N,300,"4,7-Dimethylundecane","4,7-Dimethylundecane",17301-32-5,C13H28,57,12.5781,1224,184.2191009,,83.7
+IGJRNTLDWLTHCQ-UHFFFAOYSA-N,9,"2,3-Dimethylnonane","2,3-Dimethylnonane",6/2/2884,C11H24,71,8.7923,1054,156.1878,,83
+IIYFAKIEWZDVMP-UHFFFAOYSA-N,435,Tridecane,Tridecane,629-50-5,C13H28,57,13.8288,1300,184.219101,KW,97.4
+IMFACGCPASFAPR-UHFFFAOYSA-N,320,"N,N-Dibutylbutan-1-amine",Tributylamine,102-82-9,C12H27N,142,12.199,1169,185.2143499,,93.7
+IMKJGXCIJJXALX-SHUKQUCYSA-N,511,"Naphtho[2,1-b]furan-2(1H)-one, decahydro-3a,6,6,9a-tetramethyl-, (3aR,5aS,9aS,9bR)-",Sclareolide,564-20-5,C16H26O2,123,23.2367,2086,250.19328,,77.9
+IOJUPLGTWVMSFF-UHFFFAOYSA-N,97,"1,3-Benzothiazole",Benzothiazole,95-16-9,C7H5NS,135,12.6384,1229,135.0142703,"Grundstoff für Vulkanisation, Farbstoffe, Pharmaindustrie",95
+IPCSVZSSVZVIGE-UHFFFAOYSA-N,234,Hexadecanoic acid,Hexadecanoic acid,57-10-3,C16H32O2,73,22.0052,1968,256.2402303,,
+IPRJXAGUEGOFGG-UHFFFAOYSA-N,42,N-Butylbenzenesulfonamide,N-Butylbenzenesulfonamide,3622-84-2,C10H15NO2S,170,20.2009,1797,213.0823499,"Weichmacher, in kleinerer Menge auch im BW,Plastomoll BMB, Plasthall BSA",95
+IRIAEXORFWYRCZ-UHFFFAOYSA-N,469,"Benzyl butyl benzene-1,2-dicarboxylate",Benzyl butyl phthalate,85-68-7,C19H20O4,149,25.821,2336,312.1361591,PHTH std,95.3
+IROINLKCQGIITA-UHFFFAOYSA-N,101,"N~2~-tert-Butyl-N~4~-ethyl-6-(methylsulfanyl)-1,3,5-triazine-2,4-diamine",Terbutryn,886-50-0,C10H19N5S,185,21.9306,1962,241.1361168,,86
+ISWSIDIOOBJBQZ-UHFFFAOYSA-N,110,Phenol,Phenol,108-95-2,C6H6O,94,7.9765,989,94.04186481,,91
+ISXOGOLHEGHGQF-UHFFFAOYSA-N,98,Octadecamethylcyclononasiloxane,Octadecamethylcyclononasiloxane,556-71-8,C18H54O9Si9,73,20.5764,1860,666.1691221,Säule,81
+IUMSDRXLFWAGNT-UHFFFAOYSA-N,139,Dodecamethylcyclohexasiloxane,Dodecamethylcyclohexasiloxane,540-97-6,C12H36O6Si6,73,14.2315,1335,444.1127481,Säule,88.4
+IVSZLXZYQVIEFR-UHFFFAOYSA-N,547,m-Xylene,"1,3-Dimethylbenzene",108-38-3,C8H10,91,5.2898,866,106.0782503,LHKW-Std,98.3
+IWDCLRJOBJJRNH-UHFFFAOYSA-N,194,4-Methylphenol,p-Cresol,106-44-5,C7H8O,107,10.0021,1077,108.0575149,,
+JBKVHLHDHHXQEQ-UHFFFAOYSA-N,392,"2H-Azepin-2-one, hexahydro-",Caprolactam,105-60-2,C6H11NO,113,13.0771,1253,113.084064,,88
+JCICIFOYVSPMHG-UHFFFAOYSA-N,117,"1-(2,6-Dichlorophenyl)-1,3-dihydro-2H-indol-2-one","1-(2,6-Dichlorophenyl)-2-indolinone",15362-40-0,C14H9Cl2NO,214,24.2561,2301,277.0061193,Diclofenac artifact,92
+JDNGDDOTBYZAGS-UHFFFAOYSA-N,113,"4,5-Dimethylnonane","4,5-Dimethylnonane",17302-23-7,C11H24,71,9.5481,1046,156.1878008,,86
+JFDZBHWFFUWGJE-UHFFFAOYSA-N,182,Benzonitrile,Benzonitrile,100-47-0,C7H5N,103,7.8794,987,103.0421992,,
+JFZHPFOXAAIUMB-UHFFFAOYSA-N,51,2-Ethyl-2-phenylpropanediamide,2-Phenyl-2-ethylmalondiamide,7206-76-0,C11H14N2O2,163,21.7586,1916,206.1055277,PEMA,67
+JHIVVAPYMSGYDF-UHFFFAOYSA-N,425,Cyclohexyl ketone,Cyclohexanone,108-94-1,C6H10O,98,5.9174,894,98.073165,,92.9
+JLQNHALFVCURHW-UHFFFAOYSA-N,86,Octathiocane,Octasulfur,10544-50-0,S8,160,23.0262,2049,255.7765694,,95
+JLYXXMFPNIAWKQ-CDRYSYESSA-N,377,"(1r,2r,3r,4r,5r,6r)-1,2,3,4,5,6-Hexachlorocyclohexane",beta-Hexachlorocyclohexane,319-85-7,C6H6Cl6,183,19.8835,1765,287.8600664,"CKW, Std",93
+JLYXXMFPNIAWKQ-GNIYUCBRSA-N,378,"(1R,2S,3r,4R,5S,6r)-1,2,3,4,5,6-Hexachlorocyclohexane",Lindane,58-89-9,C6H6Cl6,181,20.0203,1777,287.8600664,"CKW, Std",91
+JLYXXMFPNIAWKQ-GPIVLXJGSA-N,379,"(1R,2S,3r,4R,5S,6s)-1,2,3,4,5,6-Hexachlorocyclohexane",delta-Hexachlorocyclohexane,319-86-8,C6H6Cl6,181,20.5578,1825,287.8600664,"CKW, Std",94
+JLYXXMFPNIAWKQ-SHFUYGGZSA-N,376,"(1R,2R,3R,4R,5S,6S)-1,2,3,4,5,6-Hexachlorocyclohexane","alpha-1,2,3,4,5,6-Hexachlorocyclohexane",319-84-6,C6H6Cl6,181,19.2707,1713,287.8600664,"CKW, Std",95
+JNRAEZULKWNOQO-NTCAYCPXSA-N  ,239,"(2E)-2-Benzylidene-3,4-dihydro-1(2H)-naphthalenone",Dibutyl phthalate,6261-32-1,C17H14O,233,22.8013,2095,234.1044655,Weichmacher/ Phthalat,
+JQHJESVUFUNCLT-UHFFFAOYSA-N  ,132,,"Phthalic acid, 6-methylhept-2-yl nonyl ester",1000377-96-3,C25H40O4,149,29.3655,2803,404.29266,Weichmacher/ Phthalat,92
+JRJBVWJSTHECJK-UHFFFAOYSA-N,258,"3-Methyl-4-(2,6,6-trimethylcyclohex-2-en-1-yl)but-3-en-2-one",alpha-Isomethylionone,127-51-5,C14H22O,135,16.4667,1470,206.1670653,,
+JRUGFHHEKLYFPC-UHFFFAOYSA-N,448,"4-(2-Cyanoethyl)-1,2,3,4-tetrahydro-1-naphthalenecarbonitrile  #","3-[1-(4-Cyano-1,2,3,4-tetrahydronaphthyl)]propanenitrile",57964-40-6,C14H14N2,129,22.2123,1978,210.115699,,82
+JWUXJYZVKZKLTJ-UHFFFAOYSA-N,509,"2,2,6,6-Tetramethylpiperidin-4-one","4-Piperidinone, 2,2,6,6-tetramethyl-",826-36-8,C9H17NO,140,10.6851,1137,155.1310142,"Vincubina, Odoratine",92
+KANLOADZXMMCQA-UHFFFAOYSA-N,388,2-Methyl-phenanthrene,"Phenanthrene, 2-methyl-",2531-84-2,C15H12,192,21.7704,1898,192.093901,,91
+KBPLFHHGFOOTCA-UHFFFAOYSA-N,310,Octan-1-ol,1-Octanol,111-87-5,C8H18O,56,9.9069,1071,130.1357652,,93.6
+KCXMKQUNVWSEMD-UHFFFAOYSA-N,341,(Chloromethyl)benzene,Benzyl chloride,100-44-7,C7H7Cl,91,8.6631,1023,126.0236279,,98
+KQWGXHWJMSMDJJ-UHFFFAOYSA-N,427,Isocyanatocyclohexane,"Cyclohexane, isocyanato-",3173-53-3,C7H11NO,97,8.3248,1086,125.084064,,96.1
+KTALPKYXQZGAEG-UHFFFAOYSA-N,536,2-(Propan-2-yl)-9H-thioxanthen-9-one,"9H-Thioxanthen-9-one, 2-(1-methylethyl)-",5495-84-1,C16H14OS,239,26.3079,2349,254.076536,,89.7
+KVMPUXDNESXNOH-UHFFFAOYSA-N,43,Tris(1-chloropropan-2-yl) phosphate,Tris(2-chloroisopropyl)phosphate,13674-84-5,C9H18Cl3O4P,125,20.3993,1814,326.0008292,"Std, LC",94
+KVWWIYGFBYDJQC-UHFFFAOYSA-N,219,Methyl (3-oxo-2-pentylcyclopentyl)acetate,Methyl dihydrojasmonate,24851-98-7,C13H22O3,83,18.6353,1649,226.1568946,Hedione,
+KVZJLSYJROEPSQ-UHFFFAOYSA-N,537,"1,2-Dimethylcyclohexane","Cyclohexane, 1,2-dimethyl- (cis/trans)",583-57-3,C8H16,97,4.5692,800,112.1252007,,89.1
+KWOLFJPFCHCOCG-UHFFFAOYSA-N,93,(1-Propylnonyl)benzene,Acetophenone,98-86-2,C8H8O,140,9.8102,1066,120.0575149,std,98
+KWWWFTBWCKTBQI-UHFFFAOYSA-N,135,1-[4-(2-Hydroxypropan-2-yl)phenyl]ethan-1-one,1-[4-(1-Hydroxy-1-methylethyl)phenyl]ethanone,54549-72-3,C11H14O2,163,16.3909,1432,178.0993797,Weichmacher/ Phthalat,84.8
+KXDAEFPNCMNJSK-UHFFFAOYSA-N,314,Benzamide,Benzamide,55-21-0,C7H7NO,105,14.494,1344,121.0527638,,93.8
+LAPRIVJANDLWOK-UHFFFAOYSA-N,250,"3,6,9,12,15-Pentaoxaheptacosan-1-ol",Pentaethylene glycol monododecyl ether,3055-95-6,C22H46O6,57,28.9996,2830,406.3294392,"Tensid, PEG-Ether des Laurylalkohols (C12). Die Zahl hinter Laureth steht fuer die durchschnittliche Anzahl der Molekueleinheit -CH2-CH2-O-, auch ""Anzahl""ethylene glycol monododecyl ether z.B. Laureth-4 = Tetraethylene glycol monododecyl ether",
+LCLVJNFWTMYFRL-UHFFFAOYSA-N,60,"5-[(3-Hydroxyphenyl)methylidene]-2,2-dimethyl-1,3-dioxane-4,6-dione","5-(3-Hydroxybenzylidene)-2,2-dimethyl-1,3-dioxane-4,6-dione",15795-58-1,C13H12O5,190,25.2393,2283,248.0684735,,55
+LHRCREOYAASXPZ-UHFFFAOYSA-N,362,Benzo[k]tetraphene,"Dibenz(a,h)anthracene",53-70-3,C22H14,278,33.0484,3280,278.1095505,"PAK, Std",77
+LMYRWZFENFIFIT-UHFFFAOYSA-N,410,p-Toluenesulfamide,"Benzenesulfonamide, 4-methyl-",70-55-3,C7H9NO2S,91,18.8238,1673,171.035399,pTSA-Std,91.4
+LQERIDTXQFOHKA-UHFFFAOYSA-N,304,Nonadecane,Nonadecane,629-92-5,C19H40,57,21.3498,1900,268.3130013,KW,81
+LQSZQAHPRJMRET-UHFFFAOYSA-N   ,317,"2-(Heptan-3-yl)-1,3-dioxolane",2-Ethylhexanal ethylene glycol acetal,4359-47-1,C10H20O2,73,11.3589,1171,172.14633,,86.3
+LQZZUXJYWNFBMV-UHFFFAOYSA-N,504,Dodecan-1-ol,1-Dodecanol,112-53-8,C12H26O,83,16.2687,1474,186.198365,,92.7
+LROJZZICACKNJL-UHFFFAOYSA-N,514,"2,4,5-Trimethylbenzaldehyde","Benzaldehyde, 2,4,5-trimethyl-",5779-72-6,C10H12O,147,14.0356,1364,148.088815,,96.5
+LRUDIIUSNGCQKF-UHFFFAOYSA-N,33,5-Methyl-1H-benzotriazole,5-Methyl-1H-benzotriazole,136-85-6,C7H7N3,133,17.1572,1577,133.0639972,Korrosionsschutzmittel,88
+LXOFYPKXCSULTL-UHFFFAOYSA-N,212,"2,4,7,9-Tetramethyldec-5-yne-4,7-diol","2,4,7,9-Tetramethyl-5-decyne-4,7-diol",126-86-3,C14H26O2,109,15.5293,1407,226.1932801,"Surfunyl, Tensid, in Farben/Druckertinten",90
+MBZRJSQZCBXRGK-XYPYZODXSA-N,527,"(1r,4r)-4-tert-Butylcyclohexyl acetate","Cyclohexanol, 4-(1,1-dimethylethyl)-, acetate, trans-",1900-69-2,C12H22O2,82,15.0235,1322,198.16198,,92.8
+MEJYDZQQVZJMPP-ULAWRXDQSA-N,293,"1,4:3,6-Dianhydro-2,5-di-O-methyl-D-glucitol","1,4:3,6-Dianhydro-2,5-di-O-methyl-D-glucitol",5306-85-4,C8H14O4,69,13.4433,1280,174.0892089,,85.3
+MGWAVDBGNNKXQV-UHFFFAOYSA-N,346,"Bis(2-methylpropyl) benzene-1,2-dicarboxylate",Diisobutyl phthalate,84-69-5,C16H22O4,149,21.0886,1887,278.1518092,Weichmacher/ Phthalat,95
+MIZGSAALSYARKU-UHFFFAOYSA-N,32,"1,1,2,3,3-Pentamethyl-1,2,3,5,6,7-hexahydro-4H-inden-4-one",Cashmeran,33704-61-9,C14H22O,191,16.7579,1513,206.1670653,Cashmeran,63
+MMOXZBCLCQITDF-UHFFFAOYSA-N,397,"Benzamide, N,N-diethyl-3-methyl-",Diethyltoluamide,134-62-3,C12H17NO,119,17.8236,1592,191.131014,"Std, LC",93
+MQIUGAXCHLFZKX-UHFFFAOYSA-N,471,"Dioctyl benzene-1,2-dicarboxylate",Di-n-octyl phthalate,117-84-0,C24H38O4,149,28.8969,2746,390.27701,PHTH std,93
+MUXOBHXGJLMRAB-UHFFFAOYSA-N,530,Dimethyl butanedioate,"Butanedioic acid, dimethyl ester",106-65-0,C6H10O4,115,9.2969,1030,146.057909,,91.7
+MVPPADPHJFYWMZ-UHFFFAOYSA-N,459,Phenyl Chloride,Chlorobenzene,108-90-7,C6H5Cl,112,4.8111,849,112.007978,LHKW-Std,85
+MWKFXSUHUHTGQN-UHFFFAOYSA-N,307,Decan-1-ol,1-Decanol,112-30-1,C10H22O,70,13.4946,1273,158.1670653,,98.4
+MWPLVEDNUUSJAV-UHFFFAOYSA-N,360,Anthracene,Anthracene,120-12-7,C14H10,178,20.3396,1805,178.0782503,"PAK, Std",97
+MXVMODFDROLTFD-UHFFFAOYSA-N,224,"3,6,9,12-Tetraoxahexadecan-1-ol","3,6,9,12-Tetraoxahexadecan-1-ol",1559-34-8,C12H26O5,89,19.7047,1744,250.1780239,"Tensid, PEG-Ether des Butylalkohols (C4). durchschnittliche Anzahl der Molekueleinheit -CH2-CH2-O-, auch ""Anzahl""ethylene glycol monobutyl ether z.B. Tetraethylene glycol monobutyl ether",
+MZTIRLOLMGVVEK-UHFFFAOYSA-N,532,(Tridecan-5-yl)benzene,"Benzene, (1-butylnonyl)-",4534-50-3,C19H32,91,20.8218,1826,260.2504,,90.5
+NBBZMDUHKWRYSZ-UHFFFAOYSA-N,278,Methyl dimethylcarbamodithioate,Methyl dimethyldithiocarbamate,3735-92-0,C4H9NS2,88,13.4095,1082,135.0176416,,
+NDJKXXJCMXVBJW-UHFFFAOYSA-N,337,Heptadecane,Heptadecane,629-78-7,C17H36,71,19.117,1700,240.2817012,KW,91.8
+NFVSFLUJRHRSJG-UHFFFAOYSA-N,116,Hexadecamethylheptasiloxane,Hexadecamethylheptasiloxane,541-01-5,C16H48O6Si7,147,26.3225,1553,532.183575,Säule,81
+NIHNNTQXNPWCJQ-QNNBDYQESA-N,373,(~2~H_10_)-9H-Fluorene,Fluorene-d10,81103-79-9,C13D10,176,17.772,1588,176.1410178,"PAK, Std, IS",
+NIHNNTQXNPWCJQ-UHFFFAOYSA-N,354,9H-Fluorene,Fluorene,86-73-7,C13H10,166,17.8399,1593,166.0782503,"PAK, Std",96
+NIQCNGHVCWTJSM-UHFFFAOYSA-N,466,"Dimethyl benzene-1,2-dicarboxylate",Dimethyl phthalate,131-11-3,C10H10O4,163,16.119,1454,194.057909,PHTH std,96.5
+NLZUEZXRPGMBCV-UHFFFAOYSA-N,461,BHT,Butylated Hydroxytoluene,128-37-0,C15H24O,205,16.8841,1513,220.182715,std,95.9
+NMMIRFKUKVHGTQ-UHFFFAOYSA-N  ,220,,Butyl dodecyl ether,1000406-40-3,C16H34O,57,18.7862,1675,242.260965,,
+NNJVILVZKWQKPM-UHFFFAOYSA-N,49,"2-(Diethylamino)-N-(2,6-dimethylphenyl)acetamide  ",Lidocaine,137-58-6,C14H22N2O,86,21.515,1912,234.1732133,std Arzeneistoff: örtliches Beteubungsmittel,96
+NOOLISFMXDJSKH-UHFFFAOYSA-N,197,5-Methyl-2-(propan-2-yl)cyclohexan-1-ol,Menthol,1490-04-6,C10H20O,95,11.7572,1169,156.1514153,Duftstoff,
+NPAWGLOPXKCTCV-UHFFFAOYSA-N,542,(Dodecan-5-yl)benzene,"Benzene, (1-butyloctyl)-",2719-63-3,C18H30,91,19.6891,1730,246.234751,,87.4
+NQUMJENPNGXAIH-UHFFFAOYSA-N,288,"2,5-Dimethylnonane","2,5-Dimethylnonane",17302-27-1,C11H24,57,10.4086,1108,156.1878008,,86.9
+NSQAXMRLBNXEHK-UHFFFAOYSA-N,507,(Undecan-4-yl)benzene,"Benzene, (1-propyloctyl)-",4536-86-1,C17H28,91,18.4513,1643,232.219101,,88.4
+NSSHGPBKKVJJMM-UHFFFAOYSA-N,255,"3-Methyl-4-(2,6,6-trimethylcyclohex-1-en-1-yl)but-3-en-2-one","3-Methyl-4-(2,6,6-trimethyl-1-cyclohexen-1-yl)-3-buten-2-one",79-89-0,C14H22O,191,18.8559,1583,206.1670653,,
+NVHBFHMWJJMQTG-UHFFFAOYSA-N,538,(Undecan-3-yl)benzene,"Benzene, (1-ethylnonyl)-",4536-87-2,C17H28,91,18.8937,1670,232.219101,,88.8
+OAYXUHPQHDHDDZ-UHFFFAOYSA-N,198,2-(2-Butoxyethoxy)ethan-1-ol,2-(2-Butoxyethoxy)ethanol,112-34-5,C8H18O3,57,12.0433,1186,162.1255944,,
+OCJBOOLMMGQPQU-UHFFFAOYSA-N,452,"Benzene, 1,4-dichloro-","1,4-Dichlorobenzene",106-46-7,C6H4Cl2,146,8.6264,1021,145.969006,LHKW-Std,98.8
+OKVLJDBLLKNOQZ-UHFFFAOYSA-N,229,"N-(2-Ethylhexyl)-3,5,5-trimethylhexanamide","Hexanamide, 3,5,5-trimethyl-N-2-ethylhexyl-",1000419-85-1,C17H35NO,158,21.1274,1898,269.271864,,
+OLBCVFGFOZPWHH-UHFFFAOYSA-N,344,"2,6-Di(propan-2-yl)phenol",Propofol,2078-54-8,C12H18O,163,14.748,1364,178.1357652,Arzneistoff: Narkotika,97
+ONKNPOPIGWHAQC-UHFFFAOYSA-N,406,"4,6,6,7,8,8-Hexamethyl-1,3,4,6,7,8-hexahydroindeno[5,6-c]pyran","Cyclopenta[g]-2-benzopyran, 1,3,4,6,7,8-hexahydro-4,6,6,7,8,8-hexamethyl-",1222-05-5,C18H26O,243,21.0307,1851,258.1983655,"Duftstoff in Waschmitteln/Reinigungsmitteln, über 1000t/a weltweit",93.7
+OVWYEQOVUDKZNU-UHFFFAOYSA-N,510,3-Methylbenzaldehyde,"Benzaldehyde, 3-methyl-",620-23-5,C8H8O,119,10.0195,1071,120.0575147,,91.8
+OXQOBQJCDNLAPO-UHFFFAOYSA-N,403,"2,3-Dimethylpyrazine","Pyrazine, 2,3-dimethyl-",5910-89-4,C6H8N2,108,6.4913,920,108.0687483,,94.8
+OYGXFRZNLCWGOZ-UHFFFAOYSA-N,381,5-Propyldecane,5-Propyldecane,17312-62-8,C13H28,57,13.0784,1249,184.2191009,,92
+PAYRUJLWNCNPSJ-UHFFFAOYSA-N,328,Aniline,Aniline,62-53-3,C6H7N,93,7.7707,977,93.05784923,,89.6
+PDCBTSVBFUQBNN-UHFFFAOYSA-N,186,1-({1-[(Prop-2-en-1-yl)oxy]propan-2-yl}oxy)propan-2-ol,"2-propanol, 1-[1-methyl-2-(2-propenyloxy)ethoxy]-",55956-25-7,C9H18O3,59,8.4542,984,174.1255944,PEG-Bruchstück,
+PEGCITODQASXKH-UHFFFAOYSA-N,54,Methyl(oxo)diphenyl-lambda~5~-phosphane,"Phosphine oxide, diphenylmethyl-",2129-89-7,C13H13OP,215,22.5929,2029,216.070402,,80
+PGVOXXHNGYYHHB-UHFFFAOYSA-N,495,(Dodecan-3-yl)benzene,"Benzene, (1-ethyldecyl)-",2400-00-2,C18H30,91,19.8995,1766,246.234751,,90.5
+PHWISQNXPLXQRU-UHFFFAOYSA-N,276,Dimethylcarbamothioyl chloride,Dimethylthiocarbamoyl chloride,16420-13-6,C3H6ClNS,123,10.6677,931,122.9909481,,
+PIRFDOCDTWKNTM-UHFFFAOYSA-N,335,"2,3,5-Trimethylphenanthrene","2,3,5-Trimethylphenanthrene",3674-73-5,C17H16,220,24.136,2142,220.1252005,,81.1
+PNBCGVPSRHMZDO-UHFFFAOYSA-N  ,208,,1-[(1-Propoxypropan-2-yl)oxy]propan-2-yl acetate,1000378-33-1,C11H22O4,101,13.2393,1323,218.151809,,
+POAOYUHQDCAZBD-UHFFFAOYSA-N,177,2-Butoxyethan-1-ol,2-Butoxyethanol,111-76-2,C6H14O2,57,5.8891,910,118.0993797,,
+POOSGDOYLQNASK-UHFFFAOYSA-N,521,Tetracosane,Tetracosane,646-31-1,C24H50,71,26.2411,2400,338.391253,KW,94.3
+POPACFLNWGUDSR-UHFFFAOYSA-N,153,Methoxy(trimethyl)silane,"Silane, methoxytrimethyl-",1825-61-2,C4H12OSi,89,10.8352,506,104.0657415,Säule,93
+PPBRXRYQALVLMV-UHFFFAOYSA-N,87,Ethenylbenzene,Styrene,100-42-5,C8H8,104,5.9288,893,104.0626003,Kunststoffindustrie,95
+PUOUKAVMFCKYKW-UHFFFAOYSA-N,318,"3-Ethyl-5,5-dimethylimidazolidine-2,4-dione","3-ethyl-5,5-dimethylimidazolidine-2,4-dione",37021-15-1,C7H12N2O2,141,13.9832,1318,156.0898776,,86.3
+PUZORFQMRDHKBT-UHFFFAOYSA-N,34,"N,N-Diethyl-4-methylbenzamide","BENZAMIDE, N,N-DIETHYL-4-METHYL-",5/4/2728,C12H17NO,119,17.7554,1505,191.131,,93
+PWORFEDVDWBHSJ-UHFFFAOYSA-N,21,2-Methyl-2H-benzotriazole,"2H-Benzotriazole, 2-methyl-",16584-00-2,C7H7N3,133,12.0925,1156,133.0639972,Korrosionsinhibitor,93
+PXWLVJLKJGVOKE-UHFFFAOYSA-N,398,"2,3-Dimethyl-4-isopropyl-1-phenyl-3H-pyrazolin-5-one",Propyphenazone,479-92-5,C14H18N2O,215,22.2185,1939,230.141913,"Std, LC",65
+PYCFMMQNMYYCKK-NTCAYCPXSA-N   ,149,"(3Z)-3-(2,2-Dimethyl-6-methylenecyclohexylidene)-1-methylbutyl acetate","Acetic acid, 3-(2,2-dimethyl-6-methylene-cyclohexylidene)-1-methyl-butyl ester",1000192-69-2,C16H26O2,175,19.9826,1682,250.19328,,86
+PYVIFMPVFLOTLN-UHFFFAOYSA-N,544,(Decan-3-yl)benzene,"Benzene, (1-ethyloctyl)-",4621-36-7,C16H26,91,17.6409,1568,218.203451,,86.8
+QAKHJGJRTDJEJD-UHFFFAOYSA-N   ,133,,"Phthalic acid, hept-2-yl nonyl ester",1000356-97-6,C24H38O4,149,29.1456,2768,390.27701,Weichmacher/ Phthalat,85.2
+QAPVYZRWKDXNDK-UHFFFAOYSA-N,438,4-Octyl-N-(4-octylphenyl)aniline,"Benzenamine, 4-octyl-N-(4-octylphenyl)-",101-67-7,C28H43N,322,30.6028,3184,393.33955,,94.2
+QBYJBZPUGVGKQQ-SJJAEHHWSA-N,475,"(1R,4S,4aS,5S,8R,8aR)-1,2,3,4,10,10-Hexachloro-1,4,4a,5,8,8a-hexahydro-1,4:5,8-dimethanonaphthalene",Aldrin,309-00-2,C12H8Cl6,263,22.3232,1955,361.875717,CKW std,91.4
+QCDWFXQBSFUVSP-UHFFFAOYSA-N,323,2-Phenoxyethan-1-ol,2-Phenoxyethanol,122-99-6,C8H10O2,94,12.6147,1225,138.0680796,,93.8
+QELBXOLVEDEBJG-UHFFFAOYSA-N   ,44,Bis(2-chloro-1-methylethyl) 3-chloropropyl phosphate,Bis(1-chloro-2-propyl)(3-chloro-1-propyl)phosphate,137909-40-1,C9H18Cl3O4P,99,20.5223,1798,326.000828,,74
+QHERURXKGFABNZ-UHFFFAOYSA-N,324,2-(Tetradecyloxy)ethan-1-ol,2-(Tetradecyloxy)ethanol,2136-70-1,C16H34O2,57,21.6407,1930,258.2558803,,86.2
+QIQXTHQIDYTFRH-UHFFFAOYSA-N,242,Octadecanoic acid,Octadecanoic acid,57-11-4,C18H36O2,73,23.9749,2172,284.2715304,,
+QLOPHJMYWXXKTM-UHFFFAOYSA-N,546,"1,3,6-Dioxathiocane","1,3,6-Dioxathiocane",2094-92-0,C5H10O2S,134,10.0645,1078,134.040151,,93.7
+QNODIIQQMGDSEF-UHFFFAOYSA-N,517,(1-Hydroxycyclohexyl)(phenyl)methanone,"Methanone, (1-hydroxycyclohexyl)phenyl-",947-19-3,C13H16O2,99,19.2597,1687,204.115029,,95.1
+QPFMBZIOSGYJDE-UHFFFAOYSA-N,349,"1,1,2,2-Tetrachloroethane","1,1,2,2-Tetrachloroethane",79-34-5,C2H2Cl4,83,6.3031,853,165.8910609,,94
+QPUYECUOLPXSFR-UHFFFAOYSA-N,390,"Naphthalene, 1-methyl",1-Methylnaphthalene                 P566,90-12-0,C11H10,142,14.0639,1307,142.07825,,92
+QRUDEWIWKLJBPS-UHFFFAOYSA-N,31,1H-Benzotriazole,"1,2,3-Benzotriazole",95-14-7,C6H5N3,119,16.329,1469,119.0483472,"Std, LC",97
+QUKGYYKBILRGFE-UHFFFAOYSA-N,516,Benzyl acetate,"Acetic acid, phenylmethyl ester",140-11-4,C9H10O2,108,11.7623,1164,150.06808,,96.1
+QVRDLHPBZKOROD-UHFFFAOYSA-N,338,"2,3-Dimethylphenanthrene","Phenanthrene, 2,3-dimethyl-",3674-65-5,C16H14,206,23.079,2058,206.1095505,,87.6
+QWUWMCYKGHVNAV-UHFFFAOYSA-N,380,"1,1'-(Ethane-1,2-diyl)dibenzene",Bibenzyl,103-29-7,C14H14,91,17.0119,1525,182.1095505,,92
+QYDYPVFESGNLHU-ZHACJKMWSA-N,496,Methyl (9E)-octadec-9-enoate,"9-Octadecenoic acid, methyl ester, (E)-",1937-62-8,C19H36O2,83,23.3552,2110,296.27153,,88.8
+QZCLKYGREBVARF-UHFFFAOYSA-N,270,"Tributyl 2-(acetyloxy)propane-1,2,3-tricarboxylate",Acetyl tributyl citrate,77-90-7,C20H34O8,185,24.9435,2250,402.2253681,,86.9
+RDOFJDLLWVCMRU-UHFFFAOYSA-N,222,Bis(2-methylpropyl) hexanedioate,Diisobutyl adipate,141-04-8,C14H26O4,129,18.9505,1695,258.1831093,"Weichmacher, plasticizer for hair fixatives and nail polishes, DIBA",
+RDQSIADLBQFVMY-UHFFFAOYSA-N,506,"2,6-Di-tert-butylcyclohexa-2,5-diene-1,4-dione","2,5-Cyclohexadiene-1,4-dione, 2,6-bis(1,1-dimethylethyl)-",719-22-2,C14H20O2,177,16.2246,1472,220.14633,,84.5
+RDYMFSUJUZBWLH-AZVNHNRSSA-N,477,Endosulfan I,alpha Endosulfan,959-98-8,C9H6Cl6O3S,195,23.8985,2114,403.816881,CKW std,88.8
+RDYMFSUJUZBWLH-BRZMKDEISA-N,481,Endosulfan II,beta Endosulfan,33213-65-9,C9H6Cl6O3S,195,25.0463,2236,403.816881,CKW std,84.7
+RECUKUPTGUEGMW-UHFFFAOYSA-N,152,2-Methyl-5-(propan-2-yl)phenol,Isopropyl-o-cresol,499-75-2,C10H14O,135,13.7466,1299,150.1044651,,80
+RFFLAFLAYFXFSW-UHFFFAOYSA-N,451,"Benzene, 1,2-dichloro-","1,2-Dichlorobenzene",95-50-1,C6H4Cl2,146,9.1096,1043,145.969006,LHKW-Std,99
+RHDHXBLZBVAPTL-UHFFFAOYSA-N,505,(Dodecan-4-yl)benzene,"Benzene, (1-propylnonyl)-",2719-64-4,C18H30,91,19.6487,1742,246.234751,,91.8
+RIWRBSMFKVOJMN-UHFFFAOYSA-N,256,2-Methyl-1-phenylpropan-2-ol,"1,1-Dimethylphenylethanol",100-86-7,C10H14O,92,11.5014,1125,150.1044651,,
+RONZAEMNMFQXRA-UHFFFAOYSA-N,263,"2-Methyl-1,2,3,4,10,14b-hexahydropyrazino[2,1-a]pyrido[2,3-c][2]benzazepine",Mirtazapine,85650-52-8,C17H19N3,195,25.3321,2323,265.1578976,,75.8
+RRQYJINTUHWNHW-UHFFFAOYSA-N,10,1-Ethoxy-2-(2-ethoxyethoxy)ethane,Diethylene glycol diethyl ether,112-36-7,C8H18O3,59,9.0098,1058,162.1255944,Diethyldiethylene glycol,83
+RSJKGSCJYJTIGS-UHFFFAOYSA-N,419,Undecane,Undecane,1120-21-4,C11H24,57,10.4696,1100,156.1878008,KW,97.1
+RWCCWEUUXYIKHB-UHFFFAOYSA-N,216,Diphenylmethanone,Benzophenone,119-61-9,C13H10O,105,18.3925,1635,182.0731649,"Fotoinhibitor, UV-Härter/Schutz in Kosmetika/Verpackungen",76
+RWGFKTVRMDUZSP-UHFFFAOYSA-N,453,Isopropylbenzene,Cumen,98-82-8,C9H12,105,6.5962,922,120.0939,LHKW-Std,91.5
+RWNUSVWFHDHRCJ-UHFFFAOYSA-N,305,1-Butoxypropan-2-ol,1-Butoxy-2-propanol,5131-66-8,C7H16O2,87,7.1616,945,132.1150298,,96.4
+RWPICVVBGZBXNA-UHFFFAOYSA-N,447,"1,4-Benzenedicarboxylic acid, bis(2-ethylhexyl) ester",Dioctyl terephthalate,6422-86-2,C24H38O4,149,28.9732,2756,390.27701,Weichmacher/ Phthalat,82
+RYYVLZVUVIJVGH-UHFFFAOYSA-N,227,"1,3,7-Trimethyl-3,7-dihydro-1H-purine-2,6-dione",Caffeine,58-08-2,C8H10N4O2,194,20.9141,1835,194.0803756,"auf Wirkstoffliste, ca 2 t/a",
+RZGVZPAWCGDMCK-UHFFFAOYSA-N,540,(Tridecan-4-yl)benzene,"Benzene, (1-propyldecyl)-",4534-51-4,C19H32,91,20.9615,1840,260.2504,,87.9
+RZJRJXONCZWCBN-UHFFFAOYSA-N,512,Octadecane,Octadecane,593-45-3,C18H38,71,20.3848,1800,254.297351,KW,98
+RZVINYQDSSQUKO-UHFFFAOYSA-N,541,2-Phenoxyethyl prop-2-enoate,.beta.-Phenoxyethyl acrylate,48145-04-6,C11H12O3,99,16.4101,1425,192.078644,,87.9
+SAOKZLXYCUGLFA-UHFFFAOYSA-N,334,Bis(2-ethylhexyl) hexanedioate,Bis(2-ethylhexyl)hexanedioate,103-23-1,C22H42O4,129,26.1455,2398,370.3083098,,86.4
+SBASXUCJHJRPEV-UHFFFAOYSA-N,322,2-(2-Methoxyethoxy)ethan-1-ol,Diethylene glycol monomethyl ether,111-77-3,C5H12O3,58,6.7536,932,120.0786442,,85.2
+SFNALCNOMXIBKG-UHFFFAOYSA-N,321,2-(Dodecyloxy)ethan-1-ol,2-(Dodecyloxy)ethanol,4536-30-5,C14H30O2,57,19.3554,1731,230.2245802,,92.9
+SIKJAQJRHWYJAI-UHFFFAOYSA-N,332,1H-Indole,Indole,120-72-9,C8H7N,117,13.7893,1295,117.0578492,,91.6
+SKBBQSLSGRSQAJ-UHFFFAOYSA-N,138,"1,1'-(1,4-Phenylene)di(ethan-1-one)","1,4-Diacetylbenzene",1009-61-6,C10H10O2,147,15.8094,1470,162.0680796,,86.8
+SMUQFGGVLNAIOZ-UHFFFAOYSA-N,25,2-Methylquinoline,Quinaldine,91-63-4,C10H9N,143,13.9854,1288,143.0734993,Chinaldine,90
+SMWDFEZZVXVKRB-UHFFFAOYSA-N,24,Quinoline,Quinoline,91-22-5,C9H7N,129,13.2217,1245,129.0578492,"Leucol, Chinolin",80
+SNICXCGAKADSCV-JTQLQIEISA-N,396,"Pyridine, 3-(1-methyl-2-pyrrolidinyl)-, (S)-",Nicotine,54-11-5,C10H14N2,84,14.7095,1362,162.115699,"Std, LC",92
+SNRUBQQJIBEYMU-UHFFFAOYSA-N,407,Dodecane,Dodecane,112-40-3,C12H26,57,12.2526,1200,170.203,KW,92.5
+SODJJEXAWOSSON-UHFFFAOYSA-N,277,Bis(2-hydroxy-4-methoxyphenyl)methanone,"2,2'-Dihydroxy-4,4'-dimethoxybenzophenone",131-54-4,C15H14O5,151,26.8839,2422,274.0841236,,
+SOGKSNZFDBFKCV-UHFFFAOYSA-N,137,Tetracosamethylcyclododecasiloxane,Tetracosamethylcyclododecasiloxane,18919-94-3,C24H72O12Si12,147,23.7104,2338,888.2254962,Säule,81.8
+STCOOQWBFONSKY-UHFFFAOYSA-N,395,Tributyl phosphate,Tributyl phosphate,126-73-8,C12H27O4P,99,18.6179,1659,266.1646963,"Std, LC",91
+SXQBHARYMNFBPS-UHFFFAOYSA-N,370,"Indeno[1,2,3-cd]pyrene","Indeno(1,2,3-cd)pyrene",193-39-5,C22H12,276,32.9431,3267,276.0939004,"PAK, Std",87
+SZGNWRSFHADOMY-UHFFFAOYSA-N,248,"2,5,8,11,14,17,20,23-Octaoxapentacosan-25-ol",Octaethylene glycol monomethyl ether,25990-96-9,C17H36O9,89,27.6525,2615,384.2359327,,
+TTWJBBZEZQICBI-UHFFFAOYSA-N,352,4-Amino-5-chloro-N-[2-(diethylamino)ethyl]-2-methoxybenzamide,Metoclopramide,364-62-5,C14H22ClN3O2,86,28.6132,2715,299.1400547,,96
+UAUDZVJPLUQNMU-KTKRTIGZSA-N,443,(13Z)-13-Docosenamide,"13-Docosenamide, (Z)-",112-84-5,C22H43NO,59,29.2707,2793,337.334465,,90.3
+UCNVFOCBFJOQAL-UHFFFAOYSA-N,478,"1,1'-(2,2-Dichloroethene-1,1-diyl)bis(4-chlorobenzene)","p,p'-DDE",72-55-9,C14H8Cl4,246,24.3673,2169,315.938011,CKW std,95.5
+UDSFAEKRVUSQDD-UHFFFAOYSA-N,519,Dimethyl hexanedioate,"Hexanedioic acid, dimethyl ester",627-93-0,C8H14O4,114,13.0796,1243,174.089209,,94.6
+UFWIBTONFRDIAS-UHFFFAOYSA-N,353,Naphthalene,Naphthalene,91-20-3,C10H8,128,11.9527,1185,128.0626003,"PAK, Std",98
+UGPWRRVOLLMHSC-UHFFFAOYSA-N,119,"2,2'-(1,3-Phenylene)di(propan-2-ol)","1,3-Benzenedimethanol, .alpha.1,.alpha.1,.alpha.3,.alpha.3-tetramethyl-",1999-85-5,C12H18O2,179,16.2052,1488,194.1306798,,86
+UJPPXNXOEVDSRW-UHFFFAOYSA-N,426,Isopropyl laurate,"Dodecanoic acid, 1-methylethyl ester",10233-13-3,C15H30O2,102,18.2616,1618,242.22458,,96.1
+ULBTUVJTXULMLP-UHFFFAOYSA-N,501,"Stearic acid, butyl ester","Octadecanoic acid, butyl ester",123-95-5,C22H44O2,56,25.9601,2388,340.334131,,93.8
+URAYPUMNDPQOKB-UHFFFAOYSA-N,433,"Propane-1,2,3-triyl triacetate",Triacetin,102-76-1,C9H14O6,103,14.5833,1350,218.0790382,,99
+URLKBWYHVLBVBO-UHFFFAOYSA-N,457,p-Xylene,"1,4-Dimethylbenzene",106-42-3,C8H10,91,5.313,865,106.0782504,LHKW-Std,91.2
+UTBIMNXEDGNJFE-UHFFFAOYSA-N,450,"2,3,6-Collidine","Pyridine, 2,3,6-trimethyl-",1462-84-6,C8H11N,121,8.1774,1003,121.0891495,,95.7
+UTBVIMLZIRIFFR-UHFFFAOYSA-N,37,"2-(Methylsulfanyl)-1,3-benzothiazole",2-(Methylthio)benzothiazole,615-22-5,C8H7NS2,181,18.0568,1607,181.0019916,Abbauprodukt v. Fungizid u. Vulkanisationsbeschleuniger,94
+VDAVEASVPZDNQB-UHFFFAOYSA-N,286,"3,7-Dimethyldecane","3,7-Dimethyldecane",17312-54-8,C12H26,71,10.9262,1134,170.2034508,,89.3
+VEAFKIYNHVBNIP-UHFFFAOYSA-N,329,"1,1'-(Propane-1,3-diyl)dibenzene","1,3-Diphenylpropane",1081-75-0,C15H16,92,18.6618,1633,196.1252005,,82.3
+VKPSKYDESGTTFR-UHFFFAOYSA-N,460,"2,2,4,6,6-Pentamethylheptane","Heptane, 2,2,4,6,6-pentamethyl-",13475-82-6,C12H26,57,8.1426,990,170.203451,,92.4
+VLPFTAMPNXLGLX-UHFFFAOYSA-N,350,"Propane-1,2,3-triyl trioctanoate",Tricaprylin,538-23-8,C27H50O6,127,30.4111,2958,470.3607393,,93
+VLQBSKLZRSUMTJ-UHFFFAOYSA-N,12,2-(Methylsulfanyl)pyridine,"Pyridine, 2-(methylthio)-",18438-38-5,C6H7NS,124,10.2894,1083,125.0299204,,77
+VMKMZRBPOSNUMX-UHFFFAOYSA-N,190,"2,2'-Oxydi(propan-1-ol)","2,2'-Oxybis-1-propanol",108-61-2,C6H14O3,59,9.0003,1042,134.0942943,Lösungsmittel / Weichmacher,
+VMNISWKTOHUZQN-UHFFFAOYSA-N,473,"1,3,5-Trichloro-2,4,6-trimethylbenzene",alpha HCH d6 (IS),5324-68-5,C9H9Cl3,224,19.1854,1706,221.977,CKW std IS,
+VOWZNBNDMFLQGM-UHFFFAOYSA-N,102,"2,5-Dimethylaniline","2,5-Dimethylaniline",95-78-3,C8H11N,121,11.6404,1171,121.0891494,,87
+VQRPJMVGRQQVKI-UHFFFAOYSA-N   ,57,1-[(4-Methylphenyl)sulfonyl]-2-pyrrolidinylamine,"Pyrrolidin-2-amine, 1-(4-methylphenylsulfonyl)-",1000267-40-2,C11H16N2O2S,120,23.6438,2111,240.093248,,67
+VRPRIAVYSREHAN-UHFFFAOYSA-N,503,(1-Methylundecyl)benzene,"Benzene, (1-methylundecyl)-",2719-61-1,C18H30,105,20.3366,1812,246.234751,,90.7
+VSZGCLXGCOECAY-UHFFFAOYSA-N,325,"5,11-Dihydro-10H-dibenzo[b,f]azepin-10-one",DE(5-carboxamide)oxcarbazepine,21737-58-6,C14H11NO,209,23.8392,2178,209.084064,,80.2
+VUNOFAIHSALQQH-UHFFFAOYSA-N,36,N-Ethyl-5-methyl-2-(propan-2-yl)cyclohexane-1-carboxamide,N-Ethyl-2-(isopropyl)-5-methylcyclohexanecarboxamide,39711-79-0,C13H25NO,100,17.9519,1636,211.1936144,,86
+WDECIBYCCFPHNR-UHFFFAOYSA-N,368,Chrysene,Chrysene,218-01-9,C18H12,228,26.9573,2497,228.0939004,"PAK, Std",95
+WEEGYLXZBRQIMU-UHFFFAOYSA-N,142,"1,3,3-Trimethyl-2-oxabicyclo[2.2.2]octane","1,8-Cineol",470-82-6,C10H18O,83,8.9561,1032,154.1357652,Geruchsstoff,80.9
+WGYZMNBUZFHYRX-UHFFFAOYSA-N,183,1-[(1-Methoxypropan-2-yl)oxy]propan-2-ol,1-[(1-Methoxypropan-2-yl)oxy]propan-2-ol,20324-32-7,C7H16O3,59,8.3326,981,148.1099444,PEG-Bruchstück,
+WHFKYDMBUMLWDA-UHFFFAOYSA-N,520,2-Phenoxyethyl acetate,"Ethanol, 2-phenoxy-, acetate",6192-44-5,C10H12O3,87,15.2264,1427,180.078644,,94.5
+WMZNFELFMFOGCC-UHFFFAOYSA-N,382,"2,4-Dimethylundecane","2,4-Dimethylundecane",17312-80-0,C13H28,85,12.4063,1212,184.2191009,,91
+WNJSKZBEWNVKGU-UHFFFAOYSA-N,144,"(2,2-Dimethoxyethyl)benzene",Phenylacetaldehyde dimethyl acetal,101-48-4,C10H14O2,75,12.5585,1221,166.0993797,"Viridine,",80.1
+WOZVHXUHUFLZGK-UHFFFAOYSA-N,523,"Dimethyl benzene-1,4-dicarboxylate","1,4-Benzenedicarboxylic acid, dimethyl ester",120-61-6,C10H10O4,163,16.8205,1515,194.057909,,93.9
+WPMWEFXCIYCJSA-UHFFFAOYSA-N,247,"3,6,9,12-Tetraoxatetracosan-1-ol",Tetraethylene glycol monododecyl ether,5274-68-0,C20H42O5,57,26.8772,2556,362.3032245,"Tensid, PEG-Ether des Laurylalkohols (C12). Die Zahl hinter Laureth steht fuer die durchschnittliche Anzahl der Molekueleinheit -CH2-CH2-O-, auch ""Anzahl""ethylene glycol monododecyl ether z.B. Laureth-4 = Tetraethylene glycol monododecyl ether",
+WSEQXVZVJXJVFP-UHFFFAOYSA-N,464,"1-[3-(Dimethylamino)propyl]-1-(4-fluorophenyl)-1,3-dihydro-2-benzofuran-5-carbonitrile",Citalopram,59729-33-8,C20H21FN2O,58,26.7203,2407,324.163792,std,58.3
+WTLBZVNBAKMVDP-UHFFFAOYSA-N,275,Tris(2-butoxyethyl) phosphate,Tris(2-butoxyethyl) phosphate,78-51-3,C18H39O7P,125,26.2333,2363,398.2433406,,
+WVDDGKGOMKODPV-UHFFFAOYSA-N,192,Phenylmethanol,Benzyl alcohol,100-51-6,C7H8O,108,9.0801,1036,108.0575149,,
+WXPWZZHELZEVPO-UHFFFAOYSA-N,269,(4-Methylphenyl)(phenyl)methanone,4-Methylbenzophenone,134-84-9,C14H12O,119,18.6358,1694,196.088815,,65
+WXZOXVVKILCOPG-UHFFFAOYSA-N,107,"Bis(2-ethylhexyl) benzene-1,3-dicarboxylate",Bis(2-ethylhexyl) isophthalate,137-89-3,C24H38O4,149,28.95,2707,390.2770097,Weichmacher/ Phthalat,86
+XAUGWFWQVYXATQ-UHFFFAOYSA-N,172,N-Phenylbenzenesulfonamide,Benzenesulfonanilide,1678-25-7,C12H11NO2S,92,22.8676,2072,233.0510498,Fungizid,82
+XCSGHNKDXGYELG-UHFFFAOYSA-N,539,"1,1'-[Ethane-1,2-diylbis(oxy)]dibenzene","Benzene, 1,1'-[1,2-ethanediylbis(oxy)]bis-",104-66-5,C14H14O2,77,20.5448,1811,214.09938,,88.7
+XGJPUQFWFRCCFO-UHFFFAOYSA-N,408,"3,3,4,4-Tetramethyl-2,5-pyrrolidinedione",Tetramethyl succinimide,3566-61-8,C8H13NO2,84,13.1786,1203,155.094628,,91.8
+XJEGLRCXBDRGTP-UHFFFAOYSA-N  ,249,,"Terephthalic acid, di(4-octyl) ester",1000323-74-2,C24H38O4,149,28.9547,2704,390.27701,Weichmacher/ Phthalat,
+XKJMJYZFAWYREL-UHFFFAOYSA-N,498,Hexadecamethylcyclooctasiloxane,"Cyclooctasiloxane, hexadecamethyl-",556-68-3,C16H48O8Si8,73,18.7128,1704,592.1503308,Säule,89
+XLPJNCYCZORXHG-UHFFFAOYSA-N,524,1-(Morpholin-4-yl)prop-2-en-1-one,N-Acryloylmorpholine,12/4/5117,C7H11NO2,86,13.4552,1146,141.078979,,93.5
+XMLYCEVDHLAQEL-UHFFFAOYSA-N,526,2-Hydroxy-2-methyl-1-phenylpropan-1-one,2-Hydroxy-iso-butyrophenone,7473-98-5,C10H12O2,59,13.7172,1278,164.08373,,93.3
+XMSXQFUHVRWGNA-UHFFFAOYSA-N,375,"2,2,4,4,6,6,8,8,10,10-Decamethyl-1,3,5,7,9,2,4,6,8,10-pentoxapentasilecane",Decamethylcyclopentasiloxane,541-02-6,C10H30O5Si5,73,11.5241,1163,370.0939567,Säule,96
+XOJVVFBFDXDTEG-UHFFFAOYSA-N,336,"2,6,10,14-Tetramethylpentadecane",Norphytane,1921-70-6,C19H40,71,19.1893,1703,268.3130013,,92.4
+XPJRQAIZZQMSCM-UHFFFAOYSA-N,316,"3,6,9,12,15,18-Hexaoxaicosane-1,20-diol","3,6,9,12,15,18-Hexaoxaicosane-1,20-diol",5617-32-3,C14H30O8,89,25.3494,2364,326.1940679,,86.2
+XSAYZAUNJMRRIR-UHFFFAOYSA-N,535,1-(Naphthalen-2-yl)ethan-1-one,2-Naphthyl methyl ketone,93-08-3,C12H10O,155,18.3391,1620,170.073165,,89.8
+XSNQECSCDATQEL-UHFFFAOYSA-N,193,"2,6-Dimethyloct-7-en-2-ol",Dihydromyrcenol,18479-58-8,C10H20O,59,9.8601,1064,156.1514153,related CAS 25279-08-7,
+XTDYIOOONNVFMA-UHFFFAOYSA-N,522,Dimethyl pentanedioate,"Pentanedioic acid, dimethyl ester",1119-40-0,C7H12O4,100,11.2804,1135,160.073559,,94.1
+XTJFFFGAUHQWII-UHFFFAOYSA-N,439,"Hexanedioic acid, 1,6-dibutyl ester",Dibutyl adipate,105-99-7,C14H26O4,129,19.9074,1766,258.18311,,91.6
+XUGNVMKQXJXZCD-UHFFFAOYSA-N,303,Propan-2-yl hexadecanoate,"Hexadecanoic acid, 1-methylethyl ester",142-91-6,C19H38O2,256,22.6503,2023,298.2871805,,77.7
+XUJLWPFSUCHPQL-UHFFFAOYSA-N,309,11-Methyldodecan-1-ol,11-Methyldodecanol,85763-57-1,C13H28O,69,15.9011,1492,200.2140155,,86.4
+XUPYJHCZDLZNFP-UHFFFAOYSA-N,374,Butyl butanoate,Butyl butyrate,109-21-7,C8H16O2,71,8.2783,998,144.1150298,,96
+XXBDWLFCJWSEKW-UHFFFAOYSA-N,348,"N,N-Dimethyl-1-phenylmethanamine","N,N-Dimethylbenzylamine",103-83-3,C9H13N,91,9.2659,1042,135.1047994,,94
+XXJWXESWEXIICW-UHFFFAOYSA-N,308,2-(2-Ethoxyethoxy)ethan-1-ol,2-(2-Ethoxyethoxy)ethanol,111-90-0,C6H14O3,72,8.5481,1007,134.0942943,,95.4
+XZZNDPSIHUTMOC-UHFFFAOYSA-N,399,Triphenyl phosphate,Triphenyl phosphate,115-86-6,C18H15O4P,326,26.3113,2420,326.071,"Std, LC",93
+YCMLQMDWSXFTIF-UHFFFAOYSA-N,94,2-Methylbenzene-1-sulfonamide,o-Toluenesulfonamide,88-19-7,C7H9NO2S,90,18.3556,1557,171.0353997,,90
+YDTIDQXHYVFIKB-HZJYTTRNSA-N,384,"Benzyl (9Z,12Z)-octadeca-9,12-dienoate",Benzyl linoleate,47557-83-5,C25H38O2,91,29.065,2765,370.2871805,,90
+YEDUAINPPJYDJZ-UHFFFAOYSA-N,465,"1,3-Benzothiazol-2-ol",2(3H)-Benzothiazolone,934-34-9,C7H5NOS,151,18.9831,1630,151.009185,std,78.3
+YHJBCRBYDBNEIK-UHFFFAOYSA-N,493,(Undecan-2-yl)benzene,"Benzene, (1-methyldecyl)-",4536-88-3,C17H28,105,19.1565,1708,232.219101,,90.1
+YIWUKEYIRIRTPP-UHFFFAOYSA-N,421,2-Ethylhexan-1-ol,"1-Hexanol, 2-ethyl-",104-76-7,C8H18O,57,9.0689,1030,130.1357652,,95.7
+YNPNZTXNASCQKK-UHFFFAOYSA-N,356,Phenanthrenato,Phenanthrene,85-01-8,C14H10,178,20.2284,1795,178.0782503,"PAK, Std",96
+YNQLUTRBYVCPMQ-UHFFFAOYSA-N,458,Ethylbenzene,Ethylbenzene,100-41-4,C8H10,91,5.1374,855,106.0782503,LHKW-Std,97.6
+YOACQWFUEYGCCF-UHFFFAOYSA-N  ,237,Ethyl hexyl phosphonate,"Phosphonic acid, ethyl hexyl ester",1656-73-1,C8H19O3P,83,22.471,1329,194.107182,,
+YPJRYQGOKHKNKZ-UHFFFAOYSA-N,146,1-Ethyl-1-methylcyclohexane,"Cyclohexane, 1-ethyl-1-methyl-",4926-90-3,C9H18,55,6.6955,953,126.1408505,,84.9
+YQEZLKZALYSWHR-UHFFFAOYSA-N,100,2-(2-Chlorophenyl)-2-(methylamino)cyclohexan-1-one,Ketamine,6740-88-1,C13H16ClNO,180,21.2331,1977,237.0920418,,84
+YQLRKXVEALTVCZ-UHFFFAOYSA-N,342,"2-Isocyanato-1,3-dimethylbenzene","Benzene, 2-isocyanato-1,3-dimethyl-",28556-81-2,C9H9NO,147,11.7628,1190,147.0684139,,97
+YTHPHGWTOWIKBU-UHFFFAOYSA-N  ,223,,"Phthalic acid, methyl 2-pentyl ester",1000315-55-1,C14H18O4,163,19.3939,1774,250.120509,Weichmacher/ Phthalat,
+YVGGHNCTFXOJCH-UHFFFAOYSA-N,486,"1,1'-(2,2,2-Trichloroethane-1,1-diyl)bis(4-chlorobenzene)","p,p'-DDT",50-29-3,C14H9Cl5,235,25.9254,2334,351.914688,CKW std,86.6
+YVPJVAWPIRGOJN-UHFFFAOYSA-N,284,"2~5~-Phenyl-2~1~,2~2~,2~3~,2~4~,2~5~,2~6~-hexahydro-1~1~,2~1~:2~3~,3~1~-terphenyl","1,3,5-Triphenylcyclohexane, cis,trans-",28336-57-4,C24H24,91,26.7062,2471,312.1878008,,90.3
+YYGNTYWPHWGJRM-AAJYLUCBSA-N,251,"(6E,10E,14E,18E)-2,6,10,15,19,23-Hexamethyltetracosa-2,6,10,14,18,22-hexaene",(E)-Squalene,111-02-4,C30H50,69,29.5592,2832,410.3912516,"biogen, u.a. Hautschutzmittel,  Schmiermittel",
+YZEFQPIMXZVPKP-UHFFFAOYSA-N,103,"5-Methyl-6,7-dihydro-5H-cyclopenta[b]pyrazine","6,7-Dihydro-5-methyl-5H-cyclopentapyrazine",23747-48-0,C8H10N2,119,11.1579,1149,134.0843983,,94
+ZDMORWSPXCSTKG-UHFFFAOYSA-N   ,71,,"Carbonic acid, pentadecyl phenyl ester",1000314-57-9,C22H36O3,94,27.4484,2528,348.266445,KW mit Phenylester,75
+ZFOZVQLOBQUTQQ-UHFFFAOYSA-N,418,"Tributyl 2-hydroxy-1,2,3-propanetricarboxylate  ",Butyl citrate,77-94-1,C18H32O7,185,24.3237,2150,360.214804,,94.8
+ZFXDUWYVZMVVQT-UHFFFAOYSA-N,330,3-[2-(4-Hydroxyphenyl)propan-2-yl]phenol,"3,4'-Isopropylidenediphenol",46765-25-7,C15H16O2,213,24.2581,2173,228.1150298,,92.2
+ZPQOPVIELGIULI-UHFFFAOYSA-N,8,"1,3-Dichlorobenzene","1,3-Dichlorobenzene",541-73-1,C6H4Cl2,146,8.4986,1012,145.9690055,LHKW-Std,91
+ZQPPMHVWECSIRJ-KTKRTIGZSA-N,383,(9Z)-Octadec-9-enoic acid,Oleic acid,112-80-1,C18H34O2,83,23.7907,2145,282.2558803,,91
+ZRYDPLOWJSFQAE-UHFFFAOYSA-N,16,2-tert-Butylcyclohexan-1-one,2-tert-Butylcyclohexanone,1728-46-7,C10H18O,98,11.1864,1141,154.1357652,,91
+ZSRDNPVYGSFUMD-UHFFFAOYSA-N,200,(3-Chlorophenyl)methanol,3-Chlorobenzyl alcohol,873-63-2,C7H7ClO,107,12.5011,1216,142.0185425,,
+ZTKTZVXSSKVBTH-UHFFFAOYSA-N  ,115,"1,2,3,4,5-Pentamethyl-1-cyclopentene","Cyclopentene, 1,2,3,4,5-pentamethyl-",1000154-28-6,C10H18,123,6.1965,944,138.140851,,95
+ZTMZUYHXZPUDRF-UHFFFAOYSA-N,232,"7,9-Di-tert-butyl-1-oxaspiro[4.5]deca-6,9-diene-2,8-dione","7,9-Di-tert-butyl-1-oxaspiro(4,5)deca-6,9-diene-2,8-dione",82304-66-3,C17H24O3,205,21.6607,1923,276.1725446,,
+ZUOUZKKEUPVFJK-LHNTUAQVSA-N,432,"(~2~H_10_)-1,1'-Biphenyl",ISTD Biphenyl d10,1486-01-7,C12D10,164,15.0023,1375,164.1410178,IS 50µl (500ng/l),97
+ZVLSVDOZUWIUIJ-UHFFFAOYSA-N  ,441,"2-Isopentyl-3,5-dimethylpyrazine","2-(3-Methylbutyl)-3,5-dimethylpyrazine",111150-30-2,C11H18N2,122,14.4218,1341,178.146998,,94.6
+ZVQXQPNJHRNGID-UHFFFAOYSA-N,127,Tetramethylbutanedinitrile,Tetramethylsuccinonitrile,3333-52-6,C8H12N2,69,8.9363,1138,136.1000484,,88
+ZXFXBSWRVIQKOD-HWKPLSEASA-N,476,cis Heptachlor epoxide (Isomer B),Heptachlor epoxide,1024-57-3,C10H5Cl7O,353,23.1623,2015,385.816008,CKW std,88
+ZXVVIKMMTCNHIH-UHFFFAOYSA-N   ,178,"1,2,3,4,5-Pentamethylcyclopentane","Cyclopentane, 1,2,3,4,5-pentamethyl-",1000152-79-7,C10H20,84,6.1426,905,140.156501,,
+ZYHJQFMTTFCBKH-UHFFFAOYSA-N,508,(Dodecan-6-yl)benzene,"Benzene, (1-pentylheptyl)-",2719-62-2,C18H30,91,19.4399,1726,246.234751,,87.9
+ZYUBDLPFZYBCKS-UHFFFAOYSA-N   ,82,,"Carbonic acid, octadecyl phenyl ester",1000314-58-1,C25H42O3,94,29.2691,2826,390.313395,KW mit Phenylester,75
+ZYURHZPYMFLWSH-UHFFFAOYSA-N,534,Octacosane,Octacosane,630-02-4,C28H58,57,29.4278,2800,394.453852,KW,90.1
